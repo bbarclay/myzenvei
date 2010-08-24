@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.3">
+	<name>J!Position</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>June 2008</creationDate>
+	<author>style13</author>
+	<authorEmail>webmaster@style13.com</authorEmail>
+	<authorUrl>http://www.style13.com</authorUrl>
+	<copyright>(C) 2007-2008 All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.0.2</version>
+	
+	<description>
+		<![CDATA[ 
+			<p>This is the latest free J!Position component for Joomla! 1.5 (no legacy mode!).</p>
+			<p>Please visit our style13 <a href="http://www.style13.com">website</a> for a latest updates.</p>
+		]]>
+	</description>
+	
+	<installfile>install.jposition.php</installfile>
+	
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu img="components/com_jposition/images/application_view_tile.png">J!Position</menu>
+		<submenu>
+			<!-- Note that all & must be escaped to &amp; for the file to be valid XML and be parsed by the installer -->
+			<menu img="components/com_jposition/images/plugin_enabled.png" link="option=com_jposition&amp;controller=jposition">View All</menu>
+			<menu img="components/com_jposition/images/plugin_disabled.png" link="option=com_jposition&amp;controller=unused">View Unused</menu>
+		</submenu>
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder    to copy FROM in the package to install therefore files copied    in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>admin.jposition.php</filename>
+			<!-- install controllers -->
+			<filename>controllers/index.html</filename>
+			<filename>controllers/unused.php</filename>
+			<filename>controllers/unused_detail.php</filename>
+			<filename>controllers/jposition.php</filename>
+			<filename>controllers/jposition_detail.php</filename>
+			<!-- install models -->
+			<filename>models/index.html</filename>
+			<filename>models/unused.php</filename>
+			<filename>models/unused_detail.php</filename>
+			<filename>models/jposition.php</filename>
+			<filename>models/jposition_detail.php</filename>
+			<!-- install views -->
+			<filename>views/index.html</filename>
+			<!-- view country -->
+			<filename>views/unused/index.html</filename>
+			<filename>views/unused/view.html.php</filename>
+			<filename>views/unused/tmpl/index.html</filename>
+			<filename>views/unused/tmpl/default.php</filename>
+			<!-- view country detail-->
+			<filename>views/unused_detail/index.html</filename>
+			<filename>views/unused_detail/view.html.php</filename>
+			<filename>views/unused_detail/tmpl/index.html</filename>
+			<filename>views/unused_detail/tmpl/form.php</filename>
+			<!-- view helloworld -->
+			<filename>views/jposition/index.html</filename>
+			<filename>views/jposition/view.html.php</filename>
+			<filename>views/jposition/tmpl/index.html</filename>
+			<filename>views/jposition/tmpl/default.php</filename>
+			<!-- view country detail-->
+			<filename>views/jposition_detail/index.html</filename>
+			<filename>views/jposition_detail/view.html.php</filename>
+			<filename>views/jposition_detail/tmpl/index.html</filename>
+			<filename>views/jposition_detail/tmpl/default.php</filename>
+			<!-- images -->
+			<filename>images/index.html</filename>
+			<filename>images/application_view_tile.png</filename>
+			<filename>images/plugin_enabled.png</filename>
+			<filename>images/plugin_disabled.png</filename>
+		</files>
+	</administration>
+</install>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" client="administrator">
+	<name>Component Listing</name>
+	<author>Sabuj Kundu aka manchumahara</author>
+	<creationDate>30.08.2008</creationDate>
+	<copyright>Copyright (C) 2008 manchumahara.com</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>manchumahara@gmail.com</authorEmail>
+	<authorUrl>http://blog.manchumahara.com</authorUrl>
+	<version>2.0.0</version>
+	<description>This module shows all components as a list on the Admin area(publish it in position:cpanel for khepri template) Home Page</description>
+	<files>
+		<filename module="mod_manchucomlist">mod_manchucomlist.php</filename>
+	</files>
+	<params>
+	    <param name="show_subitem" type="radio" default="0" label="Show Subitem" description="Enable the submenu or subitems in component listing">
+           <option value="0">Hide</option>
+           <option value="1">Show</option>
+        </param>
+        <param name="show_credit" type="radio" default="0" label="Show Credit" description="Show dev's Credits bellow Componentlisting">
+           <option value="0">Hide</option>
+           <option value="1">Show</option>
+        </param>
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+	</params>
+</install>

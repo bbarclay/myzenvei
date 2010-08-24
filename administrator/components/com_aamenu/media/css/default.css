@@ -1,0 +1,173 @@
+/**
+ * @version	$Id: default.css 36 2009-05-19 01:06:55Z eddieajau $
+ */
+
+/* General */
+
+div#nlitcopy, div#nlitcopy a {
+	text-align: center;
+	color: #777;
+}
+
+/* Special checklists */
+
+ul.checklist {
+	list-style: none;
+	padding: 0;
+}
+ul.checklist li {
+	padding: 0;
+	border-bottom: 1px solid #eee;
+}
+ul.checklist li:hover {
+	background: #eee;
+}
+
+/* ACL list */
+
+table.adminlist tbody td.acl-allow1,
+table.adminlist tbody td.acl-enabled1 {
+	background-color: #6FFF75;
+	text-align: center;
+}
+table.adminlist tbody td.acl-allow0,
+table.adminlist tbody td.acl-enabled0 {
+	background-color: #FF6F6F;
+	text-align: center;
+}
+
+table.adminlist tbody td ol {
+	padding-left: 1.5em;
+}
+
+table.adminlist tbody td ol li {
+}
+
+/* Forms */
+
+fieldset {
+	margin-bottom: 10px;
+}
+fieldset legend {
+	padding: 0 2px;
+	font-weight: bold;
+}
+fieldset label {
+	line-height: 1.8;
+	vertical-align: top;
+	width: 120px; /* Width of labels */
+	/*display: inline-block;*/
+	/*display: -moz-inline-box;*/ /* Fixes Firefox */
+}
+fieldset ol {
+	margin: 0;
+	padding: 0;
+}
+fieldset li {
+	list-style: none;
+	padding: 5px;
+	margin: 0;
+}
+
+fieldset span.help {
+	font-size: 85%;
+	color: #c96;
+	margin-left: 16em;
+	padding: 0 0 0 3px;
+	border-left: 1px solid #c96;
+	display: block;
+}
+
+/* Filter Blocks */
+
+fieldset.filter {
+	margin: 0;
+	border: 0;
+	padding: 0 0 5px 0;
+}
+
+fieldset.filter ol {
+	margin: 0;
+	border: 0;
+	padding: 5px 0 0 0;
+	list-style: none;
+}
+
+fieldset.filter ol li {
+	padding: 0 5px 0 0;
+	float: left;
+}
+
+fieldset.filter ol li fieldset {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+/* Buttonbar in popups */
+
+fieldset#buttonbar {
+	border: 0;
+	text-align: right;
+}
+fieldset#buttonbar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+fieldset#buttonbar li {
+	padding: 5px;
+	margin: 0;
+}
+
+/* Toolbar */
+
+.icon-48-logo {
+	background: url(../images/taoj_logo48x48.png) no-repeat left;
+}
+
+/* General */
+
+.clearfix:after {
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+.clearfix {
+    display:inline-block;
+}
+.clearfix {
+    display:block;
+}
+* html .clearfix {
+    height:1px;
+}
+
+.readonly {
+	border: 0;
+}
+
+.invalid {
+	color: red;
+	font-weight: bold;
+}
+
+input.invalid {
+	border: 1px solid red;
+}
+
+/* Upgrades */
+span.upgrade {
+	border-top: 3px solid orange;
+	border-bottom: 3px solid orange;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+span.upgrade a {
+	font-weight: bold;
+	padding-left: 25px;
+	padding-right: 25px;
+	color: red;
+}

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<document>
+    <options>
+		<forbiddentypes>.jpg
+.jpeg
+.gif
+.png</forbiddentypes>
+		<excludelist></excludelist>
+	<sitemapurl>/sitemap.xml</sitemapurl>
+	<priority>auto</priority>
+	<changefreq>weekly</changefreq>
+	<method>curl</method>
+	<level>2</level>
+	<maxconn>50</maxconn>
+	<docroot>/home/zenveic/public_html</docroot>
+	<timeout>20</timeout>
+	</options>
+</document>

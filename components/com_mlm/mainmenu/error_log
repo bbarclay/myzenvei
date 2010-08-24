@@ -1,0 +1,857 @@
+[28-Jun-2010 13:20:24] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 13:21:40] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 13:21:40] PHP Warning:  include(fisheye/index.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 50
+[28-Jun-2010 13:21:40] PHP Warning:  include(fisheye/index.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 50
+[28-Jun-2010 13:21:40] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'fisheye/index.html' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 50
+[28-Jun-2010 13:22:00] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 13:24:09] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 13:24:26] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 13:28:51] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 13:32:08] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 13:32:22] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 13:35:23] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 13:37:28] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 13:38:03] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 13:41:17] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 13:44:15] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 13:53:31] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 13:53:31] PHP Warning:  include(components/com_mlm/fisheye/index.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 50
+[28-Jun-2010 13:53:31] PHP Warning:  include(components/com_mlm/fisheye/index.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 50
+[28-Jun-2010 13:53:31] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'components/com_mlm/fisheye/index.html' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 50
+[28-Jun-2010 13:54:48] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 13:54:48] PHP Warning:  include(../components/com_mlm/fisheye/index.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 50
+[28-Jun-2010 13:54:48] PHP Warning:  include(../components/com_mlm/fisheye/index.html) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 50
+[28-Jun-2010 13:54:48] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../components/com_mlm/fisheye/index.html' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 50
+[28-Jun-2010 13:55:37] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 13:56:07] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 13:57:18] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 13:57:18] PHP Warning:  include(../fisheye) [<a href='function.include'>function.include</a>]: failed to open stream: Inappropriate ioctl for device in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 50
+[28-Jun-2010 13:57:18] PHP Warning:  include(../fisheye) [<a href='function.include'>function.include</a>]: failed to open stream: Inappropriate ioctl for device in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 50
+[28-Jun-2010 13:57:18] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../fisheye' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 50
+[28-Jun-2010 13:59:58] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:04:17] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:13:29] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:14:58] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:15:04] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:15:10] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:15:14] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:15:16] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:15:19] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:15:26] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:15:40] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:15:45] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:15:50] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:15:53] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:16:03] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:16:06] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:16:11] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:18:16] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:18:22] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:19:49] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:19:55] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:21:47] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:23:20] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:24:09] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:26:39] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:27:26] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:27:47] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:29:13] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:29:20] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:31:33] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:41:05] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:41:14] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:45:07] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:45:23] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:45:43] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:48:42] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:49:34] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:51:42] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:57:04] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:58:02] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 14:59:53] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 15:00:28] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 15:02:43] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 15:03:32] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 15:03:50] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 19:24:58] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 19:50:43] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 19:53:19] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jun-2010 20:06:49] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jun-2010 15:08:22] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jun-2010 15:10:43] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jun-2010 15:13:53] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jun-2010 16:21:26] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jun-2010 17:46:31] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jun-2010 17:49:28] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jun-2010 17:49:31] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jun-2010 21:17:44] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jun-2010 21:18:10] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jun-2010 21:21:05] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jun-2010 21:46:58] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jun-2010 22:28:56] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jun-2010 22:39:49] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jun-2010 22:40:30] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jun-2010 22:43:27] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jun-2010 23:23:48] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jun-2010 23:24:15] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jun-2010 23:52:45] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jun-2010 23:53:28] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jun-2010 23:53:53] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jun-2010 23:54:24] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jun-2010 23:56:46] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jun-2010 23:59:00] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jun-2010 23:59:57] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[30-Jun-2010 00:03:10] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[30-Jun-2010 00:06:08] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[30-Jun-2010 10:28:24] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[30-Jun-2010 17:59:49] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[30-Jun-2010 18:46:33] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[30-Jun-2010 18:48:29] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[30-Jun-2010 19:28:29] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[30-Jun-2010 19:29:11] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[30-Jun-2010 19:31:44] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[30-Jun-2010 19:34:34] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[30-Jun-2010 19:34:49] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[30-Jun-2010 19:34:56] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[30-Jun-2010 19:35:44] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[01-Jul-2010 00:31:40] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[01-Jul-2010 00:43:40] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[01-Jul-2010 00:59:55] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[01-Jul-2010 11:28:36] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[01-Jul-2010 11:29:14] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[01-Jul-2010 11:30:06] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[01-Jul-2010 11:30:45] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[01-Jul-2010 11:34:25] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[01-Jul-2010 11:34:30] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[01-Jul-2010 12:08:40] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[01-Jul-2010 13:05:35] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[01-Jul-2010 13:28:13] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[01-Jul-2010 13:30:01] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[01-Jul-2010 13:30:23] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[01-Jul-2010 13:30:50] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[01-Jul-2010 13:32:04] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[01-Jul-2010 13:32:35] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[01-Jul-2010 13:56:28] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[01-Jul-2010 13:58:47] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[01-Jul-2010 17:24:42] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[01-Jul-2010 19:28:39] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[01-Jul-2010 19:29:19] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 00:16:33] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 00:20:34] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 00:36:51] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 00:46:17] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 00:55:14] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 02:47:31] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 02:51:02] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 03:10:51] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 03:57:56] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 03:58:36] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 04:00:26] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 04:04:50] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 04:05:31] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 04:05:42] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 04:08:05] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 04:09:55] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 04:10:15] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 04:13:02] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 04:13:12] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 04:13:56] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 10:30:45] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 10:32:29] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 10:33:51] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 10:46:40] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 11:22:53] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 12:16:40] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 12:17:55] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 12:23:09] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 12:41:56] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 12:45:02] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 12:59:27] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 13:00:18] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 13:47:21] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 14:04:41] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 15:50:49] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 15:54:44] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 15:56:20] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 16:09:45] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 16:12:51] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 16:13:07] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 17:08:04] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 17:10:59] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 17:24:45] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 18:08:26] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 18:18:59] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 18:42:53] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 18:53:09] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 19:52:14] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 19:54:19] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[02-Jul-2010 19:55:54] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[03-Jul-2010 16:00:38] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[03-Jul-2010 18:15:28] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[03-Jul-2010 18:22:46] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[03-Jul-2010 18:27:01] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Jul-2010 11:17:18] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Jul-2010 11:17:44] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Jul-2010 11:20:08] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Jul-2010 11:41:18] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Jul-2010 11:41:29] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Jul-2010 13:45:06] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Jul-2010 13:45:23] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Jul-2010 13:45:35] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Jul-2010 13:46:11] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Jul-2010 13:48:20] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Jul-2010 13:48:30] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Jul-2010 13:48:49] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Jul-2010 15:34:54] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 02:22:31] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 09:53:10] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 12:42:27] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 13:23:28] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 13:24:48] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 13:25:38] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 13:28:54] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 13:32:58] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 17:07:12] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 17:07:39] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 17:10:35] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 17:10:48] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 17:13:19] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 17:13:48] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 17:15:32] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 17:17:30] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 17:17:44] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 17:18:37] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 17:22:33] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 17:41:19] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 21:37:05] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 21:37:14] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 21:38:27] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 21:50:42] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 22:04:25] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 22:07:07] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 22:08:27] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 22:08:49] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 22:11:10] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Jul-2010 22:16:07] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[06-Jul-2010 00:49:51] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[06-Jul-2010 01:02:33] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[06-Jul-2010 01:04:06] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[06-Jul-2010 03:57:42] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[06-Jul-2010 10:10:42] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[06-Jul-2010 10:11:41] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[06-Jul-2010 10:20:32] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[06-Jul-2010 10:37:30] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[06-Jul-2010 11:09:37] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[06-Jul-2010 11:43:40] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[06-Jul-2010 12:42:34] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[06-Jul-2010 12:43:12] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[06-Jul-2010 13:00:43] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[06-Jul-2010 13:08:39] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[06-Jul-2010 13:08:43] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[06-Jul-2010 13:08:50] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[06-Jul-2010 13:09:45] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[06-Jul-2010 21:43:44] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[06-Jul-2010 21:44:44] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[06-Jul-2010 22:45:46] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[07-Jul-2010 11:21:18] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[07-Jul-2010 11:23:05] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[07-Jul-2010 11:27:04] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[07-Jul-2010 11:27:23] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[07-Jul-2010 11:35:28] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[07-Jul-2010 12:00:14] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[07-Jul-2010 14:04:33] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[07-Jul-2010 14:05:03] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[08-Jul-2010 14:01:13] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[09-Jul-2010 00:45:03] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[09-Jul-2010 11:46:16] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[09-Jul-2010 11:47:03] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[09-Jul-2010 16:00:02] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[10-Jul-2010 01:21:29] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[10-Jul-2010 02:44:05] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[10-Jul-2010 04:00:57] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[10-Jul-2010 04:08:02] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[10-Jul-2010 06:20:03] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[10-Jul-2010 10:41:47] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[10-Jul-2010 10:59:36] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[10-Jul-2010 13:02:58] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[10-Jul-2010 14:17:22] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[10-Jul-2010 15:52:32] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[10-Jul-2010 16:58:08] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[10-Jul-2010 20:53:38] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[10-Jul-2010 23:11:23] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[10-Jul-2010 23:11:23] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[11-Jul-2010 00:00:40] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[11-Jul-2010 10:43:46] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[11-Jul-2010 10:44:10] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[11-Jul-2010 10:49:24] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[11-Jul-2010 12:15:53] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[11-Jul-2010 12:26:46] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[11-Jul-2010 13:01:32] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[11-Jul-2010 13:01:41] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[11-Jul-2010 13:02:21] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[11-Jul-2010 13:02:30] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[11-Jul-2010 13:03:26] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[11-Jul-2010 13:05:47] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[11-Jul-2010 13:06:00] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[11-Jul-2010 13:15:18] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[11-Jul-2010 13:30:34] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[11-Jul-2010 13:57:28] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[11-Jul-2010 14:50:49] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[12-Jul-2010 01:54:22] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[12-Jul-2010 03:22:40] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[12-Jul-2010 08:24:15] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[12-Jul-2010 08:50:48] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[13-Jul-2010 08:00:50] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[13-Jul-2010 08:01:02] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[13-Jul-2010 08:25:56] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[13-Jul-2010 08:31:29] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[13-Jul-2010 08:32:41] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[13-Jul-2010 10:41:36] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[13-Jul-2010 10:41:51] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[13-Jul-2010 13:32:43] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[13-Jul-2010 14:37:48] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[13-Jul-2010 14:39:02] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[13-Jul-2010 14:50:04] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[13-Jul-2010 18:39:53] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[13-Jul-2010 18:39:56] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[13-Jul-2010 23:40:30] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[13-Jul-2010 23:41:17] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[14-Jul-2010 05:43:35] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[14-Jul-2010 07:54:06] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[14-Jul-2010 12:04:03] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[14-Jul-2010 13:13:52] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[14-Jul-2010 14:20:36] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[14-Jul-2010 14:20:51] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[14-Jul-2010 15:13:37] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[14-Jul-2010 20:30:12] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[15-Jul-2010 03:24:03] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[15-Jul-2010 03:25:37] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[15-Jul-2010 04:52:06] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[15-Jul-2010 08:11:44] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[15-Jul-2010 08:14:42] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[15-Jul-2010 08:17:16] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[15-Jul-2010 13:35:57] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[15-Jul-2010 14:31:43] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[15-Jul-2010 14:32:29] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[15-Jul-2010 15:58:57] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[15-Jul-2010 16:03:08] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[15-Jul-2010 16:22:10] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[15-Jul-2010 16:22:25] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[15-Jul-2010 18:16:20] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[15-Jul-2010 18:33:43] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[15-Jul-2010 19:23:46] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[16-Jul-2010 00:33:40] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[16-Jul-2010 01:43:47] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[16-Jul-2010 10:13:29] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[16-Jul-2010 10:47:36] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[16-Jul-2010 10:49:36] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[16-Jul-2010 10:49:43] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[16-Jul-2010 12:19:48] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[16-Jul-2010 12:40:10] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[16-Jul-2010 12:45:44] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[16-Jul-2010 12:53:05] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[16-Jul-2010 13:13:39] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[16-Jul-2010 13:14:09] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[16-Jul-2010 14:20:26] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[16-Jul-2010 22:18:26] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[16-Jul-2010 22:22:44] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[17-Jul-2010 02:39:08] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[17-Jul-2010 09:35:39] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[17-Jul-2010 09:36:52] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[17-Jul-2010 09:40:41] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[17-Jul-2010 09:47:29] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[17-Jul-2010 09:56:35] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[17-Jul-2010 09:56:35] PHP Warning:  include_once(setting.inc) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 1
+[17-Jul-2010 09:56:35] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'setting.inc' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 1
+[17-Jul-2010 09:57:06] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[17-Jul-2010 09:57:06] PHP Warning:  include_once(members/setting.inc) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 1
+[17-Jul-2010 09:57:06] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'members/setting.inc' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 1
+[17-Jul-2010 09:57:38] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[17-Jul-2010 09:57:38] PHP Warning:  include_once(members/settings.inc) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 1
+[17-Jul-2010 09:57:38] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'members/settings.inc' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 1
+[17-Jul-2010 09:58:02] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[17-Jul-2010 09:58:24] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[17-Jul-2010 10:00:27] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[17-Jul-2010 10:30:59] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[17-Jul-2010 10:42:34] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[17-Jul-2010 10:43:02] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[17-Jul-2010 10:43:28] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[17-Jul-2010 11:21:05] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[18-Jul-2010 01:23:49] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[18-Jul-2010 03:38:44] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[18-Jul-2010 12:08:59] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[18-Jul-2010 12:09:30] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[18-Jul-2010 12:24:43] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[18-Jul-2010 15:10:15] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[19-Jul-2010 14:49:45] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[19-Jul-2010 14:58:52] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[19-Jul-2010 14:59:29] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[19-Jul-2010 15:00:43] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[19-Jul-2010 17:41:37] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[19-Jul-2010 17:59:44] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 11:26:59] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 11:27:05] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 11:28:03] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 11:30:17] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 12:48:26] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 13:01:35] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 13:03:53] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 13:08:41] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 13:08:46] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 13:30:03] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 13:41:34] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 17:22:32] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 17:56:47] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 17:57:40] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 18:01:34] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 18:02:15] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 18:02:25] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 18:15:11] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 18:27:11] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 18:34:17] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 19:02:36] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 22:21:02] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 22:23:29] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 22:24:41] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 22:27:35] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 22:28:41] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 22:28:51] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 22:45:37] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 22:47:12] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 23:03:13] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Jul-2010 23:05:39] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 00:42:05] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 07:14:34] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 07:14:36] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 07:36:54] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 08:05:02] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 09:47:49] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 09:56:46] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 10:02:42] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 10:03:24] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 10:13:07] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 10:19:01] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 10:22:59] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 10:35:54] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 10:36:17] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 10:36:19] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 10:37:22] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 10:39:06] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 10:41:27] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 10:44:23] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 10:48:12] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 10:52:40] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 10:54:48] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 11:01:39] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 11:02:05] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 11:05:49] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 11:05:55] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 11:15:09] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 11:22:14] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 11:22:55] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 11:27:56] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 11:28:56] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 11:31:13] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 11:33:43] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 11:35:56] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 11:55:50] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 12:06:11] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 12:12:53] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 12:13:17] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 12:16:39] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 12:27:41] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 13:15:27] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 13:19:20] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 13:19:57] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 13:36:48] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 13:38:28] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 15:38:39] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 16:02:03] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 16:12:45] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 17:36:00] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Jul-2010 19:33:55] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[22-Jul-2010 05:31:38] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[22-Jul-2010 05:34:44] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[22-Jul-2010 05:35:19] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[22-Jul-2010 06:21:09] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[22-Jul-2010 13:42:57] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[22-Jul-2010 15:16:36] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[22-Jul-2010 15:19:16] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[22-Jul-2010 16:52:57] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[22-Jul-2010 17:03:03] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[22-Jul-2010 18:42:09] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[22-Jul-2010 23:29:03] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 00:51:05] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 01:31:27] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 01:31:30] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 01:32:29] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 08:37:40] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 08:39:13] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 08:39:13] PHP Parse error:  syntax error, unexpected '<' in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 2
+[23-Jul-2010 08:39:35] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 08:40:49] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 08:40:49] PHP Warning:  require_once(JPATH_ROOTDScomponentsDScom_communityDSdefines.community.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 29
+[23-Jul-2010 08:40:49] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'JPATH_ROOTDScomponentsDScom_communityDSdefines.community.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 29
+[23-Jul-2010 08:41:52] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 08:42:16] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 08:46:54] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 08:54:35] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 08:54:35] PHP Fatal error:  Call to a member function getUser() on a non-object in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 3
+[23-Jul-2010 08:55:44] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 08:55:44] PHP Warning:  require_once(JPATH_INCLUDESDSdefines.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 3
+[23-Jul-2010 08:55:44] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'JPATH_INCLUDESDSdefines.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 3
+[23-Jul-2010 08:57:54] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 08:57:55] PHP Warning:  require_once(JPATH_INCLUDES/defines.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 20
+[23-Jul-2010 08:57:55] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'JPATH_INCLUDES/defines.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 20
+[23-Jul-2010 09:18:36] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 09:53:19] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 10:15:56] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 10:17:05] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 10:17:28] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 10:23:43] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 10:23:43] PHP Fatal error:  Class 'JFactory' not found in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 3
+[23-Jul-2010 10:26:48] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 10:26:48] PHP Warning:  require_once(JPATH_LIBRARIESDSjoomlaDSfactory.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 3
+[23-Jul-2010 10:26:48] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'JPATH_LIBRARIESDSjoomlaDSfactory.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 3
+[23-Jul-2010 10:29:04] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 10:29:04] PHP Warning:  require_once(JPATH_LIBRARIES/joomla/factory.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 6
+[23-Jul-2010 10:29:04] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'JPATH_LIBRARIES/joomla/factory.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 6
+[23-Jul-2010 10:33:24] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 10:33:24] PHP Warning:  require_once(/home/myzenvei/public_html/components/com_mlm/mainmenu/../includes/framework.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 5
+[23-Jul-2010 10:33:24] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/myzenvei/public_html/components/com_mlm/mainmenu/../includes/framework.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 5
+[23-Jul-2010 10:37:11] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 10:37:11] PHP Warning:  include_once(../../../zenvieConfig.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 2
+[23-Jul-2010 10:37:11] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening '../../../zenvieConfig.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 2
+[23-Jul-2010 10:39:46] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 10:39:55] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 10:41:35] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 10:46:28] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 10:46:28] PHP Warning:  include_once(../../../members/zenvieConfig.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 2
+[23-Jul-2010 10:46:28] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening '../../../members/zenvieConfig.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 2
+[23-Jul-2010 10:48:59] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 10:57:26] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 10:57:26] PHP Warning:  include(../configuration.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 13
+[23-Jul-2010 10:57:26] PHP Warning:  include(../configuration.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 13
+[23-Jul-2010 10:57:26] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../configuration.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 13
+[23-Jul-2010 10:57:26] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/myzenvei/public_html/clients/zenvieConfig.php:13) in /home/myzenvei/public_html/libraries/joomla/session/session.php on line 423
+[23-Jul-2010 10:57:26] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/myzenvei/public_html/clients/zenvieConfig.php:13) in /home/myzenvei/public_html/libraries/joomla/session/session.php on line 426
+[23-Jul-2010 10:57:26] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/myzenvei/public_html/clients/zenvieConfig.php:13) in /home/myzenvei/public_html/libraries/joomla/session/session.php on line 456
+[23-Jul-2010 10:57:26] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cookie - headers already sent by (output started at /home/myzenvei/public_html/clients/zenvieConfig.php:13) in /home/myzenvei/public_html/libraries/joomla/session/session.php on line 423
+[23-Jul-2010 10:57:26] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/myzenvei/public_html/clients/zenvieConfig.php:13) in /home/myzenvei/public_html/libraries/joomla/session/session.php on line 423
+[23-Jul-2010 10:57:26] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/myzenvei/public_html/clients/zenvieConfig.php:13) in /home/myzenvei/public_html/libraries/joomla/session/session.php on line 426
+[23-Jul-2010 11:25:39] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 11:25:39] PHP Warning:  include(../configuration.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 13
+[23-Jul-2010 11:25:39] PHP Warning:  include(../configuration.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 13
+[23-Jul-2010 11:25:39] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../configuration.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 13
+[23-Jul-2010 11:25:39] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/myzenvei/public_html/clients/zenvieConfig.php:13) in /home/myzenvei/public_html/libraries/joomla/session/session.php on line 423
+[23-Jul-2010 11:25:39] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/myzenvei/public_html/clients/zenvieConfig.php:13) in /home/myzenvei/public_html/libraries/joomla/session/session.php on line 426
+[23-Jul-2010 11:26:33] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 11:26:33] PHP Warning:  include(../configuration.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 13
+[23-Jul-2010 11:26:33] PHP Warning:  include(../configuration.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 13
+[23-Jul-2010 11:26:33] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '../configuration.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 13
+[23-Jul-2010 11:26:33] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/myzenvei/public_html/clients/zenvieConfig.php:13) in /home/myzenvei/public_html/libraries/joomla/session/session.php on line 423
+[23-Jul-2010 11:26:33] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/myzenvei/public_html/clients/zenvieConfig.php:13) in /home/myzenvei/public_html/libraries/joomla/session/session.php on line 426
+[23-Jul-2010 11:28:09] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 11:44:38] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 11:49:01] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 11:50:04] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 11:58:49] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 12:51:07] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 12:53:28] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 13:02:08] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 13:05:10] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 13:05:48] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 13:06:55] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 13:07:01] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 13:09:23] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 13:10:32] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 13:10:49] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 13:12:50] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 13:14:50] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 13:15:50] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 13:16:37] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 13:18:36] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 13:18:51] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 13:19:27] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 13:26:06] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 13:26:54] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 13:27:05] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 13:27:15] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 13:28:33] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 13:28:52] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 13:29:56] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 13:30:54] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 15:35:50] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 15:35:50] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 15:35:51] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 15:35:51] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 15:35:51] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 15:35:52] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 15:35:52] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 15:35:52] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 15:35:55] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 15:35:55] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 15:35:55] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 15:35:56] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 15:35:56] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 15:35:56] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[23-Jul-2010 15:36:07] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 03:36:51] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 03:37:03] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 03:37:26] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 03:37:30] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 03:37:35] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 11:44:12] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 11:44:31] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 11:44:46] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 11:44:50] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 13:43:17] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 13:54:41] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 13:54:47] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 13:55:52] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 15:04:19] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 15:04:19] PHP Warning:  require_once(/home/myzenvei/public_html/clients/includes/framework.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 15:04:19] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/myzenvei/public_html/clients/includes/framework.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 20:49:33] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 20:49:33] PHP Warning:  require_once(/home/myzenvei/public_html/clients/includes/framework.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 20:49:33] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/myzenvei/public_html/clients/includes/framework.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 20:50:14] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 20:50:14] PHP Warning:  require_once(/home/myzenvei/public_html/clients/includes/framework.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 20:50:14] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/myzenvei/public_html/clients/includes/framework.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 20:50:25] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 20:50:25] PHP Warning:  require_once(/home/myzenvei/public_html/clients/includes/framework.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 20:50:25] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/myzenvei/public_html/clients/includes/framework.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 20:51:02] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 20:51:02] PHP Warning:  require_once(/home/myzenvei/public_html/clients/includes/framework.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 20:51:02] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/myzenvei/public_html/clients/includes/framework.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 20:52:55] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 20:52:56] PHP Warning:  require_once(/home/myzenvei/public_html/clients/includes/framework.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 20:52:56] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/myzenvei/public_html/clients/includes/framework.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 20:53:08] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 20:53:08] PHP Warning:  require_once(/home/myzenvei/public_html/clients/includes/framework.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 20:53:08] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/myzenvei/public_html/clients/includes/framework.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 20:53:18] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 20:53:18] PHP Warning:  require_once(/home/myzenvei/public_html/clients/includes/framework.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 20:53:18] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/myzenvei/public_html/clients/includes/framework.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 20:57:31] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 20:57:31] PHP Warning:  require_once(/home/myzenvei/public_html/clients/includes/framework.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 20:57:31] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/myzenvei/public_html/clients/includes/framework.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 20:57:34] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 20:57:34] PHP Warning:  require_once(/home/myzenvei/public_html/clients/includes/framework.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 20:57:34] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/myzenvei/public_html/clients/includes/framework.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 20:57:35] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 20:57:35] PHP Warning:  require_once(/home/myzenvei/public_html/clients/includes/framework.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 20:57:35] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/myzenvei/public_html/clients/includes/framework.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 20:58:48] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 20:58:48] PHP Warning:  require_once(/home/myzenvei/public_html/clients/includes/framework.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 20:58:48] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/myzenvei/public_html/clients/includes/framework.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 20:58:54] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 20:58:54] PHP Warning:  require_once(/home/myzenvei/public_html/clients/includes/framework.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 20:58:54] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/myzenvei/public_html/clients/includes/framework.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 23:13:30] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[25-Jul-2010 23:13:30] PHP Warning:  require_once(/home/myzenvei/public_html/clients/includes/framework.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[25-Jul-2010 23:13:30] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/myzenvei/public_html/clients/includes/framework.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[26-Jul-2010 02:45:02] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 02:45:02] PHP Warning:  require_once(/home/myzenvei/public_html/clients/includes/framework.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[26-Jul-2010 02:45:02] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/myzenvei/public_html/clients/includes/framework.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[26-Jul-2010 02:46:49] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 02:46:56] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 02:46:56] PHP Warning:  include_once(clients/zenvieConfig.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 3
+[26-Jul-2010 02:46:56] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening 'clients/zenvieConfig.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 3
+[26-Jul-2010 02:46:56] PHP Warning:  require_once(/home/myzenvei/public_html/clients/includes/framework.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[26-Jul-2010 02:46:56] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/myzenvei/public_html/clients/includes/framework.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[26-Jul-2010 02:47:28] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 02:47:28] PHP Warning:  include_once(../../clients/zenvieConfig.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 3
+[26-Jul-2010 02:47:28] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening '../../clients/zenvieConfig.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 3
+[26-Jul-2010 02:47:28] PHP Warning:  require_once(/home/myzenvei/public_html/clients/includes/framework.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[26-Jul-2010 02:47:28] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/myzenvei/public_html/clients/includes/framework.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[26-Jul-2010 02:47:36] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 02:47:36] PHP Warning:  require_once(/home/myzenvei/public_html/clients/includes/framework.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[26-Jul-2010 02:47:36] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/myzenvei/public_html/clients/includes/framework.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 33
+[26-Jul-2010 02:49:18] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 02:49:18] PHP Warning:  require_once(../includes/framework.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 34
+[26-Jul-2010 02:49:18] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '../includes/framework.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 34
+[26-Jul-2010 02:49:31] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 02:49:31] PHP Warning:  require_once(includes/framework.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 34
+[26-Jul-2010 02:49:31] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'includes/framework.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 34
+[26-Jul-2010 02:51:13] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 02:51:13] PHP Warning:  require_once(includes/framework.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 34
+[26-Jul-2010 02:51:13] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'includes/framework.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 34
+[26-Jul-2010 02:52:44] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 02:52:44] PHP Warning:  require_once(includes/framework.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 34
+[26-Jul-2010 02:52:44] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'includes/framework.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 34
+[26-Jul-2010 02:52:46] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 02:52:46] PHP Warning:  require_once(includes/framework.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 34
+[26-Jul-2010 02:52:46] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'includes/framework.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 34
+[26-Jul-2010 02:53:06] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 02:53:06] PHP Warning:  require_once(libraries/joomla/import.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/clients/zenvieConfig.php on line 42
+[26-Jul-2010 02:53:06] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'libraries/joomla/import.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/clients/zenvieConfig.php on line 42
+[26-Jul-2010 02:53:49] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 02:54:54] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 02:54:54] PHP Warning:  include_once(../../clients/zenvieConfig.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 3
+[26-Jul-2010 02:54:54] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening '../../clients/zenvieConfig.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 3
+[26-Jul-2010 02:55:11] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 02:55:27] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 07:11:18] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 07:11:32] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 07:11:44] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 07:11:48] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 07:12:18] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 07:12:20] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 07:13:04] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 07:13:05] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 07:13:19] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 07:13:22] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 07:15:31] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 07:15:33] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 07:15:35] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 08:35:49] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 08:40:45] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 08:42:06] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 09:53:07] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 09:53:17] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 09:56:20] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 10:31:40] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 10:33:48] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 10:36:55] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 10:46:02] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 10:47:20] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 10:54:43] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 11:05:30] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 11:05:46] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 11:11:48] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 11:12:02] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 11:43:11] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 11:43:24] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 12:35:36] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 12:51:10] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 12:51:10] PHP Parse error:  syntax error, unexpected '<' in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 3
+[26-Jul-2010 12:51:51] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 12:51:51] PHP Parse error:  syntax error, unexpected '<' in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 3
+[26-Jul-2010 12:57:49] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 12:57:49] PHP Parse error:  syntax error, unexpected '<' in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 3
+[26-Jul-2010 12:57:54] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 12:57:54] PHP Parse error:  syntax error, unexpected '<' in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 3
+[26-Jul-2010 12:58:35] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 12:58:35] PHP Parse error:  syntax error, unexpected '<' in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 3
+[26-Jul-2010 12:58:48] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 12:58:48] PHP Parse error:  syntax error, unexpected '<' in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 3
+[26-Jul-2010 12:59:31] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 12:59:31] PHP Parse error:  syntax error, unexpected '<' in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 3
+[26-Jul-2010 13:00:10] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 13:00:10] PHP Parse error:  syntax error, unexpected '<' in /home/myzenvei/public_html/components/com_mlm/mainmenu/index.php on line 3
+[26-Jul-2010 13:00:24] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 13:00:34] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 13:11:26] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 13:11:44] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 14:12:22] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 14:19:10] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 14:22:45] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[26-Jul-2010 17:12:06] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[27-Jul-2010 16:20:53] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[27-Jul-2010 16:21:11] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[27-Jul-2010 16:22:39] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[27-Jul-2010 16:23:16] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[27-Jul-2010 16:25:02] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[27-Jul-2010 16:28:27] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[27-Jul-2010 16:29:38] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[27-Jul-2010 22:04:24] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[27-Jul-2010 22:04:50] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[27-Jul-2010 22:05:22] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[27-Jul-2010 23:52:31] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jul-2010 05:28:00] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jul-2010 05:41:21] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jul-2010 05:42:18] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jul-2010 07:30:34] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jul-2010 07:30:49] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jul-2010 07:30:57] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jul-2010 08:00:37] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[28-Jul-2010 21:09:10] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jul-2010 08:00:34] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[31-Jul-2010 17:26:55] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[31-Jul-2010 21:49:41] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[03-Aug-2010 11:48:36] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[03-Aug-2010 16:03:48] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[03-Aug-2010 16:42:19] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[03-Aug-2010 16:44:36] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[03-Aug-2010 16:44:45] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[03-Aug-2010 16:45:16] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[03-Aug-2010 16:45:33] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[03-Aug-2010 16:50:49] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[03-Aug-2010 16:51:45] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[03-Aug-2010 17:43:50] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Aug-2010 02:14:08] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Aug-2010 11:42:56] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Aug-2010 11:44:15] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Aug-2010 11:46:30] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Aug-2010 14:28:19] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Aug-2010 14:32:36] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Aug-2010 14:33:05] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Aug-2010 15:06:55] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Aug-2010 15:30:06] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Aug-2010 15:30:42] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Aug-2010 15:33:11] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Aug-2010 18:29:05] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Aug-2010 18:29:31] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Aug-2010 18:31:16] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Aug-2010 18:37:07] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Aug-2010 18:40:31] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Aug-2010 18:44:36] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[04-Aug-2010 18:49:18] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Aug-2010 15:00:34] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Aug-2010 15:35:13] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Aug-2010 15:36:19] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Aug-2010 15:37:14] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Aug-2010 15:40:05] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Aug-2010 15:43:32] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Aug-2010 15:44:59] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Aug-2010 15:45:06] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Aug-2010 15:46:52] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[05-Aug-2010 15:46:58] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[06-Aug-2010 06:44:04] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[06-Aug-2010 08:02:05] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[06-Aug-2010 08:02:19] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[06-Aug-2010 22:09:33] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[07-Aug-2010 15:11:41] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[07-Aug-2010 15:13:19] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[07-Aug-2010 15:27:19] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[07-Aug-2010 15:27:52] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[07-Aug-2010 15:49:12] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[07-Aug-2010 16:00:07] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[07-Aug-2010 16:36:13] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[09-Aug-2010 17:36:40] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[09-Aug-2010 18:42:11] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[09-Aug-2010 23:10:47] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[09-Aug-2010 23:11:22] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[09-Aug-2010 23:16:17] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[09-Aug-2010 23:17:15] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[09-Aug-2010 23:18:22] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[09-Aug-2010 23:20:39] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[09-Aug-2010 23:22:44] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[09-Aug-2010 23:23:55] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[09-Aug-2010 23:32:14] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[09-Aug-2010 23:33:38] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[09-Aug-2010 23:39:04] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[09-Aug-2010 23:39:39] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[09-Aug-2010 23:39:53] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[09-Aug-2010 23:40:23] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[11-Aug-2010 11:34:56] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[13-Aug-2010 15:11:53] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[15-Aug-2010 10:32:08] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[15-Aug-2010 18:59:30] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[15-Aug-2010 19:24:32] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[16-Aug-2010 00:27:41] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[16-Aug-2010 00:28:03] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[18-Aug-2010 13:29:33] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[18-Aug-2010 13:43:30] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[18-Aug-2010 13:50:49] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[18-Aug-2010 13:51:29] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Aug-2010 12:50:20] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Aug-2010 15:19:18] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Aug-2010 19:27:47] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Aug-2010 19:30:33] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[20-Aug-2010 19:50:19] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Aug-2010 03:46:38] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Aug-2010 13:05:04] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[21-Aug-2010 13:05:28] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[22-Aug-2010 08:55:22] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0

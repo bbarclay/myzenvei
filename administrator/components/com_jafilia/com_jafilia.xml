@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0" method="upgrade">
+    <name>Jafilia</name>
+    <version>1.5.0 RC2</version>
+    <description><![CDATA[Jafilia 1.5 - Affiliate networking component for Joomla 1.5.x]]></description>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <author>Arkadiusz Maniecki</author>
+    <authorEmail>biuro@webwizard.pl</authorEmail>
+    <authorUrl>http://www.jafilia.com</authorUrl>
+    <copyright>Copyright © 2008 - 2009 Jafilia.com. All rights reserved.</copyright>
+    <creationDate>27-09-2009</creationDate>
+    <installfile>install.jafilia.php</installfile>
+    <uninstallfile>uninstall.jafilia.php</uninstallfile>
+    <files folder="site">
+        <folder>assets</folder>
+        <folder>images</folder>
+        <folder>language</folder>
+        <folder>tables</folder>
+        <folder>templates</folder>
+        <folder>views</folder>
+        <filename>jafilia.inc.php</filename>
+        <filename>jafilia.php</filename>
+    </files>
+    <languages folder="site/language">
+        <language tag="du-DU">du-DU/du-DU.com_jafilia.ini</language>
+        <language tag="en-GB">en-GB/en-GB.com_jafilia.ini</language>
+        <language tag="es-ES">es-ES/es-ES.com_jafilia.ini</language>
+        <language tag="fr-FR">fr-FR/fr-FR.com_jafilia.ini</language>
+        <language tag="ge-GE">ge-GE/ge-GE.com_jafilia.ini</language>
+        <language tag="pl-PL">pl-PL/pl-PL.com_jafilia.ini</language>
+		<language tag="de-DE">de-DE/de-DE.com_jafilia.ini</language>
+		<language tag="pt-PT">pt-PT/pt-PT.com_jafilia.ini</language>
+    </languages>
+	<media folder="admin/images" destination="com_jafilia/images">
+		<filename>jafilia-logo48x48.png</filename>
+		<filename>help48.jpg</filename>
+		<filename>partner48.jpg</filename>
+		<filename>clicks48.jpg</filename>
+		<filename>configuration48.jpg</filename>
+		<filename>fee48.jpg</filename>
+		<filename>aboutus48.jpg</filename>
+		<filename>banners48.jpg</filename>
+		<filename>charts48.png</filename>
+		<filename>payout.jpg</filename>
+		<filename>logo16.png</filename>
+		<filename>about16.png</filename>
+		<filename>partner16.png</filename>
+		<filename>help16.png</filename>
+		<filename>fee16.png</filename>
+		<filename>config16.png</filename>
+		<filename>clicks16.png</filename>
+		<filename>banners16.png</filename>
+		<filename>charts16.png</filename>
+	</media>	
+    <administration>
+        <menu img="../media/com_jafilia/images/logo16.png" link="option=com_jafilia">Jafilia</menu>
+        <submenu>
+            <menu img="config" link="option=com_jafilia&amp;view=config">Configuration</menu>
+            <menu img="../media/com_jafilia/images/charts16.png" link="option=com_jafilia&amp;controller=charts">Charts</menu>
+            <menu img="user" link="option=com_jafilia&amp;controller=user">Partners</menu>
+            <menu img="../media/com_jafilia/images/clicks16.png" link="option=com_jafilia&amp;controller=clicks">Clicks</menu>
+            <menu img="../media/com_jafilia/images/fee16.png" link="option=com_jafilia&amp;controller=sales">Sales</menu>
+            <menu img="../media/com_jafilia/images/banners16.png" link="option=com_jafilia&amp;controller=links">Links</menu>
+            <menu img="info" link="option=com_jafilia&amp;controller=about">About</menu>
+            <menu img="help" link="option=com_jafilia&amp;controller=help">Help</menu>
+        </submenu>
+        <files folder="admin">
+            <folder>assets</folder>
+            <folder>controllers</folder>
+            <folder>css</folder>
+            <folder>helpers</folder>
+            <folder>images</folder>
+            <folder>language</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <filename>CHANGELOG.php</filename>
+            <filename>admin.jafilia.php</filename>
+            <filename>config.jafilia.php</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+        </files>
+        <languages folder="admin/language">
+            <language tag="du-DU">du-DU/du-DU.com_jafilia.ini</language>
+            <language tag="en-GB">en-GB/en-GB.com_jafilia.ini</language>
+            <language tag="es-ES">es-ES/es-ES.com_jafilia.ini</language>
+            <language tag="fr-FR">fr-FR/fr-FR.com_jafilia.ini</language>
+            <language tag="ge-GE">ge-GE/ge-GE.com_jafilia.ini</language>
+            <language tag="pl-PL">pl-PL/pl-PL.com_jafilia.ini</language>
+			<language tag="de-DE">de-DE/de-DE.com_jafilia.ini</language>
+			<language tag="pt-PT">pt-PT/pt-PT.com_jafilia.ini</language>
+        </languages>
+    </administration>
+	
+    <plugins>
+        <plugin plugin="jafilia" order="0" group="system">
+            <files folder="plugins">
+                <file>jafilia.php</file>
+				<file>jafilia.xml</file>
+            </files>
+			<languages />
+        </plugin>
+    </plugins>
+	
+</install>

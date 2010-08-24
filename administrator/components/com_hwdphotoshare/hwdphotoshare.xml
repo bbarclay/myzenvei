@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+	<name>hwdPhotoShare</name>
+	<creationDate>2009 12 04</creationDate>
+	<author>Highwood Design</author>
+	<copyright>(C) 2007 - 2009 Highwood Design</copyright>
+	<authorEmail>info@highwooddesign.co.uk</authorEmail>
+	<authorUrl>http://hwdmediashare.co.uk</authorUrl>
+	<version>[ Accetto ]</version>
+	<description>Social networking photo sharing component for the Joomla! CMS</description>
+
+	<installfile>install.hwdphotoshare.php</installfile>
+	<uninstallfile>uninstall.hwdphotoshare.php</uninstallfile>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.mysql.utf8.sql</file>
+			<file driver="mysql">install.mysql.nonutf8.sql</file>
+		</sql>
+	</install>
+
+	<files folder="frontend">
+		<folder>assets/</folder>
+		<folder>models/</folder>
+		<folder>views/</folder>
+		<folder>xml/</folder>
+		
+     		<filename>controller.php</filename>
+     		<filename>hwdphotoshare.class.php</filename>
+		<filename>hwdphotoshare.html.php</filename>
+		<filename>hwdphotoshare.php</filename>
+		<filename>index.html</filename>
+		<filename>metadata.xml</filename>
+		<filename>router.php</filename>
+	</files>
+	
+	<administration>
+		<menu>hwdPhotoShare</menu>
+		<submenu>
+			<menu task="photos">Photos</menu>
+			<menu task="albums">Albums</menu>
+			<menu task="categories">Categories</menu>
+			<menu task="groups">Groups</menu>
+			<menu task="generalsettings">General Settings</menu>
+			<menu task="approvals">Waiting Approval</menu>
+			<menu task="reported">Reported Media</menu>
+			<menu task="plugins">Plugins</menu>
+			<menu task="export">Export Data</menu>
+			<menu task="import">Import Data</menu>
+			<menu task="maintenance">Maintenance</menu>
+		</submenu>
+		<files folder="administrator">
+			<folder>assets/</folder>
+			<folder>helpers/</folder>
+			<folder>install/</folder>
+			<folder>libraries/</folder>
+			<folder>models/</folder>
+			<folder>templates/</folder>
+			<folder>views/</folder>
+
+			<filename>admin.hwdphotoshare.html.php</filename>
+			<filename>admin.hwdphotoshare.php</filename>
+			<filename>config.hwdphotoshare.php</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>install.mysql.utf8.sql</filename>
+			<filename>install.mysql.nonutf8.sql</filename>
+			<filename>toolbar.hwdphotoshare.html.php</filename>
+			<filename>toolbar.hwdphotoshare.php</filename>
+			<filename>version.php</filename>			
+		</files>
+		
+		<languages folder="languages/admin">
+			<language tag="en-GB">en-GB.com_hwdphotoshare.menu.ini</language>
+			<language tag="en-GB">en-GB.com_hwdphotoshare.ini</language>
+		</languages>
+		
+	</administration>
+</install>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://dev.joomla.org/xml/1.5/template-install.dtd">
+<install type="template" version="1.5.0" client="administrator">
+	<name>Khepri-ReAmped</name>
+	<creationDate>20/02/08</creationDate>
+	<author>Allan Walker - Amplify</author>
+	<authorEmail>joomla@projectamplify.net</authorEmail>
+	<authorUrl>http://www.projectamplify.net</authorUrl>
+	<copyright>Default Joomla 1.5 Tempalte ReAmped by Amplify</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0</version>
+	<description>Thank you for installing the Amplify Joomla 1.5 Administration template Khepri-ReAmped. Khepri-ReAmped has been based on Andy Millar's default Khepri 1.5 design. Please proceed to the Templates Administration page to assign this template to your Joomla administration.</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>cpanel.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>login.php</filename>
+		<filename>params.ini</filename>
+		<filename>template_thumbnail.png</filename>
+		<folder>css/</folder>
+		<folder>html/</folder>
+		<folder>images/</folder>
+		<folder>js/</folder>
+	</files>
+	<positions>
+		<position>menu</position>
+		<position>submenu</position>
+		<position>toolbar</position>
+		<position>title</position>
+		<position>status</position>
+		<position>icon</position>
+		<position>cp_shell</position>
+		<position>cpanel</position>
+		<position>debug</position>
+	</positions>
+	<params>
+		<param name="showSiteName" type="radio" default="0" label="Show Site Name in header" description="Show the site name in the template header. If set to no, the default text 'Administrator' will show.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>

@@ -1,0 +1,222 @@
+                              sh404sef change log
+
+
+                         (25/01/10 12:49 - build #398)
+
+
+
+--------------------------------------------------------------------------------
+ [2010-01-25] Version 1.5.6.398
+--------------------------------------------------------------------------------
+
+2010-01-25
+     [bug] Pagination on cat and section blog don't always work
+2010-01-23
+     [chg] Better page numbers in frontpage page title, now replace - in pattern
+           string entered by user with spaces, so as to have Page 2 instead of
+           Page-2
+     [new] Virtuemart meta_ext : add page number to page title for displays with
+           more than one page
+           Tracker #75
+     [bug] Multiple pages article have double "index" file
+     [bug] Multipage articles pagination don't work if Use smart page title is
+           disabled
+2010-01-20
+     [bug] Bad Itemid handling in some sef_ext plugins
+           Tracker #78
+     [bug] Similar url plugin shows some warnings
+           Tracker #81
+
+--------------------------------------------------------------------------------
+ [2010-01-17] Version 1.5.5.388
+--------------------------------------------------------------------------------
+
+2010-01-16
+     [bug] Aliases are not encoded before being displayed for editing. Results
+           in corrupted data if some html caracters are present. Fixed provided
+           by mouloud
+           Tracker #1
+     [new] Add separate settings for controlling page title layout for Joomla
+           regular content. Also new setting for page title separator
+           Tracker #70
+2010-01-13
+     [new] Addeg support of TAG task in mosets tree plugin
+           Tracker #3
+     [chg] Typo in language file
+           Tracker #55
+2010-01-12
+     [chg] Main control panel : added reminder that attcks listed are those that
+           were blocked
+           Tracker #51,52
+     [chg] General usage of joomla libraries for file access, in order to use
+           FTP layer when activated. Not used for caching and logging
+           Tracker #48
+2010-01-11
+     [new] RSS feeds are now excluded from similar urls results
+     [new] Configuration of JCalpro SEF url plugin can be done now from control
+           panel
+           Tracker #40
+     [new] Display warning if $live_site is not set in Joomla configuration.php
+           file
+           minor language changes for backend tooltips
+           Tracker #27
+2010-01-10
+     [chg] Refactoring of main utility class file
+     [new] Added check in case user has Joomfish but turns its router off, would
+           cause error
+           Tracker #39
+     [chg] Updated tooltips for 404 page selection : article must be published
+           Tracker #38
+     [new] Improved 404 pages handling : new plugin provides similar urls
+           suggestions to visitor. Updated 404 page layout
+           Tracker #36
+     [new] Language strings added for Virtuemart "parameter search"
+     [chg] New JPaginator object to fix pagination issue when number of items
+           per page is missing in url
+           Tracker #25
+     [chg] Updated language in text displayed after installation
+2010-01-03
+     [bug] Wrong language code added to custom urls if not entered by user
+           Tracker #37
+     [chg] Removed support files for old extensions : smf, fireboard, joomlaboard
+     [chg] Better page title on pages 2,3,... of frontpage. Now titles are
+           distinct
+           Tracker #7
+     [chg] Use category and section title instead of alias to build page title
+           Tracker #16
+2010-01-02
+     [chg] Wrong pagination when switching categories on Virtuemart pages
+           Tracker #24
+2010-01-01
+     [bug] Notice error when client has no User Agent string
+           Tracker #35
+2009-12-31
+     [chg] Wrong language inserted in meta tag on multilingual sites
+           Tracker #22
+     []    PHP 5.3 compatibility
+     [bug] Excessive filtering of script tags in content
+           Tracker #32
+     [chg] Turn multiple h1 into h2 can break css, is now off by default on new
+           installs
+           Tracker #34
+2009-11-24
+     [new] Added a workaround for homepage link going to default language when
+           using Joomfish in non default languages (issue in mod_mainmenu)
+     [chg] Added check to prevent conflicts between old-style joomla 1.0.x sef
+           urls and current Joomla native sef urls when they start with
+           component/....
+     [chg] Updated built-in help page with respect to htaccess rules
+           Tracker #9
+2009-10-27
+     [chg] Removed unneeded code causing notice error on some sites, in
+           shPageRewrite.php
+           Tracker #8
+     [bug] Notice error because of non-initiliazed "block" variable in shSec.php
+2009-10-13
+     [bug] Pagination error for some category lists pages situation
+     [bug] Infinite redirect loop if a request has both a missing trailing slash
+           and does not have correct case
+     [bug] SEF urls plugin is not included when supplied by third-party
+           extension directly
+2009-10-03
+     [chg] Added workarounds for pagination handling of category list, weblinks,
+           contact
+2009-09-30
+     [bug] Better protection against infinite loops when auto-redirect from
+           Joomla 1.5 SEF to sh404sef is activated
+2009-09-29
+     [bug] Wrong logic when including plugins, would make use of router.php file
+           instead of built in plugin
+2009-09-27
+     [new] Added some logging information
+     [chg] Joomla frontpage view sets wrong $limit value : added workaround to
+           have correct pagination
+     [bug] Cache manager : individuals urls were not removed from cache when
+           deleted from the backend
+2009-09-26
+     [chg] Auto-redirect from Joomla SEF to sh404sef is now off by default,
+           causes too many issues as there can be similar SEF urls giving
+           different non-sef
+     [chg] Prevented infinite loops when system plugin such as Moovur plugin
+           calls router->parse() from output buffering handler.
+           Also modified shSimpleLogger class to avoid php error in such
+           situations (cannot use print_r or var_dump from a ob callback)
+     [chg] Small performance improvement, removed duplicated check for cache
+           file existence (only applies on first page load before file cache is
+           actually stored to disk)
+     [bug] Adjusted to new default language configuration variable name in
+           Joomfish. Would cause incorrect default language detection
+2009-09-25
+     [chg] sh404sef database tables now created with utf8 character set.
+           Required for some languages
+     [chg] Performance enhancement, removed legacy code
+2009-09-24
+     [chg] Removed use of Joomla URI to build page title when no meta plugin for
+           sh404sef is present. Would cause issue with some languages as Joomla
+           applies transliteration to the URI elements
+     [chg] Updated tooltips text for meta management activation
+           Tracker #18094
+     [bug] Typo in English and Spanish language files
+           
+           Tracker #18093
+2009-09-20
+     [new] Added workaround for bug in Joomla 1.5.14 login module (action url
+           for logout is relative). Would prevent users from loggint out when
+           not on the frontpage, if using module (logout menu option is fine)
+     [new] sh404sef will now perform an automatic 301 redirect from a Joomla SEF
+           url to its equivalent sh404sef SEF url
+     [new] Urls with case not matching the one used on the site will be
+           (optionnally) 301-redirected to the same url with the correct case.
+           ie example.com/My-Page/ will go to example.com/my-page/ (or the
+           oppposite). Added new backend parameter to switch this on/off, under
+           Advanced tab of configuration
+2009-09-19
+     [chg] BY default, adding number of items per page to Virtuemart pages is
+           now on, instead of off
+     [bug] Incorrect use of Virtuemart $VM_LANG language strings object
+           Tracker #18066
+     [bug] Router.php files would not always be used if present
+     [bug] Deactivated auto-redirect from non-sef to sef url when using
+           index2.php, instead of using tmpl=component (Virtuemart does this for
+           instance, when editing in frontend)
+           Tracker #18061
+     [new] Added workaround for SOBI2 handling of # of items per page. Now read
+           from sobi configuration table and add number of items to end of url
+           if global sh404sef (Always append #items per page) is switched on.
+           This way, page content is always consistent against URL.
+     [new] Filter on sef url list now also searches in non-sef urls (ie can
+           filter for "com_content","com_user", "view=userlist" for instance)
+     [chg] Improved handling of Joomla and extensions not passing $limit value
+           in url. Now also using POST values.
+           Added new backend parameters to activate this handling : Always
+           append # of items.
+2009-09-18
+     [chg] Reverted to PHP4 compatibility
+2009-09-15
+     [bug] Wrong tooltip in some language files for UserAgent black list backend
+           param
+           Tracker #16118
+
+--------------------------------------------------------------------------------
+ [2009-09-10] Version 1.5.2.255
+--------------------------------------------------------------------------------
+
+2009-09-10
+     [chg] Updated language strings for backend sh404sef/router.php selector
+2009-09-09
+     [new] Support for Joomla router.php files. If a sh404sef native plugin is
+           found, it will be used. If not, then Joomla router.php will be used.
+           You can force one option or the other on a per component basis in
+           sh404sef backend, under the "By component tab" using the "Do not
+           override sef_ext" setting
+2009-09-07
+     [chg] More updated links to documentation and web site
+     [bug] Missing initial data for Very adv. tab in configuration
+2009-09-06
+     [chg] Adjusted some texts and links to support FAQ and forum
+2009-09-05
+     [chg] Renamed changelog file from changelog.txt to changelog.log
+     [bug] Bad path cause warning when uninstalling if 'preserve configuration'
+           option is off
+
+                         (25/01/10 12:49 - build #398)

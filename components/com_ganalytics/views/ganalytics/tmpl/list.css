@@ -1,0 +1,68 @@
+#com_ganalytics_visitor_table,#com_ganalytics_data_table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin: 5px 0px 5px 0px;
+}
+
+#com_ganalytics_visitor_table  th,#com_ganalytics_data_table  th,#com_ganalytics_visitor_table  td,#com_ganalytics_data_table  td
+	{
+	border: 1px solid #aaaaaa;
+	padding: 2px 15px 2px 15px;
+	vertical-align: middle;
+}
+
+#com_ganalytics_visitor_table  thead th,#com_ganalytics_data_table  thead th
+	{
+	background-color: #E8E8E8;
+}
+
+#com_ganalytics_visitor_table   tfoot td,#com_ganalytics_data_table  tfoot td
+	{
+	background-color: #ADDFFF;
+}
+
+#com_ganalytics_visitor_table  tr.tbody_header,#com_ganalytics_data_table  tr.tbody_header
+	{
+	font-weight: bold;
+	text-align: center;
+	background-color: #dddddd;
+}
+
+#com_ganalytics_visitor_table  a.pagelink,#com_ganalytics_data_table  a.pagelink
+	{
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid #666666;
+	margin: 0px 5px 0px 5px;
+}
+
+#com_ganalytics_visitor_table  a.currentpage,#com_ganalytics_data_table  a.currentpage
+	{
+	background-color: yellow;
+}
+
+/* Striping */
+tr.alternate {
+	background-color: #ffffcc;
+}
+
+/* Sorting */
+th.table-sortable {
+	cursor: pointer;
+	background-image: url("img/sortable.gif");
+	background-position: center left;
+	background-repeat: no-repeat;
+	padding-left: 12px;
+}
+
+th.table-sorted-asc {
+	background-image: url("img/sorted_up.gif");
+	background-position: center left;
+	background-repeat: no-repeat;
+}
+
+th.table-sorted-desc {
+	background-image: url("img/sorted_down.gif");
+	background-position: center left;
+	background-repeat: no-repeat;
+}

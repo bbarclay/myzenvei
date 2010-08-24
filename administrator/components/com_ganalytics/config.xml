@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params addpath="/administrator/components/com_ganalytics/elements">
+		<param name="username" type="text" default="" size="100" label="Username"
+			description="The username." />
+		<param name="password" type="password" default="" size="100"
+			label="Password" description="The password of the user." />
+	</params>
+</config>

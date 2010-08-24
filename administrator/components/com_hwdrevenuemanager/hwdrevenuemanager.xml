@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+	<name>hwdRevenueManager</name>
+	<creationDate>2009 12 04</creationDate>
+	<author>Highwood Design</author>
+	<copyright>(C) 2007 - 2009 Highwood Design</copyright>
+	<authorEmail>info@highwooddesign.co.uk</authorEmail>
+	<authorUrl>http://hwdmediashare.co.uk</authorUrl>
+	<version>[ Cape ]</version>
+	<description>Revenue Manager for hwdVideoShare and hwdPhotoShare</description>
+	
+	<installfile>install.hwdrevenuemanager.php</installfile>
+	<uninstallfile>uninstall.hwdrevenuemanager.php</uninstallfile>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.mysql.utf8.sql</file>
+			<file driver="mysql">install.mysql.nonutf8.sql</file>
+		</sql>
+	</install>
+
+	<files folder="frontend">
+		<filename>hwdrevenuemanager.class.php</filename>
+		<filename>hwdrevenuemanager.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<administration>
+		<menu>hwdRevenueManager</menu>
+		<submenu>
+			<menu task="hwdvideoshare">hwdVideoShare Ads</menu>
+			<menu task="hwdphotoshare">hwdPhotoShare Ads</menu>
+			<menu task="videoads">Pre/Post-roll Video Ads</menu>
+			<menu task="longtail">Longtail Video Ads</menu>
+		</submenu>
+		<files folder="administrator">
+			<folder>assets/</folder>
+			<folder>images/</folder>
+			<folder>languages/</folder>
+
+			<filename>admin.hwdrevenuemanager.php</filename>
+			<filename>admin.hwdrevenuemanager.html.php</filename>
+			<filename>config.lt.hwdrevenuemanager.php</filename>
+			<filename>config.vs.hwdrevenuemanager.php</filename>
+			<filename>config.ps.hwdrevenuemanager.php</filename>
+			<filename>hwdrevenuemanager.class.php</filename>
+			<filename>index.html</filename>
+			<filename>install.mysql.nonutf8.sql</filename>
+			<filename>install.mysql.utf8.sql</filename>
+			<filename>redrawplaylist.class.php</filename>
+			<filename>toolbar.hwdrevenuemanager.html.php</filename>
+			<filename>toolbar.hwdrevenuemanager.php</filename>
+			<filename>version.php</filename>
+		</files>
+	</administration>
+</install>

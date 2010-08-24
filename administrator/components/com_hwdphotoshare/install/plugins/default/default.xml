@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="hwdps-template" method="upgrade">
+    <name>Default Template</name>
+    <creationDate>2009 12 04</creationDate>
+    <author>Highwood Design</author>
+    <copyright>(C) 2007 - 2009 Highwood Design</copyright>
+    <authorEmail>info@highwooddesign.co.uk</authorEmail>
+    <authorUrl>http://hwdmediashare.co.uk</authorUrl>
+    <version>[ Accetto ]</version>
+    <description>This is the Default template for hwdPhotoShare.</description>
+    <files>
+	<folder>default/</folder>
+	<filename plugin="default">default.php</filename>
+    </files>
+    <params>
+	<param name="ppr" type="list" default="3" label="Photos Per Row" description="The number of videos per row.">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+	</param>
+	<param name="apr" type="list" default="2" label="Albums Per Row" description="The number of videos per row.">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+	</param>
+	<param name="cpr" type="list" default="1" label="Categories Per Row" description="The number of categories per row.">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+	</param>
+	<param name="gpr" type="list" default="1" label="Groups Per Row" description="The number of groups per row.">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+	</param>	
+	<param name="hideSubcats" type="list" default="0" label="Hide Subcategories?" description="Hide subcateories on the main category page.">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</param>
+    </params>
+</install>

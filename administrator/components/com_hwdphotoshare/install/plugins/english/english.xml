@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="hwdps-language" method="upgrade">
+    <name>English Language</name>
+    <creationDate>2009 12 04</creationDate>
+    <author>Highwood Design</author>
+    <copyright>(C) 2007 - 2009 Highwood Design</copyright>
+    <authorEmail>info@highwooddesign.co.uk</authorEmail>
+    <authorUrl>http://hwdmediashare.co.uk</authorUrl>
+    <version>[ Accetto ]</version>
+    <description>Adds British-English language support to hwdPhotoShare</description>
+    <files>
+        <filename plugin="english">english.be.php</filename>
+        <filename plugin="english">english.fe.php</filename>
+        <filename plugin="english">english.plugs.php</filename>
+        <filename plugin="english">english.settings.php</filename>
+    </files>
+    <params>
+    </params>
+</install>
+

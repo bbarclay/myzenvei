@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: manifest.xml 92 2009-06-04 09:58:37Z eddieajau $ -->
+<install type="component" version="1.5.7" method="upgrade">
+	<name>AAMenu</name>
+	<version>1.0.1</version>
+	<creationDate>4 June 2009</creationDate>
+	<author>Andrew Eddie</author>
+	<authorEmail>info@newlifeinit.com</authorEmail>
+	<authorUrl>http://www.theartofjoomla.com</authorUrl>
+	<copyright>Copyright (C) 2009 New Life in IT Pty Ltd. All rights reserved.</copyright>
+	<license>GNU General Public License</license>
+	<description>COM_AAMENU_Description</description>
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install/installsql.mysql.utf8.php</file>
+		</sql>
+	</install>
+
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">install/uninstallsql.mysql.utf8.php</file>
+		</sql>
+	</uninstall>
+
+	<administration>
+		<menu img="components/com_aamenu/media/images/taoj_logo16x16.png" link="option=com_aamenu">Advanced Administrator Menu</menu>
+
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB/en-GB.com_aamenu.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_aamenu.menu.ini</language>
+		</languages>
+
+		<files folder="admin">
+			<file>aamenu.php</file>
+			<file>config.xml</file>
+			<file>controller.php</file>
+			<file>index.html</file>
+			<file>version.php</file>
+
+			<folder>controllers</folder>
+			<folder>help</folder>
+			<folder>helpers</folder>
+			<folder>install</folder>
+			<folder>libraries</folder>
+			<folder>media</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+		</files>
+	</administration>
+
+	<installfile>install/install.php</installfile>
+	<uninstallfile>install/uninstall.php</uninstallfile>
+
+	<modules>
+		<module module="mod_aamenu" title="Advanced Administrator Menu" position="menu" client="administrator">
+			<files folder="mod_admin_aamenu">
+				<file>helper.php</file>
+				<file>index.html</file>
+				<file>menu.php</file>
+				<file module="mod_aamenu">mod_aamenu.php</file>
+				<file>mod_aamenu.xml</file>
+			</files>
+
+			<languages folder="admin/language">
+				<language tag="en-GB">en-GB/en-GB.mod_aamenu.ini</language>
+			</languages>
+
+			<media />
+		</module>
+	</modules>
+</install>

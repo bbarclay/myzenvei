@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.7" client="administrator">
+	<name>Advanced Administrator Menu</name>
+	<author>Andrew Eddie</author>
+	<creationDate>4 June 2009</creationDate>
+	<copyright>Copyright (C) 2009 New Life in IT Pty Ltd; 2005 - 2009 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@newlifeinit.com</authorEmail>
+	<authorUrl>www.newlifeinit.com</authorUrl>
+	<version>1.0.1</version>
+	<description>Mod_AAMenu_Description</description>
+	<files>
+		<file>helper.php</file>
+		<file>index.html</file>
+		<file>menu.php</file>
+		<file module="mod_aamenu">mod_aamenu.php</file>
+		<file>mod_aamenu.xml</file>
+	</files>
+	<params>
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+	</params>
+</install>

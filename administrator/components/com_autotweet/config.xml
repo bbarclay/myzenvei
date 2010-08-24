@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params>
+		<param name="username" type="text" default="" label="Username" description="Twitter username." />
+		<param name="password" type="password" default="" label="Password" description="Twitter password for username." />
+		<param name="@spacer" type="spacer" default="" label="" description="" />		
+		<param name="@spacer1" type="spacer" default="URL handling" label ="" description="" />
+		<param name="show_url" type="list" default="2" label="Show URL" description="The article URL can be showed at the beginning or end of the twitter status message.">
+			<option value="0">No, do not show</option>
+			<option value="1">Yes, at the beginning of message</option>
+			<option value="2">Yes, at the end of message</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />		
+		<param name="@spacer2" type="spacer" default="Automatic resend attempts" label ="" description="" />
+		<param name="resend_attempts" type="list" default="3" label="Resend attempts" description="AutoTweet resends the status message automatically to twitter if there is an error on twitter api site (e.g. 408 timeout). Here you can change the number of resend attempts. Change this parameter only if you have problems sending to twitter (increase attempts) or with the performance of your site (decrease attempts).">
+			<option value="1">1 attempt</option>
+			<option value="2">2 attempts</option>
+			<option value="3">3 attempts (default)</option>
+			<option value="4">4 attempts</option>
+			<option value="5">5 attempts</option>			
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />		
+		<param name="@spacer3" type="spacer" default="Message/Database cleanup" label ="" description="" />
+		<param name="cleanup_enabled" type="radio" default="1" label="Enable cleanup" description="For performance reasons it is essential to cleanup the AutoTweet database periodically. The automatic cleanup function removes all messages older than the specified number of days. Normally you should NOT deactivate this function!">
+			<option value="0">off</option>
+			<option value="1">on</option>
+		</param>			
+		<param name="cleanup_days" type="list" default="1" label="Delete messages" description="">
+			<option value="1">older than 5 days (default)</option>
+			<option value="2">older than 10 days</option>
+			<option value="3">older than 15 days</option>
+			<option value="4">older than 20 days</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer4" type="spacer" default="Short URL service" label ="" description="" />
+		<param name="shorturl_service" type="list" default="1" label="Provider" description="Disable this service ONLY, if you have problems with the short URLs (broken links, problems accessing the article from tweet link...) If you will use the service from bit.ly you need an account there and you can see your statistics at bit.ly.">
+			<option value="1">default (is.gd)</option>
+			<option value="2">bit.ly (needs account!)</option>
+			<option value="0">disabled</option>
+		</param>
+		<param name="spacer5" type="spacer" default="If you will use bit.ly service, please enter your account data here. (If you use the default is.gd, it is not necessary to enter anything." label="" description="" />
+		<param name="bit_username" type="text" label="bit.ly username" description="Insert your bit.ly username." />
+		<param name="bit_key" type="password" label="bit.ly api key" description="You will find the api key in your account data at bit.ly." />
+		<param name="shorturl_always" type="radio" default="0" label="Use always short URLs" description="If set to Yes, short URLs are used also when not needed for message lenght. This makes sense when you use bit.ly and you will have a complete statistic there.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>			
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer6" type="spacer" default="Twitter connection method" label ="" description="" />
+		<param name="cxn_method" type="list" default="0" label="Connection method" description="Change this to CURL if you have problems with sockets (fsockopen).">
+			<option value="0">Sockets</option>
+			<option value="1">CURL</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />		
+		<param name="@spacer7" type="spacer" default="Version checks" label ="" description="" />
+		<param name="version_check" type="radio" default="1" label="Enable version checks" description="If you have problems or warnings on AutoTweet NG Information site (in backend), you can disable version checking and the file autotweet.ini will no longer loaded from the 1st-movers.com server (Of course you will not get information about new versions if this option is disabled).">
+			<option value="0">off</option>
+			<option value="1">on</option>
+		</param>			
+		<param name="@spacer" type="spacer" default="" label="" description="" />		
+		<param name="@spacer8" type="spacer" default="Debugging and test (use this only for test purposes)" label ="" description="" />
+		<param name="debug_enabled" type="radio" default="0" label="Enable debug" description="If debugging mode is enabled, you will get more info about sending attempts and twitter return code.">
+			<option value="0">off</option>
+			<option value="1">on</option>
+		</param>			
+	</params>
+</config>

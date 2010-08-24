@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>AcctExp</name>
+	<creationDate>2009.11.19</creationDate>
+	<author>David Deutsch, Team AEC, Helder Garcia</author>
+	<authorEmail>skore@valanx.org</authorEmail>
+	<copyright>@Copyright (C) 2004-2009 David Deutsch</copyright>
+	<authorUrl>http://valanx.org</authorUrl>
+	<version>0.12.6.2</version>
+	<description>A complete subscription management system. By David Deutsch (skOre) and the team of AEC at valanx.org (started by Helder Garcia (hlbog))</description>
+	<files folder="components/com_acctexp">
+		<file>acctexp.class.php</file>
+		<file>acctexp.html.php</file>
+		<file>acctexp.php</file>
+		<file>index.html</file>
+
+		<folder>lang</folder>
+		<folder>lib</folder>
+		<folder>micro_integration</folder>
+		<folder>processors</folder>
+	</files>
+	<administration>
+		<files folder="administrator/components/com_acctexp">
+			<file>index.html</file>
+			<file>admin.acctexp.php</file>
+			<file>admin.acctexp.html.php</file>
+			<file>toolbar.acctexp.php</file>
+			<file>toolbar.acctexp.html.php</file>
+
+			<folder>lang</folder>
+			<folder>install</folder>
+		</files>
+	</administration>
+	<media destination="com_acctexp" folder="media/com_acctexp">
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+	</media>
+	<installfile>install/install.acctexp.php</installfile>
+	<uninstallfile>install/uninstall.acctexp.php</uninstallfile>
+</install>

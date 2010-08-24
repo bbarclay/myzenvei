@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: config.xml 17 2009-05-15 07:09:42Z eddieajau $ -->
+<config menu="hide">
+	<params addpath="/administrator/components/com_aamenu/helpers/elements">
+		<param
+			name="tags"
+			type="textarea"
+			rows="10"
+			cols="50"
+			default=""
+			label="AAMenu_Options_Tags_Label"
+			description="AAMenu_Options_Tags_Desc" />
+	</params>
+</config>

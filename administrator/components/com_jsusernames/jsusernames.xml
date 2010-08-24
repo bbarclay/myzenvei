@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>JS Usernames</name>
+	<creationDate>03/07/2009</creationDate>
+	<author>Jomsocialplate</author>
+	<authorEmail>sales@jomsocialplate.com</authorEmail>
+	<authorUrl>http://www.jomsocialplate.com</authorUrl>
+	<copyright>Copyright 2009 All rights reserved</copyright>
+	<license>License Info</license>
+	<version>1.0</version>
+	<description>JSUsernames is an addon for JomSocial which allows user to define their own custom URL</description>
+	<installfile>install.jsusernames.php</installfile>
+	<uninstallfile>uninstall.jsusernames.php</uninstallfile>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<administration>
+		<menu link="option=com_jsusernames">JomSocial Usernames</menu>
+		<files folder="admin">
+			<folder>controllers</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<filename>admin.jsusernames.php</filename>
+			<filename>install.mysql.utf8.sql</filename>
+			<filename>system.zip</filename>
+			<filename>community.zip</filename>
+			<filename>en-GB.plg_jsusernames.ini</filename>
+		</files>
+	</administration>
+</install>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="hwdps-slideshow" method="upgrade">
+    <name>AutoViewer</name>
+    <creationDate>2009 12 04</creationDate>
+    <author>Highwood Design</author>
+    <copyright>(C) 2007 - 2009 Highwood Design</copyright>
+    <authorEmail>info@highwooddesign.co.uk</authorEmail>
+    <authorUrl>http://hwdmediashare.co.uk</authorUrl>
+    <version>[ Accetto ]</version>
+    <description>Adds Autoviewer slideshow support to hwdPhotoShare</description>
+    <files>
+        <filename plugin="autoviewer">autoviewer.php</filename>
+        <filename plugin="autoviewer">autoviewer.swf</filename>
+    </files>
+    <params>
+    </params>  
+</install>

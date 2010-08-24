@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0" method="upgrade">
+	<name>Community</name>
+	<creationDate>2009-03-05</creationDate>
+	<author>Azrul Studio</author>
+	<authorEmail>support@azrul.com</authorEmail>
+	<authorUrl>http://www.jomsocial.com</authorUrl>
+	<copyright>Copyright 2008 by Slashes &amp; Dots Sdn Bhd. All rights reserved</copyright>
+	<license>License Info</license>
+	<version>1.6.288</version>
+	<description>JomSocial is a social networking component for Joomla!</description>
+	<installfile>install.community.php</installfile>
+	<uninstallfile>uninstall.community.php</uninstallfile>
+	<files folder="site">
+		<filename>azrul.zip</filename>
+		<filename>frontend.zip</filename>
+		<filename>templates.zip</filename>
+		<filename>ai_plugin.zip</filename>
+	</files>
+	<administration>
+		<menu link="option=com_community" img="components/com_community/assets/icons/community-favicon.png">Jom Social</menu>
+		<submenu>
+			<menu view="configuration" img="components/com_community/assets/icons/configuration-favicon.gif">Configurations</menu>
+			<menu view="users" img="components/com_community/assets/icons/edit-user-favicon.gif">Users</menu>
+			<menu view="profiles" img="components/com_community/assets/icons/profiles-favicon.gif">Custom Profiles</menu>
+			<menu view="groups" img="components/com_community/assets/icons/groups-favicon.gif">Groups</menu>
+			<menu view="groupcategories" img="components/com_community/assets/icons/groupcategories-favicon.gif">Groups Category</menu>
+			<menu view="templates" img="components/com_community/assets/icons/templates-favicon.gif">Templates</menu>
+			<menu view="mailqueue" img="components/com_community/assets/icons/mailq-favicon.gif">Mail Queue</menu>
+			<menu link="option=com_plugins&amp;filter_type=community" img="components/com_community/assets/icons/applications-favicon.gif">Applications</menu>
+			<menu view="userpoints" img="components/com_community/assets/icons/userpoints-favicon.gif">User Points</menu>
+			<menu view="about" img="components/com_community/assets/icons/about-favicon.gif">About</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>box.jpg</filename>
+			<filename>backend.zip</filename>
+			<filename>admin.community.php</filename>
+			<filename>installer.helper.php</filename>
+			<filename>defaultItems.php</filename>
+			<filename>checksum.txt</filename>
+		</files>
+		<languages>
+			<language tag="en-GB">languages/admin/en-GB.com_community.ini</language>
+		</languages>
+	</administration>
+	<languages>
+		<language tag="en-GB">languages/site/en-GB.com_community.ini</language>
+	</languages>
+</install>

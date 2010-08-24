@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en_GB" xml:lang="en_GB">
+<head>
+<title>AutoTweet NG User Documentation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<div align="center">
+<h1>AutoTweet NG User Documentation (Pro and free version)</h1>
+<img src="/administrator/components/com_autotweet/assets/fm-logo.png" alt="1st-movers.com">
+<h4>Author: Ulli Storck</h4>
+<h4>Version 3.1, Revision Date: 22.02.2010</h4>
+<table cellpadding="20">
+<tr><td><a href="http://www.1st-movers.com/" target="_blank">1st-movers.com</a></td><td><a href="http://www.1st-movers.com/faq" target="_blank">FAQ</a></td></tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#installation">Installation and configuration</a></li>
+<li><a href="#facebook">Activate AutoTweet for Facebook</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#issues">Known issues</a></li>
+</ul>
+<p>&nbsp;</p>
+<h1><a name="introduction">Introduction</a></h1>
+<p>This document describes the basic functionality and key features of the 1stMovers AutoTweet NG (next generation) extensions. The AutoTweet product series posts the title and url for new Joomla articles, forum posts etc. automatically as status messages to twitter and/or Facebook (pro version). All AutoTweet extensions are under GPL 2.0.</p>
+<p>This documentation contains instructions for the free and the commercial (Pro) version of the AutoTweet NG component. The usage of both versions is similar. The Pro version adds support for Facebook and has some extra features. All available plugins are working with the free and the Pro version.</p>
+<h3>Features</h3>
+<ul>
+<li>All plugins are customizable: account, category/section to post for, link position, show section/category, post private articles, post modified articles, exclude sections/categories, use title or text for message, additional static text (e.g. for hashtags), short url service provider (is.gd, bit.ly) etc.</li>
+<li>Works with sh404sef and JoomSEF (and - of course - Joomla! embedded SEF support).</li>
+<li>Automatic support for short URLs.</li>
+<li>Automatic message resending: Sometimes you will get an error message when posting. This can happen from time to time when twitter or Facebook is overloaded or the API is down. AutoTweet resends the status message automatically if there is an error on api site.</li>
+<li>AutoTweet posts also later published or republished articles.</li>
+<li>AutoTweet NG comes with a backend component. The component logs all posted messages (including error and pending messages) and you can manage and resend this messages in the components backend.</li>
+<li>AutoTweet NG supports now articles with present publish date. (This articles are posted automatically to twitter when published by Joomla or you can post them manually from AutoTweet NG component backend.)</li>
+</ul>
+<h3>Extra features in Pro version</h3>
+<ul>
+<li>Support for Facebook (works with personal profile, Facebook pages and Facebook groups).</li>
+<li>Manually mode: All generated status messages are stored in the AutoTweet database and must be published manually by the admin from the backend.</li>
+<li>Support for SEF URLs when post (article etc.) is saved from the backend. Tested with Joomla! core SEF, sh404SEF and JoomSEF. (since version 1.1)</li>
+<li>Post to Facebook pages as the page itself with the page account (and not as the user with the personal account). (since version 1.1)</li>
+</ul>
+<h3>Available AutoTweet NG extensions</h3>
+<p>AutoTweet NG consists of a (main) component and several plugins. With the component you can manage the posted messages, including error und pending messages. The component provides also the basic services for the plugins. The AutoTweet NG Extension-Plugins handles the message posting for the different extensions like Kunena, K2 etc. All Extension-Plugins needs the AutoTweet NG Component (free or pro) to work.</p>
+<ul>
+<li>AutoTweet NG Component: The main component. Message handling and basic services.</li>
+<li>AutoTweet NG Automator-Plugin (is shipped as part of the component package): Automatic post attempts for pending messages.</li>
+<li>AutoTweet NG Content-Extension: Extends AutoTweet for Joomla core content articles.</li>
+<li>AutoTweet NG Kunena-Extension: Extends AutoTweet for Kunena forum posts.</li>
+<li>AutoTweet NG K2-Extension: Extends AutoTweet for K2 article manager.</li>
+<li>AutoTweet NG Phoca Download-Extension: Extends AutoTweet for Phoca Download and posts a message for new/changed downloads.</li>
+<li>AutoTweet NG Eventlist-Extension: Extends AutoTweet for Eventlist and posts a message for new/changed events.</li>
+<li>AutoTweet NG SimpleCalendar-Extension: Extends AutoTweet for SimpleCalendar and posts a message for new/changed events.</li>
+<li>AutoTweet NG Sobi2-Extension: Extends AutoTweet for Sobi2 article manager and posts a message for new/changed articles.</li>
+<li>AutoTweet NG Remository-Extension: Extends AutoTweet for Remository download manager and posts a message for new/updated downloads.</li>
+<li>AutoTweet NG VirtueMart-Extension: Extends AutoTweet for VirtueMart shop system and posts a message for new/updated products.</li>
+<li>AutoTweet NG QuickFAQ-Extension: Extends AutoTweet for QuickFAQ and posts a message for new/updated FAQ entrys.</li>
+<li>AutoTweet NG MyBlog-Extension: Extends AutoTweet for MyBlog and posts a message for new/updated blog entrys.</li>
+<li>AutoTweet NG Latest Module: Shows the latest posts in admin cpanel and has an option to toggle manually mode. This module works with the pro version only!</li>
+</ul>
+<p>More plugins will come in the future.</p>
+<p> </p>
+<h1><a name="installation">Installation and configuration</a></h1>
+<p>All AutoTweet NG extensions can be installed/updated by the standard Joomla installation procedure. Please install first the AutoTweet NG Component and then the needed plugins. The Content-Extension and the Automator-Plugin are packaged and installed/updated automatically with the main component. All other extensions (plugins, modules) must be downloaded and installed separately.</p>
+<h3>Requirements</h3>
+<p>All AutoTweet NG extensions have the following requirements:</p>
+<ul>
+<li>PHP 5</li>
+<li>PHP cURL support</li>
+<li>Joomla 1.5.4+</li>
+</ul>
+<p>The AutoTweet NG extension plugins have special requirements:</p>
+<ul>
+<li>All plugins needs AutoTweet NG Component (free or pro) to work.</li>
+<li>Some plugins need other extensions to work (e. g. AutoTweet NG Kunena needs the Kunena forum extension).</li>
+</ul>
+</ul>
+<p>AutoTweet needs access to some domains/URLs to work:</p>
+<ul>
+<li>"twitter.com" (api.twitter.com) for posting to twitter.</li>
+<li>"facebook.com" for posting to Facebook (pro version).</li>
+<li>"bit.ly" or/and "is.gd" for short url service.</li>
+<li>"1st-movers.com" for automatic version checks (the component checks for new versions on the server).</li>
+</ul>
+<p>It is possible that your provider has restricted access to one or all of this URLs or that some firewall rules conflicts with the access to this URLs. If you have problems accessing these URLs please contact your admin and/or provider/host.</p>
+<h3>Installation</h3>
+<p><strong>You should make a backup of your files and database before you install/upgrade extensions!</strong></p>
+<ul>
+<li>Download AutoTweed NG Component package (free or pro).</li>
+<li>Install AutoTweed NG Component package with the Joomla! installer (File: com_autotweet.zip). The Content-Extension and the Automator-Plugin are installed automatically meanwhile component installation. The Automator-Plugin is enabled automatically. The Content-Extension is disabled after installation to prevent accidental posts.</li>
+<li>Open AutoTweet NG Component in the backend and configure the component in the parameters window.</li>
+<li>Check the plugin options and enable the Content-Extension (if needed).</li>
+<li>Donwload the other AutoTweet NG Extension-Plugins you needed and install them (File: plg_autotweet[extension].zip). Go to the plugin options and do the configuration. Don't forget to enable the plugins.</li>
+</ul>
+<h3>Upgrade</h3>
+<p><strong>You should make a backup of your files and database before you install/upgrade extensions!</strong></p>
+<p>Information about new available versions you will find also in the information window of the AutoTweet NG component in Joomla backend.</p>
+<p>For all versions (components and plugins) with date 09.02.2010 (2010-02-09) or newer, I have implemented a new upgrade procedure. It is no longer necessary to uninstall old versions of the component or plugins. You can just use the Joomla! installer to upgrade:</p>
+<ul>
+<li>Check for dependencies: Sometimes you have to update also the component when updating an extension plugin (and vice versa). Information about version dependencies you can find in the change logs (download area) on 1st-movers.com.</li>
+<li>Download the newest version of AutoTweed NG Component package (free or pro).</li>
+<li>Upgrade AutoTweed NG Component package with the Joomla! installer (File: com_autotweet.zip). This is same as installing AutoTweet (Upgrade is detected and done automatically!). The Content-Extension and the Automator-Plugin are updated automatically meanwhile component installation. The Automator-Plugin is enabled automatically. The state of the Content-Extension is unchanged.</li>
+<li>Open AutoTweet NG Component in the backend and check the configuration in the parameters window. (Sometimes there are new or changed options.)</li>
+<li>Check the plugin options (Automator-Plugin, Content-Extension).</li>
+<li>Do the same procedure for other plugins when upgrade is needed. Plugins are disabled after the upgrade to prevent accidental posts. So you have to enable it manually!</li>
+</ul>
+<p>This procedure works also when you upgrade from free to Pro version!</p>
+<p>Sometimes you will have problems/error message with file permissions. In this case contact your admin or uninstall the old version before installing the new. When you do this, it is NOT necessary to remove the AutoTweet database tables (manually)!</p>
+<h3>Configuration</h3>
+<p>For all configuration options you will get some help if you move the mouse pointer over the field title.</p>
+<h4>AutoTweet NG Component</h4>
+<p>Select (in admin backend) the AutoTweet NG Component (Components/AutoTweet) and open the parameters window.</p>
+<ul>
+<li>Twitter channel (Username, Password): If you will post to twitter enable this channel and enter you twitter account data.</li>
+<li>Facebook channel (Facebook user id): If you will post to Facebook enable this channel and enter your Facebook user id. You can post to a personal profile, to a Facebook (business/fan) page or to a Facebook group. If you will post to a page or group, you must also enter the Facebook page or group id. <strong>You must also authorize AutoTweet on Facebook.</strong> Please read first the <a href="#facebook">additional information to activate AutoTweet for Facebook</a> to get information about authorizing and Facebook page/group id.</li>
+<li>URL handling: The article URL can be showed at the beginning or end of the twitter status message.</li>
+<li>Automatic resend attempts: AutoTweet resends the status message automatically if there is an error on api site. Here you can change the number of resend attempts. Change this parameter only if you have problems sending to twitter (increase attempts) or with the performance of your site (decrease attempts).</li>
+<li>Message/Database cleanup: For performance reasons it is essential to cleanup the AutoTweet database periodically. The automatic cleanup function removes all messages older than the specified number of days. Normally you should NOT deactivate this function!</li>
+<li>Short URLs: Disable this service ONLY, if you have problems with the short URLs (broken links, problems accessing the article from message link...) If you will use the service from bit.ly you need an account there and you can see your statistics at bit.ly.</li>
+<li>Transmitting mode (only available in the Pro version): If you enable the manually mode, status massages are not sended automatically to the service (twitter, Facebook, ...) when saved/published. Status messages are stored and you can send them later manually from AutoTweet backend.</li>
+<li>Version checks: If you have problems or warnings on AutoTweet NG Information site (in backend), you can disable version checking and the file autotweet.ini will no longer loaded from the 1st-movers.com server (Of course you will not get information about new versions if this option is disabled).</li>
+<li>Debugging and test (use this only for test purposes): If debugging mode is enabled, you will get more info about sending attempts and return codes. The debug info is shown on top of the page when a message is sended to twitter or Facebook.</li>
+</ul>
+<h4>AutoTweet NG Automator-Plugin</h4>
+<p>You must enable the plugin to get it work.</p>
+<p>Options (since version 1.1):</p>
+<ul>
+<li>Max. nr of posts: Max. number of pending posts sendet by the Automator-Plugin in one time/call. (Max. 5 posts for performance reasons.)</li>
+<li>Interval in seconds: Interval for the post attempts of the Automator-Plugin. This means the plugin checks all X seconds for new pending posts. Min. is 120 seconds for performance reasons.</li>
+</ul>
+<h4>AutoTweet NG Extension-Plugins</h4>
+<p>The Extension-Plugins has similar configuration options (not each option is available for each plugin):</p>
+<ul>
+<li>Sections/Categories to post for: Select Sections/Categories which will be source of articles. The field conditions are connected by OR! (If nothing is set, all articles will be posted!).</li>
+<li>Excluded Sections/Categories: Specify exclusions for article posting. Exclusions has priority over all other settings! (If fields are empty, nothing is excluded).</li>
+<li>Post private: You can post private articles. Off course users has to login to read the linked article.</li>
+<li>Post modified: You can post also modified (edited) articles.</li>
+<li>Show section/category: You can show the section and/or category at the beginning of the message and you can selected, if you will add a '#' for hashtag support in front of category/section name. Remember: The message can have a maximum of 140 characters and will be truncated at the end! Hashtags are not supported by all channels (e.g. Facebook ignores hashtags).</li>
+<li>Use title or text: If your titles are not good for posting to twitter you can also use the first X chars from the article text. Enter the number of chars (from title or text) for use with message (min. 10 max. 140 chars). Remember: A message has not more than 140 chars and will be truncated. If you use static text (hashtags) or category/section names they also need space...</li>
+<li>Additional text/hashtags: AutoTweet can insert metakey data automatically as hashtags in the message (If no metakey data is available, AutoTweet uses also the static text if entered). Also you can use only a static text. Hashtags are not supported by all channels (e.g. Facebook ignores hashtags).</li>
+<li>Post replys: If this option is set to Yes also replys to articles/posts are posted.</li>
+<li>Post only for usertype: Send only articles posted by a specific type of user (registered users, admis/moderators).</li>
+</ul>
+<p> </p>
+<h1><a name="facebook">Activate AutoTweet for Facebook</a></h1>
+<p>To activate AutoTweet for Facebook, you have to do a little bit more work as for twitter activation. This is <i>normal behavior</i> with Facebook. I have done my best to make this as easy as possible for you.</p>
+<h3>Authorize application and grant the extended permissions</h3>
+<p>When you will use the Facebook support (only available in the Pro version) then you must authorize the AutoTweet application on Facebook and grant the extended permission <i>publish_stream</i> and <i>offline_access</i> to the application. You can do this manually on Facebook or AutoTweet can guide you (recommended):</p>
+<ul>
+<li>Go to the AutoTweet backend and select the tab <i>Services</i>.</li>
+<li>Click the link <i>Add/Authorize Facebook application and grant/change permissions for AutoTweet on Facebook</i> under <i>Service specific functions</i>.</li>
+<li>Login to Facebook, authorize the application and grant the requested permissions.</li>
+<li>Read and check the information/instructions on the AutoTweet Facebook canvas site.</li>
+<li>If you will post to a Facebook page you must also grant the extended permissions for the page. Follow the instructions on the AutoTweet Facebook canvas site, click on <i>Grant extended permissions for Facebook page</i> and grant the requested permissions for the page.</li>
+<li>Enable the Facebook channel in AutoTweet NG Pro component preferences and enter (copy/paste) the displayed Facebook user id and - if you will post to a page or group - the displayed page or group id.</li>
+</ul>
+<p> </p>
+<h1><a name="usage">Usage</a></h1>
+<p>The Extension-Plugins works quietly in the background. For the usage of the backend component I will give you some hints:</p>
+<h3>Fields</h3>
+<p>You can sort the table by clicking on the field name in the head of the table.</p>
+<ul>
+<li>Date posted: This is the date the article is published from Joomla and stored in the AutoTweet database log.</li>
+<li>Publish date: This is the date the message is send to twitter/Facebook. (For pending articles with present date the publish date is in the future.)</li>
+<li>Article ID: This is the ID of the original Joomla article, forum post etc.</li>
+<li>State: success, error (manual resend attempt is possible), pending (manual or automatic resend by AutoTweet NG Automator-Plugin is possible)</li>
+</ul>
+<h3>Additional information</h3>
+<ul>
+<li>Pending messages are waiting for posting. In most cases they has a present/future publish date. If you have enable the AutoTweet NG Automator-Plugin this messages are automatically send when the publish date is reached. You can also do manual send attempts.</li>
+<li>Messages with error state are not automatically resendet by AutoTweet NG Automator-Plugin. When the reason for the problem is solved, you can resend them manually.</li>
+</ul>
+<h3>Functions</h3>
+<p>In the top of the AutoTweet NG admin screen you will find some buttons:</p>
+<ul>
+<li>Publish: Send the selected messages to all enabled channels.</li>
+<li>Publish all: Sends all messages with state 'error' or 'pending'.</li>
+<li>Delete: Removes the selected messages from AutoTweet log database.</li>
+<li>Parameters: Opens a window with the components parameters/options.</li>
+<li>Help: Opens the AutoTweet online help in a separate window.</li>
+</ul>
+<p> </p>
+<h1><a name="issues">Known issues</a></h1>
+<ul>
+<li>Free version: When article is posted from admin backend, no SEF support is available and normal URL is used (This is an issue of Joomla and not of the plugin: in backend no SEF support is available at all). The Pro version supports also SEF URLs when articles etc. are posted from admin backend.</li>
+</ul>
+<p>&nbsp;</p>
+<a href="javascript:void(0);" onclick="javascript:window.close();"><span class="small">Close window</span></a>
+</body>
+</html>

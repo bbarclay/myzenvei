@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" client="administrator" version="1.5.0">
+    <name>foobla TO-DO list</name>
+	<author>The foobla Team</author>
+	<creationDate>September 2008</creationDate>
+	<copyright>(C) 2008 The foobla Team.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>info@foobla.com</authorEmail>
+	<authorUrl>www.foobla.com</authorUrl>
+	<version>1.5.2.0</version>
+	<description><![CDATA[
+		<h3>foobla TODO for Joomla Backend.</h3>
+		
+		<p>Based on <a href="http://extensions.joomla.org/component/option,com_mtree/task,viewlink/link_id,1108/Itemid,35/" target="_blank">HP ToDo list</a> from <a href="http://www.joomlager.de/" target="_blank">Hannes Papenberg</a>.</p>
+		
+		<p>This module implements a ToDo list into the tabs in the admin area.</p>
+		
+		<h4>PAY ATTENTION!!!</h4>
+		<p>To use this module properly, please do the following steps.</p>
+			<ul>
+				<li>Publish the module by setting the Enabled option to Yes.</li>
+				<li>Select cpanel position for the module.</li>
+			</ul>
+		<p>To configure the module right now, please <a href="index.php?option=com_modules&client=1" target="_blank">click here</a>.</p>
+		<p>For more help, please go to the foobla official site <a href="http://foobla.com/" target="_blank">http://foobla.com</a>.</p>
+	]]>
+	</description>
+    
+	<files>
+        <filename module="mod_foobla_todo">mod_foobla_todo.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+        <filename>todo/index.html</filename>
+        <filename>todo/english.php</filename>
+        <filename>todo/german.php</filename>
+    </files>
+    <params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<!--<param name="assignuser" type="radio" default="0" label="Assign TO-DO entries to specific user" description="If set to yes, you can assign ToDo-entries to a specific user">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>-->
+		
+		<param name="ordernumber" type="radio" default="0" label="Show order number" description="If set to Yes, order number of the entries will be showed.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+		<param name="superadmin" type="radio" default="0" label="SuperAdmin edit" description="If set to Yes, any SuperAdmin can add the entries">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+		<param name="showothers" type="radio" default="0" label="Show other users entries" description="If set to Yes, any SuperAdmin can access to the entries of other users.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="prioritize" type="radio" default="1" label="Use Priority" description="If set to Yes, you can give each entry a priority.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+		<param name="use_status" type="radio" default="1" label="Use Status" description="If set to Yes, you can choose the status for each entry.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+    </params>
+</install>

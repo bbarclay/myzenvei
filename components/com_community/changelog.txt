@@ -1,0 +1,163 @@
+1.2.0
++ Activity stream added when changing profile picture
+
+1.1.143 03/02/2009
+^ When user tries to add a friend that has already requested a connection with a user, system should display proper message.
+^ Default point for the first block of the karma should be < 50 instead of < 20.
+^ Number of tags for JomSocial Network is limited to 10.
+^ Issues with Imagick and PHP4 is resolved.
+^ Fix missing activities header in blueface template
+^ Change blueface status text display
++ Add missing edit details in blackout template toolbar
++ Add maintenance to fix photo's privacy. To access the maintenance page, access index.php?option=com_community&view=maintenance
++ Add acitivities time format into default.ini. The library will load the time format from this file.
++ Add table index into for 'field_id' and 'user_id' in table '#__community_fields_values'.
++ Change email template text from 'You are now friend with {actor}' to 'You are now friends with {actor}';
++ Escape special characters in group / discussion / bulletin name in sef mode url.
++ Added css override
++ Validate password field to not allow less than 6 characters in edit details.
++ Author link added link to alias/author option
+
+1.1.139 - 2/20/2009
++ New icon for notifications
++ New option in the back end to specify Imagick's library.
++ New layout for backend configuration.
++ Added new blackout template
++ Added user reporting feature
++ Added user points feature
++ Added AJAX filtering for frontpage and activities
++ Added group invitations
++ Added ImageMagick support
++ Added template overriding feature.
++ Added new group triggers.
++ Added text limit and support for older versions of Jom Comment.
++ Added character limit support for both My Blog and My Articles.
++ Added new option in the back end to display number of members for frontpage.
++ Added tooltips for each custom fields.
++ Show profile header added for those restricted profile so that people still can add them as friend.
++ Added new notification tab for new messages and new friend request.
++ Fixed posted_on field not updated when user update thier status in profile page.
++ Added members count for frontpage
++ Allow profile groups to be moved up or down.
++ Add member if member is not in group when group administration is changed.
++ Added additional checking if photos folder is not created, it should automatically create them.
++ Fixed time format issue.
++ Fixed timestamp issue for popup message compose window.
++ Fixed date field validation.
+^ JomSocial Network configurations are moved into the configuration section.
+^ Unique form name is used for registrations to avoid naming conflicts.
+^ Several layout issues with IE6 is resolved.
+^ Custom profile date support range is fixed.
+^ Most javascripts are moved into an object allowing easy and more organized access.
+^ Moderate group creation by default is disabled when installing on a clean installation.
+^ Fix broken group discussion list on default template.
+^ Fixed wrong used of quotes in database for apps.
+^ Fixed activity timezone differences between today and yesterday.
+^ Fixed inbox issue.
+^ Fixed email validation to support .info domain.
+^ Fixed several jQuery issue with the value contain double quote.
+^ Fix issue when group is modified from the back end.
+^ Fixed group bulletins showing error if user click on view all buletins link.
+^ Use PHP to test image validity instead of testing the file's name.
+^ IP address are properly passed for the walls.
+^ URLs for group bulletins , discussions are properly SEF'ed.
+^ Additional checking is perform if hosting still uses PHP4 for Twitter.
+# Improve the singular/plural translation
+
+1.0.129 - 1/14/2009
+# Optimize image gallery loading. Loading indicator will show properly and loader will wait for the image to completely load before showing it.
++ Fixed cronjobs runned from cronjob.php not providing the correct headers. [cronjob.php]
+
+
+1.0.128 - 1/13/2009
++ Add new translations into language file
++ Support more type cache handler with joomla default caching in. (My Blog and Walls module)
++ Logged in members now uses notice.member.access.php file in the template if viewing unauthorized page.
++ Added new language files for modules and applications. ( Will require update on the modules )
++ Add new member in group members table when administration is changed and update the count correctly.
++ Added application privacy
++ Add forgot password and forgot username links
++ Add code to check if the 'Remember me' plugin enabled. It will display the remember me plugin if enabled.
+^ Additional checks are made when improper date value are used.
+^ Issue that prevents user from posting in group walls has been resolved.
+^ Core applications returning permission error has been fixed.
+^ PNG with improper alpha blending is fixed.
+^ Fixed multiple select having a very long height.
+^ All message will be remove when user delete a conversation at inbox or sent page.
+^ Now user can send message to one user at a time.
+^ Fix user profile status save correctly even if the status string is empty.
+^ Added new text translation for registration page.
+^ Fix new messages ordering. Latest message will show up first.
+^ Use unique element id in registration page to avoid id conflicts.
+^ Fix the inbox messages mark / unmark features.
+^ Fixed activity stream when activity is longer than 1 week
+- Remove frontpage.guests.php in blueface and bubble template since they are all same
+
+1.0.127 - 12/05/2008
++ Add new cronjob.php file so that it can be parsed to PHP via Command line. [ Need to configure your site in that file]
+^ Fix applications not formatting wall comments correctly in PHP4.
+^ Most strings are moved into the language file template.
+^ Issues with black background are fixed.
+^ Links in email are displayed correctly now for sites that sits on the subfolder.
+^ Fix issue with sending message that has quotes.
+^ The time in the inbox and sent displays the correct time now. 
+
+1.0.126 - 12/03/2008
++ Email notification is added when a user adds a friend and when approving a friend request.
+^ Existing menu structure will be automatically updated when performing an upgrade / reinstall.
+^ When viewing other profile, status now displays correctly in blueface and bubble template.
+^ If date is not entered for the field, field should not display date but empty value instead.
+^ Thumbnails for photos now uses the absolute path.
+^ Use configured sitename for the title and body of invitation mails.
+^ Fix photo rendering issue with Safari browsers.
+^ Issues with bulletin subject not showing up in notifications is fixed.
+^ Date and time not appearing in inbox is fixed.
+
+1.0.125 - 12/01/2008
++ Added email cloaking when email address are populated in the custom fields.
+^ Site super administrator should be able to delete / remove walls
+^ Ajax removal function now checks the authority to delete the walls
+^ Fix image resize transparency issues. Previously, black background become transparent.
+- remove the word 'circle' in and "expand your network circle" in template file
+
+1.0.124 - 11/27/2008
++ Test uploaded image type explicitly, instead of depending on the uploader
++ Fix image resizing error in photo gallery display.
++ Fix php4 compatibility in profie search function
++ Add proper CRoute to the submenu's.
++ Url / emails string now automatic converted to external link.
++ String that represent phone number will be non-searchable.
++ An asterisk (*) will be shown beside the field name for the required fields during profile editing. 
++ Added checking for all the required fields.
++ Removed hardcoded text in registration form, use language file instead.
++ Send notification emails when write new message / reply a message.
+^ Ajax window popup for Opera 9.5 and above is fixed.
+^ Fixed editing a checkbox type for field in the back end not displaying options.
+^ Photo resize will resize correctly without creating a black image beneath it.
+^ Fixed issues with removing a wall in the photos.
+^ Short open tags are removed from the template.
+^ Default custom fields are only added if no custom fields already exists.
+^ Album listing are listed correctly now.
+^ Fixed errors with PHP4 that causes the write message and popup to fail.
+^ Group discussion and bulletin should show proper notice when group is being moderated.
+- Email and website for group details are removed 
+
+1.0.123 - 11/25/2008
++ Added the ability to delete discussion for group creators and super administrators.
++ Added option to delete bulletins for group creators and super administrators.
+- remove ajax test code, referring to j15Dev.com
+^ Scrollbar is added in the popup when the text in the terms & conditions is too long.
+^ Shorten the activity date before being archived
+
+1.0.122 - 11/24/2008
++ Optimized database tables for groups.
++ Added public changelogs.
+^ Added core application parameter for Jom Comment.
+^ Links in module has been fixed to contain correct Itemid.
+^ Changes all link in module and ohoto gallery link in the profile page to have itemid.
+^ Fixed Friend invite where it only process the first email address in the list.
+^ Display proper error message for invalid emails.
+^ Time in activity stream is fixed to display the correct time. Time will be displayed based on the timezone configured in Joomla.
+^ Fixed div id conflict between activity stream in profile page with activities stream module.
+
+1.0.121 - 11/21/2008

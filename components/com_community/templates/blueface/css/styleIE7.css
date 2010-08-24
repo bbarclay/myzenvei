@@ -1,0 +1,74 @@
+/*****************************************
+ Jom Social Toolbar
+ *****************************************/
+#community-wrap #cToolbarNav {
+	height: 23px;
+}
+#community-wrap #cToolbarNav ul#community-toolbar {
+    height: 23px;
+}
+#community-wrap #cToolbarNav ul#community-toolbar li.toolbar-item {
+	border-top: solid 1px #c2cdde;
+}
+#community-wrap #cToolbarNav div.toolbar-myname {
+	height: 23px;
+}
+#community-wrap #cToolbarNav ul#community-toolbar li.toolbar-active {
+	line-height: 23px;
+	border-top: solid 1px #c2cdde;
+}
+#community-wrap #cToolbarNav ul#community-toolbar li.toolbar-active a {
+	border-top: solid 1px #fff;
+}
+
+
+ul.application-group-avatars a {
+	text-decoration: none;
+}
+img.avatar { -ms-interpolation-mode: bicubic; }
+
+body #community-wrap {
+	overflow: hidden;
+	padding: 10px;
+	text-align: left;
+	position: relative;
+}
+body #community-wrap div.greybox div div div h1 {
+	line-height: 30px;
+}
+
+body #community-wrap #cToolbarNav {
+	/* Toolbar-submenu being positioned absolute, inherits z-index from parent container */
+	z-index: 1000;
+}
+
+body #community-wrap #cToolbarNav ul#community-toolbar li.toolbar-item a {
+	/* In IE7, toolbar-items are 1px off grid from bottom, with 2px border-top */
+	margin-top: -1px;
+}
+
+body #community-wrap .app-box-content {
+	/* Content dissapears after collapsing and expanding again */
+	position: relative;
+	zoom: 1;
+}
+
+body #community-wrap .group-menu {
+	padding-top: 5px;
+}	
+
+body #community-wrap .app-box,
+body #community-wrap .app-box-content {
+	/* Content dissapears after collapsing and expanding again */
+	position: relative;
+	zoom: 1;
+}
+
+
+body #community-wrap {
+	width: auto !important;
+}
+
+#community-wrap .wall-coc-form textarea {
+ 	margin: 0 0 0 -68px;
+}

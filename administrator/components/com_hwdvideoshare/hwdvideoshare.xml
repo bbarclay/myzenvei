@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+	<name>hwdVideoShare</name>
+	<creationDate>2009 12 04</creationDate>
+	<author>Highwood Design</author>
+	<copyright>(C) 2007 - 2009 Highwood Design</copyright>
+	<authorEmail>info@highwooddesign.co.uk</authorEmail>
+	<authorUrl>http://hwdmediashare.co.uk</authorUrl>
+	<version>[ Dannevirke ]</version>
+	<description>Social networking video sharing component for the Joomla! CMS</description>
+
+	<installfile>install.hwdvideoshare.php</installfile>
+	<uninstallfile>uninstall.hwdvideoshare.php</uninstallfile>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.mysql.utf8.sql</file>
+			<file driver="mysql">install.mysql.nonutf8.sql</file>
+		</sql>
+	</install>
+
+	<files folder="frontend">
+		<folder>assets/</folder>
+		<folder>converters/</folder>
+		<folder>models/</folder>
+		<folder>views/</folder>
+
+		<filename>xml/xspf/index.html</filename>
+		<filename>xml/xmloutput.class.php</filename>
+		<filename>xml/xmlparse.class.php</filename> 
+		
+		<filename>controller.php</filename>
+		<filename>hwdvideoshare.class.php</filename>
+		<filename>hwdvideoshare.html.php</filename>
+		<filename>hwdvideoshare.php</filename>
+		<filename>index.html</filename>
+		<filename>metadata.xml</filename>
+		<filename>router.php</filename>
+	</files>
+	
+	<administration>
+		<menu>hwdVideoShare</menu>
+		<submenu>
+			<menu task="videos">Videos</menu>
+			<menu task="categories">Categories</menu>
+			<menu task="groups">Groups</menu>
+			<menu task="serversettings">Server Settings</menu>
+			<menu task="generalsettings">General Settings</menu>
+			<menu task="converter">Converter</menu>
+			<menu task="approvals">Pending Approval</menu>
+			<menu task="reported">Reported Media</menu>
+			<menu task="plugins">Plugins</menu>
+			<menu task="export">Export Data</menu>
+			<menu task="import">Import Data</menu>
+			<menu task="maintenance">Maintenance</menu>
+		</submenu>
+		<files folder="administrator">
+			<folder>assets/</folder>
+			<folder>helpers/</folder>
+			<folder>install/</folder>
+			<folder>libraries/</folder>
+			<folder>models/</folder>
+			<folder>templates/</folder>
+			<folder>views/</folder>
+
+			<filename>admin.hwdvideoshare.html.php</filename>
+			<filename>admin.hwdvideoshare.php</filename>
+			<filename>config.hwdvideoshare.php</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>install.mysql.utf8.sql</filename>
+			<filename>install.mysql.nonutf8.sql</filename>
+			<filename>serverconfig.hwdvideoshare.php</filename>
+			<filename>toolbar.hwdvideoshare.html.php</filename>
+			<filename>toolbar.hwdvideoshare.php</filename>
+			<filename>version.php</filename>
+		</files>
+		
+		<languages folder="languages/admin">
+			<language tag="en-GB">en-GB.com_hwdvideoshare.menu.ini</language>
+			<language tag="en-GB">en-GB.com_hwdvideoshare.ini</language>
+		</languages>
+		
+	</administration>
+</install>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+   <name>VirtueMart Remote Installer</name>
+   <creationDate>01.07.2008</creationDate>
+   <author>soeren</author>
+   <copyright>soeren, GNU/GPL</copyright>
+   <authorEmail>soeren-|at-|virtuemart.net</authorEmail>
+   <authorUrl>http://virtuemart.net</authorUrl>
+   <version>1.1</version>
+   <description>This is a Downloader and Extractor Script for VirtueMart.</description>
+   <queries/>
+   <installfile>install.virtuemartremoteinstaller.php</installfile>
+   <uninstallfile>uninstall.virtuemartremoteinstaller.php</uninstallfile>
+   <administration>
+      <menu>Download VirtueMart</menu>
+      <files>
+         <filename>admin.virtuemartremoteinstaller.php</filename>
+         <filename>downloader.php</filename>
+         <filename>getter.png</filename>
+         <filename>toolbar.virtuemartremoteinstaller.php</filename>
+         <filename>local.png</filename>
+         <filename>remote.png</filename>
+         <filename>cart.gif</filename>
+      </files>
+   </administration>
+</install>
+         

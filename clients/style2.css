@@ -1,0 +1,35 @@
+.up_arrow
+{
+	background:url(images/up.png) no-repeat;
+	border:0px;
+	background-position:center;
+}
+.down_arrow
+{
+	background:url(images/down.png) no-repeat;
+	border:0px;
+	background-position:center;
+}
+.previous
+{
+	background:url(images/back.gif) no-repeat;
+	border:0px;
+	background-position:center;
+	color: #F0F0F0;
+	text-transform: uppercase;
+	text-decoration: bold;
+}
+.next
+{
+	background:url(images/forwards.gif) no-repeat;
+	border:0px;
+	background-position:center;
+	color: #F0F0F0;
+	text-transform: uppercase;
+	text-decoration: bold;
+}
+.error_tab
+{
+	background-color:red!important;
+	color: black!important;
+}

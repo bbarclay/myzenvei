@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" client="administrator" version="1.5">
+	<name>mod_foobla_shortcuts</name>
+	<author>foobla.com</author>
+	<creationDate>April 2009</creationDate>
+	<copyright>(C) 2009 foobla.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@foobla.com</authorEmail>
+	<authorUrl>www.foobla.com</authorUrl>
+	<version>1.5.0.1</version>
+	<description>INSTALLED</description>
+	
+	<languages>
+  			<language tag="en-GB">en-GB.mod_foobla_shortcuts.ini</language>
+	</languages>  
+		
+	<files>
+		<filename module="mod_foobla_shortcuts">mod_foobla_shortcuts.php</filename>
+		<filename>assets/images/icons/icon-16-editadd.png</filename>
+	</files>
+	<params>
+		<param name="separate" type="radio" default="1" label="DISPLAY_DEPARATE" description="DISPLAY_DEPARATE_DES">
+			<option value="1">yes</option>
+			<option value="0">no</option>
+		</param>
+		
+		<param name="icon" type="radio" default="1" label="DISPLAY_ICON" description="DISPLAY_ICON_DES">
+			<option value="1">yes</option>
+			<option value="0">no</option>
+		</param>
+		
+		<param name="orderinput" type="radio" default="0" label="DISPLAY_ORDER_INPUT" description="DISPLAY_ORDER_INPUT_DES">
+			<option value="1">yes</option>
+			<option value="0">no</option>
+		</param>
+		
+		
+		<param name="@spacer" type="spacer" default="Icon #1" label="Icon #1" description="Icon #1" />
+		<param name="title_1" type="text" default="Global Configuration" label="Title #1" description="TITLE_DES" />		
+		<param name="link_1" type="text" default="index.php?option=com_config" label="Link #1" description="LINK_DES" />
+		<param name="icon_1" type="text" default="" label="Icon #1" description="ICON_DES" />
+		<param name="icon_1_lib" type="imagelist" directory="administrator/templates/khepri/images/menu" default="icon-16-config.png" label="Icon #1" description="ICON_LIB_DES" />
+		
+		<param name="@spacer" type="spacer" default="Icon #2" label="Icon #2" description="Icon #2" />		
+		<param name="title_2" type="text" default="Add new Article" label="Title #2" description="Title of Icon" />		
+		<param name="link_2" type="text" default="index.php?option=com_content&amp;task=add" label="Link #2" description="LINK_DES" />
+		<param name="icon_2" type="text" default="/administrator/templates/khepri/images/header/icon-48-article-add.png" label="Icon #2" description="ICON_DES" />
+		<param name="icon_2_lib" type="imagelist" directory="administrator/templates/khepri/images/menu" default="" label="Icon #2" description="Image icon for the shortcut" />
+		
+		<param name="@spacer" type="spacer" default="Icon #3" label="Icon #3" description="Icon #3" />
+		<param name="title_3" type="text" default="Add Custom HTML Module" label="Title #3" description="TITLE_DES" />		
+		<param name="link_3" type="text" default="index.php?option=com_modules&amp;task=edit&amp;module=mod_custom&amp;created=1&amp;client=0" label="Link #3" description="LINK_DES" />
+		<param name="icon_3" type="text" default="" label="Icon #3" description="ICON_DES" />
+		<param name="icon_3_lib" type="imagelist" directory="administrator/templates/khepri/images/menu" default="icon-16-module.png" label="Icon #3" description="ICON_LIB_DES" />
+		
+		<param name="@spacer" type="spacer" default="Icon #4" label="Icon #4" description="Icon #4" />
+		<param name="title_4" type="text" default="" label="Title #4" description="TITLE_DES" />		
+		<param name="link_4" type="text" default="" label="Link #4" description="LINK_DES" />
+		<param name="icon_4" type="text" default="" label="Icon #4" description="ICON_DES" />
+		<param name="icon_4_lib" type="imagelist" directory="administrator/templates/khepri/images/menu" default="" label="Icon #4" description="ICON_LIB_DES" />
+		
+		<param name="@spacer" type="spacer" default="Icon #5" label="Icon #5" description="Icon #5" />
+		<param name="title_5" type="text" default="" label="Title #5" description="TITLE_DES" />		
+		<param name="link_5" type="text" default="" label="Link #5" description="LINK_DES" />
+		<param name="icon_5" type="text" default="" label="Icon #5" description="ICON_DES" />
+		<param name="icon_5_lib" type="imagelist" directory="administrator/templates/khepri/images/menu" default="" label="Icon #5" description="ICON_LIB_DES" />
+		
+		<param name="@spacer" type="spacer" default="Icon #6" label="Icon #6" description="Icon #6" />
+		<param name="title_6" type="text" default="" label="Title #6" description="TITLE_DES" />		
+		<param name="link_6" type="text" default="" label="Link #6" description="LINK_DES" />
+		<param name="icon_6" type="text" default="" label="Icon #6" description="ICON_DES" />
+		<param name="icon_6_lib" type="imagelist" directory="administrator/templates/khepri/images/menu" default="" label="Icon #6" description="ICON_LIB_DES" />
+		
+		<param name="@spacer" type="spacer" default="Icon #7" label="Icon #7" description="Icon #7" />
+		<param name="title_7" type="text" default="" label="Title #7" description="TITLE_DES" />		
+		<param name="link_7" type="text" default="" label="Link #7" description="LINK_DES" />
+		<param name="icon_7" type="text" default="" label="Icon #7" description="ICON_DES" />
+		<param name="icon_7_lib" type="imagelist" directory="administrator/templates/khepri/images/menu" default="" label="Icon #7" description="ICON_LIB_DES" />
+		
+		
+		<param name="@spacer" type="spacer" default="Icon #8" label="Icon #8" description="Icon #8" />
+		<param name="title_8" type="text" default="" label="Title #8" description="TITLE_DES" />		
+		<param name="link_8" type="text" default="" label="Link #8" description="LINK_DES" />
+		<param name="icon_8" type="text" default="" label="Icon #8" description="ICON_DES" />
+		<param name="icon_8_lib" type="imagelist" directory="administrator/templates/khepri/images/menu" default="" label="Icon #8" description="ICON_LIB_DES" />
+		
+		
+		<param name="@spacer" type="spacer" default="Icon #9" label="Icon #9" description="Icon #9" />
+		<param name="title_9" type="text" default="" label="Title #9" description="TITLE_DES" />		
+		<param name="link_9" type="text" default="" label="Link #9" description="LINK_DES" />
+		<param name="icon_9" type="text" default="" label="Icon #9" description="ICON_DES" />
+		<param name="icon_9_lib" type="imagelist" directory="administrator/templates/khepri/images/menu" default="" label="Icon #9" description="ICON_LIB_DES" />
+		
+		
+		<param name="@spacer" type="spacer" default="Icon #10" label="Icon #10" description="Icon #10" />
+		<param name="title_10" type="text" default="" label="Title #10" description="TITLE_DES" />		
+		<param name="link_10" type="text" default="" label="Link #10" description="LINK_DES" />
+		<param name="icon_10" type="text" default="" label="Icon #10" description="ICON_DES" />
+		<param name="icon_10_lib" type="imagelist" directory="administrator/templates/khepri/images/menu" default="" label="Icon #10" description="ICON_LIB_DES" />
+		
+		<param name="@spacer" type="spacer" default="Icon #11" label="Icon #11" description="Icon #11" />
+		<param name="title_11" type="text" default="" label="Title #11" description="TITLE_DES" />		
+		<param name="link_11" type="text" default="" label="Link #11" description="LINK_DES" />
+		<param name="icon_11" type="text" default="" label="Icon #11" description="ICON_DES" />
+		<param name="icon_11_lib" type="imagelist" directory="administrator/templates/khepri/images/menu" default="" label="Icon #11" description="ICON_LIB_DES" />
+		
+		<param name="@spacer" type="spacer" default="Icon #12" label="Icon #12" description="Icon #12" />
+		<param name="title_12" type="text" default="" label="Title #12" description="TITLE_DES" />		
+		<param name="link_12" type="text" default="" label="Link #12" description="LINK_DES" />
+		<param name="icon_12" type="text" default="" label="Icon #12" description="ICON_DES" />
+		<param name="icon_12_lib" type="imagelist" directory="administrator/templates/khepri/images/menu" default="" label="Icon #12" description="ICON_LIB_DES" />
+	</params>
+	
+	<params group="advanced">
+		<param name="shortcuts" type="textarea" rows="12" cols="50" default="" label="SHORTCUTS_LABEL" description="SHORTCUTS_DES" />
+	</params>
+</install>

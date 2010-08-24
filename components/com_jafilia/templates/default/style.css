@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+
+#jaf_registration  {
+	width: 500px;
+	margin:auto;
+	padding:25px;
+}
+
+#jaf_header {
+	width: 100%;
+	background-color:#FF9900;
+	border: 1px solid #000000;
+	margin-bottom: 30px;
+}
+
+#jaf_navi  {
+	width: 100%;
+	background-color:#CCCCCC;
+	border: 1px solid #000000;
+	padding:10px;
+	display:block;
+	margin-bottom:30px;
+}
+
+#jaf_mainpart  {
+	width: 100%;
+	margin-bottom:30px;
+	background-color:#CCCCCC;
+	border: 1px solid #000000;
+}
+
+#jaf_footer  {
+	margin: 30px;
+}
+
+#jaf_agbfield  {
+	display:none;
+	background-color:#FF3333;
+	padding:10px;
+	width:500px;
+	text-align:left;
+}
+
+#jaf_agbfield li  {
+	list-style:circle;
+	list-style-type:circle;
+}
+
+fieldset  {
+	padding:10px;
+}
+
+label .title  {
+	float: left;
+	width: 150px;
+}
+
+.title h1 {
+	color: #000000;
+}
+
+.navi th  {
+	width:25%;
+	background-color:#FF9900;
+	padding:4px;
+}
+
+.navi a:hover {
+	color:#FFFFFF;
+}
+
+th h3  {
+	font-size: 1.5em;
+}
+
+.codeline  {
+	background-color:#FFFFFF;
+	padding:5px;
+}

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="List Layout">
+		<message>
+			<![CDATA[List Layout]]>
+		</message>
+	</layout>
+	<state>
+		<name>List Layout</name>
+		<description>See a timeline</description>
+		<params addpath="/administrator/components/com_ganalytics/elements">
+			<param name="accountids" type="ganalytics" default=""
+				label="Select Profiles" description="The Profiles" />
+			<param name="type" type="list" default="visitsbytraffic" label="Data"
+				description="The data collection which should be shown.">
+				<option value="visitsbytraffic">Visits by traffic source</option>
+				<option value="visitsbybrowser">Visits by browser (including mobile phones)
+				</option>
+				<option value="visitsbycountry">Visits by country</option>
+				<option value="timeonsite">Time on site by region</option>
+				<option value="toppages">Top pages by pageviews</option>
+				<option value="advanced">Advanced</option>
+			</param>
+			<param name="daterange" type="list" default="month" label="Date Range"
+				description="The date range of the data, if the advanced value is choosen then the start and end date from the advanced parameter section is set as start date.">
+				<option value="day">Day</option>
+				<option value="week">Week</option>
+				<option value="month">Month</option>
+				<option value="year">Year</option>
+				<option value="advanced">Advanced</option>
+			</param>
+			<param name="max" type="text" default="10" label="Max Result"
+				size="5" description="The maximum number of result." />
+			<param name="@spacer" type="spacer" default="" label=""
+				description="" />
+			<param name="titleFormat" type="textarea2" default=""
+				label="Title Format" description="Here you can customize the appearance of the title"
+				rows="3" cols="50">
+				<content>&lt;h3&gt;{accountname} [{profilename}] {startdate} {dateseparator} {endate}&lt;/h3&gt; </content>
+				<description>
+					Here you can modify the title. The following
+					attributes
+					are provided:&lt;br&gt;
+					{accountname},
+					{profilename},
+					{startdate},
+					{dateseparator}, {endate}
+				</description>
+			</param>
+			<param name="showVisitors" type="radio" default="yes" label="Show Visitors"
+				description="Show the visitors list.">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</param>
+			<param name="pagination" type="radio" default="yes" label="Show Pagination"
+				description="Trim the list to 10 rows and make it navigatable.">
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</param>
+			<param name="dateFormat" type="text" size="80" default="%d.%m.%Y"
+				label="Date Format"
+				description="The format of the date(s) (see http://www.php.net/strftime for details)." />
+
+			<param name="width" type="text" default="600px" label="Width"
+				size="5" description="The width of the list." />
+			<param name="height" type="text" default="200px" label="Height"
+				size="5" description="The height of the list." />
+			<param name="@spacer" type="spacer" default="" label=""
+				description="" />
+			<param name="pageclass_sfx" type="text" size="20" default=""
+				label="Page Class Suffix"
+				description="A suffix to be applied to the css classes of the page, this allows individual page styling" />
+		</params>
+		<advanced>
+			<param name="dimensions" type="list" default="ga:date" label="Dimensions"
+				description="The dimension.">
+				<option value="ga:browser">ga:browser</option>
+				<option value="ga:browserVersion">ga:browserVersion</option>
+				<option value="ga:city">ga:city</option>
+				<option value="ga:connectionSpeed">ga:connectionSpeed</option>
+				<option value="ga:continent">ga:continent</option>
+				<option value="ga:countOfVisits">ga:countOfVisits</option>
+				<option value="ga:country">ga:country</option>
+				<option value="ga:date">ga:date</option>
+				<option value="ga:day">ga:day</option>
+				<option value="ga:daysSinceLastVisit">ga:daysSinceLastVisit</option>
+				<option value="ga:flashVersion">ga:flashVersion</option>
+				<option value="ga:hostname">ga:hostname</option>
+				<option value="ga:hour">ga:hour</option>
+				<option value="ga:javaEnabled">ga:javaEnabled</option>
+				<option value="ga:language">ga:language</option>
+				<option value="ga:latitude">ga:latitude</option>
+				<option value="ga:longitude">ga:longitude</option>
+				<option value="ga:month">ga:month</option>
+				<option value="ga:networkDomain">ga:networkDomain</option>
+				<option value="ga:networkLocation">ga:networkLocation</option>
+				<option value="ga:pageDepth">ga:pageDepth</option>
+				<option value="ga:operatingSystem">ga:operatingSystem</option>
+				<option value="ga:operatingSystemVersion">ga:operatingSystemVersion</option>
+				<option value="ga:region">ga:region</option>
+				<option value="ga:screenColors">ga:screenColors</option>
+				<option value="ga:screenResolution">ga:screenResolution
+				</option>
+				<option value="ga:subContinent">ga:subContinent</option>
+				<option value="ga:userDefinedValue">ga:userDefinedValue
+				</option>
+				<option value="ga:visitorType">ga:visitorType</option>
+				<option value="ga:week">ga:week</option>
+				<option value="ga:year">ga:year</option>
+				<option value="ga:adContent">ga:adContent</option>
+				<option value="ga:adGroup">ga:adGroup</option>
+				<option value="ga:adSlot">ga:adSlot</option>
+				<option value="ga:adSlotPosition">ga:adSlotPosition</option>
+				<option value="ga:campaign">ga:campaign</option>
+				<option value="ga:keyword">ga:keyword</option>
+				<option value="ga:medium">ga:medium</option>
+				<option value="ga:referralPath">ga:referralPath</option>
+				<option value="ga:source">ga:source</option>
+				<option value="ga:exitPagePath">ga:exitPagePath</option>
+				<option value="ga:landingPagePath">ga:landingPagePath
+				</option>
+				<option value="ga:pagePath">ga:pagePath</option>
+				<option value="ga:pageTitle">ga:pageTitle</option>
+				<option value="ga:affiliation">ga:affiliation</option>
+				<option value="ga:daysToTransaction">ga:daysToTransaction</option>
+				<option value="ga:productCategory">ga:productCategory
+				</option>
+				<option value="ga:productName">ga:productName</option>
+				<option value="ga:productSku">ga:productSku</option>
+				<option value="ga:transactionId">ga:transactionId</option>
+				<option value="ga:searchCategory">ga:searchCategory</option>
+				<option value="ga:searchDestinationPage">ga:searchDestinationPage</option>
+				<option value="ga:searchKeyword">ga:searchKeyword</option>
+				<option value="ga:searchKeywordRefinement">ga:searchKeywordRefinement</option>
+				<option value="ga:searchStartPage">ga:searchStartPage
+				</option>
+				<option value="ga:searchUsed">ga:searchUsed</option>
+			</param>
+			<param name="metrics" type="list" default="ga:visits" label="Metrics"
+				description="The metrics">
+				<option value="ga:bounces">ga:bounces</option>
+				<option value="ga:entrances">ga:entrances</option>
+				<option value="ga:exits">ga:exits</option>
+				<option value="ga:newVisits">ga:newVisits</option>
+				<option value="ga:pageviews">ga:pageviews</option>
+				<option value="ga:timeOnPage">ga:timeOnPage</option>
+				<option value="ga:timeOnSite">ga:timeOnSite</option>
+				<option value="ga:visitors">ga:visitors</option>
+				<option value="ga:visits">ga:visits</option>
+				<option value="ga:adClicks">ga:adClicks</option>
+				<option value="ga:adCost">ga:adCost</option>
+				<option value="ga:CPC">ga:CPC</option>
+				<option value="ga:CPM">ga:CPM</option>
+				<option value="ga:CTR">ga:CTR</option>
+				<option value="ga:impressions">ga:impressions</option>
+				<option value="ga:uniquePageviews">ga:uniquePageviews</option>
+				<option value="ga:itemRevenue">ga:itemRevenue</option>
+				<option value="ga:itemQuantity">ga:itemQuantity</option>
+				<option value="ga:transactionRevenue">ga:transactionRevenue</option>
+				<option value="ga:transactions">ga:transactions</option>
+				<option value="ga:transactionShipping">ga:transactionShipping</option>
+				<option value="ga:transactionTax">ga:transactionTax</option>
+				<option value="ga:uniquePurchases">ga:uniquePurchases</option>
+				<option value="ga:searchDepth">ga:searchDepth</option>
+				<option value="ga:searchDuration">ga:searchDuration</option>
+				<option value="ga:searchExits">ga:searchExits</option>
+				<option value="ga:searchRefinements">ga:searchRefinements</option>
+				<option value="ga:searchUniques">ga:searchUniques</option>
+				<option value="ga:searchVisits">ga:searchVisits</option>
+				<option value="ga:goal1Completions">ga:goal1Completions</option>
+				<option value="ga:goal2Completions">ga:goal2Completions</option>
+				<option value="ga:goal3Completions">ga:goal3Completions</option>
+				<option value="ga:goal4Completions">ga:goal4Completions
+				</option>
+				<option value="ga:goalCompletionsAll">ga:goalCompletionsAll</option>
+				<option value="ga:goal1Starts">ga:goal1Starts</option>
+				<option value="ga:goal2Starts">ga:goal2Starts</option>
+				<option value="ga:goal3Starts">ga:goal3Starts</option>
+				<option value="ga:goal4Starts">ga:goal4Starts</option>
+				<option value="ga:goalStartsAll">ga:goalStartsAll</option>
+				<option value="ga:goal1Value">ga:goal1Value</option>
+				<option value="ga:goal2Value">ga:goal2Value</option>
+				<option value="ga:goal3Value">ga:goal3Value</option>
+				<option value="ga:goal4Value">ga:goal4Value</option>
+				<option value="ga:goalValueAll">ga:goalValueAll</option>
+			</param>
+			<param name="sort" type="text" default="" label="Sort" size="100"
+				description="The order and direction to retrieve the results. Can have multiple dimensions and metrics(Ascending: ga:visits, Descending: -ga:visits)." />
+			<param name="startdate" type="calendar" default="" label="Start Date"
+				description="If the date range parameter is set to advanced, the data will be displayed started by this date."
+				format="%Y-%m-%d" />
+			<param name="enddate" type="calendar" default="" label="End Date"
+				description="If the date range parameter is set to advanced, the data will be displayed end by this date (if it is empty the actual day will be used)."
+				format="%Y-%m-%d" />
+			<param name="ga_cache" type="list" default="1" label="Caching"			
+				description="Select whether to cache the content.">
+				<option value="2">Use global</option>
+				<option value="1">Cache always</option>
+				<option value="0">Cache never</option>
+			</param>
+			<param name="ga_cache_time" type="text" default="18000" label="Cache Time"
+				description="The time before the cache expiration is recached in sec." />
+		</advanced>
+	</state>
+</metadata>

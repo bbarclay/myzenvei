@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+   <menu>
+      <options var="task">
+         <default name="HWDVS_MENU_PH" msg="HWDVS_MENU_PH_DESC" />
+         <option name="HWDVS_MENU_BBCAT" msg="HWDVS_MENU_BBCAT_DESC" value="categories" />
+         <option name="HWDVS_MENU_BBALB" msg="HWDVS_MENU_BBALB_DESC" value="albums" />
+         <option name="HWDVS_MENU_BBPHO" msg="HWDVS_MENU_BBPHO_DESC" value="photos" />
+         <option name="HWDVS_MENU_BBGRP" msg="HWDVS_MENU_BBGRP_DESC" value="groups" />
+         <option name="HWDVS_MENU_UP" msg="HWDVS_MENU_UP_DESC" value="upload" />
+         <option name="HWDVS_MENU_CA" msg="HWDVS_MENU_CA_DESC" value="createalbum" />
+         <option name="HWDVS_MENU_AG" msg="HWDVS_MENU_AG_DESC" value="creategroup" />
+         <option name="HWDVS_MENU_YP" msg="HWDVS_MENU_YP_DESC" value="yourphotos" />
+         <option name="HWDVS_MENU_YF" msg="HWDVS_MENU_YF_DESC" value="yourfavourites" />
+         <option name="HWDVS_MENU_YG" msg="HWDVS_MENU_YG_DESC" value="yourgroups" />
+         <option name="HWDVS_MENU_YM" msg="HWDVS_MENU_YM_DESC" value="yourmembership" />
+      </options>
+   </menu>
+   <state switch="task">
+      <default>
+         <name>HWDVS_MENU_PH</name>
+         <description>HWDVS_MENU_PH_DESC</description>
+         <params />
+      </default>
+      <categories>
+         <name>HWDVS_MENU_BBCAT</name>
+         <description>HWDVS_MENU_BBCAT_DESC</description>
+         <params />
+      </categories>
+      <albums>
+         <name>HWDVS_MENU_BBALB</name>
+         <description>HWDVS_MENU_BBALB_DESC</description>
+         <params />
+      </albums>
+      <photos>
+         <name>HWDVS_MENU_BBPHO</name>
+         <description>HWDVS_MENU_BBPHO_DESC</description>
+         <params />
+      </photos>     
+      <groups>
+         <name>HWDVS_MENU_BBGRP</name>
+         <description>HWDVS_MENU_BBGRP_DESC</description>
+         <params />
+      </groups>     
+      <upload>
+         <name>HWDVS_MENU_UP</name>
+         <description>HWDVS_MENU_UP_DESC</description>
+         <params />
+      </upload>     
+      <createalbum>
+         <name>HWDVS_MENU_CA</name>
+         <description>HWDVS_MENU_CA_DESC</description>
+         <params />
+      </createalbum>  
+      <creategroup>
+         <name>HWDVS_MENU_AG</name>
+         <description>HWDVS_MENU_AG_DESC</description>
+         <params />
+      </creategroup>
+      <yourphotos>
+         <name>HWDVS_MENU_YP</name>
+         <description>HWDVS_MENU_FV_DESC</description>
+         <params />
+      </yourphotos>      
+      <yourfavourites>
+         <name>HWDVS_MENU_YF</name>
+         <description>HWDVS_MENU_YF_DESC</description>
+         <params />
+      </yourfavourites>      
+      <yourgroups>
+         <name>HWDVS_MENU_YG</name>
+         <description>HWDVS_MENU_MM_DESC</description>
+         <params />
+      </yourgroups>      
+      <yourmembership>
+         <name>HWDVS_MENU_YM</name>
+         <description>HWDVS_MENU_MM_DESC</description>
+         <params />
+      </yourmembership>
+   </state>
+</metadata>
