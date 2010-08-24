@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<install type="language" version="1.5.0" client="site">
+	<name>Korean formal - Sie</name> 
+	<tag>ko-KR</tag>
+  <version>1.5.0</version> 
+  <creationDate>2007-07-23</creationDate> 
+  <author>Joomla! German</author> 
+  <authorEmail>info@joomlaGTT.de</authorEmail> 
+  <description>Deutsches Sprachpaket (Site) mit formaler Anrede</description>
+  <files>
+    <file file="meta">ko-KR.xml</file>
+    <file>ko-KR.com_banners.ini</file>
+    <file>ko-KR.com_contact.ini</file>
+    <file>ko-KR.com_content.ini</file>
+    <file>ko-KR.com_frontpage.ini</file>
+    <file>ko-KR.com_mailto.ini</file>
+    <file>ko-KR.com_messages.ini</file>
+    <file>ko-KR.com_newsfeeds.ini</file>
+    <file>ko-KR.com_poll.ini</file>
+    <file>ko-KR.com_search.ini</file>
+    <file>ko-KR.com_user.ini</file>
+    <file>ko-KR.com_weblinks.ini</file>
+    <file>ko-KR.com_wrapper.ini</file>
+    <file>ko-KR.ignore.php</file>
+    <file>ko-KR.ini</file>
+    <file>ko-KR.mod_archive.ini</file>
+    <file>ko-KR.mod_banners.ini</file>
+    <file>ko-KR.mod_breadcrumbs.ini</file>
+    <file>ko-KR.mod_custom.ini</file>
+    <file>ko-KR.mod_feed.ini</file>
+    <file>ko-KR.mod_footer.ini</file>
+    <file>ko-KR.mod_latestnews.ini</file>
+    <file>ko-KR.mod_login.ini</file>
+    <file>ko-KR.mod_mainmenu.ini</file>
+    <file>ko-KR.mod_mostread.ini</file>
+    <file>ko-KR.mod_newsflash.ini</file>
+		<file>ko-KR.mod_online.ini</file>    
+		<file>ko-KR.mod_poll.ini</file>
+    <file>ko-KR.mod_random_image.ini</file>
+    <file>ko-KR.mod_related_items.ini</file>
+    <file>ko-KR.mod_search.ini</file>
+    <file>ko-KR.mod_sections.ini</file>
+    <file>ko-KR.mod_stats.ini</file>
+    <file>ko-KR.mod_syndicate.ini</file>
+    <file>ko-KR.mod_whosonline.ini</file>
+    <file>ko-KR.mod_wrapper.ini</file>
+		<file>ko-KR.plg_search_categories.ini</file>    
+		<file>ko-KR.plg_search_contacts.ini</file>
+		<file>ko-KR.plg_search_content.ini</file>				
+		<file>ko-KR.plg_search_newsfeeds.ini</file>
+		<file>ko-KR.plg_search_sections.ini</file>
+		<file>ko-KR.plg_search_weblinks.ini</file>						
+    <file>ko-install.xml</file>
+    <file>index.html</file>
+  </files>
+</install>

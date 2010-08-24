@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="user">
+	<name>User - Jomsocial User</name>
+	<author>JomSocial</author>
+	<creationDate>October 2005</creationDate>
+	<copyright>Copyright (C) 2008 - 2009. All rights reserved.</copyright>
+	<license>http://www.jomsocial.com</license>
+	<authorEmail>support@jomsocial.com</authorEmail>
+	<authorUrl>www.jomsocial.com</authorUrl>
+	<version>1.0</version>
+	<description>JomSocial user login plugin. This plugin is responsible to create or destroy the cookies correctly.</description>
+	<files>
+		<filename plugin="jomsocialuser">jomsocialuser.php</filename>
+	</files>
+	<params/>
+</install>

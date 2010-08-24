@@ -1,0 +1,19 @@
+
+#primaryNav li { width:100%; }
+
+#primaryNav.main li { width:12.0%; }
+
+.sitemap { margin: 65px 0 50px 0; float: left; width: 100%; }
+#primaryNav { margin: 0; float: left; width: 100%; }
+#primaryNav #home { display: block; float: none; background: #ffffff url(../images/L1-left.png) center bottom no-repeat;
+position: relative; z-index: 2; padding: 5px 0 30px 0; }
+#primaryNav li { float: left; background: url(../images/L1-center.png) center top no-repeat; padding: 30px 0 0 0; 
+margin-top: -30px; }
+#primaryNav li a { margin: 0 20px 0 0; padding: 10px 0; display: block; font-size: 9px; font-weight: bold;
+text-align: center; color: black; background: #c3eafb url(../images/white-highlight.png) top left repeat-x;
+border: 2px solid #b5d9ea; -moz-border-radius: 5px; -webkit-border-radius: 5px; -webkit-box-shadow: rgba(0,0,0,0.5) 2px 2px 2px; 
+-moz-box-shadow: rgba(0,0,0,0.5) 2px 2px 2px; /* FF 3.5+ */	 }
+#primaryNav li a:hover { background-color: #e2f4fd; border-color: #97bdcf; }
+#primaryNav li.last { background: url(../images/L1-right.png) center top repeat-y;  }
+
+

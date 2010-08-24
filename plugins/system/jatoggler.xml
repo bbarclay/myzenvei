@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<name>Blogomunity's AJAX Toggler</name>
+	<author>Blogomunity</author>
+	<creationDate>October 2009</creationDate>
+	<copyright>(C) 2008-2009 Blogomunity. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>blogomunity@gmail.com</authorEmail>
+	<authorUrl>http://blogomunity.com</authorUrl>
+	<version>1.6</version>
+	<description>Provides AJAX support for Joomla admin templates! Don't forget to publish the system plugin "Blogomunity's AJAX Toggler"!</description>
+	<files>
+		<filename plugin="jatoggler">jatoggler.php</filename>
+		<folder>jatoggler</folder>
+	</files>
+	
+	<params>
+		<param name="exclude" type="text" default="" label="Exclude components" description="Comma separated components, i.e. &lt;b&gt;com_content,com_virtuemart&lt;/b&gt;. No spaces here!" />
+	</params>
+</install>

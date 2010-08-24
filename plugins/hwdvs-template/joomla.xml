@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="hwdvs-template" method="upgrade">
+    <name>Joomla Template</name>
+    <creationDate>2009 12 04</creationDate>
+    <author>Highwood Design</author>
+    <copyright>(C) 2007 - 2009 Highwood Design</copyright>
+    <authorEmail>info@highwooddesign.co.uk</authorEmail>
+    <authorUrl>http://hwdmediashare.co.uk</authorUrl>
+    <version>[ Dannevirke ]</version>
+    <description>This is the Joomla template for hwdVideoShare.</description>
+    <files>
+	<folder>joomla/</folder>
+	<filename plugin="joomla">joomla.php</filename>
+    </files>
+    <params>
+	<param name="thumbWidth1" type="text" size="6" default="120" label="Main Thumb Width" description="The thumbnail image width for the main default thumbnails." />
+	<param name="thumbWidth2" type="text" size="6" default="120" label="Viewed Thumb Width" description="The thumbnail image width for the most viewed thumbnails." />
+	<param name="thumbWidth3" type="text" size="6" default="120" label="Favoured Thumb Width" description="The thumbnail image width for the most favoured thumbnails." />
+	<param name="thumbWidth4" type="text" size="6" default="120" label="Popular Thumb Width" description="The thumbnail image width for the most popular thumbnails." />
+	<param name="thumbWidth5" type="text" size="6" default="120" label="Watched Thumb Width" description="The thumbnail image width for the now being watched thumbnails." />
+	<param name="thumbWidth6" type="text" size="6" default="120" label="Featured Thumb Width" description="The thumbnail image width for the featured thumbnails." />
+	<param name="thumbWidth7" type="text" size="6" default="50" label="User Thumb Width" description="The thumbnail image width for the more by this user thumbnails." />
+	<param name="thumbWidth8" type="text" size="6" default="50" label="Related Thumb Width" description="The thumbnail image width for the related thumbnails." />
+	<param name="thumbWidth9" type="text" size="6" default="50" label="Category Thumb Width" description="The thumbnail image width for the more in this category thumbnails." />
+	<param name="beingWatchNow" type="text" size="6" default="3" label="Being Watch Now" description="The number of videos to show in the Now Being Watched section." />
+	<param name="vpr" type="list" default="3" label="Videos Per Row" description="The number of videos per row.">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+	</param>
+	<param name="cpr" type="list" default="3" label="Categories Per Row" description="The number of categories per row.">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+	</param>
+	<param name="gpr" type="list" default="2" label="Groups Per Row" description="The number of groups per row.">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+	</param>	
+	<param name="hideSubcats" type="list" default="0" label="Hide Subcategories?" description="Hide subcateories on the main category page.">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+	</param>
+    </params>
+</install>

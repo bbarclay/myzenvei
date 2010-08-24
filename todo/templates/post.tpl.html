@@ -1,0 +1,245 @@
+{include file="header.tpl.html"}
+
+<br />
+
+{if $no_projects}
+<table width="500" bgcolor="{$cell_color}" border="0" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+    <td>
+      <table bgcolor="#FFFFFF" width="100%" cellspacing="1" cellpadding="2" border="0">
+        <tr>
+          <td class="default">
+            <b>{t}Sorry, but there are no projects currently setup as allowing anonymous posting.{/t}</b>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+{else}
+  {if $new_issue_id != "" and $smarty.post.report_stays != "yes"}
+<table width="500" bgcolor="{$cell_color}" border="0" cellspacing="0" cellpadding="1" align="center">
+  <tr>
+    <td>
+      <table bgcolor="#FFFFFF" width="100%" cellspacing="1" cellpadding="2" border="0">
+        <tr>
+          <td class="default">
+            <b>{t escape=no 1=$new_issue_id}Thank you, the new issue was created successfully. For your records, the new issue ID is <font color="red">%1</font>{/t}</b>
+            <br /><br />
+            {t 1=$smarty.server.PHP_SELF escape=no}You may <a class="link" href="%1">submit another issue</a> if you so wish.{/t}
+          </td>
+        </tr>
+        <tr align="center">
+          <td colspan="2" bgcolor="{$cell_color}" class="default_white">
+            <a class="white_link" href="index.php">{t}Back to Login Form{/t}</a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+  {else}
+    {if $smarty.get.post_form != 'yes'}
+{literal}
+<script type="text/javascript">
+<!--
+function validateForm(f)
+{
+    if (hasSelected(f.project, -1)) {
+        alert('{/literal}{t escape=js}Please choose the project that this new issue will apply to{/t}.{literal}');
+        selectField(f, 'project');
+        return false;
+    }
+    return true;
+}
+//-->
+</script>
+{/literal}
+<table width="80%" bgcolor="{$cell_color}" border="0" cellspacing="0" cellpadding="1" align="center">
+<form name="report_form" action="{$smarty.server.PHP_SELF}" method="get" onSubmit="javascript:return validateForm(this);">
+<input type="hidden" name="post_form" value="yes">
+  <tr>
+    <td>
+      <table bgcolor="#FFFFFF" width="100%" cellspacing="1" cellpadding="2" border="0">
+        <tr>
+          <td colspan="2" class="default">
+            <b>{t}Report New Issue{/t}</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150" bgcolor="{$cell_color}" class="default_white">
+            <b>{t}Project{/t}: *</b>
+          </td>
+          <td bgcolor="{$light_color}">
+            <select name="project" class="default">
+              <option value="-1">{t}Please choose a project{/t}</option>
+              {html_options options=$projects}
+            </select>
+            {include file="error_icon.tpl.html" field="project"}
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" bgcolor="{$cell_color}">
+            <input class="button" type="submit" value="{t}Next{/t} &gt;&gt;">&nbsp;&nbsp;
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</form>
+{literal}
+<script type="text/javascript">
+<!--
+window.onload = setFocus;
+function setFocus()
+{
+    document.report_form.project.focus();
+}
+//-->
+</script>
+{/literal}
+    {else}
+{literal}
+<script type="text/javascript">
+<!--
+var required_custom_fields = new Array();
+var custom_fields = new Array();
+function validateForm(f)
+{
+    if (isWhitespace(f.summary.value)) {
+        errors[errors.length] = new Option('{/literal}{t escape=js}Summary{/t}{literal}', 'summary');
+    }
+    if (isWhitespace(f.description.value)) {
+        errors[errors.length] = new Option('{/literal}{t escape=js}Description{/t}{literal}', 'description');
+    }
+    checkCustomFields(f, required_custom_fields);
+}
+//-->
+</script>
+{/literal}
+<table width="80%" bgcolor="{$cell_color}" border="0" cellspacing="0" cellpadding="1" align="center">
+<form name="report_form" action="{$smarty.server.PHP_SELF}" method="post" enctype="multipart/form-data" onSubmit="javascript:return checkFormSubmission(this, 'validateForm');">
+<input type="hidden" name="cat" value="report">
+{assign var="tabindex" value=1}
+  <tr>
+    <td colspan="2" bgcolor="{$cell_color}" class="default_white">
+      <a class="white_link" href="index.php">{t}Back to Login Form{/t}</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <table bgcolor="#FFFFFF" width="100%" cellspacing="1" cellpadding="2" border="0">
+        <tr>
+          <td colspan="2" class="default">
+            <b>{t}Report New Issue{/t}</b>
+          </td>
+        </tr>
+        <tr>
+          <td width="150" bgcolor="{$cell_color}" class="default_white">
+            <b>{t}Project{/t}:</b>
+          </td>
+          <td bgcolor="{$light_color}" class="default">
+            <b>{$project_name}</b>
+            <input type="hidden" name="project" value="{$smarty.get.project}">
+          </td>
+        </tr>
+        <tr>
+          <td width="150" bgcolor="{$cell_color}" class="default_white">
+            <b>{t}Summary{/t}: *</b>
+          </td>
+          <td bgcolor="{$light_color}">
+            <input type="text" name="summary" class="default" size="60" tabindex="{$tabindex++}">
+            {include file="error_icon.tpl.html" field="summary"}
+          </td>
+        </tr>
+        <tr>
+          <td width="150" bgcolor="{$cell_color}" class="default_white">
+            <b>{t}Description{/t}: *</b>
+          </td>
+          <td bgcolor="{$light_color}">
+            <textarea name="description" style="width: 97%" rows="10" tabindex="{$tabindex++}"></textarea>
+            {include file="error_icon.tpl.html" field="description"}
+          </td>
+        </tr>
+        {include file="edit_custom_fields.tpl.html" custom_fields=$custom_fields form_type='anonymous'}
+        {assign var=tabindex value=$tabindex+50}
+        <tr>
+          <td width="150" bgcolor="{$cell_color}" class="default_white">
+            <b>{t}Attach Files{/t}:</b>
+          </td>
+          <td bgcolor="{$light_color}">
+            <table width="100%" cellpadding="2" cellspacing="0" id="file_table">
+              <tr>
+                <td>
+                  <input type="file" name="file[]" size="40" class="shortcut" tabindex="{$tabindex++}" {if $user_agent == 'ie'}onChange="javascript:addFileRow();"{/if}>
+                </td>
+              </tr>
+            </table>
+            {literal}
+            <script type="text/javascript">
+            <!--
+            if (document.all) {
+                var fileTable = document.all['file_table'];
+            } else if (!document.all && document.getElementById) {
+                var fileTable = document.getElementById('file_table');
+            }
+            function addFileRow()
+            {
+                if (!fileTable) {
+                    return;
+                }
+                rows = fileTable.rows.length;
+                newRow = fileTable.insertRow(rows);
+                cell = newRow.insertCell(0);
+                cell.innerHTML = '<input class="shortcut" size="40" type="file" name="file[]" onChange="javascript:addFileRow();">';
+            }
+            //-->
+            </script>
+            {/literal}
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" bgcolor="{$cell_color}">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td width="10" nowrap class="default_white">
+                  <nobr>
+                  </nobr>
+                </td>
+                <td width="100%" align="center">
+                  <input class="button" type="submit" value="{t}Submit{/t}" tabindex="{$tabindex++}">&nbsp;&nbsp;
+                  <input class="button" type="reset" value="{t}Reset{/t}" tabindex="{$tabindex++}">
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="default">
+            <b>* {t}Required fields{/t}</b>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</form>
+</table>
+
+<br />
+{literal}
+<script type="text/javascript">
+<!--
+window.onload = setFocus;
+function setFocus()
+{
+    document.report_form.summary.focus();
+}
+//-->
+</script>
+{/literal}
+    {/if}
+  {/if}
+{/if}
+
+{include file="footer.tpl.html"}

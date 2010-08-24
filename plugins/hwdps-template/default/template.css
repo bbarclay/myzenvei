@@ -1,0 +1,542 @@
+		/*----------------------------------------------------------------------------*/
+		/*----------------------------------------------------------------------------*/
+
+		#hwdps {
+			width: 100%!important;
+			max-width: 100%!important;
+			text-align: left;
+			overflow: hidden!important;
+			font-size: 100%;
+			padding-top: 5px;
+		}
+
+		#hwdps img {
+			border: 0px;
+		}
+		
+		#hwdps form {
+			margin: 0!important;
+			padding: 0!important;
+		}
+		
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare main navigation bar definitions                             */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdps_navcontainer
+		{
+			margin: 0;
+			padding: 0;
+			height: 35px!important;
+			overflow:hidden;
+			vertical-align:top;
+			float: left;
+		}
+
+		#hwdps_navcontainer ul
+		{
+			margin: 0!important;
+			padding: 0!important;
+			height: 35px!important;
+		}
+
+		#hwdps_navcontainer ul li {
+		}
+
+		#hwdps_navcontainer ul li
+		{
+			float: left;
+			text-align: center;
+			font-size: 14px;
+			line-height: 25px!important;
+			margin: 0!important;
+			padding: 0 2px 0 0px!important;
+			width: 100px;
+			height: 35px!important;
+		}
+
+		#hwdps_navcontainer ul li a
+		{
+			width: 100px;
+			margin: 0!important;
+			padding: 0!important;
+		}
+
+		#hwdps_navcontainer ul li a:link    { color: #171d25; font-weight: bold; text-decoration: none; padding: 0; margin: 0;}
+		#hwdps_navcontainer ul li a:active  { color: #171d25; font-weight: bold; text-decoration: none; padding: 0; margin: 0;}
+		#hwdps_navcontainer ul li a:visited { color: #171d25; font-weight: bold; text-decoration: none; padding: 0; margin: 0;}
+		#hwdps_navcontainer ul li a:hover   { color: #171d25; font-weight: bold; text-decoration: none; padding: 0; margin: 0;}
+
+		#hwdps_navcontainer li#active
+		{
+		}
+
+		#hwdps_navcontainer li#active a:link    { color: #171d25; font-weight: bold; text-decoration: none; padding: 0; margin: 0;}
+		#hwdps_navcontainer li#active a:active  { color: #171d25; font-weight: bold; text-decoration: none; padding: 0; margin: 0;}
+		#hwdps_navcontainer li#active a:visited { color: #171d25; font-weight: bold; text-decoration: none; padding: 0; margin: 0;}
+		#hwdps_navcontainer li#active a:hover   { color: #171d25; font-weight: bold; text-decoration: none; padding: 0; margin: 0;}
+
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare search bar definitions                                      */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdps_searchbar {
+			float:right;
+		}
+
+		#hwdps_searchbar form {
+			margin: 0!important;
+			padding: 0!important;
+		}
+
+		#hwdps_searchbar div {
+			margin: 0;
+			padding: 0;
+		}
+
+		#hwdps_searchbar .hwdsearchbox {
+			width: 185px;
+		}
+
+		#hwdps_searchbar .hwdsearchbox input {
+			width:180px;
+			height:20px;
+			line-height:20px;
+			font-size:15px;
+			color: #000000;
+			border:1px solid #adadad;
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*----------------------------------------------------------------------------*/
+
+		#hwdps .sic-container {
+			width:100%;
+			margin:0!important;
+			padding:0!important;
+		}
+
+		#hwdps .sic-right {
+			padding-left:0px;
+			overflow:hidden;
+		}
+
+		#hwdps .sic-center {
+			overflow:hidden;
+			float:left;
+			margin-right: 5px;
+		}
+		
+		/*----------------------------------------------------------------------------*/
+		/*----------------------------------------------------------------------------*/
+
+		#hwdps .box {
+			padding: 5px;
+			border-bottom: 1px dotted #ccc;
+		}
+
+		#hwdps .photoBox, #hwdps .photoBoxModule {
+			float:left;
+			text-align:center;
+		}
+
+		#hwdps .photoRow {
+		}
+		
+		#hwdps .scoller {
+			height:260px;
+			overflow-y:scroll;
+			overflow-x:hidden;
+		}
+
+		#hwdps .photoContainer-v {
+			display:table-cell;
+			vertical-align:middle;
+			text-align:center;
+			margin: 0pt auto;
+			padding: 5px;
+		}
+
+		#hwdps .photoContainer-h {
+			text-align:center;
+			margin: 0pt auto;
+		}
+
+
+		#hwdps .albumBox {
+			border-bottom: 1px dotted #ccc;
+			padding-top: 10px;
+		}
+		
+		/*----------------------------------------------------------------------------*/
+		/*----------------------------------------------------------------------------*/
+
+		#hwdps .usernav {
+			margin: 0pt auto;
+			background-color: #88c909;
+			margin-bottom: 5px;
+			border:1px solid #81bd0a;
+			text-align: center;
+			font-weight: bold;
+			padding:5px;
+		}
+		#hwdps .usernav a:link    { color: #000000; }
+		#hwdps .usernav a:active  { color: #000000; }
+		#hwdps .usernav a:visited { color: #000000; }
+		#hwdps .usernav a:hover   { color: #000000; }
+
+		/*----------------------------------------------------------------------------*/
+		/*----------------------------------------------------------------------------*/
+
+		#hwdps .footer {
+			margin: 0pt auto;
+			background-color: #eaeaea;
+			margin-bottom: 5px;
+			border:1px solid #adadad;
+			text-align: center;
+			font-size: 85%;
+			font-weight: bold;
+			padding:5px;
+		}
+
+		#hwdps .footer a:link    { font-weight: bold; text-decoration: none; font-size: 100%; }
+		#hwdps .footer a:active  { font-weight: bold; text-decoration: none; font-size: 100%; }
+		#hwdps .footer a:visited { font-weight: bold; text-decoration: none; font-size: 100%; }
+		#hwdps .footer a:hover   { font-weight: bold; text-decoration: none; font-size: 100%; }
+
+		/*----------------------------------------------------------------------------*/
+		/*----------------------------------------------------------------------------*/
+
+		#hwdps .standard {
+			border:1px solid #ccc;
+			margin-bottom:10px;
+		}
+
+		#hwdps .standard .padding {
+			padding: 5px!important;
+			margin: 0!important;
+		}
+
+		#hwdps .standard td{
+			padding: 5px!important;
+			margin: 0!important;
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*----------------------------------------------------------------------------*/
+
+		#hwdps .required {
+			color: #ff0000;
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*----------------------------------------------------------------------------*/
+
+		#hwdps h2 {
+			background: #d5d5d5;
+			text-align: left;
+			font-size: 150%;
+			margin: 1px!important;
+			padding: 5px!important;
+			line-height: 100%;
+			width: auto;
+		}
+
+		#hwdps h3 {
+			background: #d5d5d5;
+			text-align: left;
+			font-size: 150%;
+			margin: 1px;
+			padding: 5px;
+			line-height: 100%;
+			width: auto;
+		}
+		
+		/*----------------------------------------------------------------------------*/
+		/*----------------------------------------------------------------------------*/
+
+		#hwdps .pagenavi {
+			text-align: center;
+			padding: 3px;
+			border: 0!important;
+		}
+
+		#hwdps .pagenav {
+			text-align: center;
+			padding: 3px;
+			border: 0!important;
+		}
+
+		#hwdps .pagecount {
+			text-align: center;
+			border: 0!important;
+		}
+		
+		#hwdps ul.pagination {
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*----------------------------------------------------------------------------*/
+
+		#hwdps .comments {
+			margin: 0pt auto;
+			border: solid 1px #171d25;
+			background-color: #ffffff;
+			color: #171d25;
+			margin-bottom: 2px;
+		}
+
+		#hwdps .comments .padding{
+			padding: 5px;
+		}
+		#hwdps .comments a:link    { color: #333333; font-weight: bold; text-decoration: none; font-size: 100%; }
+		#hwdps .comments a:active  { color: #333333; font-weight: bold; text-decoration: none; font-size: 100%; }
+		#hwdps .comments a:visited { color: #333333; font-weight: bold; text-decoration: none; font-size: 100%; }
+		#hwdps .comments a:hover   { color: #333333; font-weight: bold; text-decoration: none; font-size: 100%; }
+
+		/*----------------------------------------------------------------------------*/
+		/*----------------------------------------------------------------------------*/
+
+		#hwdadverts-nopadding {
+			width:100%;
+			overflow:hidden;
+			text-align:center;
+		}
+
+		#hwdadverts-padding {
+			width:100%;
+			overflow:hidden;
+			text-align:center;
+			padding: 10px 0;
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*  THE TAB INTERFACE                                                         */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdps .tabberlive .tabbertabhide {
+			display:none;
+		}
+
+		#hwdps .tabber {
+		}
+
+		#hwdps .tabberlive {
+			margin-top:1em;
+		}
+
+		#hwdps ul.tabbernav
+		{
+			padding: 0!important;
+			margin: 0!important;
+			font-size: 12px;
+			right: 0;
+		}
+
+		#hwdps ul.tabbernav li
+		{
+			margin: 0!important;
+			padding: 0!important;
+			display: inline;
+		}
+
+		#hwdps ul.tabbernav li a
+		{
+			padding: 3px 5px;
+			margin-left: 3px;
+			border: 1px solid #bebebe;
+			background: #d0d0d0;
+			color: #fff;
+			text-decoration: none;
+		}
+
+		#hwdps ul.tabbernav li a:link { color: #000; }
+
+		#hwdps ul.tabbernav li a:visited { color: #000; }
+
+		#hwdps ul.tabbernav li a:hover
+		{
+			color: #000;
+			background: #00bdff;
+			border-color: #00bdff;
+		}
+
+		#hwdps ul.tabbernav li.tabberactive a
+		{
+			color: #000;
+			background: #88c909;
+			border-color: #88c909;
+		}
+
+		#hwdps ul.tabbernav li.tabberactive a:hover
+		{
+			color: #000;
+			background: #00bdff;
+			border-color: #00bdff;
+		}
+
+		#hwdps .tabberlive .tabbertab {
+			padding:5px 0 0 0;
+		}
+
+		/* If desired, hide the heading since a heading is provided by the tab */
+		#hwdps .tabberlive .tabbertab h2 {
+			display:none;
+		}
+
+		#hwdps .tabberlive .tabbertab h3 {
+			display:none;
+		}
+
+		/* Example of using an ID to set different styles for the tabs on the page */
+		#hwdps .tabberlive#tab1 {
+		}
+
+		#hwdps .tabberlive#tab2 {
+		}
+
+		#hwdps .tabberlive#tab2 .tabbertab {
+			height:200px;
+			overflow:auto;
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*----------------------------------------------------------------------------*/
+		
+		#hwdps .psthumb {
+			border: 1px solid #ccc;
+			padding: 2px;
+		}
+
+		
+		#hwdps .ps-al-thumb {
+			padding: 0 5px 5px 5px;
+			float:left;
+		}
+		
+		#hwdps .ps-cl-thumb {
+			padding: 0 5px 5px 5px;
+			float:left;
+		}
+		
+		#hwdps .ps-gl-thumb {
+			padding: 0 5px 5px 5px;
+			float:left;
+		}
+		
+		#hwdps .avatar
+		{
+			float: right;
+			padding: 0 5px 5px 5px;
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*----------------------------------------------------------------------------*/
+		
+		input.interactbutton_sm {
+			cursor: pointer;
+			margin: 2px 2px 2px 0;
+			padding: 2px;
+			font-size: 9px;
+			font-weight: normal;
+			color: #171d25;
+			border: 1px solid #cccccc;
+			background-color: #FFFFFF;
+		}
+
+		input.interactbutton {
+			cursor: pointer;
+			margin: 2px 2px 2px 0;
+			padding: 2px;
+			font-size: 12px;
+			font-weight: normal;
+			color: #171d25;
+			border: 1px solid #cccccc;
+			background-color: #FFFFFF;
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*----------------------------------------------------------------------------*/
+		
+		#hwdps .albumLinks {
+			float:left;
+		}
+		#hwdps .pageData {
+			float:left;
+		}
+		#hwdps .pageNavigation {
+			float:right;
+		}
+		
+		/*----------------------------------------------------------------------------*/
+		/*----------------------------------------------------------------------------*/
+
+		dl.tabs {
+			float: left;
+			margin: 10px 0 -1px 0;
+			z-index: 50;
+		}
+
+		dl.tabs dt {
+			float: left;
+			padding: 4px 10px;
+			border-left: 1px solid #ccc;
+			border-right: 1px solid #ccc;
+			border-top: 1px solid #ccc;
+			margin-left: 3px;
+			background: #f0f0f0;
+			color: #666;
+		}
+
+		dl.tabs dt.open {
+			background: #F9F9F9;
+			border-bottom: 1px solid #F9F9F9;
+			z-index: 100;
+			color: #000;
+		}
+
+		div.current {
+			clear: both;
+			border: 1px solid #ccc;
+			padding: 10px 10px;
+		}
+
+		div.current dd {
+			padding: 0;
+			margin: 0;
+		}				
+		
+		/*----------------------------------------------------------------------------*/
+		/*----------------------------------------------------------------------------*/
+
+		#hwdps .sblinks {
+			padding: 1px;
+			margin: 1px;
+			border: 1px solid #d3d3d3;
+		}
+
+		#hwdps .addremfav {
+		}
+
+		#hwdps .description {
+		}
+
+		#hwdps .tags {
+		}
+
+		#hwdps .add2gselect {
+			width: 120px;
+		}		
+		#hwdps .hwdnotice {
+			margin: 5px;
+			padding: 5px;
+			border: 1px solid #00bdff;
+			background: #eafaff none repeat scroll 0% 0%; 
+		}	
+
+		#hwdps .ajaxresponse {
+			visibility: hidden
+		}
+
+		#hwdps .add2groupresponse {
+		}

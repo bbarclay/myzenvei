@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+	<options>
+		<autoResize value="true"/>
+		<playerWidth value="500"/>
+		<playerHeight value="350"/>
+		
+		<autoLoad value="true"/>
+		<autoPlay value="false"/>
+		<playContinuously value="true"/>
+		<loop value="false"/>
+		<random value="false"/>
+		
+		<bufferTime value="5"/>
+		
+		<keepAspectRatio value="true"/>
+		
+		<volume value="50"/>
+		<controlsPadding value="10"/>
+		
+		<buttonSound value="false"/>
+		
+		<showPreviewImage value="true"/>
+		<showShareBtn value="true"/>
+		<showFullScreenBtn value="true"/>
+		<showMiddlePlayBtn value="true"/>
+		
+		<showWatermark value="true"/>
+		<watermarkPos value="TR"/>
+	
+		<spaceKeyListener value="true"/>
+		<clickListener value="true"/>
+		<doubleClickListener value="true"/>	
+		
+		<cBarAutoHide value="true"/>
+		<cBarHideDelay value="3"/>
+		
+		<mouseCursorAutoHide value="true"/>
+		<mouseCursorHideDelay value="5"/>
+		
+		<playlistPos value="B"/>
+		<playlistSize value="70"/>
+		<playlistAutoHide value="true"/>
+		<playlistHideType value="fade"/>
+		<playlistHideDelay value="2"/>
+		<playlistThumbWidth value="70"/>
+		<playlistThumbHeight value="50"/>
+		<playlistThumbPadding value="10"/>
+	</options>
+	
+	<colors>
+		<playerBackground value="0x000000"/>
+		<preloader background="0x000000" bckAlpha="70" text="0xCCCCCC" circle="0x559BB5"/>
+		<middlePlayBtn arrowNormal="0xFFFFFF" bckNormal="0x000000" alphaNormal="60" arrowOver="0xFFFFFF" bckOver="0x000000" alphaOver="80" arrowDown="0xFFFFFF" bckDown="0x000000" alphaDown="100"/>
+		<controllerBackground value="0x000000"/>
+		<controllerButtons normal="0xCCCCCC" over="0xFFFFFF" down="0xFFFFFF"/>
+		<volume border="0x666666" background="0x000000" speaker="0xCCCCCC" bar="0x559BB5"/>
+		<volumeScrubBtn brdNormal="0xCCCCCC" bckNormal="0x000000" brdOver="0xFFFFFF" bckOver="0x000000" brdDown="0xFFFFFF" bckDown="0x000000" />
+		<progressBar border="0x666666" background="0x000000" elapse="0x559BB5" download="0x999999"/>
+		<progressScrubBtn brdNormal="0xCCCCCC" bckNormal="0x000000" brdOver="0xFFFFFF" bckOver="0x000000" brdDown="0xFFFFFF" bckDown="0x000000" />
+		<times value="0xCCCCCC"/>
+		<share background="0x000000" bckAlpha="40" boxBck="0x000000" boxBckAlpha="70" labels="0xFFFFFF" errorText="0x00FF00" text="0x000000" textBck="0xFFFFFF" textBrd="0x000000" btnsNormal="0xCCCCCC" btnsOver="0xFFFFFF" btnsDown="0xFFFFFF"/>
+		<playlist background="0x000000" bckAlpha="60" thumbBck="0x000000" thumbNormalAlpha="50" thumbOverAlpha="80" thumbSelectedAlpha="100"/>
+	</colors>
+	
+	<videos>
+		<video>
+			<videoPath value="videos/ratatouille.mov"/>
+			<previewImage value="images/ratatouillePreview.jpg"/>
+			<thumbImage value="images/ratatouilleThumb.jpg"/>
+			<stafImage value="images/ratatouilleStaf.jpg"/>
+			<aspectRatio value="4:3"/>
+			<totalTime value="108"/>
+			<watermarkPath value="images/ratatouilleLogo.png"/>
+			<watermarkLink value="http://disney.go.com/disneyvideos/animatedfilms/ratatouille/"/>
+		</video>
+		<video>
+			<videoPath value="http://www.youtube.com/watch?v=eKG08z85DtY"/>
+		</video>
+		<video>
+			<videoPath value="http://www.youtube.com/watch?v=WT_r9C9Jstw"/>
+		</video>
+		<video>
+			<videoPath value="http://www.youtube.com/watch?v=YE7VzlLtp-4"/>
+		</video>
+		<video>
+			<videoPath value="http://www.youtube.com/watch?v=JOw45DdDQl0"/>
+		</video>
+		<video>
+			<videoPath value="http://www.youtube.com/watch?v=M7LQtGdzNIo"/>
+		</video>
+		<video>
+			<videoPath value="http://www.youtube.com/watch?v=5e16U8UsT4I"/>
+		</video>
+		<video>
+			<videoPath value="http://www.youtube.com/watch?v=MdUdlR7XfAw"/>
+		</video>
+		<video>
+			<videoPath value="http://www.youtube.com/watch?v=duOoqDu2H70"/>
+		</video>
+		<video>
+			<videoPath value="http://www.youtube.com/watch?v=h5q4udVYUQg"/>
+		</video>
+		<video>
+			<videoPath value="http://www.youtube.com/watch?v=kIPGZs0UCQc"/>
+		</video>
+	</videos>
+	
+	<staf>
+		<subject>
+			<![CDATA[Message from your friend]]>
+		</subject>
+		<message>
+			<![CDATA[Hi,<br/>Your friend thought you might be interested in this video:<br/><a href="[videoPage]" target="_blank"><img border="0" src="[imgPath]" alt="Go to Video!" /></a>]]>
+		</message>
+	</staf>
+</settings>

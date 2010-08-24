@@ -1,0 +1,86 @@
+<!-- *******************************************************************
+// Title          jSecure Authentication (jSecure)
+// Description    jSecure Authentication for Joomla 1.5
+// Author         © 2007-2008 Ajay Lulia, Bhavin Shah, Kamlesh Rewapati
+// License        This is free software and you may redistribute it under the GPL.
+//                jSecure comes with absolutely no warranty.
+//                Use at your own risk. For details, see the license at
+//                http://www.gnu.org/licenses/gpl.txt
+//                Other licenses can be found in LICENSES folder.
+// ******************************************************************* -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> Readme </TITLE>
+ </HEAD>
+
+ <BODY>
+  
+<div style='width: 90%; text-align: left;'>
+		<p><strong>Drawback:</strong></p>    
+		<p>Joomla has one drawback, any web user can easily know the site is created in Joomla! by typing the URL to access the administration area (i.e. www.site name.com/administration). This makes hackers hack the site easily once they crack id and password for Joomla!. </p>    
+		<p><strong>Information:</strong></p>      
+		<p>jSecure Authentication module prevents access to administration (back end) login page without appropriate access key.</p>      
+		<p><strong>Installation steps:</strong></p>
+		<ol>
+			<li>Login to administration area</li>
+			<li>Go to Installer -&gt; select the plgSystemJSecure.zip file.</li>
+			<li>Click on Install & upload.</li>
+		</ol>      
+		<p> Once the plugin is installed there are few manual steps which needs to be followed to make the plugin work: </p>    
+		<ol>
+			<li>Login to Administration area</li>
+			<li>Go To Plugins-&gt;System</li>
+			<li>Click on <strong>System - jSecure Authentication</strong> link</li>
+			<li>Enable the plugin and set the optional parameters specified below</li>
+			<li>Save the plugin.</li>
+		</ol>
+		<p>Default key to access login page is "jSecure".</p>
+		<p><em><strong>Note:</strong></em> The key is case sensitive and can **ONLY** contain alphanumeric values. PLEASE dont use numeric values</p>
+		<p><strong>How to Use :</strong></p>
+		<p>http://www.site name/administrator/?<em><strong>keyname </strong></em></p>    
+		<p><em><strong>keyname:</strong></em> key name is the key specified in the jSecure Authentication module. </p>          
+		<p><br /><strong>Set the Parameters:</strong></p>
+		<p><br /><em><strong>jSecure Authentication</strong></em> module provides following parameters:</p><p><strong>Key:</strong> This is secure key which will be used to grant access to administration area.</p>
+		<p><strong><span class="editlinktip"><span>Redirect Options:</span></span></strong> This parameter specifies what action to take if the key does not match. There are two choices:</p>
+		<ul>
+			<li><em>Redirect to index page</em>: Redirect unauthorized user back to home page</li>
+			<li><em>Custom Path</em>: Provide relative path to custom page, for example 404 page not found. </li>
+		</ul>
+		<p>For More information http://joomlaserviceprovider.com<br>
+			Thanks to the team (Ajay Lulia, Bhavin Shah, Kamlesh Rewapati) for Developing the module and plugin.<br>
+			Thanks to Sam Moffatt for converting Joomla! 1.0 module to a Joomla! 1.5 system plugin.<br>
+		</p>
+<p>
+<B>Change Log:</B><br>
+
+1.0: Initial Version 1.0.1:<br>
+    Fix for J1.5 Native<br><br>
+
+1.0.2(30-Aug-08):<br>
+    Fix for J1.5 params (Thanks to Christer) <br><br>
+
+1.0.3(15-Sep-08):<br>
+    Fix for J1.5 call to admin login page using index2.php, please update your copy of jSecure Authentication.<br><br>
+
+1.0.4(26-Sep-08):<br>
+	Fix for J1.5 to use proper custom tag and fixed a php error.<br><br>
+
+1.0.5(16-Oct-08):<br> 
+	Fixed redirection issue.<br><br>
+
+1.0.6(23-Dec-08):<br> 
+	Fixed security bug. Updated the readme file.<br><br>
+1.0.7(21-Mar-09):<br>
+	Fixed the code for redirection.<br><br>
+1.0.8(02-Jun-09):<br>
+	Fixed the case sensitivity check.<br><br>
+1.0.9(10-Jun-09):<br>
+	Fixed warning message.
+</p>
+<br>
+<p>
+<strong>License:</strong> This is free software and you may redistribute it under the GPL. jSecure comes with absolutely no warranty. Use at your own risk. For details, see the license at http://www.gnu.org/licenses/gpl.txt Other licenses can be found in LICENSES folder.
+</p>
+ </BODY>
+</HTML>

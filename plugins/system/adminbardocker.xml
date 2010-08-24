@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://www.joomla.org/xml/dtd/1.5/plugin-install.dtd">
+<install version="1.5.0" type="plugin" group="system">
+	<name>System - AdminBar Docker</name>
+	<description>AdminBar Docker - dock/undock the administrator bars in Joomla!</description>
+	<version>1.1.1</version>
+	<creationDate>February 2010</creationDate>
+	<author>NoNumber! (Peter van Westen)</author>
+	<authorEmail>peter@nonumber.nl</authorEmail>
+	<authorUrl>http://www.nonumber.nl</authorUrl>
+	<copyright>Copyright (C) 2010 NoNumber! All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+
+	<!-- Files -->
+	<files>
+		<filename plugin="adminbardocker">adminbardocker.php</filename>
+		<folder>adminbardocker</folder>
+	</files>
+
+	<!-- Parameters -->
+	<params addpath="/plugins/system/nonumberelements/elements">
+		<param type="loadlanguage" extension="plg_system_adminbardocker" />
+		<param type="license" extension="AdminBar Docker" />
+		<param type="title"
+			label="AdminBar Docker"
+			description="With AdminBar Docker you can undock the admin toolbars to keep them in view when scrolling through long admin pages"
+			image="/plugins/system/adminbardocker/images/logo.png"
+			image_w="60" image_h="80"
+			url="http://www.nonumber.nl/adminbardocker"
+			download_url="http://www.nonumber.nl/adminbardocker/download"
+			help_url="http://www.nonumber.nl/adminbardocker"
+			version="1.1.1"
+			version_url="http://www.nonumber.nl/versions"
+			version_file="version_adminbardocker" />
+
+		<param name="dock_state" type="radio" default="docked" label="Default state" description="Default state (description)">
+			<option value="docked">Dock</option>
+			<option value="undocked">Undock</option>
+		</param>
+		<param name="dock_pos" type="radio" default="top" label="Default position" description="Default position (description)">
+			<option value="top">Undock to top</option>
+			<option value="bottom">Undock to bottom</option>
+		</param>
+		<param name="autohide" type="radio" default="0" label="Default Auto hide" description="Default Auto hide (description)">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>

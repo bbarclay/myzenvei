@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>System - JomSocial Usernames</name>
+	<author>Jomsocialplate</author>
+	<creationDate>07/07/2009</creationDate>
+	<copyright>Copyright (C) 2009. All rights reserved.</copyright>
+	<license>http://www.jomsocialplate.com</license>
+	<authorEmail>sales@jomsocialplate.com</authorEmail>
+	<authorUrl>www.jomsocialplate.com</authorUrl>
+	<version>1.0</version>
+	<description>
+		Allows usernames in url.
+	</description>
+	<files>
+		<filename plugin="jsusernames">jsusernames.php</filename>
+	</files>
+	<params>
+		<param name="mymenuitem" type="menuitem" default="45" label="Select a menu item" description="JSUsernames will use the menu's Itemid so that the appropriate modules does not load" />
+	</params>
+</install>

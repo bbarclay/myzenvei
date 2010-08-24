@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="2.1.0" type="plugin" group="system" method="upgrade">
+	<name>System - JCE MediaBox 1.0.5</name>
+	<author>Ryan Demmer</author>
+	<creationDate>17 February 2010</creationDate>
+	<copyright>(C) 2006-2010 Ryan Demmer. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomlacontenteditor.net</authorEmail>
+	<authorUrl>www.joomlacontenteditor.net</authorUrl>
+	<version>1.0.5</version>
+	<description>JCEMEDIABOX_DESC</description>
+	<params>
+		<param name="theme" type="list" default="standard" label="JCEMEDIABOX_THEME" description="JCEMEDIABOX_THEMEDESC">
+ 			<option value="standard">JCEMEDIABOX_STANDARD</option>
+			<option value="squeeze">JCEMEDIABOX_SQUEEZE</option>
+			<option value="shadow">JCEMEDIABOX_SHADOW</option>
+			<option value="light">JCEMEDIABOX_LIGHT</option>
+			<option value="custom">JCEMEDIABOX_CUSTOM</option>
+ 		</param>
+		<param name="themecustom" type="text" size="50" default="" label="JCEMEDIABOX_THEMECUSTOM" description="JCEMEDIABOX_THEMECUSTOMDESC"/>
+		<param name="themepath" type="text" size="50" default="plugins/system/jcemediabox/themes" label="JCEMEDIABOX_THEMEPATH" description="JCEMEDIABOX_THEMEPATHDESC"/>
+		<param name="imgpath" type="text" size="50" default="plugins/system/jcemediabox/img" label="JCEMEDIABOX_IMAGEPATH" description="JCEMEDIABOX_IMAGEPATHDESC"/>
+		<param name="fadespeed" type="text" default="500" label="JCEMEDIABOX_FADESPEED" description="JCEMEDIABOX_FADESPEEDDESC"/>
+		<param name="scalespeed" type="text" default="500" label="JCEMEDIABOX_SCALESPEED" description="JCEMEDIABOX_SCALESPEEDDESC"/>
+		<param name="overlay" type="radio" default="1" label="JCEMEDIABOX_OVERLAY" description="JCEMEDIABOX_OVERLAYDESC">
+ 			<option value="1">YES</option>
+			<option value="0">NO</option>
+ 		</param>
+		<param name="overlayopacity" type="text" default="0.8" label="JCEMEDIABOX_OVERLAYOPACITY" description="JCEMEDIABOX_OVERLAYOPACITYDESC" />
+		<param name="overlaycolor" type="text" default="#000000" label="JCEMEDIABOX_OVERLAYCOLOR" description="JCEMEDIABOX_OVERLAYCOLORDESC" />
+		<param name="width" type="text" default="" label="JCEMEDIABOX_WIDTH" description="JCEMEDIABOX_WIDTHDESC" />
+		<param name="height" type="text" default="" label="JCEMEDIABOX_HEIGHT" description="JCEMEDIABOX_HEIGHTDESC" />
+		<param name="resize" type="radio" default="1" label="JCEMEDIABOX_RESIZE" description="JCEMEDIABOX_RESIZEDESC">
+ 			<option value="1">YES</option>
+			<option value="0">NO</option>
+ 		</param>
+		<param name="icons" type="radio" default="1" label="JCEMEDIABOX_ICONS" description="JCEMEDIABOX_ICONSDESC">
+ 			<option value="1">YES</option>
+			<option value="0">NO</option>
+ 		</param>
+		<param name="hideobjects" type="radio" default="0" label="JCEMEDIABOX_HIDEOBJECTS" description="JCEMEDIABOX_HIDEOBJECTSDESC">
+ 			<option value="1">YES</option>
+			<option value="0">NO</option>
+ 		</param>
+		<param name="scrolling" type="radio" default="fixed" label="JCEMEDIABOX_SCROLLPOSITION" description="JCEMEDIABOX_SCROLLPOSITIONDESC">
+ 			<option value="scroll">JCEMEDIABOX_SCROLL</option>
+			<option value="fixed">JCEMEDIABOX_FIXED</option>
+ 		</param>
+		<!--param name="protect" type="radio" default="0" label="JCEMEDIABOX_PROTECT" description="JCEMEDIABOX_PROTECTDESC">
+ 			<option value="1">YES</option>
+			<option value="0">NO</option>
+ 		</param-->
+		<param name="components" type="text" size="50" default="" label="JCEMEDIABOX_COMPONENTS" description="JCEMEDIABOX_COMPONENTSDESC" />
+		<param name="dynamic_themes" type="radio" default="0" label="JCEMEDIABOX_DYNAMICTHEMES" description="JCEMEDIABOX_DYNAMICTHEMESDESC">
+ 			<option value="1">YES</option>
+			<option value="0">NO</option>
+ 		</param>
+		<param type="spacer" />
+		<param name="tipclass" type="text" default="tooltip" label="JCEMEDIABOX_TOOLTIPCLASS" description="JCEMEDIABOX_TOOLTIPCLASSDESC"/>
+		<param name="tipopacity" type="text" default="0.8" label="JCEMEDIABOX_TOOLTIPOPACITY" description="JCEMEDIABOX_TOOLTIPOPACITYDESC"/>
+		<param name="tipspeed" type="text" default="150" label="JCEMEDIABOX_TOOLTIPSPEED" description="JCEMEDIABOX_TOOLTIPSPEEDDESC"/>
+		<param name="tipposition" type="list" default="br" label="JCEMEDIABOX_TOOLTIPPOSITION" description="JCEMEDIABOX_TOOLTIPPOSITIONDESC">
+ 			<option value="tl">JCEMEDIABOX_TOPLEFT</option>
+ 			<option value="tr">JCEMEDIABOX_TOPRIGHT</option>
+			<option value="tc">JCEMEDIABOX_TOPCENTRE</option>
+ 			<option value="bl">JCEMEDIABOX_BOTTOMLEFT</option>
+			<option value="br">JCEMEDIABOX_BOTTOMRIGHT</option>
+ 			<option value="bc">JCEMEDIABOX_BOTTOMCENTRE</option>
+ 		</param>
+		<param name="tipoffsets_x" type="text" default="16" label="JCEMEDIABOX_TOOLTIPXOFFSET" description="JCEMEDIABOX_TOOLTIPXOFFSETDESC"/>
+		<param name="tipoffsets_y" type="text" default="16" label="JCEMEDIABOX_TOOLTIPYOFFSET" description="JCEMEDIABOX_TOOLTIPYOFFSETDESC"/>
+		<param type="spacer" />
+		<param name="legacy" type="radio" default="0" label="JCEMEDIABOX_LEGACY" description="JCEMEDIABOX_LEGACYDESC">
+ 			<option value="1">YES</option>
+			<option value="0">NO</option>
+ 		</param>
+		<param name="flash" type="text" size="50" default="10,0,22,87" label="JCEMEDIABOX_FLASH" />
+		<param name="windowsmedia" type="text" size="50" default="5,1,52,701" label="JCEMEDIABOX_WINDOWSMEDIA" />
+		<param name="quicktime" type="text" size="50" default="6,0,2,0" label="JCEMEDIABOX_QUICKTIME" />
+		<param name="realmedia" type="text" size="50" default="7,0,0,0" label="JCEMEDIABOX_REALMEDIA" />
+		<param name="shockwave" type="text" size="50" default="8,5,1,0" label="JCEMEDIABOX_SHOCKWAVE" />
+	</params>
+	<files>
+		<file plugin="jcemediabox">jcemediabox/addons/default-src.js</file>
+		<file>jcemediabox/addons/default.js</file>
+		<file>jcemediabox/addons/index.html</file>
+		<file>jcemediabox/addons/twitter-src.js</file>
+		<file>jcemediabox/addons/twitter.js</file>
+		<file>jcemediabox/css/index.html</file>
+		<file>jcemediabox/css/jcemediabox.css</file>
+		<file>jcemediabox/css/jcemediabox_ie6.css</file>
+		<file>jcemediabox/img/blank.gif</file>
+		<file>jcemediabox/img/index.html</file>
+		<file>jcemediabox/img/zoom-img.png</file>
+		<file>jcemediabox/img/zoom-link.gif</file>
+		<file>jcemediabox/index.html</file>
+		<file>jcemediabox/js/index.html</file>
+		<file>jcemediabox/js/jcemediabox-src.js</file>
+		<file>jcemediabox/js/jcemediabox.js</file>
+		<file>jcemediabox/js/mediaobject-src.js</file>
+		<file>jcemediabox/js/mediaobject.js</file>
+		<file>jcemediabox/themes/index.html</file>
+		<file>jcemediabox/themes/light/css/index.html</file>
+		<file>jcemediabox/themes/light/css/style.css</file>
+		<file>jcemediabox/themes/light/css/style_ie6.css</file>
+		<file>jcemediabox/themes/light/img/close.gif</file>
+		<file>jcemediabox/themes/light/img/index.html</file>
+		<file>jcemediabox/themes/light/img/loader.gif</file>
+		<file>jcemediabox/themes/light/img/next.gif</file>
+		<file>jcemediabox/themes/light/img/prev.gif</file>
+		<file>jcemediabox/themes/light/img/tip-bl.gif</file>
+		<file>jcemediabox/themes/light/img/tip-bl.png</file>
+		<file>jcemediabox/themes/light/img/tip-br.gif</file>
+		<file>jcemediabox/themes/light/img/tip-br.png</file>
+		<file>jcemediabox/themes/light/img/tip-tl.gif</file>
+		<file>jcemediabox/themes/light/img/tip-tl.png</file>
+		<file>jcemediabox/themes/light/img/tip-tr.gif</file>
+		<file>jcemediabox/themes/light/img/tip-tr.png</file>
+		<file>jcemediabox/themes/light/index.html</file>
+		<file>jcemediabox/themes/light/popup.html</file>
+		<file>jcemediabox/themes/light/tooltip.html</file>
+		<file>jcemediabox/themes/shadow/css/index.html</file>
+		<file>jcemediabox/themes/shadow/css/style.css</file>
+		<file>jcemediabox/themes/shadow/css/style_ie6.css</file>
+		<file>jcemediabox/themes/shadow/img/close.png</file>
+		<file>jcemediabox/themes/shadow/img/index.html</file>
+		<file>jcemediabox/themes/shadow/img/loader.gif</file>
+		<file>jcemediabox/themes/shadow/img/next.png</file>
+		<file>jcemediabox/themes/shadow/img/prev.png</file>
+		<file>jcemediabox/themes/shadow/img/tip-bl.gif</file>
+		<file>jcemediabox/themes/shadow/img/tip-bl.png</file>
+		<file>jcemediabox/themes/shadow/img/tip-br.gif</file>
+		<file>jcemediabox/themes/shadow/img/tip-br.png</file>
+		<file>jcemediabox/themes/shadow/img/tip-tl.gif</file>
+		<file>jcemediabox/themes/shadow/img/tip-tl.png</file>
+		<file>jcemediabox/themes/shadow/img/tip-tr.gif</file>
+		<file>jcemediabox/themes/shadow/img/tip-tr.png</file>
+		<file>jcemediabox/themes/shadow/index.html</file>
+		<file>jcemediabox/themes/shadow/popup.html</file>
+		<file>jcemediabox/themes/shadow/tooltip.html</file>
+		<file>jcemediabox/themes/squeeze/css/index.html</file>
+		<file>jcemediabox/themes/squeeze/css/style.css</file>
+		<file>jcemediabox/themes/squeeze/css/style_ie6.css</file>
+		<file>jcemediabox/themes/squeeze/img/close.png</file>
+		<file>jcemediabox/themes/squeeze/img/index.html</file>
+		<file>jcemediabox/themes/squeeze/img/loader.gif</file>
+		<file>jcemediabox/themes/squeeze/img/next.png</file>
+		<file>jcemediabox/themes/squeeze/img/prev.png</file>
+		<file>jcemediabox/themes/squeeze/index.html</file>
+		<file>jcemediabox/themes/squeeze/popup.html</file>
+		<file>jcemediabox/themes/squeeze/tooltip.html</file>
+		<file>jcemediabox/themes/standard/css/index.html</file>
+		<file>jcemediabox/themes/standard/css/style.css</file>
+		<file>jcemediabox/themes/standard/css/style_ie6.css</file>
+		<file>jcemediabox/themes/standard/img/close.png</file>
+		<file>jcemediabox/themes/standard/img/corner-bl.gif</file>
+		<file>jcemediabox/themes/standard/img/corner-bl.png</file>
+		<file>jcemediabox/themes/standard/img/corner-br.gif</file>
+		<file>jcemediabox/themes/standard/img/corner-br.png</file>
+		<file>jcemediabox/themes/standard/img/corner-tl.gif</file>
+		<file>jcemediabox/themes/standard/img/corner-tl.png</file>
+		<file>jcemediabox/themes/standard/img/corner-tr.gif</file>
+		<file>jcemediabox/themes/standard/img/corner-tr.png</file>
+		<file>jcemediabox/themes/standard/img/index.html</file>
+		<file>jcemediabox/themes/standard/img/loader.gif</file>
+		<file>jcemediabox/themes/standard/img/next.png</file>
+		<file>jcemediabox/themes/standard/img/prev.png</file>
+		<file>jcemediabox/themes/standard/img/tip-bl.gif</file>
+		<file>jcemediabox/themes/standard/img/tip-bl.png</file>
+		<file>jcemediabox/themes/standard/img/tip-br.gif</file>
+		<file>jcemediabox/themes/standard/img/tip-br.png</file>
+		<file>jcemediabox/themes/standard/img/tip-tl.gif</file>
+		<file>jcemediabox/themes/standard/img/tip-tl.png</file>
+		<file>jcemediabox/themes/standard/img/tip-tr.gif</file>
+		<file>jcemediabox/themes/standard/img/tip-tr.png</file>
+		<file>jcemediabox/themes/standard/index.html</file>
+		<file>jcemediabox/themes/standard/popup.html</file>
+		<file>jcemediabox/themes/standard/tooltip.html</file>
+		<file>jcemediabox.php</file>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_jcemediabox.ini</language>
+	</languages>
+</install>

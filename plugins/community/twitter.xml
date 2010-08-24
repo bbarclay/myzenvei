@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="community" method="upgrade">
+	<name>My twitter updates</name>
+	<author>AzrulStudio</author>
+	<creationDate>7 October 2008</creationDate>
+	<copyright>Copyright (C) 2008. All rights reserved.</copyright>
+	<license>http://www.azrul.com</license>
+	<authorEmail>support@azrul.com</authorEmail>
+	<authorUrl>www.azrul.com</authorUrl>
+	<version>1.6</version>
+	<isapplication>true</isapplication>
+	<isbrowseable>true</isbrowseable>
+	<description>
+		Twitter ™ application for JomSocial
+	</description>
+	<languages>
+		<language tag="en-GB">en-GB.plg_twitter.ini</language>
+	</languages>
+	<files>
+		<file plugin="twitter">twitter.php</file>
+		<folder>twitter</folder>
+	</files>
+	
+	<menuitem>
+		<menu label="Groups" position="toolbar">
+			<link label="Groups">task=groups</link>
+		</menu>
+	</menuitem>
+	
+	<params>
+		<param name="cache" type="list" default="0" label="Enable caching" description="Cache data">
+			<option value="0">No</option>
+			<option value="1">Use Global</option>
+		</param>
+		<param name="coreapp" type="list" default="0" label="Core Application" description="Causes this application to not appearin the users applications list but it will allow this application to appear in the user profile automatically if selected.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+
+</install>

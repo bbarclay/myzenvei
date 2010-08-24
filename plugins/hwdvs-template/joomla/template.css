@@ -1,0 +1,470 @@
+		/*----------------------------------------------------------------------------*/
+		/*  Core hwdVideoShare CSS Definitions                                        */
+		/*----------------------------------------------------------------------------*/
+
+		.clear {clear: both; height: 1px; line-height: 1px; margin-bottom: -1px;}
+
+		#hwdvids {
+			width: 100%!important;
+			max-width: 100%!important;
+			text-align: left;
+			overflow: hidden!important;
+			font-size: 100%;
+			padding-top: 5px;
+		}
+
+		#hwdvids form {
+			margin: 0!important;
+			padding: 0!important;
+		}
+
+		input.interactbutton {
+			cursor: pointer;
+			margin: 2px;
+			padding: 2px;
+			font-size: 9px;
+			font-weight: normal;
+			color: #171d25;
+			border: 1px solid #cccccc;
+			background-color: #FFFFFF;
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare main navigation bar definitions                                  */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdvs_navcontainer
+		{
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			overflow:hidden;
+			vertical-align:top;
+		}
+
+		#hwdvs_navcontainer ul
+		{
+			margin: 0!important;
+			padding: 0!important;
+			list-style-type: none!important;
+		}
+
+		#hwdvs_navcontainer ul li {
+		}
+
+		#hwdvs_navcontainer ul li
+		{
+			float: left;
+			text-align: center;
+			margin: 0!important;
+			padding: 0 1px 0 1px!important;
+		}
+
+		#hwdvs_navcontainer ul li a
+		{
+			margin: 0!important;
+			padding: 0!important;
+		}
+
+		#hwdvs_navcontainer li#active
+		{
+		}
+
+		#hwdvs_navcontainer li#active a:link    { text-decoration: underline; padding: 0; margin: 0;}
+		#hwdvs_navcontainer li#active a:active  { text-decoration: underline; padding: 0; margin: 0;}
+		#hwdvs_navcontainer li#active a:visited { text-decoration: underline; padding: 0; margin: 0;}
+		#hwdvs_navcontainer li#active a:hover   { text-decoration: underline; padding: 0; margin: 0;}
+
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare search bar definitions                                      */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdsearchbar {
+		}
+
+		#hwdsearchbar form {
+			margin: 0!important;
+			padding: 0!important;
+		}
+
+		#hwdsearchbar div {
+			margin: 0;
+			padding: 0;
+		}
+
+		#hwdsearchbar .hwdsearchbox {
+			width: 160px;
+			padding-right: 2px;
+		}
+
+		#hwdsearchbar .hwdsearchbox input {
+			width:158px;
+			color: #333;
+			border: 1px solid #ccc;
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare                                                             */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdvids .sectiontableentry0,
+		#hwdvids .sectiontableentry1,
+		#hwdvids .sectiontableentry2 {
+		  
+		}
+
+		#hwdvids .box {
+		  border-top: 1px dashed #ccc;
+		  margin: 2px;
+		}
+
+		#hwdvids h3 {
+			padding: 3px 0;
+			margin: 0;
+		}
+		
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare user navigation bar definitions                             */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdvids .usernav {
+			margin: 0pt auto;
+			margin-bottom: 2px;
+			font-weight: normal;
+			text-align:center;
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare header/footer bar definitions                               */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdvids .hwdvsfooter {
+			border-top: 2px dashed #ccc;
+			text-align: center;
+			font-size: 85%;
+			margin: 5px 0;
+			padding: 5px 0;
+		}
+		
+		#hwdvids .hwdvsheader {
+			border-bottom: 2px dashed #ccc;
+			clear: both;
+			margin: 5px 0!important;
+			padding: 5px 0;
+		}
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare standard container definitions                              */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdvids .standard {
+			margin: 0pt auto;
+			padding: 0;
+			margin-bottom: 2px;
+		}
+
+		#hwdvids .standard .padding {
+			padding: 5px!important;
+			margin: 0!important;
+		}
+
+		#hwdvids .standard td {
+			padding: 5px;
+		}
+
+		#hwdvids .standard h4 {
+			padding: 2px 0;
+			margin: 2px 0;
+		}
+
+		#hwdvids .thumb0, #hwdvids .thumb1, #hwdvids .hasTip, #hwdvids .featuredthumbs {
+			border: 1px solid #ccc;
+			margin: 0;
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare search bar definitions                                      */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdvids .sic-container {
+			width:100%;
+			margin:0!important;
+			padding:0!important;
+		}
+
+		#hwdvids .sic-right {
+			width:34%;
+			float:right;
+			padding-left:0px;
+		}
+
+		#hwdvids .sic-left {
+			width:34%;
+			float:left;
+			padding-right:5px;
+		}
+		
+		#hwdvids .sic-center {
+			width:65%;
+			float:left;
+		}
+	
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare 'required' input text                                       */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdvids .required {
+			color: #ff0000;
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare page navigation definitions                                 */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdvids .pagenavi {
+			text-align: center;
+			padding: 3px;
+		}
+
+		#hwdvids .pagecount {
+			text-align: center;
+			padding: 3px;
+		}
+		
+		#hwdvids .pagenav {
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare video player page definitions                               */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdvids .sblinks {
+			padding: 1px;
+			margin: 1px;
+			border: 1px solid #d3d3d3;
+		}
+
+		#hwdvids .addremfav {
+		}
+
+		#hwdvids .description {
+		}
+
+		#hwdvids .tags {
+		}
+
+		/* The 'add to group' select box - for specifying width*/
+		#hwdvids .add2gselect {
+			width: 120px;
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare advert (inserted by hwdRevenueManager) definitions          */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdadverts-nopadding {
+			width:100%;
+			overflow:hidden;
+			text-align:center;
+		}
+
+		#hwdadverts-padding {
+			width:100%;
+			overflow:hidden;
+			text-align:center;
+			padding: 10px 0;
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare miscellaneous definitions                                   */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdvids .listtitle {
+			font-size: 120%;
+			font-weight: bold;
+		}
+
+		#hwdvids .listcat {
+			font-size: 100%;
+			font-weight: bold;
+		}
+
+		#hwdvids .listdesc, #hwdvids .listrating, #hwdvids .listduration, #hwdvids .listviews, #hwdvids .listuploader {
+			font-size: 100%;
+		}
+		
+		/* The class for the thumbnail image on the video edit page */
+		#hwdvids .edit-videopreview {
+			width: auto;
+			padding: 5px;
+			margin: 5px;
+			text-align: center;
+			border: 1px dashed #ccc;
+		}
+
+		/* The class for the ajax conformation after successful flash upload */
+		#hwdvids .flashconfirm {
+			color:#00CC00
+		}
+
+		/* The class (generally) used for any ajax response */
+		#hwdvids .ajaxresponse {
+			visibility: hidden
+		}
+
+		/* The class used for the 'add to group' ajax response */
+		#hwdvids .add2groupresponse {
+		}
+
+		/* The class used for the avatar display (in lists) */
+		#hwdvids .avatar
+		{
+			float: left;
+			padding: 0 5px;
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*  MASUGA RATER _ THE RATING INTERFACE                                       */
+		/*    ryan masuga, masugadesign.com                                           */
+		/*    ryan@masugadesign.com                                                   */
+		/*    Licensed under a Creative Commons Attribution 3.0 License.              */
+		/*    http://creativecommons.org/licenses/by/3.0/                             */
+		/*    See readme.txt for full credit details.                                 */
+		/*----------------------------------------------------------------------------*/
+
+		#ajaxratemasuga div {
+			text-align: inherit;!important;
+		}
+
+		#ajaxratemasuga ul{
+			padding:0px!important;
+			margin:0px!important;
+		}
+		#ajaxratemasuga li{
+			padding:0px!important;
+			margin:0px!important;
+		}
+
+		#ajaxratemasuga ul li {
+		}
+
+		#hwdvids #ajaxratemasuga .unit-rating li.current-rating {
+			background-position: left bottom;
+			background-repeat: repeat-x;
+			position: absolute;
+			height: 30px;
+			display: block;
+			text-indent: -9000px;
+			z-index: 1;
+			padding:0!important;
+			margin:0!important;
+		}
+
+
+		.ratingblock {
+			display:block;
+			padding-bottom:1px;
+			margin-bottom:0;
+		}
+
+		.loading {
+			height: 30px;
+		}
+
+		.unit-rating { /* the UL */
+			list-style:none;
+			margin: 0px;
+			padding:0px;
+			height: 30px;
+			position: relative;
+		}
+
+		.unit-rating li{
+			text-indent: -90000px;
+			padding:0px;
+			margin:0px;
+			/*\*/
+			float: left;
+			/* */
+		}
+
+		.unit-rating li a {
+			outline: none;
+			display:block;
+			width:30px;
+			height: 30px;
+			text-decoration: none;
+			text-indent: -9000px;
+			z-index: 20;
+			position: absolute;
+			padding: 0px;
+		}
+
+		.unit-rating li a:hover{
+			background-position: left center!important;
+			background-repeat: none;
+			z-index: 2;
+			left: 0px;
+		}
+
+		.unit-rating a.r1-unit{left: 0px;}
+		.unit-rating a.r1-unit:hover{width:30px;}
+		.unit-rating a.r2-unit{left:30px;}
+		.unit-rating a.r2-unit:hover{width: 60px;}
+		.unit-rating a.r3-unit{left: 60px;}
+		.unit-rating a.r3-unit:hover{width: 90px;}
+		.unit-rating a.r4-unit{left: 90px;}
+		.unit-rating a.r4-unit:hover{width: 120px;}
+		.unit-rating a.r5-unit{left: 120px;}
+		.unit-rating a.r5-unit:hover{width: 150px;}
+		.unit-rating a.r6-unit{left: 150px;}
+		.unit-rating a.r6-unit:hover{width: 180px;}
+		.unit-rating a.r7-unit{left: 180px;}
+		.unit-rating a.r7-unit:hover{width: 210px;}
+		.unit-rating a.r8-unit{left: 210px;}
+		.unit-rating a.r8-unit:hover{width: 240px;}
+		.unit-rating a.r9-unit{left: 240px;}
+		.unit-rating a.r9-unit:hover{width: 270px;}
+		.unit-rating a.r10-unit{left: 270px;}
+		.unit-rating a.r10-unit:hover{width: 300px;}
+
+		.voted {color:#999;}
+		.thanks {color:#36AA3D;}
+		.masugaerror {color:#ff0000;}
+		.static {color:#5D3126;}
+
+/* tabs */
+
+dl.tabs {
+	float: left;
+	margin: 10px 0 -1px 0;
+	z-index: 50;
+}
+
+dl.tabs dt {
+	float: left;
+	padding: 4px 10px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	margin-left: 3px;
+	background: #f0f0f0;
+	color: #666;
+}
+
+dl.tabs dt.open {
+	background: #F9F9F9;
+	border-bottom: 1px solid #F9F9F9;
+	z-index: 100;
+	color: #000;
+}
+
+div.current {
+	clear: both;
+	border: 1px solid #ccc;
+	padding: 10px 10px;
+}
+
+div.current dd {
+	padding: 0;
+	margin: 0;
+}

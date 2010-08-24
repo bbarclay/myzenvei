@@ -1,0 +1,20 @@
+/** 
+ *	Application Profile CSS 
+ **/
+
+#community-wrap div.ccontentEditable table.ccontentTable td.listkey
+{
+	font-weight:bold;
+	text-align:right;
+	width:140px;
+}
+
+#community-wrap div.ccontentEditable table.ccontentTable td
+{
+	padding:4px;	
+}
+
+#community-wrap div.ccontentEditable
+{
+	display: none;
+}

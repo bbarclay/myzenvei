@@ -1,0 +1,120 @@
+/**
+ * Stylesheet
+ *
+ * @package     AdminBar Docker
+ * @version     1.1.1
+ *
+ * @author      Peter van Westen <peter@nonumber.nl>
+ * @link        http://www.nonumber.nl
+ * @copyright   Copyright (C) 2010 NoNumber! All Rights Reserved
+ * @license     http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+
+/* ICONS */
+
+.abd_icons {
+	position: fixed;
+	z-index: 12;
+	top: 0px;
+	right: 0px;
+	background-color: #F0F0F0;
+	border: 1px solid #D6D6D6;
+	padding: 1px;
+	height: 23px;
+}
+
+.abd_icon {
+	cursor: pointer;
+	cursor: hand;
+	float: left;
+	width: 16px;
+	height: 16px;
+	padding: 4px 4px 3px 3px;
+	display: block;
+}
+	.abd_icon div {
+		background: transparent url(../images/icons.png) no-repeat 0px 0px;
+		width: 16px;
+		height: 16px;
+	}
+	.abd_icon_undock div {
+		background-position: 0px 0px;
+	}
+	.abd_icon_dock div {
+		background-position: 0px -16px;
+	}
+	.abd_icon_reload div {
+		background-position: 0px -32px;
+	}
+	.abd_icon_top div {
+		background-position: 0px -48px;
+	}
+	.abd_icon_bottom div {
+		background-position: 0px -64px;
+	}
+	.abd_icon_dock_pos_bottom div {
+		background-position: 0px -96px;
+	}
+		.abd_icon_dock_pos_bottom.abd_icon_hover div {
+			background-position: 0px -80px;
+		}
+	.abd_icon_dock_pos_top div {
+		background-position: 0px -80px;
+	}
+		.abd_icon_dock_pos_top.abd_icon_hover div {
+			background-position: 0px -96px;
+		}
+	.abd_icon_autohide div {
+		background-position: 0px -128px;
+	}
+		.abd_icon_autohide.abd_icon_hover div {
+			background-position: 0px -112px;
+		}
+	.abd_icon_noautohide div {
+		background-position: 0px -112px;
+	}
+		.abd_icon_noautohide.abd_icon_hover div {
+			background-position: 0px -128px;
+		}
+
+/* OVERLAYS */
+
+.abd_hidden {
+	display: none;
+}
+.abd_spacer {
+	width: 100%;
+}
+.abd_dock {
+	position: fixed;
+	width: 100%;
+	left: 0px;
+}
+.abd_dock_inner {
+	background-color: #FFFFFF;
+}
+#abd_dock_top {
+	background: transparent url(../images/shade.png) repeat-x bottom center;
+	top: 0px;
+	padding-bottom: 5px;
+	z-index: 11;
+}
+#abd_dock_bottom {
+	background: transparent url(../images/shade.png) repeat-x top center;
+	bottom: 0px;
+	padding-top: 5px;
+	z-index: 10;
+}
+
+div#abd_home_icon {
+	display: none;
+}
+	.abd_dock div#abd_home_icon {
+		display: block;
+		float: left;
+		background: #F0F0F0 url(../images/mini_icon.png) no-repeat 4px 4px;
+		width: 24px;
+		height: 24px;
+		cursor: pointer;
+		cursor: hand;
+	}

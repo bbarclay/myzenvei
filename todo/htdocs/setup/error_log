@@ -1,0 +1,5 @@
+[29-Jul-2010 15:52:01] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jul-2010 16:05:50] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jul-2010 16:05:50] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Host '2d.70.79ae.static.theplanet.com' is not allowed to connect to this MySQL server in /home/myzenvei/public_html/todo/htdocs/setup/index.php on line 370
+[29-Jul-2010 16:06:44] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0
+[29-Jul-2010 16:07:03] PHP Warning:  Module 'ffmpeg' already loaded in Unknown on line 0

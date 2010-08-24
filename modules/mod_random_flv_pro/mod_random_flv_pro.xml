@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Random FLV Pro</name>
+	<author>Fiona Coulter</author>
+	<creationDate>March 2009</creationDate>
+	<copyright>Inspiration Web Design</copyright>
+	<license>Commercial</license>
+	<authorEmail>joomla@iswebdesign.co.uk</authorEmail>
+	<authorUrl>www.iswebdesign.co.uk</authorUrl>
+	<version>1.0.0</version>
+	<description>Random FLV Player Pro</description>
+	<files>
+		<filename module="mod_random_flv_pro">mod_random_flv_pro.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/noscript.php</filename>		
+		<filename>tmpl/index.html</filename>
+		<filename>flashscript/index.html</filename>
+		<filename>flashscript/flashvars.js</filename>
+		<filename>flashscript/flashver.vbs</filename>
+		<filename>flashscript/detectflash.js</filename>
+		<filename>flashscript/embedplayer.js</filename>
+		<filename>flashscript/playertags.js</filename>
+		<filename>flashscript/embedpopup.js</filename>
+		<filename>flashscript/popupwin.js</filename>
+		<folder>assets</folder>		
+	</files>
+	<params>
+		<param name="count" type="text" default="5" label="Count" description="DESCCOUNT" />
+		<param name="playerHeight" type="text" default="60" label="Player Height" description="DESCHEIGHT" />		
+		<param name="ordering" type="list" default="create_dsc" label="Ordering" description="Ordering options">
+			<option value="random">Random</option>
+	  	</param>
+		<param name="folder" type="text" default="media/flvs" label="FLV Folder" description="PARAMFLVFOLDER" />
+		<param name="skin" type="filelist" label="Skin" description="DESCSKIN" directory="/modules/mod_random_flv_pro/assets/" default="flvplayer" stripext="1" filter="\.swf$" />
+		<param name="autoStart" type="radio" default="yes" label="Auto Start Play" description="PARAMAUTOSTART">
+			<option value="yes">yes</option>
+			<option value="no">no</option>
+		</param>
+        <param name="autoReplay" type="radio" default="yes" label="Auto Replay" description="PARAMAUTOREPLAY">
+			<option value="yes">yes</option>
+			<option value="no">no</option>
+		</param>							
+		<param name="jscriptDetect" type="radio" default="default" label="Javascript Enabled" description="PARAMJSCRIPTDETECT">
+			<option value="default">yes</option>
+			<option value="noscript">no</option>
+		</param>
+        <param name="autoPopup" type="radio" default="no" label="Auto Popup" description="PARAMAUTOPOPUP">
+			<option value="yes">yes</option>
+			<option value="no">no</option>
+		</param>					
+	</params>
+	<params group="advanced">
+		<param name="moduleclass_sfx" type="text" default=""
+			label="Module Class Suffix"
+			description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling">
+		</param>
+		<param name="class_sfx" type="text" default=""
+			label="Menu Class Suffix"
+			description="A suffix to be applied to the css class of the menu items" >
+		</param>
+	</params>
+		<languages>
+		   <language tag="en-GB">en-GB.mod_random_flv_pro.ini</language>
+	    </languages>
+</install>

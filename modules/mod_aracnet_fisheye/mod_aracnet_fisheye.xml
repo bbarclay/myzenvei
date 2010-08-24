@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>AracNet iFishEye</name>
+	<author>Alejandro Malo</author>
+	<creationDate>Junio 2008</creationDate>
+	<copyright>AracNet 2008</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>soporte@aracnet.com.mx</authorEmail>
+	<authorUrl>www.aracnet.com.mx</authorUrl>
+	<version>1.2</version>
+	<description>MOD_ARACNET_FISHEYE.DESC</description>
+<files>
+	<filename module="mod_aracnet_fisheye">mod_aracnet_fisheye.php</filename>
+	<folder>assets</folder>
+	<filename>index.html</filename>
+	<filename>blank.gif</filename>
+</files>
+<languages>
+	<language tag="es-ES">language/es-ES/es-ES.mod_aracnet_fisheye.ini</language>
+	<language tag="en-GB">language/en-GB/en-GB.mod_aracnet_fisheye.ini</language>
+</languages>
+<params>
+	<param name="menu_css" type="list" default="0" label="MOD_ARACNET_FISHEYE.MENU_CSS" description="MOD_ARACNET_FISHEYE.MENU_CSS_DESC">
+		<option value="1">MOD_ARACNET_FISHEYE.MENU_CSS_1</option>
+		<option value="0">MOD_ARACNET_FISHEYE.MENU_CSS_2</option>
+	</param>
+	<param name="menu_radius" type="text" default="128" label="MOD_ARACNET_FISHEYE.MENU_RADIUS" description="MOD_ARACNET_FISHEYE.MENU_RADIUS_DESC" />
+	<param name="menu_dimthumb" type="text" default="64" label="MOD_ARACNET_FISHEYE.MENU_DIMTHUMB" description="MOD_ARACNET_FISHEYE.MENU_DIMTHUMB_DESC" />
+  <param name="menu_dimfocus" type="text" default="128" label="MOD_ARACNET_FISHEYE.MENU_DIMFOCUS" description="MOD_ARACNET_FISHEYE.MENU_DIMFOCUS_DESC" />
+	<param name="menu_axis" type="list" default="0" label="MOD_ARACNET_FISHEYE.MENU_AXIS" description="MOD_ARACNET_FISHEYE.MENU_AXIS_DESC">
+		<option value="x">MOD_ARACNET_FISHEYE.MENU_AXIS_1</option>
+		<option value="y">MOD_ARACNET_FISHEYE.MENU_AXIS_2</option>
+	</param>
+	<param name="menu_size" type="text" default="128" label="MOD_ARACNET_FISHEYE.MENU_SIZE" description="MOD_ARACNET_FISHEYE.MENU_SIZE_DESC" />
+	<param name="menu_align" type="list" default="1" label="MOD_ARACNET_FISHEYE.MENU_ALIGN" description="MOD_ARACNET_FISHEYE.MENU_ALIGN_DESC">
+		<option value="top">MOD_ARACNET_FISHEYE.MENU_ALIGN_1</option>
+		<option value="med">MOD_ARACNET_FISHEYE.MENU_ALIGN_2</option>
+		<option value="btm">MOD_ARACNET_FISHEYE.MENU_ALIGN_3</option>
+		<option value="lft">MOD_ARACNET_FISHEYE.MENU_ALIGN_4</option>
+		<option value="ctr">MOD_ARACNET_FISHEYE.MENU_ALIGN_5</option>
+		<option value="rgt">MOD_ARACNET_FISHEYE.MENU_ALIGN_6</option>
+	</param>
+  <param name="menu_bgnd" type="imagelist" label="MOD_ARACNET_FISHEYE.MENU_BGND" description="MOD_ARACNET_FISHEYE.MENU_BGND_DESC" directory="/images/aracnet_fisheye" hide_default="1" />
+	<param name="menu_bg_valign" type="list" default="top" label="MOD_ARACNET_FISHEYE.MENU_BG_VALIGN" description="MOD_ARACNET_FISHEYE.MENU_BG_VALIGN_DESC">
+		<option value="top">MOD_ARACNET_FISHEYE.MENU_BG_VALIGN_1</option>
+		<option value="middle">MOD_ARACNET_FISHEYE.MENU_BG_VALIGN_2</option>
+		<option value="bottom">MOD_ARACNET_FISHEYE.MENU_BG_VALIGN_3</option>
+	</param>
+	<param name="menu_bg_align" type="list" default="left" label="MOD_ARACNET_FISHEYE.MENU_BG_ALIGN" description="MOD_ARACNET_FISHEYE.MENU_BG_ALIGN_DESC">
+		<option value="left">MOD_ARACNET_FISHEYE.MENU_BG_ALIGN_1</option>
+		<option value="center">MOD_ARACNET_FISHEYE.MENU_BG_ALIGN_2</option>
+		<option value="right">MOD_ARACNET_FISHEYE.MENU_BG_ALIGN_3</option>
+	</param>
+	<param name="menu_bg_rep" type="list" default="no-repeat" label="MOD_ARACNET_FISHEYE.MENU_BG_REP" description="MOD_ARACNET_FISHEYE.MENU_BG_REP_DESC">
+		<option value="no-repeat">MOD_ARACNET_FISHEYE.MENU_BG_REP_1</option>
+		<option value="repeat-x">MOD_ARACNET_FISHEYE.MENU_BG_REP_2</option>
+		<option value="repeat-y">MOD_ARACNET_FISHEYE.MENU_BG_REP_3</option>
+		<option value="repeat">MOD_ARACNET_FISHEYE.MENU_BG_REP_4</option>
+	</param>
+  <param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="menu_item0" type="menuitem" label="MOD_ARACNET_FISHEYE.MENU_ITEM0" description="MOD_ARACNET_FISHEYE.MENU_ITEM0_DESC" />
+  <param name="menu_image0" type="imagelist" label="MOD_ARACNET_FISHEYE.MENU_IMAGE0" description="MOD_ARACNET_FISHEYE.MENU_IMAGE0_DESC" directory="/images/aracnet_fisheye" hide_default="1" />
+  <param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="menu_item1" type="menuitem" label="MOD_ARACNET_FISHEYE.MENU_ITEM1" description="MOD_ARACNET_FISHEYE.MENU_ITEM1_DESC" />
+	<param name="menu_image1" type="imagelist" label="MOD_ARACNET_FISHEYE.MENU_IMAGE1" description="MOD_ARACNET_FISHEYE.MENU_IMAGE1_DESC" directory="/images/aracnet_fisheye" hide_default="1" />
+  <param name="@spacer" type="spacer" default="" label="" description="" />
+  <param name="menu_item2" type="menuitem" label="MOD_ARACNET_FISHEYE.MENU_ITEM2" description="MOD_ARACNET_FISHEYE.MENU_ITEM2_DESC" />
+	<param name="menu_image2" type="imagelist" label="MOD_ARACNET_FISHEYE.MENU_IMAGE2" description="MOD_ARACNET_FISHEYE.MENU_IMAGE2_DESC" directory="/images/aracnet_fisheye" hide_default="1" />
+  <param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="menu_item3" type="menuitem" label="MOD_ARACNET_FISHEYE.MENU_ITEM3" description="MOD_ARACNET_FISHEYE.MENU_ITEM3_DESC" />
+	<param name="menu_image3" type="imagelist" label="MOD_ARACNET_FISHEYE.MENU_IMAGE3" description="MOD_ARACNET_FISHEYE.MENU_IMAGE3_DESC" directory="/images/aracnet_fisheye" hide_default="1" />
+  <param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="menu_item4" type="menuitem" label="MOD_ARACNET_FISHEYE.MENU_ITEM4" description="MOD_ARACNET_FISHEYE.MENU_ITEM4_DESC" />
+	<param name="menu_image4" type="imagelist" label="MOD_ARACNET_FISHEYE.MENU_IMAGE4" description="MOD_ARACNET_FISHEYE.MENU_IMAGE4_DESC" directory="/images/aracnet_fisheye" hide_default="1" />
+  <param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="menu_item5" type="menuitem" label="MOD_ARACNET_FISHEYE.MENU_ITEM5" description="MOD_ARACNET_FISHEYE.MENU_ITEM5_DESC" />
+	<param name="menu_image5" type="imagelist" label="MOD_ARACNET_FISHEYE.MENU_IMAGE5" description="MOD_ARACNET_FISHEYE.MENU_IMAGE5_DESC" directory="/images/aracnet_fisheye" hide_default="1" />
+  <param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="menu_item6" type="menuitem" label="MOD_ARACNET_FISHEYE.MENU_ITEM6" description="MOD_ARACNET_FISHEYE.MENU_ITEM6_DESC" />
+	<param name="menu_image6" type="imagelist" label="MOD_ARACNET_FISHEYE.MENU_IMAGE6" description="MOD_ARACNET_FISHEYE.MENU_IMAGE6_DESC" directory="/images/aracnet_fisheye" hide_default="1" />
+  <param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="menu_item7" type="menuitem" label="MOD_ARACNET_FISHEYE.MENU_ITEM7" description="MOD_ARACNET_FISHEYE.MENU_ITEM7_DESC" />
+	<param name="menu_image7" type="imagelist" label="MOD_ARACNET_FISHEYE.MENU_IMAGE7" description="MOD_ARACNET_FISHEYE.MENU_IMAGE7_DESC" directory="/images/aracnet_fisheye" hide_default="1" />
+  <param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="menu_item8" type="menuitem" label="MOD_ARACNET_FISHEYE.MENU_ITEM8" description="MOD_ARACNET_FISHEYE.MENU_ITEM8_DESC" />
+	<param name="menu_image8" type="imagelist" label="MOD_ARACNET_FISHEYE.MENU_IMAGE8" description="MOD_ARACNET_FISHEYE.MENU_IMAGE8_DESC" directory="/images/aracnet_fisheye" hide_default="1" />
+  <param name="@spacer" type="spacer" default="" label="" description="" />
+	<param name="menu_item9" type="menuitem" label="MOD_ARACNET_FISHEYE.MENU_ITEM9" description="MOD_ARACNET_FISHEYE.MENU_ITEM9_DESC" />
+	<param name="menu_image9" type="imagelist" label="MOD_ARACNET_FISHEYE.MENU_IMAGE9" description="MOD_ARACNET_FISHEYE.MENU_IMAGE8_DESC" directory="/images/aracnet_fisheye" hide_default="1" />
+</params>
+</install>

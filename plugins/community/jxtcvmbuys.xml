@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="community" method="upgrade">
+	<name>Latest Purchases</name>
+	<author>JoomlaXTC</author>
+	<creationDate>2009-12-28</creationDate>
+	<copyright>Copyright (C) 2009 JoomlaXTC</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorUrl>http://www.joomlaxtc.com</authorUrl>
+	<version>1.0</version>
+	<isapplication>true</isapplication>
+	<description>
+		Display latest purchases done.
+	</description>
+	<files>
+		<file plugin="jxtcvmbuys">jxtcvmbuys.php</file>
+		<folder>jxtcvmbuys</folder>
+	</files>
+	
+	<params>
+		<param name="coreapp" type="list" default="0" label="Core Application" description="Causes this application to not appearin the users applications list but it will allow this application to appear in the user profile automatically if selected.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this plugin">
+			<option value="1">Use Global</option>
+			<option value="0">No</option>
+		</param>
+		<param name="maxqty" type="text" default="20" label="Maximum Items" description="Maximum number of products to display." />
+	</params>
+</install>

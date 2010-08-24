@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5.4" type="plugin" group="system" method="upgrade">
+	<name>AutoTweet NG Content-Extension</name>
+	<author>Ulli Storck</author>
+	<creationDate>October 2009</creationDate>
+	<copyright>Ulli Storck</copyright>
+	<license>GPL 2.0</license>
+	<authorEmail></authorEmail>
+	<authorUrl>http://www.1st-movers.com</authorUrl>
+	<version>3.2</version>
+	<description>Extension plugin for AutoTweet. Inserts new content articles in the twitter timeline of a specified account. Needs AutoTweet NG Component to work!</description>
+	<files>
+		<filename plugin="autotweetcontent">autotweetcontent.php</filename>
+	</files>
+	<languages>
+	</languages>
+	<params>		
+		<param name="@spacer5" type="spacer" default="Specify the articles to post in the following fields. The field conditions are connected by OR! (If nothing is set, all articles will be posted!)." label ="" description="" />
+		<param name="section" type="section" default="" label="Section" description="Select section which will be source of articles" />
+		<param name="category" type="category" default="" label="Category" description="Select category which will be source of articles" />
+		<param name="sections" type="text" default="" label="Section-IDs" description="Select sections which will be source of articles - IDs of sections separated by comma (e.g. 1,2,3,4,5)" />
+		<param name="categories" type="text" default="" label="Categorie-IDs" description="Select categories which will be source of articles - IDs of categories separated by comma (e.g. 1,2,3,4,5)" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer6" type="spacer" default="Specify exclusions for article posting. Exclusions has priority over all other settings! (If fields are empty, nothing is excluded)." label ="" description="" />
+		<param name="excluded_sections" type="text" default="" label="Excluded Section-IDs" description="Select sections which will be excluded from posting - IDs of sections separated by comma (e.g. 1,2,3,4,5)" />
+		<param name="excluded_categories" type="text" default="" label="Excluded Categorie-IDs" description="Select categories which will be excluded from posting - IDs of categories separated by comma (e.g. 1,2,3,4,5)" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="post_private" type="radio" default="0" label="Post private articles" description="You can post private articles to twitter. Off course users have login to read the linked article.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="post_modified" type="radio" default="0" label="Post modified articles" description="You can post also modified (edited) articles. As default only new articles are posted to twitter.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>			
+		<param name="@spacer" type="spacer" default="" label="" description="" />		
+		<param name="@spacer7" type="spacer" default="Options for status message" label ="" description="" />
+		<param name="show_catsec" type="list" default="0" label="Show section/category" description="You can show the section and/or category at the beginning of the twitter message. Remember: The message can have a maximum of 140 characters and will be truncated at the end!">
+			<option value="0">No, do not show</option>
+			<option value="1">Yes, show section only</option>
+			<option value="3">Yes, show category only</option>
+			<option value="2">Yes, show section and category</option>
+		</param>
+		<param name="show_hash" type="radio" default="0" label="Show section/category as hashtag" description="Add a '#' to section/category.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>		
+		<param name="use_text" type="list" default="0" label="Use title or text" description="If your titles are not good for posting to twitter you can also use the article text.">
+			<option value="0">use title for twitter message (default)</option>
+			<option value="1">use message text for twitter message</option>
+			<option value="2">use title and text for message</option>
+		</param>
+		<param name="use_text_count" type="text" default="100" label="Number of chars to use" description="Enter the number of chars for use with twitter message (min. 10 max. 140 chars). Remember: A twitter message has not more than 140 chars and will be truncated. If you use static text (hashtags) or category/section names they also need space..." />
+		<param name="@spacer" type="spacer" default="" label="" description="" />		
+		<param name="@spacer8" type="spacer" default="Advanced option: Additional text/hashtags for message." label ="" description="" />
+		<param name="static_text_source" type="list" default="0" label="Source for text" description="AutoTweet can insert metakey data automatically as hashtags in the twitter message (If no metakey data is available, AutoTweet uses also the static text if entered). Also you can use only a static text.">
+			<option value="0">none, do not show additional text</option>
+			<option value="1">use article metakey data as hashtags</option>
+			<option value="2">use static text (enter below)</option>
+		</param>
+		<param name="metakey_count" type="text" default="1" label="Metakey count" description="Here you can enter how many metakey words (counted from left to right) should be used as hashtags, when you chose option 'use article metakey data as hashtags'" />	
+		<param name="static_text" type="text" default="" label="Static text" description="Here you can enter a static text that is inserted into the message, when you chose option 'use static text' or if no metakey data is available. Remember: If the position of the static text is at the end of the message text, it will be truncated if there are more then 140 chars." />
+		<param name="static_text_pos" type="list" default="0" label="Position for text" description="">
+			<option value="1">show text/hashtags at the beginning of message text</option>
+			<option value="2">show text/hashtags at the end of message text</option>
+		</param>
+	</params>
+</install>

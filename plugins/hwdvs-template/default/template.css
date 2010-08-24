@@ -1,0 +1,649 @@
+		/*----------------------------------------------------------------------------*/
+		/*  Core hwdVideoShare CSS Definitions                                        */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdvids {
+			width: 100%!important;
+			max-width: 100%!important;
+			text-align: left;
+			overflow: hidden!important;
+			font-size: 100%;
+			padding-top: 5px;
+		}
+
+		#hwdvids form {
+			margin: 0!important;
+			padding: 0!important;
+		}
+
+		input.interactbutton {
+			cursor: pointer;
+			margin: 2px;
+			padding: 2px;
+			font-size: 9px;
+			font-weight: normal;
+			color: #171d25;
+			border: 1px solid #cccccc;
+			background-color: #FFFFFF;
+		}
+
+		img.hasTip {
+			border: 1px solid #ccc;
+			padding: 1px!important;
+			margin: 0 3px 3px 0;
+		}
+		
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare main navigation bar definitions                                  */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdvs_navcontainer
+		{
+			margin: 0;
+			padding: 0;
+			height: 35px!important;
+			overflow:hidden;
+			vertical-align:top;
+			float: left;
+		}
+
+		#hwdvs_navcontainer ul
+		{
+			margin: 0!important;
+			padding: 0!important;
+			height: 35px!important;
+		}
+
+		#hwdvs_navcontainer ul li {
+		}
+
+		#hwdvs_navcontainer ul li
+		{
+			float: left;
+			text-align: center;
+			font-size: 14px;
+			line-height: 25px!important;
+			margin: 0!important;
+			padding: 0 2px 0 0px!important;
+			width: 100px;
+			height: 35px!important;
+		}
+
+		#hwdvs_navcontainer ul li a
+		{
+			width: 100px;
+			margin: 0!important;
+			padding: 0!important;
+		}
+
+		#hwdvs_navcontainer ul li a:link    { color: #171d25; font-weight: bold; text-decoration: none; padding: 0; margin: 0;}
+		#hwdvs_navcontainer ul li a:active  { color: #171d25; font-weight: bold; text-decoration: none; padding: 0; margin: 0;}
+		#hwdvs_navcontainer ul li a:visited { color: #171d25; font-weight: bold; text-decoration: none; padding: 0; margin: 0;}
+		#hwdvs_navcontainer ul li a:hover   { color: #171d25; font-weight: bold; text-decoration: none; padding: 0; margin: 0;}
+
+		#hwdvs_navcontainer li#active
+		{
+		}
+
+		#hwdvs_navcontainer li#active a:link    { color: #171d25; font-weight: bold; text-decoration: none; padding: 0; margin: 0;}
+		#hwdvs_navcontainer li#active a:active  { color: #171d25; font-weight: bold; text-decoration: none; padding: 0; margin: 0;}
+		#hwdvs_navcontainer li#active a:visited { color: #171d25; font-weight: bold; text-decoration: none; padding: 0; margin: 0;}
+		#hwdvs_navcontainer li#active a:hover   { color: #171d25; font-weight: bold; text-decoration: none; padding: 0; margin: 0;}
+
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare search bar definitions                                      */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdsearchbar {
+			float:right;
+		}
+
+		#hwdsearchbar form {
+			margin: 0!important;
+			padding: 0!important;
+		}
+
+		#hwdsearchbar div {
+			margin: 0;
+			padding: 0;
+		}
+
+		#hwdsearchbar .hwdsearchbox {
+			/* width: 185px; */
+		}
+
+		#hwdsearchbar .hwdsearchbox input {
+			width:180px;
+			height:20px;
+			line-height:20px;
+			font-size:15px;
+			color: #000000;
+			border:1px solid #adadad;
+			padding-right: 2px;
+		}
+
+
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare search bar definitions                                      */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdvids .sic-container {
+			width:100%;
+			margin:0!important;
+			padding:0!important;
+		}
+
+		#hwdvids .sic-right {
+			width:34%;
+			float:right;
+			padding-left:0px;
+		}
+
+		#hwdvids .sic-left {
+			width:34%;
+			float:left;
+			padding-right:5px;
+		}
+		
+		#hwdvids .sic-center {
+			width:65%;
+			float:left;
+		}
+
+		#hwdvids .box {
+			padding: 5px;
+		}
+
+		#hwdvids .scoller {
+			height:255px;
+			overflow-y:scroll;
+			overflow-x:hidden;
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare user navigation bar definitions                             */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdvids .usernav {
+			margin: 0pt auto;
+			padding: 5px;
+			background-color: #88c909;
+			margin-bottom: 5px;
+			border:1px solid #81bd0a;
+			text-align: center;
+			font-weight: bold;
+		}
+		#hwdvids .usernav a:link    { color: #000000; }
+		#hwdvids .usernav a:active  { color: #000000; }
+		#hwdvids .usernav a:visited { color: #000000; }
+		#hwdvids .usernav a:hover   { color: #000000; }
+
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare footer bar definitions                             */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdvids .footer {
+			margin: 0pt auto;
+			padding: 5px;
+			background-color: #eaeaea;
+			margin-bottom: 5px;
+			border:1px solid #adadad;
+			text-align: center;
+			font-size: 85%;
+			font-weight: bold;
+		}
+
+		#hwdvids .footer a:link    { font-weight: bold; text-decoration: none; font-size: 100%; }
+		#hwdvids .footer a:active  { font-weight: bold; text-decoration: none; font-size: 100%; }
+		#hwdvids .footer a:visited { font-weight: bold; text-decoration: none; font-size: 100%; }
+		#hwdvids .footer a:hover   { font-weight: bold; text-decoration: none; font-size: 100%; }
+
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare featured video and group (lists) definitions                */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdvids .fthumb0 {
+			border: 1px solid #ccc;
+			padding: 1px!important;
+			margin: 0 3px 3px 0;
+		}
+
+		#hwdvids .fthumb1 {
+			border: 1px solid #ccc;
+			padding: 1px!important;
+			margin: 0 3px 3px 0;
+		}
+
+		#hwdvids .featuredthumbs {
+			border: 1px solid #ccc;
+			padding: 1px!important;
+			margin: 0 3px 3px 0;
+		}
+		
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare video (default list) definitions                            */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdvids .thumb0 {
+			border: 1px solid #ccc;
+			padding: 1px!important;
+			margin: 0 3px 3px 0;
+		}
+
+		#hwdvids .thumb1 {
+			border: 1px solid #ccc;
+			padding: 1px!important;
+			margin: 0 3px 3px 0;
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare standard container definitions                              */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdvids .standard {
+			border:1px solid #ccc;
+			margin-bottom:10px;
+		}
+
+		#hwdvids .standard .padding {
+			padding: 5px!important;
+			margin: 0;
+		}
+
+		#hwdvids .standard td{
+			padding: 5px!important;
+			margin: 0;
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare 'required' input text                                       */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdvids .required {
+			color: #ff0000;
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare special text definitions                                    */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdvids h2 {
+			background: #d5d5d5;
+			text-align: left;
+			font-size: 150%;
+			margin: 1px;
+			padding: 5px;
+			line-height: 100%;
+			width: auto;
+		}
+
+		#hwdvids h3 {
+			background: #d5d5d5;
+			text-align: left;
+			font-size: 150%;
+			margin: 1px;
+			padding: 5px;
+			line-height: 100%;
+			width: auto;
+		}
+		
+		#hwdvids .listtitle {
+			padding: 1px 0 0 0;
+			font-size: 120%;
+			text-align: left;
+			font-weight: bold;
+		}
+
+		#hwdvids .listcat {
+			padding: 1px 0 0 0;
+			text-align: left;
+			font-size: 100%;
+			font-weight: bold;
+		}
+
+		#hwdvids .listdesc {
+			padding: 1px 0 0 0;
+			text-align: left;
+			font-size: 100%;
+			font-weight: normal;
+		}
+		#hwdvids .listrating {
+			padding: 1px 0 0 0;
+			text-align: left;
+			font-size: 100%;
+		}
+
+		#hwdvids .listduration {
+			padding: 1px 0 0 0;
+			text-align: left;
+			font-size: 100%;
+		}
+
+		#hwdvids .listviews {
+			padding: 1px 0 0 0;
+			text-align: left;
+			font-size: 100%;
+		}
+
+		#hwdvids .listuploader {
+			padding: 1px 0 0 0;
+			text-align: left;
+			font-size: 100%;
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare page navigation definitions                                 */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdvids .pagenavi {
+			text-align: center;
+			padding: 3px;
+			border: 0!important;
+		}
+
+		#hwdvids .pagenav {
+			text-align: center;
+			padding: 3px;
+			border: 0!important;
+		}
+
+		#hwdvids .pagecount {
+			text-align: center;
+			border: 0!important;
+		}
+		
+		#hwdvids ul.pagination {
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare video player page definitions                               */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdvids .sblinks {
+			padding: 1px;
+			margin: 1px;
+			border: 1px solid #d3d3d3;
+		}
+
+		#hwdvids .addremfav {
+		}
+
+		#hwdvids .description {
+		}
+
+		#hwdvids .tags {
+		}
+
+		/* The 'add to group' select box - for specifying width*/
+		#hwdvids .add2gselect {
+			width: 120px;
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare advert (inserted by hwdRevenueManager) definitions          */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdadverts-nopadding {
+			width:100%;
+			overflow:hidden;
+			text-align:center;
+		}
+
+		#hwdadverts-padding {
+			width:100%;
+			overflow:hidden;
+			text-align:center;
+			padding: 10px 0;
+		}
+		
+		/*----------------------------------------------------------------------------*/
+		/*  hwdVideoShare miscellaneous definitions                                   */
+		/*----------------------------------------------------------------------------*/
+
+		/* These definitions can be used for text links on opposite background colours */
+		#hwdvids a.swap:link    { color: #333333; font-weight: bold; text-decoration: none; font-size: 100%; }
+		#hwdvids a.swap:active  { color: #333333; font-weight: bold; text-decoration: none; font-size: 100%; }
+		#hwdvids a.swap:visited { color: #333333; font-weight: bold; text-decoration: none; font-size: 100%; }
+		#hwdvids a.swap:hover   { color: #333333; font-weight: bold; text-decoration: none; font-size: 100%; }
+
+		/* The class for the thumbnail image on the video edit page */
+		#hwdvids .edit-videopreview {
+			width: 120px;
+			padding: 5px;
+			margin: 5px;
+			text-align: center;
+			border: 1px dashed #ffffff;
+		}
+
+
+
+		/* The class for the ajax conformation after successful flash upload */
+		#hwdvids .flashconfirm {
+			color:#00CC00
+		}
+
+		/* The class (generally) used for any ajax response */
+		#hwdvids .ajaxresponse {
+			visibility: hidden
+		}
+
+		/* The class used for the 'add to group' ajax response */
+		#hwdvids .add2groupresponse {
+		}
+
+		/* The class used for the avatar display (in lists) */
+		#hwdvids .avatar
+		{
+			float: right;
+			padding: 0 5px 5px 5px;
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*  TABBER _ THE TAB INTERFACE                                                */
+		/*    REQUIRED to hide the non-active tab content.                            */
+		/*    But do not hide them in the print stylesheet!                           */
+		/*    Add style only after the tabber interface is set up (.tabberlive)       */
+		/*		                                                              */
+		/*    .tabber = before the tabber interface is set up                         */
+		/*    .tabberlive = after the tabber interface is set up                      */
+		/*    .tabbertab = the tab content                                            */
+		/*    ul.tabbernav = the tab navigation list                                  */
+		/*    li.tabberactive = the active tab                                        */
+		/*----------------------------------------------------------------------------*/
+
+		#hwdvids .tabberlive .tabbertabhide {
+			display:none;
+		}
+
+		#hwdvids .tabber {
+		}
+
+		#hwdvids .tabberlive {
+			margin-top:1em;
+		}
+
+		#hwdvids ul.tabbernav
+		{
+			padding: 0!important;
+			margin: 0!important;
+			font-size: 12px;
+			right: 0;
+		}
+
+		#hwdvids ul.tabbernav li
+		{
+			margin: 0!important;
+			padding: 0!important;
+			display: inline;
+		}
+
+		#hwdvids ul.tabbernav li a
+		{
+			padding: 3px 5px;
+			margin-left: 3px;
+			border: 1px solid #bebebe;
+			background: #d0d0d0;
+			color: #fff;
+			text-decoration: none;
+		}
+
+		#hwdvids ul.tabbernav li a:link { color: #000; }
+
+		#hwdvids ul.tabbernav li a:visited { color: #000; }
+
+		#hwdvids ul.tabbernav li a:hover
+		{
+			color: #000;
+			background: #00bdff;
+			border-color: #00bdff;
+		}
+
+		#hwdvids ul.tabbernav li.tabberactive a
+		{
+			color: #000;
+			background: #88c909;
+			border-color: #88c909;
+		}
+
+		#hwdvids ul.tabbernav li.tabberactive a:hover
+		{
+			color: #000;
+			background: #00bdff;
+			border-color: #00bdff;
+		}
+
+		#hwdvids .tabberlive .tabbertab {
+			padding:5px 0 0 0;
+		}
+
+		/* If desired, hide the heading since a heading is provided by the tab */
+		#hwdvids .tabberlive .tabbertab h2 {
+			display:none;
+		}
+
+		#hwdvids .tabberlive .tabbertab h3 {
+			display:none;
+		}
+
+		/* Example of using an ID to set different styles for the tabs on the page */
+		#hwdvids .tabberlive#tab1 {
+		}
+
+		#hwdvids .tabberlive#tab2 {
+		}
+
+		#hwdvids .tabberlive#tab2 .tabbertab {
+			height:200px;
+			overflow:auto;
+		}
+
+		/*----------------------------------------------------------------------------*/
+		/*  MASUGA RATER _ THE RATING INTERFACE                                       */
+		/*    ryan masuga, masugadesign.com                                           */
+		/*    ryan@masugadesign.com                                                   */
+		/*    Licensed under a Creative Commons Attribution 3.0 License.              */
+		/*    http://creativecommons.org/licenses/by/3.0/                             */
+		/*    See readme.txt for full credit details.                                 */
+		/*----------------------------------------------------------------------------*/
+
+		#ajaxratemasuga div {
+			text-align: left!important;
+			direction: ltr!important;
+		}
+
+		#ajaxratemasuga ul{
+			padding:0px!important;
+			margin:0px!important;
+		}
+		#ajaxratemasuga li{
+			padding:0px!important;
+			margin:0px!important;
+		}
+
+		#ajaxratemasuga ul li {
+		}
+
+		#hwdvids #ajaxratemasuga .unit-rating li.current-rating {
+			background-position: left bottom;
+			background-repeat: repeat-x;
+			position: absolute;
+			height: 30px;
+			display: block;
+			text-indent: -9000px;
+			z-index: 1;
+			padding:0!important;
+			margin:0!important;
+		}
+
+
+		.ratingblock {
+			display:block;
+			padding-bottom:1px;
+			margin-bottom:0;
+		}
+
+		.loading {
+			height: 30px;
+		}
+
+		.unit-rating { /* the UL */
+			list-style:none;
+			margin: 0px;
+			padding:0px;
+			height: 30px;
+			position: relative;
+		}
+
+		.unit-rating li{
+			text-indent: -90000px;
+			padding:0px;
+			margin:0px;
+			/*\*/
+			float: left;
+			/* */
+		}
+
+		.unit-rating li a {
+			outline: none;
+			display:block;
+			width:30px;
+			height: 30px;
+			text-decoration: none;
+			text-indent: -9000px;
+			z-index: 20;
+			position: absolute;
+			padding: 0px;
+		}
+
+		.unit-rating li a:hover{
+			background-position: left center!important;
+			background-repeat: no-repeat;
+			z-index: 2;
+			left: 0px;
+		}
+
+		.unit-rating a.r1-unit{left: 0px;}
+		.unit-rating a.r1-unit:hover{width:30px;}
+		.unit-rating a.r2-unit{left:30px;}
+		.unit-rating a.r2-unit:hover{width: 60px;}
+		.unit-rating a.r3-unit{left: 60px;}
+		.unit-rating a.r3-unit:hover{width: 90px;}
+		.unit-rating a.r4-unit{left: 90px;}
+		.unit-rating a.r4-unit:hover{width: 120px;}
+		.unit-rating a.r5-unit{left: 120px;}
+		.unit-rating a.r5-unit:hover{width: 150px;}
+		.unit-rating a.r6-unit{left: 150px;}
+		.unit-rating a.r6-unit:hover{width: 180px;}
+		.unit-rating a.r7-unit{left: 180px;}
+		.unit-rating a.r7-unit:hover{width: 210px;}
+		.unit-rating a.r8-unit{left: 210px;}
+		.unit-rating a.r8-unit:hover{width: 240px;}
+		.unit-rating a.r9-unit{left: 240px;}
+		.unit-rating a.r9-unit:hover{width: 270px;}
+		.unit-rating a.r10-unit{left: 270px;}
+		.unit-rating a.r10-unit:hover{width: 300px;}
+
+		.voted {color:#999;}
+		.thanks {color:#36AA3D;}
+		.masugaerror {color:#ff0000;}
+		.static {color:#5D3126;}

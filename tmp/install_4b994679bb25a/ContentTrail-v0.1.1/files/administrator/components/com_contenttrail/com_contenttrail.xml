@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5">
+	<name>ContentTrail</name>
+	<description>ContentTrail ... breadcrumbs for your Section/Category/Article structure</description>
+	<version>0.1.1</version>
+	<creationDate>February 2010</creationDate>
+	<author>GeoXeo</author>
+	<authorEmail>contact@geoxeo.com</authorEmail>
+	<authorUrl>http://www.geoxeo.com</authorUrl>
+	<copyright>Copyright (C) 2010 GeoXeo All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+
+	<!-- Installation -->
+	<uninstallfile>uninstall.contenttrail.php</uninstallfile>
+	<uninstall>
+	<sql>
+		<file driver="mysql" charset="utf8">uninstall.contenttrail.sql</file>
+	</sql>
+	</uninstall>
+	
+	<!-- Administration Files -->
+	<administration>
+		<files>
+			<filename>index.html</filename>
+			<filename>helper.php</filename>
+			<folder>elements</folder>
+		</files>	
+	</administration>
+</install>

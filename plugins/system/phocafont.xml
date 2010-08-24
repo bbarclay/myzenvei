@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<name>Phoca Font Plugin</name>
+	<creationDate>08/12/2009</creationDate>
+	<author>Jan Pavelka (www.phoca.cz)</author>
+	<authorEmail></authorEmail>
+	<authorUrl>www.phoca.cz</authorUrl>
+	<copyright>Jan Pavelka</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.2</version>
+	<description><![CDATA[ 
+       Phoca Font Plugin - using CSS Fonts on site<br />
+       More information on <a href="http://www.phoca.cz" target="_blank" >www.phoca.cz</a>
+      ]]></description>
+	<files>
+		<filename plugin="phocafont">phocafont.php</filename>
+	</files>
+	<params>
+	</params>
+</install>

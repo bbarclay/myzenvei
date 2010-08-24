@@ -1,0 +1,28 @@
+/**
+ * INSTALL
+ *
+ * @author     GeoXeo <contact@geoxeo.com>
+ * @link       http://www.geoxeo.com
+ * @copyright  Copyright (C) 2010 GeoXeo - All Rights Reserved
+ * @license    http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+
+ */
+
+INSTALLING / UPDATING
+=====================
+This package will install all you need for the extension
+Install this package by use of the standard installer in your Joomla! administrator.
+
+If you already have this extension installed, this package will automatically update it.
+So you do not need to uninstall the extension first.
+
+
+TROUBLESHOOTING
+===============
+You might get errors during install about not being able to write files or create folders.
+Please make sure your folders have the right read/write permissions.
+You can check this in your Joomla! administrator menu:
+Help >> System Info >> Directory Permissions
+
+If you still get errors, please let me know:
+www.geoxeo.com/forum

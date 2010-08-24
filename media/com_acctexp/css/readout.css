@@ -1,0 +1,115 @@
+/* == AccountExpiration Readout Style by David 'skOre' Deutsch == */
+
+table.aec_bg {
+background: #fff;
+}
+
+table.aec_bg h1 {
+background: #555 none repeat scroll 0 0;
+background-image: url(/media/com_acctexp/images/admin/backend_gfx/heading_sub_lr.png);
+background-position: bottom left;
+background-repeat: no-repeat;
+padding: 4px 0 4px 22px;
+color: #fff;
+margin: 8px 0;
+}
+
+table.aec_readout {
+border-spacing: 0;
+border-collapse: collapse;
+margin-bottom: 12px;
+}
+
+table.aec_readout td {
+border: 1px solid #333;
+padding: 2px;
+}
+
+table.aec_readout th {
+border: 1px solid #ddd;
+border-bottom: 1px solid #333;
+padding: 4px;
+font-weight: bold;
+}
+
+th.active {
+background-color:#99FF99 !important;
+}
+
+th.visible {
+background-color:#9999FF !important;
+}
+
+th.auto_check {
+background-color:#9999FF !important;
+}
+
+th.pre_exp_check {
+background-color:#9999BB !important;
+}
+
+th.on_userchange {
+background-color:#9999FF !important;
+}
+
+th.params_full_amount {
+background-color:#FFFF99 !important;
+}
+
+th.params_trial_amount {
+background-color:#FFFF99 !important;
+}
+
+th.col0 {
+background-color:#E9E9E9;
+}
+
+th.col1 {
+background-color:#FFFFFF;
+}
+
+tr.row0 {
+background-color:#E9E9E9;
+}
+
+tr.row1 {
+background-color:#FFFFFF;
+}
+
+tr.row0 td.boolYes {
+background-color:#89EF89;
+font-align: center;
+}
+
+tr.row0 td.boolNo {
+background-color:#EF8989;
+font-align: center;
+}
+
+tr.row1 td.boolYes {
+background-color:#99FF99;
+font-align: center;
+}
+
+tr.row1 td.boolNo {
+background-color:#FF9999;
+font-align: center;
+}
+
+#aec_iconlist_flag_blue { background: url(/media/com_acctexp/images/admin/icons/flag_blue.png) no-repeat; text-indent: 14px; }
+#aec_iconlist_flag_green { background: url(/media/com_acctexp/images/admin/icons/flag_green.png) no-repeat; text-indent: 14px; }
+#aec_iconlist_flag_orange { background: url(/media/com_acctexp/images/admin/icons/flag_orange.png) no-repeat; text-indent: 14px; }
+#aec_iconlist_flag_purple { background: url(/media/com_acctexp/images/admin/icons/flag_purple.png) no-repeat; text-indent: 14px; }
+#aec_iconlist_flag_pink { background: url(/media/com_acctexp/images/admin/icons/flag_pink.png) no-repeat; text-indent: 14px; }
+#aec_iconlist_flag_red { background: url(/media/com_acctexp/images/admin/icons/flag_red.png) no-repeat; text-indent: 14px; }
+#aec_iconlist_flag_yellow { background: url(/media/com_acctexp/images/admin/icons/flag_yellow.png) no-repeat; text-indent: 14px; }
+
+#aec_colorlist_BBDDFF { background: #BBDDFF !important; }
+#aec_colorlist_5F8BC4 { background: #5F8BC4 !important; }
+#aec_colorlist_A2BE72 { background: #A2BE72 !important; }
+#aec_colorlist_DDFF99 { background: #DDFF99 !important; }
+#aec_colorlist_D07C30 { background: #D07C30 !important; }
+#aec_colorlist_C43C42 { background: #C43C42 !important; }
+#aec_colorlist_AA89BB { background: #AA89BB !important; }
+#aec_colorlist_B7B7B7 { background: #B7B7B7 !important; }
+#aec_colorlist_808080 { background: #808080 !important; }

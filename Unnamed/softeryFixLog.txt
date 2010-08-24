@@ -1,0 +1,8 @@
+
+========================================
+Site: test1(C:\Users\Owner\Documents\Unnamed Site 2\)
+
+File: "C:\Users\Owner\Documents\Unnamed Site 2\index.html" - was fixed
+========================================
+
+File: "file:///C|/Users/Owner/Documents/Unnamed Site 2/index.html" - was fixed

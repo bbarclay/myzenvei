@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>Content - ContentTrail</name>
+	<author>GeoXeo</author>
+	<creationDate>February 2010</creationDate>
+	<copyright>Copyright (C) 2010 GeoXeo. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@geoxeo.com</authorEmail>
+	<authorUrl>www.geoxeo.com</authorUrl>
+	<version>0.1.1</version>
+	<description>This plugin replaces site breadcrumbs with Section-Category-Article form breadcrumbs for com_content views</description>
+	<files>
+		<filename plugin="contenttrail">contenttrail.php</filename>
+	</files>
+	
+	<params addpath="/administrator/components/com_contenttrail/elements">
+		<param name="sections" type="sections" default="-1" label="Limit to Sections" description="Apply plugin only to these sections." />
+		<param name="layout" type="radio" default="0" label="Layout" description="Layout used to display a section or a category when clicking on breadcrumbs">
+			<option value="0">List</option>
+			<option value="1">Blog</option>
+		</param>
+		<param name="override" type="radio" default="1" label="Override breadcrumbs" description="If not: use the Content Trail module to display">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="itemid" type="text" default="" label="Itemid" description="Itemid to use to open breadcrumbs links (if empty, then current itemid is used)"/>
+	</params>
+</install>

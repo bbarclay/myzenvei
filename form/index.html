@@ -1,0 +1,2161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+    <title>Get Your Own Site</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="Author" content="SolutionX Inc." />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="10 days" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    <meta name="Content-Language" content="english" />
+    
+    <script type="text/javascript" src="/js/help_text.js"></script>
+    
+    <link rel="stylesheet" href="/Resource/windowfiles/dhtmlwindow.css" type="text/css" />
+    <script type="text/javascript" src="/Resource/windowfiles/dhtmlwindow.js"></script>
+    <script>Style[1]=["black","black","#feffbe","#feffbe","","","","","","","","","","",200,"",2,2,10,10,"","","","",""]</script>
+	
+	<link rel="stylesheet" href="/css/admin.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/css/left_nav.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/css/modal.css" type="text/css" media="screen" />
+	
+	
+	<link rel="stylesheet" href="/css/join.css" type="text/css" media="screen" />
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/css/welcome.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/css/custom.css" type="text/css" media="screen" />
+	
+	<script type="text/javascript">
+	// Script
+
+	</script>
+
+
+	
+	<!--[if IE]>
+	    <style>
+    		    
+        	    
+	    </style>
+    <![EndIf]-->
+</head>
+<body>
+    
+    
+	
+	
+	
+    <div id="Header">    
+    
+    
+    <div id="Nav">
+        <a href="/index.html">Welcome</a>&nbsp;&nbsp;&nbsp;
+        <a href="/join/index.html">Join Us</a>&nbsp;&nbsp;&nbsp;
+        <a href="/faq/index.html">FAQ</a>&nbsp;&nbsp;&nbsp;
+        <a href="/welcome/login.html">Login</a>
+	</div>
+	
+	
+    <div id="personal">
+                <ul>
+	                <li id="white"><b id="white">Admin Admin</b></li>
+	                <li id="white">Independent Business Owner</li>
+	                <li id="white">IBO #: 101E1</li>
+	                <li id="white">(208) 860-6963</li>
+                </ul></div></div>
+
+	<div id="Container">
+	    <div id="Content">
+	        <div id="Body">
+	            
+
+<script src="/js/BuilderAjax.js" type="text/javascript"></script>
+
+<script src="/js/MD5.js" type="text/javascript"></script>
+
+<script src="/js/Mod10.js" type="text/javascript"></script>
+
+<script src="/js/main.js" type="text/javascript"></script>
+
+<script language="javascript" type="text/javascript">
+
+    var Setup = 39.99;
+    var Tax = 0;
+    var Shipping = 0;
+    var Market = "";
+    var isSample = "";
+
+	if (isSample == "1" || isSample.toLowerCase() == "true")
+	{
+		isSample = true;
+	}
+	else
+	{
+		isSample = false;
+	}
+
+    if (Market == "")
+    {
+        Market = "USA";
+    }
+
+	///////////////////////////////////////////////////////////////////////////
+	//
+	// Define product skus/prices here
+	//
+	var Products = new Array();
+	Products["business"] = new Array();
+	Products["marketing"] = new Array();
+	
+	Products["business"]["BLU-32"] = 35.00;
+	Products["business"]["GRN-05"] = 32.00;
+	Products["business"]["RED-60"] = 32.00;
+	Products["business"]["SLVR-4"] = 32.00;
+
+	Products["marketing"]["BLU-32"] = 38.00;
+	Products["marketing"]["GRN-05"] = 35.00;
+	Products["marketing"]["RED-60"] = 35.00;
+	Products["marketing"]["SLVR-4"] = 35.00;
+
+
+	///////////////////////////////////////////////////////////////////////////
+	//
+	// Define initial order product fields
+	//
+	var InitialOrderFields = new Array();
+	InitialOrderFields[0] = "kv_InitialOrder_1";
+	InitialOrderFields[1] = "kv_InitialOrder_2";
+	InitialOrderFields[2] = "kv_InitialOrder_3";
+	InitialOrderFields[3] = "kv_InitialOrder_4";
+
+	///////////////////////////////////////////////////////////////////////////
+	//
+	// Define autoship order product fields
+	//
+	var AutoshipOrderFields = new Array();
+	
+	///////////////////////////////////////////////////////////////////////////
+	//
+	// Define "other" order product fields
+	//
+	var OtherOrderFields = new Array();
+
+	///////////////////////////////////////////////////////////////////////////
+	//
+	// Define sample order product fields
+	//
+	var SampleOrderFields = new Array();
+	
+	function GetProductList()
+	{
+        if (document.getElementById("membership_marketing").checked)
+        {
+			return Products["marketing"];
+        }
+        
+        return Products["business"];
+	}    	
+    	
+    function ValidateForm() 
+    {
+        var IsDistributor = document.getElementById("membership_business").checked;
+	
+		var Threshhold = 128;
+		var Message = "To enjoy the benefits of a Business Associate, your monthly qualifying purchase (autoship) must be a combination of products totaling $128 or more. ";
+	    var Order = 0;
+		var Prices = GetProductList();
+		
+		for(var i = 0; i < InitialOrderFields.length; i++)
+		{
+			var sku = document.getElementById(InitialOrderFields[i]).value;
+			var qty = document.getElementById(InitialOrderFields[i] + "_Qty").value;
+			if(sku != "")
+			{
+				var prc = Prices[sku];
+				if (!isNaN(prc))
+				{
+					Order += parseFloat(prc) * parseFloat(qty);
+	            }
+			}
+		}
+		
+		if (!IsDistributor)
+		{
+			Threshhold = 70;
+			Message = "To enjoy the benefits of a Marketing Associate, your monthly qualifying purchase (autoship) must be a combination of products totaling $70 or more.";
+		}
+		
+		if (Order < Threshhold)
+		{
+			alert(Message);
+			return false;
+		}
+		
+		
+		if (document.getElementById('FirstName').value == '') {
+			alert('Please enter your First Name');
+			return false;
+		}
+		if (document.getElementById('LastName').value == '') {
+			alert('Please enter your Last Name');
+			return false;
+		}
+		if (document.getElementById('Email').value == '') {
+			alert('Please enter your Email');
+			return false;
+		}
+		if (document.getElementById('ConfirmEmail').value == '') {
+			alert('Please confirm your Email');
+			return false;
+		}
+		if (IsDistributor)
+		{
+			if (document.getElementById('kv_TaxID').value == '') {
+				alert('Please enter your SSN');
+				return false;
+			}
+			if (document.getElementById('confirmTaxID').value == '') {
+				alert('Please enter your Confirm Your SSN');
+				return false;
+			}
+		}
+		if (document.getElementById('DaytimePhone').value == '') {
+			alert('Please enter your Daytime Phone number');
+			return false;
+		}
+		if (document.getElementById('kv_HomePhone').value == '') {
+			alert('Please enter your Evening Phone');
+			return false;
+		}
+		if (document.getElementById('kv_ShippingAddress1').value == '') {
+			alert('Please enter your Shipping Address');
+			return false;
+		}
+		if (document.getElementById('kv_ShippingCity').value == '') {
+			alert('Please enter your Shipping City');
+			return false;
+		}
+		if (document.getElementById('kv_ShippingState').value == '') {
+			alert('Please enter your Shipping State');
+			return false;
+		}
+		if (document.getElementById('kv_ShippingZip').value == '') {
+			alert('Please enter your Shipping Zipcode');
+			return false;
+		}
+		if (document.getElementById('kv_ShippingCountry').value == '') {
+			alert('Please select your Shipping Country');
+			return false;
+		}
+		if (document.getElementById('BillingAddress1').value == '') {
+			alert('Please enter your Billing Address');
+			return false;
+		}
+		if (document.getElementById('BillingCity').value == '') {
+			alert('Please enter your Billing City');
+			return false;
+		}
+		if (document.getElementById('BillingState').value == '') {
+			alert('Please enter your Billing State');
+			return false;
+		}
+		if (document.getElementById('BillingZip').value == '') {
+			alert('Please enter your Billing Zipcode');
+			return false;
+		}
+		if (document.getElementById('BillingCountry').value == '') {
+			alert('Please select your Billing Country');
+			return false;
+		}
+		if (document.getElementById('NameOnCard').value == '') {
+			alert('Please enter the name on your Credit Card');
+			return false;
+		}
+		if (document.getElementById('CardNumber').value == '') {
+			alert('Please enter your Credit Card Number');
+			return false;
+		}
+		if (document.getElementById('CVV2').value == '') {
+			alert('Please enter your 3 digit Credit Card Verification Number');
+			return false;
+		}
+		if (document.getElementById('ExpirationMonth').value == '') {
+			alert('Please select your Expiration Month');
+			return false;
+		}
+		if (document.getElementById('ExpirationYear').value == '') {
+			alert('Please select your Expiration Year');
+			return false;
+		}
+		
+		if (document.getElementById('SiteName').value == '') {
+			alert('Please select your your website URL');
+			return false;
+		}
+		if (document.getElementById('Password').value == '') {
+			alert('Please enter your Password');
+			return false;
+		}
+		if (IsDistributor)
+		{
+			if (!document.getElementById('ckPolicies').checked) {
+				alert('Please read the items under the \'Policies and Procedures\' section');
+				return false;
+			}
+	    }
+		
+		return true;
+    }
+    
+    function selectMembership(v)
+    {
+		///////////////////////////////////////////////////////////////////////////////
+		//
+		// The form will change based on what type of customer we're working with
+		//
+		if (isSample)
+		{
+			v = "marketing";
+		}
+		
+        if (v == "marketing")
+        {
+            document.getElementById("membership_business_details").style.display = "none";
+            document.getElementById("membership_marketing_details").style.display = "";
+			document.getElementById('membership_marketing').checked = true;
+			document.getElementById('Membership_Type_Text_1').innerHTML = 'Marketing';
+			document.getElementById('Membership_Type_Text_2').innerHTML = '70';
+			document.getElementById('Membership_Type_Text_3').innerHTML = 'Marketing';
+			document.getElementById('Membership_Type_Text_4').innerHTML = '70';
+        }
+        else
+        {
+            document.getElementById("membership_marketing_details").style.display = "none";
+            document.getElementById("membership_business_details").style.display = "";
+			document.getElementById('membership_business').checked = true;
+			document.getElementById('Membership_Type_Text_1').innerHTML = 'Business';
+			document.getElementById('Membership_Type_Text_2').innerHTML = '128';
+			document.getElementById('Membership_Type_Text_3').innerHTML = 'Business';
+			document.getElementById('Membership_Type_Text_4').innerHTML = '128';
+        }
+        
+		var Prices = GetProductList();
+		
+		for(var i = 0; i < InitialOrderFields.length; i++)
+		{
+			var sku = document.getElementById(InitialOrderFields[i]).value;
+			var obj = document.getElementById(InitialOrderFields[i] + "_Price");
+			obj.innerHTML = formatCurrency(Prices[sku])
+		}
+        
+        
+        initOrder();
+    }
+
+    
+    function initOrder() 
+    {
+        var ShippingMethod = document.getElementById("InitialOrderShippingMethod").value;
+		var kv_ShippingAddress1 = document.getElementById("kv_ShippingAddress1").value;
+		var kv_ShippingAddress2 = document.getElementById("kv_ShippingAddress2").value;
+		var kv_ShippingCity = document.getElementById("kv_ShippingCity").value;
+		var kv_ShippingState = document.getElementById("kv_ShippingState").value;
+		var kv_ShippingZip = document.getElementById("kv_ShippingZip").value;
+		var kv_ShippingCountry = document.getElementById("kv_ShippingCountry").value;
+
+        if (kv_ShippingZip != "" && !isSample)
+        {
+            AjaxMethod("/ModuleZenVei/EstimateShippingandTax", calcOrder, 
+					   "InitialOrderShippingMethod", ShippingMethod,
+                       "kv_ShippingAddress1", kv_ShippingAddress1, 
+                       "kv_ShippingAddress2", kv_ShippingAddress2, 
+                       "kv_ShippingCity", kv_ShippingCity, 
+                       "kv_ShippingState", kv_ShippingState, 
+                       "kv_ShippingZip", kv_ShippingZip, 
+                       "kv_ShippingCountry", kv_ShippingCountry, 
+                       "kv_InitialOrder_1", document.getElementById("kv_InitialOrder_1").value,
+                       "kv_InitialOrder_2", document.getElementById("kv_InitialOrder_2").value,
+                       "kv_InitialOrder_3", document.getElementById("kv_InitialOrder_3").value,
+                       "kv_InitialOrder_4", document.getElementById("kv_InitialOrder_4").value,
+                       "kv_InitialOrder_1_Qty", document.getElementById("kv_InitialOrder_1_Qty").value,
+                       "kv_InitialOrder_2_Qty", document.getElementById("kv_InitialOrder_2_Qty").value,
+                       "kv_InitialOrder_3_Qty", document.getElementById("kv_InitialOrder_3_Qty").value,
+                       "kv_InitialOrder_4_Qty", document.getElementById("kv_InitialOrder_4_Qty").value
+                      );
+        }
+        else
+        {
+			calcOrder(null);
+        }
+                        
+    }
+    
+    function calcOrder(X)
+    {
+        Tax = 0;
+        Shipping = 0;
+        
+        if (X)
+        {
+            Tax = AjaxValue(X, "Tax");
+            Shipping = AjaxValue(X, "Shipping");
+        }
+        
+        var Total = 0;
+        var Order = 0;
+		var Prices = GetProductList();
+		
+		for(var i = 0; i < InitialOrderFields.length; i++)
+		{
+			var sku = document.getElementById(InitialOrderFields[i]).value;
+			var qty = document.getElementById(InitialOrderFields[i] + "_Qty").value;
+			if(sku != "")
+			{
+				var prc = Prices[sku];
+				if (!isNaN(prc))
+				{
+					Order += parseFloat(prc) * parseFloat(qty);
+	            }
+			}
+		}
+
+		for(var i = 0; i < OtherOrderFields.length; i++)
+		{
+			var sku = document.getElementById(OtherOrderFields[i]).value;
+			var qty = document.getElementById(OtherOrderFields[i] + "_Qty").value;
+			if(sku != "")
+			{
+				var prc = Prices[sku];
+				if (!isNaN(prc))
+				{
+					Order += parseFloat(prc) * parseFloat(qty);
+	            }
+			}
+		}   
+
+		for(var i = 0; i < SampleOrderFields.length; i++)
+		{
+			var sku = document.getElementById(SampleOrderFields[i]).value;
+			if(sku != "")
+			{
+				var prc = Prices[sku];
+				if (!isNaN(prc))
+				{
+					Shipping = 5.97;
+					Order = 0;
+	            }
+			}
+		}  
+		        
+        Total = parseFloat(Tax) + parseFloat(Shipping) + parseFloat(Setup) + parseFloat(Order);
+        document.getElementById('shipping_amount').innerHTML = formatCurrency(Shipping);
+        document.getElementById('tax_amount').innerHTML = formatCurrency(Tax);
+        document.getElementById("order_amount").innerHTML = formatCurrency(Order);
+        document.getElementById("fee_amount").innerHTML = formatCurrency(Setup);
+        document.getElementById("total_amount").innerHTML = formatCurrency(Total);
+        
+        document.getElementById("autoship_amount").innerHTML = formatCurrency(Order);
+
+        if (Order > 0)
+        {
+            document.getElementById("autoship_text").style.display = "";
+        }
+        else
+        {
+            document.getElementById("autoship_text").style.display = "none";
+        }        
+    }
+
+    
+    function init(m)
+    {
+        if (m == "USA")
+        {
+            document.getElementById("market_state_text_shipping").innerHTML = "State";
+            document.getElementById("market_country_text_shipping").innerHTML = "United States";
+            document.getElementById("market_postal_text_shipping").innerHTML = "Zip";
+            document.getElementById("can_state_select_shipping").style.display = "none";
+            document.getElementById("usa_state_select_shipping").style.display = "";
+            document.getElementById("kv_ShippingCountry").value = "USA";
+            
+            document.getElementById("market_state_text_billing").innerHTML = "State";
+            document.getElementById("market_country_text_billing").innerHTML = "United States";
+            document.getElementById("market_postal_text_billing").innerHTML = "Zip";
+            document.getElementById("can_state_select_billing").style.display = "none";
+            document.getElementById("usa_state_select_billing").style.display = "";
+            document.getElementById("BillingCountry").value = "USA";
+        }
+        
+        if (m == "CAN")
+        {
+            document.getElementById("market_state_text_shipping").innerHTML = "Province";
+            document.getElementById("market_country_text_shipping").innerHTML = "Canada";
+            document.getElementById("market_postal_text_shipping").innerHTML = "Postal Code";
+            document.getElementById("usa_state_select_shipping").style.display = "none";
+            document.getElementById("can_state_select_shipping").style.display = "";
+            document.getElementById("kv_ShippingCountry").value = "CAN";
+            
+            document.getElementById("market_state_text_billing").innerHTML = "Province";
+            document.getElementById("market_country_text_billing").innerHTML = "Canada";
+            document.getElementById("market_postal_text_billing").innerHTML = "Postal Code";
+            document.getElementById("usa_state_select_billing").style.display = "none";
+            document.getElementById("can_state_select_billing").style.display = "";
+            document.getElementById("BillingCountry").value = "CAN";
+        }
+        
+        initOrder()
+    }
+    	
+</script>
+
+<script type="text/javascript" language="javascript">
+   
+    function toggleDesc(v)
+    {
+        if (document.getElementById(v + "_desc").style.display == "none")
+        {
+            document.getElementById(v + "_desc").style.display = "";
+        }
+        else
+        {
+            document.getElementById(v + "_desc").style.display = "none";
+        }
+    }
+    
+    function UseShipping(v)
+    {
+		///////////////////////////////////////////////////////////////////////////
+		//
+		// Copy shipping address fields to billing fields
+		//
+        if (v)
+        {
+			if (document.getElementById('select_Market').value == 'USA')
+			{
+				document.getElementById('USA_BillingState').value =  document.getElementById('USA_ShippingState').value
+				document.getElementById('kv_ShippingState').value =  document.getElementById('USA_ShippingState').value
+				document.getElementById('BillingState').value =  document.getElementById('USA_ShippingState').value
+			}
+			else
+			{
+				document.getElementById('CAN_BillingState').value =  document.getElementById('CAN_ShippingState').value
+				document.getElementById('kv_ShippingState').value =  document.getElementById('CAN_ShippingState').value
+				document.getElementById('BillingState').value =  document.getElementById('CAN_ShippingState').value
+			}
+			
+            document.getElementById('BillingAddress1').value = document.getElementById('kv_ShippingAddress1').value
+            document.getElementById('BillingAddress2').value = document.getElementById('kv_ShippingAddress2').value
+			document.getElementById('BillingCity').value =  document.getElementById('kv_ShippingCity').value
+			document.getElementById('BillingZip').value =  document.getElementById('kv_ShippingZip').value
+			document.getElementById('BillingCountry').value =  document.getElementById('kv_ShippingCountry').value
+        }
+    }
+
+    function formatCurrency(num) {
+        num = num.toString().replace(/\$|\,/g,'');
+        if(isNaN(num))
+        num = "0";
+        sign = (num == (num = Math.abs(num)));
+        num = Math.floor(num*100+0.50000000001);
+        cents = num%100;
+        num = Math.floor(num/100).toString();
+        if(cents<10)
+        cents = "0" + cents;
+        for (var i = 0; i < Math.floor((num.length-(1+i))/3); i++)
+        num = num.substring(0,num.length-(4*i+3))+','+
+        num.substring(num.length-(4*i+3));
+        return (((sign)?'':'-') + '$' + num + '.' + cents);
+    }
+
+    function validUsername(elem)
+    {
+        var lowerName = elem.value.toLowerCase();
+	    var ckName = lowerName.split('zenvei').length - 1;
+	    var alphaExp = /^[0-9a-zA-Z]+$/;
+	    
+	    if (ckName > 0)
+	    {
+	        alert("Sorry, but you can not use ZenVei in your URL name.");
+	        elem.focus();
+		    elem.value = "";
+		    return false
+	    }
+	    
+	    if(!elem.value.match(alphaExp))
+	    {
+		    alert("Your website username may contain only \"alpha-numeric\" characters (A-Z and 0-9); special characters--including common punctuation marks--are not allowed.");
+		    elem.focus();
+		    elem.value = "";
+		    document.getElementById('SiteNameStatus').innerHTML="<font color=\"#ff0000\">Please select a different website address.</font>";
+	    }
+    }	
+    
+    var NamespaceDiv = "";
+    
+    function ajaxNamespace(d) 
+    {
+        NamespaceDiv = d;
+        //alert(d);
+        var SiteName = document.getElementById(NamespaceDiv + "_SiteName").value;
+        
+        if (SiteName == "")
+        {
+            document.getElementById(NamespaceDiv + "_NamespaceResponse").innerHTML = "Please select a URL for your site.";
+        }
+        else
+        {
+            AjaxMethod("/Resource/Modules/ModuleAjax/AjaxNamespace", ajaxNamespaceCB, "NamespaceUser", SiteName);
+        }
+    }
+    
+    function ajaxNamespaceCB(data) 
+    {
+        var validSiteName = AjaxValue(data, "Available");
+        var SiteName = document.getElementById(NamespaceDiv + "_SiteName").value;
+        
+        if (validSiteName == 0) 
+        {
+            document.getElementById(NamespaceDiv + "_NamespaceResponse").innerHTML = "Sorry, http://www.myzenvei.com" + SiteName + " is not available, please try again";
+            setTimeout("clearSiteName()",300)
+        }
+        else
+        {
+            document.getElementById(NamespaceDiv + "_NamespaceResponse").innerHTML = "Congratulations, " + SiteName + " is available!";
+        }
+    }
+    
+    function clearSiteName()
+    {
+        document.getElementById(NamespaceDiv + "_SiteName").value = "";
+        document.getElementById("SiteName").value = "";
+    }
+    
+    function ajaxEmail() 
+    {
+        AjaxMethod("/Resource/Modules/ModuleAjax/AjaxNamespace", ajaxEmailCB, "NamespaceUser", document.getElementById("Email").value);
+    }
+    
+    function ajaxEmailCB(data) 
+    {
+        if (AjaxValue(data, "Available") == 0) {
+            alert("The email address you selected is already taken.  Please select a different email address and try again.")
+            document.getElementById("Email").value = "";
+        }
+    }
+    
+    function validCC(c) 
+    {
+        if (Mod10(c.value) == false) {
+            alert("The credit card number you entered does not appear to be a valid number.  Please enter a new credit card number.");
+            c.value = "";
+        }
+        
+    }
+
+    function ConfirmUserPassword(d) 
+    {
+	    if (document.getElementById(d + '_create_Password').value != document.getElementById(d + '_ConfirmPassword').value)
+	    {
+		    alert("The 'Confirm Password' you entered does not match your original password. \n\n Please double check your entry and try again.")
+	    }
+    }
+    
+    function ConfirmEmailMatch() {
+		if (document.getElementById('Email').value != document.getElementById('ConfirmEmail').value) {
+			alert('The \'Confirm Email\' you entered does not match your original Email. \n\n Please double check your entry and try again.');
+			return false;
+		}
+		
+		return true;
+    }
+    
+    function changeText(v)
+    {
+        if (v == true)
+        {
+            document.getElementById("SSN").innerHTML = "Tax ID #:";
+            document.getElementById("confirmSSNRow").innerHTML = "Confirm Tax ID #:";
+            document.getElementById("BusinessNameRow").style.display = "";
+            
+        }
+        else
+        {
+            document.getElementById("SSN").innerHTML = "SSN#:";
+            document.getElementById("confirmSSNRow").innerHTML = "Confirm SSN#:";
+            document.getElementById("BusinessNameRow").style.display = "none";
+        }
+    }
+    
+    function validSSN(v)
+    {
+        if (v.length != 9)
+        {
+            alert("Please provide a valid SSN/SIN with exactly 9 digits.");
+            return false
+        }
+        
+        var numDashes = v.split('-').length - 1;
+        
+        if (numDashes > 0)
+        {
+            alert("Please do not use dashes in your SSN/SIN #.");
+        }
+        
+    }
+    
+    function confirmSSN(v)
+    {
+        if (v != document.getElementById("kv_TaxID").value)
+        {
+            alert("Your tax information numbers did not match please try again.");
+            document.getElementById("confirmTaxID").value = "";
+            return false
+            
+        }
+    }
+
+</script>
+
+<style>
+	.TableField
+	{
+		font-weight: bold;
+		white-space: nowrap;
+		width: 107px;
+	}
+	.TableValue
+	{
+		color: #767561;
+	}
+	.TableValue input
+	{
+		width: 132px;
+	}
+	#ColumnBody
+	{
+		margin: 0px 0 0px 0px;
+		padding: 0px 20px 25px 20px;
+	}
+	#ContentDiv
+	{
+		margin: 10px 0px 0px 0px;
+	}
+	#NavCart
+	{
+		width: 213px;
+		height: 153px;
+		background: url(  "/images/store/nav_cart.png" ) left top no-repeat;
+		padding: 75px 0 0 15px;
+	}
+	.PageForm
+	{
+		position: relative;
+		z-index: 50;
+	}
+</style>
+<!--[if IE]>
+    <style>
+        
+        #NavCart {    
+        }
+        
+        #Body
+        {
+        	padding: 75px 0px 170px 0px;   	
+        }
+    </style>
+<![EndIf]-->
+<table cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<div class="PageForm">
+				<div id="ErrorMessage" style="display: none;">
+					<table cellpadding="0" cellspacing="0" width="691">
+						<tr>
+							<td>
+								<img src="/images/office/box_main_white_clean_top.png" width="691" />
+							</td>
+						</tr>
+						<tr>
+							<td style="background: url('/images/office/box_main_white_bg.png') top left repeat-y">
+								<div id="ColumnTitle">
+									<h1>
+										BILLING ERROR</h1>
+									<div id="TitleText">
+									</div>
+								</div>
+								<div id="ColumnBody">
+									There was a problem billing your credit card. The payment processor returned the
+									following error:
+									<blockquote>
+										</blockquote>
+									Please review the provided payment information for accuracy and resubmit; or try
+									an alternate form of payment.
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="/images/office/box_main_white_bottom.png" width="691" />
+							</td>
+						</tr>
+					</table>
+				</div>
+				<br />
+				
+				<div id="PageTitle" style="font-size: 24px; color: #5EA11E;">Join the ZENVEI Team</div>
+				
+				<form method="post" action="" onsubmit="return ValidateForm();" name="EnrollForm" id="EnrollForm" />
+				<input type="hidden" name="TreePlacement" value="" />
+				<input type="hidden" id="BillingState" name="BillingState" value="" />
+				<input type="hidden" id="kv_ShippingState" name="kv_ShippingState" value="" />
+				<input type="hidden" id="Password" name="Password" value="" />
+				<input type="hidden" id="SiteName" name="SiteName" value="" />
+				<input type="hidden" id="Balance" name="Balance" value="" />
+				<input type="hidden" id="PlacementID" name="PlacementID" value="" />
+				<input type="hidden" id="Placement" name="Placement" value="" />
+
+				<div id="StepSelectMembership">
+					<table cellpadding="0" cellspacing="0" width="691">
+						<tr>
+							<td>
+								<img src="/images/office/box_main_white_clean_top.png" width="691" height="16" />
+							</td>
+						</tr>
+						<tr>
+							<td style="background: url('/images/office/box_main_white_bg.png') top left repeat-y">
+								<div id="ColumnTitle">
+									<h1>Step 1: Order</h1>
+								</div>
+								<div style="background: url('/images/enroll.png') 370px 97px no-repeat; margin: 0px 0 0 0; padding: 0px 20px 20px;">
+									
+									<div id="Select_Your_Market" style="display: none;">
+									
+										<span style="color: #6a7a7f; font-weight: bold;">Please Select Your Market</span>
+										<table cellpadding="5">
+											<tr>
+												<td style="color: #6a7a7f; font-weight: bold;">
+													Market:
+												</td>
+												<td>
+													<select id="select_Market" name="select_Market" style="width: 325px;" onchange="init(this.value);">
+														<option value="USA" />United States
+														<option value="CAN" />Canada
+													</select>
+												</td>
+											</tr>
+										</table>
+										<br />
+										<br />
+									</div>
+									
+									<img src="/images/products.png" id="card_image" alt="" style="float: right;" />
+									<br />
+								
+								    <div style="font-size: 18px;">Enrollment Type:</div>
+									
+									<div id="membership_business_details">
+										<input style="display:none;" type="radio" id="membership_business" name="membership" value="business" />
+										<table cellpadding="0" cellspacing="0">
+											<tr>
+												<td style="padding: 15px 0 0 0;">
+													<span style="font-weight:bold;">BUSINESS ASSOCIATE</span> - Monthly autoship of $128 or more
+												</td>
+											</tr>
+											<tr>
+												<td style="padding:15px 0 0 15px;">Benefits include:</td>
+											</tr>
+											<tr>
+												<td>
+													<ul style="padding:15px 0 0 35px;">
+														<li>This is the first benefit</li>
+													</ul>
+												</td>
+											</tr>
+										</table>
+										
+										<div style="font-weight:bold; padding:10px 0 0 0;" onclick="selectMembership('marketing');">Click here to see other enrollment options >></div>
+										<div style="font-weight:bold; padding:10px 0 0 0;">Click here to order products without creating an autoship order >></div>
+										
+									</div>
+									
+									<div id="membership_marketing_details" style="display:none;">
+										<input style="display:none;" type="radio" id="membership_marketing" name="membership" value="marketing" />
+										<table cellpadding="0" cellspacing="0">
+											<tr>
+												<td style="padding: 15px 0 0 0;">
+													<span style="font-weight:bold;">MARKET ASSOCIATE</span> - Monthly autoship of $70 or more
+												</td>
+											</tr>
+											<tr>
+												<td style="padding:15px 0 0 15px;">Benefits include:</td>
+											</tr>
+											<tr>
+												<td>
+													<ul style="padding:15px 0 0 35px;">
+														<li>This is the first benefit</li>
+													</ul>
+												</td>
+											</tr>
+										</table>
+										
+										<div style="font-weight:bold; padding:10px 0 0 0;" onclick="selectMembership('business');">Click here to see other enrollment options >></div>
+										<div style="font-weight:bold; padding:10px 0 0 0;">Click here to order products without creating an autoship order >></div>
+										
+									</div>
+									
+									
+									<table cellpadding="0" cellspacing="0">
+										<tr>
+											<td style="font-size: 18px; padding:15px 0 0 0;">
+												Registration Fee:
+											</td>
+										</tr>
+										<tr>
+											<td style="padding:15px 0 0 0;">An annual registration fee of $39.99 will be added to your registration order. This fee will be automatically renewed each year unless you cancel your Zenvei membership.</td>
+										</tr>
+									</table>
+
+									<div style="border-bottom: 1px solid #acacac; margin: 5px 0px 15px 0px;">
+										&nbsp;</div>
+  									
+									<table cellpadding="0" cellspacing="0">
+										<tr>
+											<td>
+												<div style="font-size: 18px;">Select Monthly AutoShip Program:</div>
+												
+												Your first order will ship immedialtely and will ship everymonth herafter until you contact Zenvei to cancel.
+												<br />
+												<br />
+												As a <span id="Membership_Type_Text_1">Business</span> Associate you may choose a combination of products totallying $<span id="Membership_Type_Text_2">128</span> or more. To enjoy the benefits of a <span id="Membership_Type_Text_3">Business</span> Associate,
+												 your monthly qualifying purchase would be a combination of products totallying $<span id="Membership_Type_Text_4">128</span> or more.
+												<br />
+												<br />
+												<table cellpadding="0" cellspacing="0">
+													<tr>
+														<td align="right" style="font-weight:bold;">
+															ZENVEI RED
+														</td>
+														<td style="width:300px; padding:0px 20px 0px 20px;">
+															Improves and maintains cardiovascular function.
+														</td>
+														<td style="font-weight:bold; padding:0px 15px 0px 15px;">
+														<span id="kv_InitialOrder_1_Price">0</span>
+														</td>
+														<td>
+															<select id="kv_InitialOrder_1_Qty" name="kv_InitialOrder_1_Qty" style="" onchange="initOrder();">
+																<option value="0" />Select Quantity
+																<option value="1" />1
+																<option value="2" />2
+																<option value="3" />3
+																<option value="4" />4
+																<option value="5" />5
+																<option value="6" />6
+																<option value="7" />7
+																<option value="8" />8
+																<option value="9" />9
+																<option value="10" />10
+															</select>
+														</td>
+														<td style="padding-left: 10px;">
+															<img src="/images/red_bottle.png" height="50" style="position: relative; margin-bottom: 5px;" />
+														</td>
+													</tr>
+
+													<input type="hidden" id="kv_InitialOrder_1" name="kv_InitialOrder_1" value="RED-60" />
+													<script language="javascript" type="text/javascript">
+														document.getElementById('kv_InitialOrder_1_Qty').value = '';
+													</script>
+
+													<tr>
+														<td align="right" style="font-weight:bold;">
+															ZENVEI BLUE
+														</td>
+														<td style="width:300px; padding:0px 20px 0px 20px;">
+															Supports
+														</td>
+														<td style="font-weight:bold; padding:0px 15px 0px 15px;">
+														<span id="kv_InitialOrder_2_Price">0</span>
+														</td>
+														<td>
+															<select id="kv_InitialOrder_2_Qty" name="kv_InitialOrder_2_Qty" style="width: 111px;" onchange="initOrder();">
+																<option value="0" />Select Quantity
+																<option value="1" />1
+																<option value="2" />2
+																<option value="3" />3
+																<option value="4" />4
+																<option value="5" />5
+																<option value="6" />6
+																<option value="7" />7
+																<option value="8" />8
+																<option value="9" />9
+																<option value="10" />10
+															</select>
+ 
+														</td>
+														<td style="padding-left: 10px;">
+															<img src="/images/blue_bottle.png" height="50" style="position: relative; margin-bottom: 5px;" />
+														</td>
+													</tr>
+													<input type="hidden" id="kv_InitialOrder_2" name="kv_InitialOrder_2" value="BLU-32" />
+													<script language="javascript" type="text/javascript">
+													document.getElementById('kv_InitialOrder_2_Qty').value = '';
+													</script>
+
+													<tr>
+														<td align="right" style="font-weight:bold;">
+															ZENVEI GREEN
+														</td>
+														<td style="width:300px; padding:0px 20px 0px 20px;">
+														Detox
+														</td>
+														<td style="font-weight:bold; padding:0px 15px 0px 15px;">
+														<span id="kv_InitialOrder_3_Price">0</span>
+														</td>
+														<td>
+															<select id="kv_InitialOrder_3_Qty" name="kv_InitialOrder_3_Qty" style="width: 111px;" onchange="initOrder();">
+																<option value="0" />Select Quantity
+																<option value="1" />1
+																<option value="2" />2
+																<option value="3" />3
+																<option value="4" />4
+																<option value="5" />5
+																<option value="6" />6
+																<option value="7" />7
+																<option value="8" />8
+																<option value="9" />9
+																<option value="10" />10
+															</select>
+														</td>
+														<td style="padding-left: 10px;">
+															<img src="/images/green_bottle.png" height="50" style="position: relative; margin-bottom: 5px;" />
+														</td>
+													</tr>
+													<input type="hidden" id="kv_InitialOrder_3" name="kv_InitialOrder_3" value="GRN-05" />
+													<script language="javascript" type="text/javascript">
+													document.getElementById('kv_InitialOrder_3_Qty').value = '';
+													</script>
+													
+													<tr>
+														<td align="right" style="font-weight:bold;">
+															ZENVEI SILVER
+														</td>
+														<td style="width:300px; padding:0px 20px 0px 20px;">
+														A liquid
+														</td>
+														<td style="font-weight:bold; padding:0px 15px 0px 15px;">
+														<span id="kv_InitialOrder_4_Price">0</span>
+														</td>
+														<td>
+															<select id="kv_InitialOrder_4_Qty" name="kv_InitialOrder_4_Qty" style="width: 111px;" onchange="initOrder();">
+																<option value="0" />Select Quantity
+																<option value="1" />1
+																<option value="2" />2
+																<option value="3" />3
+																<option value="4" />4
+																<option value="5" />5
+																<option value="6" />6
+																<option value="7" />7
+																<option value="8" />8
+																<option value="9" />9
+																<option value="10" />10
+															</select>
+														</td>
+														<td style="padding-left: 10px;">
+															<img src="/images/silver_bottle.png" height="50" style="position: relative; margin-bottom: 5px;" />
+														</td>
+													</tr>
+													<input type="hidden" id="kv_InitialOrder_4" name="kv_InitialOrder_4" value="SLVR-4" />
+													<script language="javascript" type="text/javascript">
+							                        document.getElementById('kv_InitialOrder_4_Qty').value = '';
+													</script>
+
+													<tr>
+														<td colspan="4">
+															<br />
+															Shipping Method: 
+														
+															<select name="InitialOrderShippingMethod" id="InitialOrderShippingMethod">
+															<option value="UPS Standard" />UPS Standard
+															<option value="UPS Next Day" />UPS Next Day
+															<option value="US Mail" />US Mail
+															<option value="US Mail 12" />US Mail 12
+															<option value="Will Call" />Will Call
+															<option value="Will Call Warehouse" />Will Call Warehouse
+															</select>
+															<script language="javascript" type="text/javascript">
+															document.getElementById("InitialOrderShippingMethod").value = "";
+															</script>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+  									
+                                   
+                                    <br />
+                                    
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="/images/office/box_main_white_bottom.png" width="691" height="6" />
+							</td>
+						</tr>
+					</table>
+				</div>
+	
+
+				<br />
+				<div id="StepPersonalInfo">
+					<table cellpadding="0" cellspacing="0" width="691">
+						<tr>
+							<td>
+								<img src="/images/office/box_main_white_clean_top.png" width="691" height="16" />
+							</td>
+						</tr>
+						<tr>
+							<td style="background: url('/images/office/box_main_white_bg.png') top left repeat-y">
+								<div id="ColumnTitle">
+									<table width="650" style="border-bottom: 1px solid #ACACAC;">
+										<tr>
+											<td>
+												<h1 style="border-bottom: 0px solid #ACACAC;">
+													Step 2: Personal Info (Secure)</h1>
+											</td>
+											<td align="right">
+												<div id="signup_as_business">
+													Signup as Business
+													<input type="checkbox" name="BusinessSignup" id="BusinessSignup" value="True" onclick="changeText(this.checked);" />
+
+													<script language="javascript" type="text/javascript">
+						        if ('' == 'True') {
+							        document.getElementById('BusinessSignup').checked = true;
+						        } else {
+							        document.getElementById('BusinessSignup').checked = false;
+						        }
+													</script>
+
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div id="ColumnBody">
+									<table width="100%" cellpadding="5">
+										<tr>
+											<td class="TableField" align="right">
+												First Name:
+											</td>
+											<td class="TableValue">
+												<input type="text" style="width: 190px;" name="FirstName" id="FirstName" value="" />
+											</td>
+											<td class="TableField" align="right">
+												Last Name:
+											</td>
+											<td class="TableValue">
+												<input type="text" style="width: 190px;" name="LastName" id="LastName" value="" />
+											</td>
+										</tr>
+										<tr>
+											<td align="right" id="birthday_title">
+												Birthday:
+											</td>
+											<td class="TableValue" id="birthday_value">
+												<select name="kv_birthday_Month" id="kv_birthday_Month" onchange="populateDays(this, document.getElementById('kv_birthday_Day'));">
+													<option value="1" />1
+													<option value="2" />2
+													<option value="3" />3
+													<option value="4" />4
+													<option value="5" />5
+													<option value="6" />6
+													<option value="7" />7
+													<option value="8" />8
+													<option value="9" />9
+													<option value="10" />10
+													<option value="11" />11
+													<option value="12" />12
+												</select>
+												<select name="kv_birthday_Day" id="kv_birthday_Day">
+												</select>
+												<select name="kv_birthday_Year" id="kv_birthday_Year">
+												</select>
+
+												<script language="javascript" type="text/javascript">
+							    populateBirthDates(document.getElementById('kv_birthday_Month'), document.getElementById('kv_birthday_Day'), document.getElementById('kv_birthday_Year'));
+							    if ('' != '') {
+									document.getElementById('kv_birthday_Month').value = '';
+									document.getElementById('kv_birthday_Month').onchange();
+									document.getElementById('kv_birthday_Day').value = '';
+									document.getElementById('kv_birthday_Year').value = '';
+							    }
+												</script>
+
+											</td>
+										</tr>
+										<tr id="BusinessNameRow" style="display: none">
+											<td class="" align="right">
+												Business Name:
+											</td>
+											<td colspan="3" class="TableValue">
+												<input type="text" name="kv_BusinessName" id="kv_BusinessName" value="" style="width: 453px;" />
+											</td>
+										</tr>
+										<tr>
+											<td class="TableField" align="right">
+												Email:
+											</td>
+											<td class="TableValue">
+												<input type="text" style="width: 190px;" name="Email" id="Email" onchange="if (!ValidEmail(this.value, false)) {alert('Please enter a valid email address'); return false;} ;ajaxEmail();" value="" />
+											</td>
+											<td class="TableField" align="right">
+												Confirm Email:
+											</td>
+											<td class="TableValue">
+												<input type="text" style="width: 190px;" name="ConfirmEmail" id="ConfirmEmail" value="" onchange="ConfirmEmailMatch();" />
+											</td>
+										</tr>
+										<tr id="ssn_row">
+											<td id="SSN" style="font-weight: bold; white-space: nowrap; padding: 8px 5px 5px 5px;" align="right" valign="top">
+												SSN/SIN:
+											</td>
+											<td class="TableValue">
+												<input type="text" style="width: 190px;" name="kv_TaxID" id="kv_TaxID" value="" onchange="validSSN(this.value);" maxlength="9" /><br />
+												(no dashes)
+											</td>
+											<td id="confirmSSNRow" style="font-weight: bold; white-space: nowrap; padding: 8px 5px 5px 5px;" align="right" valign="top">
+												Confirm SSN/SIN:
+											</td>
+											<td class="TableValue">
+												<input type="text" style="width: 190px;" name="confirmTaxID" id="confirmTaxID" value="" onchange="confirmSSN(this.value);" maxlength="9" /><br />
+												(no dashes)
+											</td>
+										</tr>
+										<tr id="ssn_row_more">
+											<td>
+											</td>
+											<td class="TableField" colspan="3" align="left" style="color: #6a7a7f; cursor: pointer;
+												padding: 8px 5px 15px 5px; width: 400px;" onclick="document.getElementById('SSN_What').style.display='';" valign="top">
+												Why do you need my SSN/SIN?
+											</td>
+										</tr>
+										<tr>
+											<td class="TableField" align="right">
+												Daytime Phone:
+											</td>
+											<td class="TableValue">
+												<input type="text" style="width: 190px;" name="DaytimePhone" id="DaytimePhone" value="" />
+											</td>
+											<td class="TableField" align="right">
+												Evening Phone:
+											</td>
+											<td class="TableValue">
+												<input type="text" style="width: 190px;" name="kv_HomePhone" id="kv_HomePhone" value="" />
+											</td>
+										</tr>
+										<tr>
+											<td align="right">
+												Cell Phone:
+											</td>
+											<td class="TableValue">
+												<input type="text" style="width: 190px;" name="kv_CellPhone" id="kv_CellPhone" value="" />
+											</td>
+											<td align="right">
+												Fax #:
+											</td>
+											<td class="TableValue">
+												<input type="text" style="width: 190px;" name="kv_FaxNumber" id="kv_FaxNumber" value="" />
+											</td>
+										</tr>
+									</table>
+									<div id="CoApp">
+										<table width="100%" cellpadding="5">
+											<tr>
+												<td colspan="4">
+													<div style="border-bottom: 1px solid #acacac; margin: 0px 0px 10px 0px; width: 650px;">
+														&nbsp;</div>
+												</td>
+											</tr>
+											<tr>
+												<td>
+												</td>
+												<td colspan="3">
+													<h5 style="display: inline;">
+														CoApplicant Information:</h5>
+													(optional)
+												</td>
+											</tr>
+											<tr>
+												<td align="right" style="padding: 0px 5px 0px 35px;">
+													First Name:
+												</td>
+												<td class="TableValue">
+													<input type="text" style="width: 190px;" name="kv_CoFirstName" id="kv_CoFirstName" value="" />
+												</td>
+												<td align="right">
+													Last Name:
+												</td>
+												<td class="TableValue">
+													<input type="text" style="width: 190px;" name="kv_CoLastName" id="kv_CoLastName" value="" />
+												</td>
+											</tr>
+											<tr>
+												<td align="right">
+													Birthday:
+												</td>
+												<td class="TableValue">
+													<select name="kv_Cobirthday_Month" id="kv_Cobirthday_Month" onchange="populateDays(this, document.getElementById('kv_Cobirthday_Day'));">
+														<option value="1" />1
+														<option value="2" />2
+														<option value="3" />3
+														<option value="4" />4
+														<option value="5" />5
+														<option value="6" />6
+														<option value="7" />7
+														<option value="8" />8
+														<option value="9" />9
+														<option value="10" />10
+														<option value="11" />11
+														<option value="12" />12
+													</select>
+													<select name="kv_Cobirthday_Day" id="kv_Cobirthday_Day">
+													</select>
+													<select name="kv_Cobirthday_Year" id="kv_Cobirthday_Year">
+													</select>
+
+													<script language="javascript" type="text/javascript">
+						        populateBirthDates(document.getElementById('kv_Cobirthday_Month'), document.getElementById('kv_Cobirthday_Day'), document.getElementById('kv_Cobirthday_Year'));
+						        if ('' != '') {
+								    document.getElementById('kv_Cobirthday_Month').value = '';
+								    document.getElementById('kv_Cobirthday_Month').onchange();
+								    document.getElementById('kv_Cobirthday_Day').value = '';
+								    document.getElementById('kv_Cobirthday_Year').value = '';
+						        }
+													</script>
+
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<div id="SSN_What" style="display: none; position: absolute; width: 250px; height: 250px;
+									top: 600px; padding: 0px 0px 0px 386px;" onclick="document.getElementById('SSN_What').style.display='none';">
+									<div style="padding: 10px; background: #ffffff; width: 230px; height: 250px; background: url('/images/bg_popup.png') top left no-repeat;">
+										<div style="width: 230px;">
+											<h1 style="margin: 0px 0px 10px 0px; padding: 0px 20px 0px 0px; font-size: 14px;">
+												Why do you need my social security number?</h1>
+											This number is needed for tax purposes. All Independent Internet Affiliates
+											who sign up with ZENVEI are eligible to earn commissions if they refer ZENVEI
+											to others. The company requires your Social Security Number in order to report any
+											earnings to the IRS. <b>NO CREDIT CHECK will be performed</b>, and your Social Security
+											Number is transferred through a safe, secure and encrypted system.
+											<div style="margin: 11px 0px 0px 0px; float: right; cursor: pointer;">
+												<img src="/images/close.png" /></div>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="/images/office/box_main_white_bottom.png" width="691" height="6" />
+							</td>
+						</tr>
+					</table>
+				</div>
+				<br />
+				<div id="StepPaymentInfo">
+					<table cellpadding="0" cellspacing="0" width="691">
+						<tr>
+							<td>
+								<img src="/images/office/box_main_white_clean_top.png" width="691" height="16" />
+							</td>
+						</tr>
+						<tr>
+							<td style="background: url('/images/office/box_main_white_bg.png') top left repeat-y">
+								<div id="ColumnTitle">
+									<h1>
+										Step 3: Payment Info (Secure)</h1>
+								</div>
+								<div id="ColumnBody">
+									<table width="100%" cellpadding="5" border="0">
+										<tr>
+											<td></td>
+											<td colspan="3">
+												<div style="font-size: 15px; color: #499500;">Shipping Address: (No PO Boxes)</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="TableField" align="right">
+												Address 1:
+											</td>
+											<td colspan="3" class="TableValue">
+												<input type="text" name="kv_ShippingAddress1" id="kv_ShippingAddress1" value="" style="width: 500px;" onchange="initOrder();" />
+											</td>
+										</tr>
+										<tr>
+											<td class="TableField" align="right">
+												Address 2:
+											</td>
+											<td colspan="3" class="TableValue">
+												<input type="text" name="kv_ShippingAddress2" id="kv_ShippingAddress2" value="" style="width: 500px;" onchange="initOrder();" />
+											</td>
+										</tr>
+										<tr>
+											<td class="TableField" align="right">
+												City:
+											</td>
+											<td class="TableValue">
+												<input type="text" style="width: 190px" name="kv_ShippingCity" id="kv_ShippingCity" value="" onchange="initOrder();" />
+											</td>
+											<td class="TableField" align="right">
+												<span id="market_state_text_shipping"></span>:
+											</td>
+											<td class="TableValue">
+												<div id="usa_state_select_shipping" style="display: none; width: 190px;" onchange="initOrder();">
+													<select name="USA_ShippingState" id="USA_ShippingState" onchange="document.getElementById('kv_ShippingState').value=this.value">
+														<option value="" />Select...
+														<option value="AL" />Alabama
+														<option value="AK" />Alaska
+														<option value="AZ" />Arizona
+														<option value="AR" />Arkansas
+														<option value="CA" />California
+														<option value="CO" />Colorado
+														<option value="CT" />Connecticut
+														<option value="DE" />Delaware
+														<option value="DC" />District of Columbia
+														<option value="FL" />Florida
+														<option value="GA" />Georgia
+														<option value="HI" />Hawaii
+														<option value="ID" />Idaho
+														<option value="IL" />Illinois
+														<option value="IN" />Indiana
+														<option value="IA" />Iowa
+														<option value="KS" />Kansas
+														<option value="KY" />Kentucky
+														<option value="LA" />Louisiana
+														<option value="ME" />Maine
+														<option value="MD" />Maryland
+														<option value="MA" />Massachusetts
+														<option value="MI" />Michigan
+														<option value="MS" />Mississippi
+														<option value="MO" />Missouri
+														<option value="MT" />Montana
+														<option value="NE" />Nebraska
+														<option value="NV" />Nevada
+														<option value="NH" />New Hampshire
+														<option value="NJ" />New Jersey
+														<option value="NM" />New Mexico
+														<option value="NY" />New York
+														<option value="NC" />North Carolina
+														<option value="ND" />North Dakota
+														<option value="OH" />Ohio
+														<option value="OK" />Oklahoma
+														<option value="OR" />Oregon
+														<option value="PA" />Pennsylvania
+														<option value="RI" />Rhode Island
+														<option value="SC" />South Carolina
+														<option value="SD" />South Dakota
+														<option value="TN" />Tennessee
+														<option value="TX" />Texas
+														<option value="UT" />Utah
+														<option value="VT" />Vermont
+														<option value="VA" />Virginia
+														<option value="WA" />Washington
+														<option value="DC" />Washington D.C.
+														<option value="WV" />West Virginia
+														<option value="WI" />Wisconsin
+														<option value="WY" />Wyoming
+													</select>
+												</div>
+												<div id="can_state_select_shipping" style="display: none; width: 190px;" onchange="initOrder();">
+													<select name="CAN_ShippingState" id="CAN_ShippingState" onchange="document.getElementById('kv_ShippingState').value=this.value">
+														<option value="" />Select...
+														<option value="AB" />Alberta
+														<option value="BC" />British Columbia
+														<option value="MB" />Manitoba
+														<option value="NB" />New Brunswick
+														<option value="NF" />New Foundland
+														<option value="NT" />Northwest Territories
+														<option value="NS" />Nova Scotia
+														<option value="ON" />Ontario
+														<option value="PI" />Prince Edward Island
+														<option value="PQ" />Quebec
+														<option value="SA" />Saskatchewan
+														<option value="YT" />Yukon Territory
+													</select>
+												</div>
+
+												<script language="javascript" type="text/javascript">
+                                                    document.getElementById('USA_ShippingState').value = '';
+                                                    document.getElementById('CAN_ShippingState').value = '';
+												</script>
+
+											</td>
+										</tr>
+										<tr>
+											<td class="TableField" align="right" style="padding: 0px 0px 0px 10px;">
+												<span id="market_postal_text_shipping"></span>:
+											</td>
+											<td class="TableValue">
+												<input type="text" style="width: 190px" value="" id="kv_ShippingZip" name="kv_ShippingZip" onchange="initOrder();" />
+											</td>
+											<td class="TableField" align="right">
+												Country:
+											</td>
+											<td class="TableValue">
+												<span id="market_country_text_shipping"></span>
+												<input type="hidden" id="kv_ShippingCountry" name="kv_ShippingCountry" value="" />
+											</td>
+										</tr>
+										<tr>
+											<td colspan="4">
+												<div style="border-bottom: 1px solid #acacac; margin: 0px 0px 10px 0px; width: 650px;">
+													&nbsp;</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+											</td>
+											<td>
+												<div style="font-size: 15px; color: #499500;">Billing Address:</div>
+											</td>
+											<td colspan="2" align="left">
+												Same as shipping
+												<input type="checkbox" value="true" name="useShipping" id="useShipping" onclick="UseShipping(this.checked);" />
+											</td>
+										</tr>
+										<tr>
+											<td class="TableField" align="right">
+												Address 1:
+											</td>
+											<td colspan="3" class="TableValue">
+												<input type="text" name="BillingAddress1" id="BillingAddress1" value="" style="width: 500px;" />
+											</td>
+										</tr>
+										<tr>
+											<td class="TableField" align="right">
+												Address 2:
+											</td>
+											<td colspan="3" class="TableValue">
+												<input type="text" name="BillingAddress2" id="BillingAddress2" value="" style="width: 500px;" />
+											</td>
+										</tr>
+										<tr>
+											<td class="TableField" align="right">
+												City:
+											</td>
+											<td class="TableValue">
+												<input type="text" style="width: 190px" name="BillingCity" id="BillingCity" value="" />
+											</td>
+											<td class="TableField" align="right">
+												<input type="hidden" id="BillingCountry" style="width: 190px" name="BillingCountry" value="" />
+												<span id="market_state_text_billing"></span>:
+											</td>
+											<td class="TableValue">
+												<div id="usa_state_select_billing" style="display: none;">
+													<select name="USA_BillingState" id="USA_BillingState" onchange="document.getElementById('BillingState').value=this.value">
+														<option value="" />Select...
+														<option value="AL" />Alabama
+														<option value="AK" />Alaska
+														<option value="AZ" />Arizona
+														<option value="AR" />Arkansas
+														<option value="CA" />California
+														<option value="CO" />Colorado
+														<option value="CT" />Connecticut
+														<option value="DE" />Delaware
+														<option value="DC" />District of Columbia
+														<option value="FL" />Florida
+														<option value="GA" />Georgia
+														<option value="HI" />Hawaii
+														<option value="ID" />Idaho
+														<option value="IL" />Illinois
+														<option value="IN" />Indiana
+														<option value="IA" />Iowa
+														<option value="KS" />Kansas
+														<option value="KY" />Kentucky
+														<option value="LA" />Louisiana
+														<option value="ME" />Maine
+														<option value="MD" />Maryland
+														<option value="MA" />Massachusetts
+														<option value="MI" />Michigan
+														<option value="MS" />Mississippi
+														<option value="MO" />Missouri
+														<option value="MT" />Montana
+														<option value="NE" />Nebraska
+														<option value="NV" />Nevada
+														<option value="NH" />New Hampshire
+														<option value="NJ" />New Jersey
+														<option value="NM" />New Mexico
+														<option value="NY" />New York
+														<option value="NC" />North Carolina
+														<option value="ND" />North Dakota
+														<option value="OH" />Ohio
+														<option value="OK" />Oklahoma
+														<option value="OR" />Oregon
+														<option value="PA" />Pennsylvania
+														<option value="RI" />Rhode Island
+														<option value="SC" />South Carolina
+														<option value="SD" />South Dakota
+														<option value="TN" />Tennessee
+														<option value="TX" />Texas
+														<option value="UT" />Utah
+														<option value="VT" />Vermont
+														<option value="VA" />Virginia
+														<option value="WA" />Washington
+														<option value="DC" />Washington D.C.
+														<option value="WV" />West Virginia
+														<option value="WI" />Wisconsin
+														<option value="WY" />Wyoming
+													</select>
+												</div>
+												<div id="can_state_select_billing" style="display: none;">
+													<select style="width: 190px" name="CAN_BillingState" id="CAN_BillingState" onchange="document.getElementById('BillingState').value=this.value">
+														<option value="" />Select...
+														<option value="AB" />Alberta
+														<option value="BC" />British Columbia
+														<option value="MB" />Manitoba
+														<option value="NB" />New Brunswick
+														<option value="NF" />New Foundland
+														<option value="NT" />Northwest Territories
+														<option value="NS" />Nova Scotia
+														<option value="ON" />Ontario
+														<option value="PI" />Prince Edward Island
+														<option value="PQ" />Quebec
+														<option value="SA" />Saskatchewan
+														<option value="YT" />Yukon Territory
+													</select>
+												</div>
+
+												<script language="javascript" type="text/javascript">
+                                document.getElementById('USA_BillingState').value = '';
+                                document.getElementById('CAN_BillingState').value = '';
+												</script>
+
+											</td>
+										</tr>
+										<tr>
+											<td class="TableField" align="right" style="padding: 0px 0px 0px 10px;">
+												<span id="market_postal_text_billing"></span>:
+											</td>
+											<td class="TableValue">
+												<input type="text" style="width: 190px" value="" id="BillingZip" name="BillingZip" />
+											</td>
+											<td class="TableField" align="right">
+												Country:
+											</td>
+											<td class="TableValue">
+												<span id="market_country_text_billing"></span>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="4">
+												<div style="border-bottom: 1px solid #acacac; margin: 0px 0px 10px 0px; width: 650px;">
+													&nbsp;</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+											</td>
+											<td colspan="3">
+												<div style="font-size: 15px; color: #499500;">Credit Card Information:</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="TableField" align="right">
+												Card Type:
+											</td>
+											<td colspan="3">
+												<table cellpadding="0" cellpadding="0">
+													<tr>
+														<td class="TableField" align="right">
+															<select name="PaymentType" id="PaymentType">
+																<option value="AMEX" />American Express
+																<option value="Visa" />Visa
+																<option value="MasterCard" />MasterCard
+																<option value="Discover" />Discover
+															</select>
+
+															<script language="javascript" type="text/javascript">
+							document.getElementById('PaymentType').value = '';
+															</script>
+
+														</td>
+														<td class="TableField" align="right" style="padding: 0px 10px 0px 10px;">
+															Name on Card:
+														</td>
+														<td class="TableValue">
+															<input type="text" name="NameOnCard" id="NameOnCard" value="" style="width: 234px;" />
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td class="TableField" align="right">
+												Card #:
+											</td>
+											<td class="TableValue">
+												<input type="text" style="width: 190px" value="" id="CardNumber" name="CardNumber" onchange="validCC(this);" />
+											</td>
+											<td colspan="2">
+												<table cellpadding="0" cellpadding="0">
+													<tr>
+														<td class="TableField" align="right" style="padding: 0px 10px 0px 0px; cursor: pointer;
+															color: #64184c;" onclick="document.getElementById('CC_What').style.display='';">
+															What is this?<img src="/images/pwp/arrow_purple.png" width="8" height="9" alt="" style="margin-left: 4px;" />
+														</td>
+														<td class="TableValue">
+															<input type="text" value="" id="CVV2" name="CVV2" style="width: 50px;" />
+														</td>
+														<td class="TableValue" style="padding: 0px 10px 0px 0px;">
+															<img src="/images/cc_back.png" />
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td class="TableField" align="right">
+												Expiration Date:
+											</td>
+											<td class="TableValue" colspan="3">
+												<select name="ExpirationMonth" id="ExpirationMonth">
+													<option value="01" />1 - January
+													<option value="02" />2 - Febuary
+													<option value="03" />3 - March
+													<option value="04" />4 - April
+													<option value="05" />5 - May
+													<option value="06" />6 - June
+													<option value="07" />7 - July
+													<option value="08" />8 - August
+													<option value="09" />9 - September
+													<option value="10" />10 - October
+													<option value="11" />11 - November
+													<option value="12" />12 - December
+												</select>
+												<select name="ExpirationYear" id="ExpirationYear">
+													<option value="09" />2009
+													<option value="10" />2010
+													<option value="11" />2011
+													<option value="12" />2012
+													<option value="13" />2013
+													<option value="14" />2014
+													<option value="15" />2015
+													<option value="16" />2016
+													<option value="17" />2017
+													<option value="18" />2018
+													<option value="19" />2019
+													<option value="20" />2020
+													<option value="21" />2021
+												</select>
+
+												<script language="javascript" type="text/javascript">
+						document.getElementById('ExpirationMonth').value = '';
+						document.getElementById('ExpirationYear').value = '';
+												</script>
+
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div id="CC_What" style="display: none; cursor: pointer; position: absolute; width: 250px;
+									height: 364px; top: 1560px; padding: 0px 0px 0px 540px;" onclick="document.getElementById('CC_What').style.display='none';">
+									<div style="padding: 10px; background: #ffffff; width: 230px; height: 364px; background: url('/images/cc_popup.png') top left no-repeat;">
+										<div style="margin: -2px 0px 0px 0px; float: right; cursor: pointer;">
+											<img src="/images/close.png" /></div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="/images/office/box_main_white_bottom.png" width="691" height="6" />
+							</td>
+						</tr>
+					</table>
+				</div>
+				<br />
+	
+		
+				
+				<div id="StepWebsite">
+					<table cellpadding="0" cellspacing="0" width="691">
+						<tr>
+							<td>
+								<img src="/images/office/box_main_white_clean_top.png" width="691" height="16" />
+							</td>
+						</tr>
+						<tr>
+							<td style="background: url('/images/office/box_main_white_bg.png') top left repeat-y">
+								<div id="ColumnTitle">
+									<h1>
+										<span id="StepWebsiteStepTitle">Step 4</span>: Your Personal MyZENVEI Website</h1>
+								</div>
+								<div id="ColumnBody">
+									Please choose a unique name for your web address. You may not use the word ZENVEI
+									 in your address. This name will also be your username at the login page. This will
+									provide you with a MyZENVEI website which wil allow you to enroll new independent
+									associates into your ZENVEI group.
+									<br />
+									<br />
+									<table>
+										<tr>
+											<td>
+											    <div style="font-size: 15px; color: rgb(73, 149, 0);">Select URL:</div>
+											</td>
+											<td valign="bottom" style="padding: 0px 0px 3px 10px;">
+												<span style="color: #64184c; cursor: pointer; font-weight: bold;" onclick="document.getElementById('urlWhat').style.display='';">
+													What is this?</span>
+											</td>
+										</tr>
+									</table>
+									<table>
+										<tr>
+											<td style="font-weight: bold;">
+												http://www.myzenvei.com/
+											</td>
+											<td>
+												<input type="text" value="" id="dist_SiteName" name="dist_SiteName" onchange="validUsername(this);ajaxNamespace('dist');document.getElementById('SiteName').value=this.value;" style="width: 250px;" />
+											</td>
+											<td style="font-weight: bold; cursor: pointer;" onclick="ajaxNamespace('dist');">
+												<img src="/images/pwp/arrow_circle.png" width="20" height="20" align="absmiddle" style="margin: 0px 7px 0px 7px;" />check
+												availability
+											</td>
+										</tr>
+										<tr>
+											<td>
+											</td>
+											<td style="color: #6a7a7f; font-weight: bold;" align="left" colspan="2" id="dist_NamespaceResponse">
+											</td>
+											<td>
+											</td>
+										</tr>
+									</table>
+									<div style="border-bottom: 1px solid #acacac; margin: 0px 0px 15px 0px;">
+										&nbsp;</div>
+									<img src="/images/setup_website.png" width="291" height="170" border="0" alt="" align="right" />
+									<div style="font-size: 15px; color: rgb(73, 149, 0);">Select Password:</div>
+									Password can be modified after sign-up in your Back Office.
+									<br />
+									<br />
+									<table cellpadding="5">
+										<tr>
+											<td class="TableField" align="right">
+												Create Password:
+											</td>
+											<td class="TableValue">
+												<input type="password" style="width: 190px;" name="dist_create_Password" id="dist_create_Password" value="" onchange="document.getElementById('Password').value=this.value;" />
+											</td>
+										</tr>
+										<tr>
+											<td class="TableField" align="right">
+												Confirm Password:
+											</td>
+											<td class="TableValue">
+												<input type="password" style="width: 190px;" value="" id="dist_ConfirmPassword" name="dist_ConfirmPassword" onchange="ConfirmUserPassword('dist');" />
+											</td>
+										</tr>
+									</table>
+									<div id="Select_Website" style="display:none;">
+										<div style="border-bottom: 1px solid #acacac; margin: 0px 0px 15px 0px;">
+											&nbsp;</div>
+										<br />
+										<br />
+										<div style="font-size: 15px; color: rgb(73, 149, 0);">Select Website Subscription:</div>
+										<br />
+										<table cellpadding="5" width="100%">										
+											<tr>
+												<td class="TableField" align="right" valign="top">
+													Annual:
+												</td>
+												<td class="TableValue" valign="top" width="1">
+													<input type="radio" value="" id="select_AnnualProductID" name="ProductID" style="width: 20px;" />
+												</td>
+												<td valign="top">
+													
+												</td>
+											</tr>
+											<tr>
+												<td class="TableField" align="right" valign="top">
+													Monthly:
+												</td>
+												<td class="TableValue" valign="top" width="1">
+													<input type="radio" value="177" id="select_MonthlyProductID" name="ProductID" style="width: 20px;" />
+												</td>
+												<td valign="top">
+													
+												</td>
+											</tr>
+											<tr>
+												<td class="TableField" align="right" valign="top">
+													Free:
+												</td>
+												<td class="TableValue" valign="top" width="1">
+													<input type="radio" value="" id="select_FreeProductID" name="ProductID" style="width: 20px;" />
+												</td>
+												<td valign="top">
+													
+												</td>
+											</tr>
+										</table>
+										
+
+									</div>
+								</div>
+								<div id="urlWhat" style="display: none; position: absolute; cursor: pointer; width: 250px; height: 250px; top: 2657px; left: 100px; padding: 0px 0px 0px 115px;" onclick="document.getElementById('urlWhat').style.display='none';">
+									<div style="padding: 10px; background: #ffffff; width: 230px; height: 250px; font-size: 11px;
+										background: url('/images/bg_popup.png') top left no-repeat;">
+										<div style="width: 230px;">
+											<h1 style="margin: 0px 0px 10px 0px; font-size: 14px;">
+												What is Website URL?</h1>
+											This is the web address for your your site. website. It includes a username that
+											you will choose (example: http://www.myzenvei.com/<strong>yourusername</strong>).<br />
+											<br />
+											Your username will also be part of your your site. email address (ie. <strong>yourusername</strong>@myzenvei.com).
+											Usernames may only contain letters (a-z) and numbers (0-9)&mdash;no spaces or special
+											characters&mdash;and must be at least three characters long.
+											<div style="margin: 11px 0px 0px 0px; float: right; cursor: pointer;">
+												<img src="/images/close.png" /></div>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="/images/office/box_main_white_bottom.png" width="691" height="6" />
+							</td>
+						</tr>
+					</table>
+				</div>
+				<br />
+				<div id="StepPolicies">
+					<table cellpadding="0" cellspacing="0" width="691">
+						<tr>
+							<td>
+								<img src="/images/office/box_main_white_clean_top.png" width="691" height="16" />
+							</td>
+						</tr>
+						<tr>
+							<td style="background: url('/images/office/box_main_white_bg.png') top left repeat-y">
+								<div id="ColumnTitle">
+									<h1>
+										Policies & Procedures and Terms & Conditions</h1>
+								</div>
+								<div id="ColumnBody">
+									To become a ZENVEI Distributor, you must acknowledge that you have
+									read, understand, and agree to the terms of the Policies & Procedures and Terms
+									& Conditions. If you have not already done so, click on the links below to read
+									and print these documents then check the boxes to indicate your agreement.
+									<br />
+									<br />
+									<table>
+										<tr>
+											<td>
+												<input type="checkbox" value="True" id="ckPolicies" name="Policies" />
+											</td>
+											<td nowrap="">
+												I have read, understand and agree to abide by the terms set forth in the <a href="/join/agreement.html" target="_blank">Policies and Procedures<img src="/images/pwp/arrow_purple.png" width="8" height="9" alt="" style="margin-left: 4px;" /></a>
+											</td>
+										</tr>
+										<tr style="display: none;">
+											<td>
+												<input type="checkbox" value="True" id="ckTerms" name="Terms" />
+											</td>
+											<td nowrap="">
+												I have read, understand and agree to abide by the terms set forth in the <a href="/join/agreement.html" target="_blank">Terms and Conditions<img src="/images/pwp/arrow_purple.png" width="8" height="9" alt="" style="margin-left: 4px;" /></a>
+											</td>
+										</tr>
+									</table>
+
+									<script language="javascript" type="text/javascript">
+                    var ckPolicies = "";
+                    var ckTerms = "";
+                    if (ckPolicies == 'True') {
+						document.getElementById('ckPolicies').checked = true;
+                    } else {
+						document.getElementById('ckPolicies').checked = false;
+                    }
+                    if (ckTerms == 'True') {
+						document.getElementById('ckTerms').checked = true;
+                    } else {
+						document.getElementById('ckTerms').checked = false;
+                    }
+
+									</script>
+
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="/images/office/box_main_white_bottom.png" width="691" height="6" />
+							</td>
+						</tr>
+					</table>
+					<br />
+				</div>
+				<table>
+					<tr>
+						<td>
+							<input type="image" src="/images/continue.png" style="width: 114px; height: 22px;
+								border: 0px" />
+						</td>
+						<td style="font-weight: bold; color: #6a7a7f;">
+							<div id="continue_text">Congratulations! This will submit your enrollment and create your website.</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						</td>
+						<td>
+							Please note it may take a few moments to process your credit card. To avoid<br />
+							multiple charges, please do not click the continue button more than once.
+						</td>
+					</tr>
+				</table>
+				<br />
+				</form>
+			</div>
+			<td>
+				<img src="/images/spacer.png" height="1" width="20" />
+			</td>
+			<td valign="top" style="padding: 42px 0px 0px 0px; z-index:1000">
+				<div style="position: fixed;">
+					<div id="NavCart" style="height: 236px;">
+						<table width="180" cellpadding="0" cellspacing="0">
+							<tr id="row_signup_fee">
+								<td valign="bottom" style="color: #55a51c; border-bottom: 1px solid #d5d6d0; padding: 5px 0px 5px 0px;">
+									REGIST. FEE
+								</td>
+								<td valign="bottom" align="right" style="border-bottom: 1px solid #d5d6d0; padding: 5px 0px 5px 0px; text-align: right">
+									<span id="fee_amount" style="font-weight: bold;">$0.00</span>
+								</td>
+							</tr>
+							<tr>
+								<td style="color: #55a51c; border-bottom: 1px solid #d5d6d0; padding: 5px 0px 5px 0px;">
+									PRODUCT ORDER
+								</td>
+								<td align="right" style="border-bottom: 1px solid #d5d6d0; padding: 5px 0px 5px 0px; text-align: right">
+									<span id="order_amount" style="font-weight: bold;">$0.00</span>
+								</td>
+							</tr>
+							<tr>
+								<td style="color: #55a51c; border-bottom: 1px solid #d5d6d0; padding: 5px 0px 5px 0px;">
+									SHIPPING
+								</td>
+								<td align="right" style="border-bottom: 1px solid #d5d6d0; padding: 5px 0px 5px 0px; text-align: right">
+									<span id="shipping_amount" style="font-weight: bold;">$0.00</span>
+								</td>
+							</tr>
+							<tr>
+								<td style="color: #55a51c; border-bottom: 0px solid #d5d6d0; padding: 5px 0px 5px 0px;">
+									TAX
+								</td>
+								<td align="right" style="border-bottom: 0px solid #d5d6d0; padding: 5px 0px 5px 0px; text-align: right">
+									<span id="tax_amount" style="font-weight: bold;">$0.00</span>
+								</td>
+							</tr>
+							<tr>
+								<td align="right" style="color: #64184c; border-bottom: 0px solid #d5d6d0; padding: 5px 0px 5px 0px; font-weight: bold; font-size: 14px;">
+									<img src="/images/arrow.png" width="8" height="9" alt="" style="margin-right: 4px;" />TOTAL:
+								</td>
+								<td align="right" style="border-bottom: 0px solid #d5d6d0; padding: 5px 0px 5px 0px; text-align: right">
+									<span id="total_amount" style="font-weight: bold; font-size: 14px;">$0.00</span>
+								</td>
+							</tr>
+						</table>
+						<div id="autoship_text" style="display: none; padding: 20px 40px 0px 0px; font-weight:bold; color: #5c595d;">
+							<br />
+							<br />
+							<br />
+							Your AutoShip order will be charged monthly at an amount of <span id="autoship_amount">
+								$0.00</span>.</div>
+					</div>
+				</div>
+			</td>
+	</td></tr>
+</table>
+
+<script language="javascript" type="text/javascript">
+	
+    switch('') {
+        default : 
+            document.getElementById('select_MonthlyProductID').checked = true;
+            break;
+    }
+
+    if ("" != "") {
+	    document.getElementById("ErrorMessage").style.display="";
+	}
+
+    var useShipping = "";
+    if (useShipping != "")
+    {
+        document.getElementById("useShipping").onclick();
+    }
+
+
+	//stuff that needs to fire after page load
+	document.getElementById('BusinessSignup').onclick();
+	document.getElementById('select_Market').value = Market;
+    init(Market);
+	selectMembership('');
+
+        
+</script>
+
+
+	        </div>
+	    </div>
+	</div>
+	
+	
+	<div id="Footer">
+
+	<div style="background: url('/images/footer.png') top left no-repeat; width: 801px; height: 137px; margin-bottom: 12px; text-align: left;">
+		<div style="width: 200px; margin-left: 15px; padding-top: 17px; float: left;">
+			<span style="color: #673266; font-size: 18px;">Join the ZENVEI Team</span>
+			<br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id nisl et nisl malesuada aliquet.
+			
+			<br /><br /><a href="#">SIGN UP NOW!</a>
+		</div>
+		<div style="width: 200px; margin-left: 213px; padding-top: 17px; float: left;">
+			<span style="color: #673266; font-size: 18px;">ZENVEI's FAQs</span>
+			<br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id nisl et nisl malesuada aliquet.
+			
+			<br /><br /><a href="#">LEARN MORE</a>
+		</div>
+	</div>
+
+    Powered By Solution x • © 2009 myZENVEI.com. All rights reserved.</div>
+	
+	
+	<script>
+		
+	
+	function setIFrameContent(iframe,filename) {	
+		var element = document.getElementById(iframe);
+		if (element) {
+			element.src = filename;
+		}
+	}
+	
+	function overlay(ModalDiv) {
+		el = document.getElementById(ModalDiv);
+		el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+	}
+	
+		
+	</script>
+	
+</body>
+</html>

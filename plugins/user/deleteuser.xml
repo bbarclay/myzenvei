@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="user">
+	<name>Delete User</name>
+	<author>The JomSocial Team</author>
+	<creationDate>December 2008</creationDate>
+	<copyright>Copyright (C) 2008. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@jomsocial.com</authorEmail>
+	<authorUrl>The JomSocial Team</authorUrl>
+	<version>1.0</version>
+	<description>User delete plugin for JomSocial.</description>
+	<files>
+		<filename plugin="deleteuser">deleteuser.php</filename>
+	</files>
+	<params/>
+</install>

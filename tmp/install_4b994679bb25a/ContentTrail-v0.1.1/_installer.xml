@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install version="1.5" type="component">
+	<name>GeoXeo-installer - UNINSTALL ME!</name>
+	<description>This is a temporary component to install / update GeoXeo extensions</description>
+	<version>v1.1.0</version>
+	<creationDate>June 2009</creationDate>
+	<author>GeoXeo</author>
+	<authorEmail>contact@geoxeo.com</authorEmail>
+	<authorUrl>http://www.geoxeo.com</authorUrl>
+	<copyright>Copyright (C) 2010 GeoXeo - All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+
+	<!-- Installation -->
+	<installfile>_installer.php</installfile>
+
+	<!-- Administration Files -->
+	<administration>
+		<files>
+			<filename>_installer.xml</filename>
+			<filename>extensions.php</filename>
+			<folder>files</folder>
+		</files>
+
+		<!-- Administration Language Files -->
+		<languages folder="language">
+			<language tag="en-GB">en-GB.com_geoxeo-installer-uninstallme.ini</language>
+			<language tag="de-DE">de-DE.com_geoxeo-installer-uninstallme.ini</language>
+			<language tag="nl-NL">nl-NL.com_geoxeo-installer-uninstallme.ini</language>
+			<language tag="sv-SE">sv-SE.com_geoxeo-installer-uninstallme.ini</language>
+		</languages>
+	</administration>
+</install>

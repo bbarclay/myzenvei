@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>System - pcDTR</name>
+	<author>Otherland</author>
+	<creationDate>November 2009</creationDate>
+	<copyright>Otherland.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<authorEmail>info@otherland.se</authorEmail>
+	<authorUrl>www.otherland.se</authorUrl>
+	<version>3.0.1</version>
+	<description>
+	<![CDATA[
+	<h2>pcDTR 3.0.1 for Joomla 1.5.x from <a href="http://pcdtr.otherland.se/" target="_blank">http://pcdtr.otherland.se</a></h2>
+	<h3>Our Request: If you like this extension, PLEASE vote for it on <a href="http://extensions.joomla.org/extensions/style-a-design/typography/10232" target="_blank">Joomla! Extensions Directory!</a></h3>
+	]]>
+	</description>
+	<files>
+		<filename plugin="pcdtr">pcdtr.php</filename>
+		<filename>pcdtr/index.html</filename>
+		<filename>pcdtr/css.php</filename>
+		<filename>pcdtr/parseCSS.php</filename>
+		<filename>pcdtr/simple_html_dom.php</filename>
+	</files>
+	<media destination="pcdtr" folder="media">
+		<filename>fonts/Brody.ttf</filename>
+		<filename>css/styles.css</filename>
+	</media>
+	<params>
+		<param name="heading_css" type="text" size="50" default="media/pcdtr/css/styles.css" label="Css file" description="" />
+		<param name="fonts_dir" type="text" size="50" default="media/pcdtr/fonts" label="Fonts folder" description="" />
+		<param name="cache_images" type="radio" default="1" label="Enable Cache" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="cache_dir" type="text" size="50" default="cache" label="Cache folder" description="" />
+		<param name="letter_wrap" type="text" size="5" default="25" label="Letter wrap" description="" />
+		<param name="letter_wrap_space" type="radio" default="0" label="Space after letter wrap" description="Enable to add a space after letter wrap.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="resample_rate" type="text" size="1" default="1" label="Resample rate" description="Must be a number between 1-4" />
+		<param name="test_string" type="text" size="20" default="ÁIJQÇjgx" label="Test string" description="Add something like ÁIJQÇjgx|/@#()" />
+	</params>
+</install>

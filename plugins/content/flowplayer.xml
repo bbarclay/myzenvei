@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+	<name>Content - FlowPlayer</name>
+	<author>Daniel Gutierrez</author>
+	<creationDate>February 2009</creationDate>
+	<copyright>Copyright 2009 Daniel Gutierrez. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>daniel@gutierrez.nu</authorEmail>
+	<authorUrl>www.gutierrez.nu</authorUrl>
+	<version>1.1.0</version>
+	<description>Integration of Flow Player www.flowplayer.org to Joomla.</description>
+	<files>
+		<filename plugin="flowplayer">flowplayer.php</filename>
+		<file>flowplayer/flowplayer-3.1.4.min.js</file>
+		<file>flowplayer/flowplayer.controls-3.1.5.swf</file>
+		<file>flowplayer/flowplayer-3.1.5.swf</file>
+		<file>flowplayer/index.html</file>
+		<file>flowplayer/LICENSE.txt</file>
+		<file>flowplayer/Changelog.txt</file>		
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_content_flowplayer.ini</language>
+		<language tag="es-ES">es-ES.plg_content_flowplayer.ini</language>
+	</languages>
+	<params>		
+		<param name="width" type="text" label="WIDTH" default="400" description="WIDTH_DESC" />
+		<param name="height" type="text" label="HEIGHT" default="300" description="HEIGHT_DESC" />
+		<param name="autoPlay" type="radio" label="AUTOPLAY" default="0" description="AUTOPLAY_DESC" >
+			<option value="0">AUTOPLAY_OPT1</option>
+			<option value="1">AUTOPLAY_OPT2</option>
+		</param>
+		<param name="scaling" type="list" label="SCALING" default="scale" description="SCALING_DESC">
+			<option value="fit">SCALING_OPT1</option>
+			<option value="half">SCALING_OPT2</option>
+			<option value="orig">SCALING_OPT3</option>
+			<option value="scale">SCALING_OPT4</option>
+		</param>
+		<param name="bufferL" type="text" label="BUFFERL" default="3" description="BUFFERL_DESC" />		
+	</params>	
+	<params group="advanced">
+		<param name="@spacer" type="spacer" default="CONFIGURATION_FLOWPLAYER" label="" description="" />
+		<param name="key" type="text" label="KEY" default="" description="KEY_DESC" />
+		<param name="controls" type="textarea" label="CONTROLS" cols="30" rows="4" default="play:true" description="CONTROLS_DESC" />
+		<param name="canvas" type="textarea" label="CANVAS" cols="30" rows="4" default="" description="CANVAS_DESC" />	
+		<param name="screen" type="textarea" label="SCREEN" cols="30" rows="4" default="" description="SCREEN_DESC" />	
+		<param name="play" type="textarea" label="PLAY" cols="30" rows="4" default="" description="PLAY_DESC" />		
+	</params>
+</install>

@@ -1,0 +1,9 @@
+Changelog Flowplayer 1.1.0
+
+November 2009
+
+- Rewrite of the code.
+- Delete flowplayer/constans.php.
+- Update flowplayer of 3.0.3 to 3.1.5.
+- Add Key field in Advanced Params for Commercial Version.
+- Add Multiple Flowplayer in article.

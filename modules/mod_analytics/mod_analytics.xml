@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>JoomlaGATor!</name>
+	<author>Nick Dawson</author>
+	<creationDate>March 2009</creationDate>
+	<copyright>(C) 2009 Nick Dawson.</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>nick@dawson.be</authorEmail>
+	<authorUrl>www.dawson.be</authorUrl>
+	<version>2.3.0</version>
+	<description>JoomlaGATor! - A Google Analytics Tracking Module for Joomla 1.5. Supports ga.js tracking script with auto-SSL and auto-SEF detection aswell as automated download, mailto and external link tracking. Spanish translation for TradiArt (www.tradiart.com). Italian translation by ToFu (www.filmatti.it). Russian translation by Slenik (slenik.net). Brazilian Portuguese translation by Ricardo Pedri Lopes (www.noticie.com.br). Help can be found at wiki.dawson.be. (C) 2009 Nick Dawson (GNU/GPL) Single account version 2.3.0 - www.dawson.be</description>
+	<files>
+		<filename module="mod_analytics">mod_analytics.php</filename>
+		<filename>gatr.js</filename>
+		<filename>index.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_analytics.ini</language>
+		<language tag="es-ES">es-ES.mod_analytics.ini</language>
+		<language tag="it-IT">it-IT.mod_analytics.ini</language>
+		<language tag="pt-BR">pt-BR.mod_analytics.ini</language>
+		<language tag="ru-RU">ru-RU.mod_analytics.ini</language>
+	</languages>
+	<params>
+		<param name="ucode1" type="text" default="" label="ANALYTICS_PRI_ACCOUNT_NUMBER" description="ANALYTICS_PRI_ACCOUNT_NUMBER_DESC" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="truser" type="radio" default="0" label="ANALYTICS_TRACK_IND_USERS" description="ANALYTICS_TRACK_IND_USERS_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="disusers" type="radio" default="0" label="ANALYTICS_DISABLE_USERS" description="ANALYTICS_DISABLE_USERS_DESC">
+			<option value="0">NONE</option>
+			<option value="1">DIS_ALL_REG</option>
+			<option value="2">DIS_SPEC_USERS</option>
+		</param>
+		<param name="userlist" type="text" default="admin\|root" label="ANALYTICS_DIS_USER_LIST" description="ANALYTICS_DIS_USER_LIST_DESC" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="trdl" type="radio" default="0" label="ANALYTICS_TRACK_FILES" description="ANALYTICS_TRACK_FILES_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="trext" type="text" default="doc\|eps\|jpg\|png\|svg\|xls\|ppt\|pdf\|xls\|zip\|txt\|vsd\|vxd\|js\|css\|rar\|exe\|wma\|mov\|avi\|wmv\|mp3" label="ANALYTICS_FILE_EXT" description="ANALYTICS_FILE_EXT_DESC" />
+		<param name="trueloc" type="radio" default="1" label="ANALYTICS_TRUE_LOCATION" description="ANALYTICS_TRUE_LOCATION_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="trdlname" type="text" default="/downloads" label="ANALYTICS_FILE_DIR" description="ANALYTICS_FILE_DIR_DESC" />
+		<param name="trmail" type="radio" default="0" label="ANALYTICS_TRACK_MAIL" description="ANALYTICS_TRACK_MAIL_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="trmlname" type="text" default="/mailto/" label="ANALYTICS_MAIL_DIR" description="ANALYTICS_MAIL_DIR_DESC" />
+		<param name="trlink" type="radio" default="0" label="ANALYTICS_TRACK_EXTERNAL" description="ANALYTICS_TRACK_EXTERNAL_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="truncurl" type="radio" default="0" label="ANALYTICS_TRUNC_URL" description="ANALYTICS_TRUNC_URL_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="trlkname" type="text" default="/external/" label="ANALYTICS_EXT_DIR" description="ANALYTICS_EXT_DIR_DESC" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="subdtrack" type="radio" default="0" label="ANALYTICS_TRACK_SUBDOMAIN" description="ANALYTICS_TRACK_SUBDOMAIN_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="subdroot" type="text" default="" label="ANALYTICS_ROOT_DOMAIN" description="ANALYTICS_ROOT_DOMAIN_DESC" />		
+	</params>
+	<params group="advanced">
+		<param name="trbrowse" type="radio" default="1" label="ANALYTICS_TRACK_BROWSER_INFO" description="ANALYTICS_TRACK_BROWSER_INFO_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="trcookie" type="radio" default="1" label="ANALYTICS_CHECK_COOKIE_INT" description="ANALYTICS_CHECK_COOKIE_INT_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="trflash" type="radio" default="1" label="ANALYTICS_DETECT_FLASH_CAPA" description="ANALYTICS_DETECT_FLASH_CAPA_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="trtitle" type="radio" default="1" label="ANALYTICS_TRACK_PAGE_TITLE" description="ANALYTICS_TRACK_PAGE_TITLE_DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="sampler" type="text" default="" label="ANALYTICS_SET_SAMPLE_RATE" description="ANALYTICS_SET_SAMPLE_RATE_DESC" />
+		<param name="session" type="text" default="" label="ANAYLYTICS_SESSION_TIMEOUT" description="ANAYLYTICS_SESSION_TIMEOUT_DESC" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="search1" type="text" default="" label="ANALYTICS_FIRST_SEARCH_VAR" description="ANALYTICS_FIRST_SEARCH_VAR_DESC" />
+		<param name="search2" type="text" default="" label="ANALYTICS_SEC_SEARCH_VAR" description="ANALYTICS_SEC_SEARCH_VAR_DESC" />
+		<param name="keyword1" type="text" default="" label="ANALYTICS_ING_ORG_A" description="ANALYTICS_ING_ORG_A_DESC" />
+		<param name="keyword2" type="text" default="" label="ANALYTICS_ING_ORG_B" description="ANALYTICS_ING_ORG_B_DESC" />
+		<param name="referrer1" type="text" default="" label="ANALYTICS_ING_REF_A" description="ANALYTICS_ING_REF_A_DESC" />
+		<param name="referrer2" type="text" default="" label="ANALYTICS_ING_REF_B" description="ANALYTICS_ING_REF_B_DESC" />
+	</params>
+</install>

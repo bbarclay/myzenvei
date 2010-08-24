@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="editors-xtd" method="upgrade">
+    <name>Editor Button - Add hwdVideoShare video</name>
+    <author>Dave Horsfall, Sergey P. Shitikov</author>
+    <creationDate>2009 12 04</creationDate>
+    <copyright>(C) highwood design. All rights reserved.</copyright>
+    <authorEmail>rw4lll@yandex.ru</authorEmail>
+    <authorUrl>http://hwdmediashare.co.uk/</authorUrl>
+    <version>[ Dannevirke ]</version>
+    <description>Enables a button which allows you to easily insert a hwdVideoShare video into an Article.</description>
+    <languages>
+	<language tag="en-GB">en-GB.plg_editors-xtd_hwdvideo.ini</language>
+	<language tag="ru-RU">ru-RU.plg_editors-xtd_hwdvideo.ini</language>
+    </languages>
+    <files>
+	<filename plugin="plug_hwd_vs_insertvideo">plug_hwd_vs_insertvideo.php</filename>
+	<filename plugin="plug_hwd_vs_insertvideo">plug_hwd_vs_insertvideo.png</filename>
+	<filename plugin="plug_hwd_vs_insertvideo">plug_hwd_vs_insertvideo.css</filename>
+    </files>
+</install>

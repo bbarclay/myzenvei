@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+#iFishEye > table {margin:auto;}
+#iFishEye > div {margin:auto;}
+.iFishEye_lft {text-align:left;}
+.iFishEye_ctr {text-align:center;}
+.iFishEye_rgt {text-align:right;}
+.iFishEye_top {vertical-align:top;}
+.iFishEye_med {vertical-align:middle;}
+.iFishEye_btm {vertical-align:bottom;}
+.iFishEyeLink {text-decoration:none; text-align:center;}
+.iFishEyeImg {border:none; margin:4px;}
+.iFishEyeCaption {font-weight:bold;font-variant:small-caps;}

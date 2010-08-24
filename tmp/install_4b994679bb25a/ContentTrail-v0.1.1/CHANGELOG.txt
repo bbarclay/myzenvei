@@ -1,0 +1,21 @@
+/**
+ * Changelog
+ *
+ * @author     GeoXeo <contact@geoxeo.com>
+ * @link       http://www.geoxeo.com
+ * @copyright  Copyright (C) 2010 GeoXeo - All Rights Reserved
+ * @license    http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+
+/**
+ * + Added
+ * ! Removed
+ * ^ Changed
+ * # Fixed
+ */
+
+16-Feb-2010 : v0.1.0
+ + First release
+ 
+05-Mar-2010 : v0.1.1
+ # bug fix: menu item showing uncategorized article caused error 

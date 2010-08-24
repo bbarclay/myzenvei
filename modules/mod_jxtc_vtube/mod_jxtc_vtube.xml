@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+	<name>JoomlaXTC VTube Video Module</name>
+	<author>JoomlaXTC</author>
+	<creationDate>2010-02-02</creationDate>
+	<copyright>Copyright (C) 2009,2010 Monev Software LLC. All rights reserved.</copyright>
+	<authorUrl>http://www.joomlaxtc.com</authorUrl>
+	<version>1.4</version>
+	<description>JoomlaXTC VTube Module v1.4 - Visit www.joomlaxtc.com documents area for help.</description>
+	<files>
+		<filename module="mod_jxtc_vtube">mod_jxtc_vtube.php</filename>
+	  <filename>helper.php</filename>
+	  <filename>staf.php</filename>
+	  <filename>func_buildparms.php</filename>
+	  <filename>COPYRIGHT.php</filename>
+	  <filename>LICENSE.php</filename>
+	  <filename>flash/index.html</filename>
+	  <filename>flash/videoPlayer.swf</filename>
+	  <filename>flash/staf.php</filename>
+	  <filename>js/index.html</filename>
+	  <filename>js/jxtcswfobject.js</filename>
+	  <filename>xml/index.html</filename>
+	  <filename>xml/settings.xml</filename>
+		<folder>elements</folder>
+		<folder>images</folder>
+	</files>
+	<params addpath="/modules/mod_jxtc_vtube/elements">
+		<param name="@spacer" type="spacer" default="V-Tube Global Parameters" label="" description="Players Global Settings" />
+		<param name="width" type="text" default="920" label="Player width" description="Player width (in pixels)." />
+		<param name="height" type="text" default="338" label="Player height" description="Player height (in pixels)." />
+		<param name="display" type="list" default="m" label="Display Type" description="Player display mode.">
+		  <option value="m">Module</option>
+		  <option value="p">Pop-up</option>
+		  <option value="a">Auto Pop-up</option>
+			<option value="s">Lightbox</option>
+		</param>
+				<param name="xml" type="radio" default="XPS" label="Playlist Type" description="Choose your preferred playlist.">
+			<option value="X">XPS</option>
+			<option value="L">XML</option>
+		</param>
+		<param name="autoResize" type="list" default="1" label="Auto Resize" description="Auto Resize.">
+		  <option value="0">Yes</option>
+			<option value="1">No</option>
+		</param>	
+		<param name="autoLoad" type="list" default="1" label="Auto Load" description="Enable or disable autoplay function.">
+		  <option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="autoPlay" type="list" default="1" label="Autoplay" description="Enable or disable autoplay function.">
+		  <option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="playContinuously" type="list" default="1" label="Continuous Play" description="Enable or disable Continuous Play function.">
+		  <option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="loop" type="list" default="1" label="Loop Play" description="Enable or disable Loop Play function.">
+			 <option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="random" type="list" default="0" label="Random Play" description="Enable or disable Random Play function.">
+		  <option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="bufferTime" type="text" default="5" label="Video Buffer Time" description="Player Buffer" />
+		<param name="keepAspectRatio" type="list" default="1" label="Keep Aspect Ratio" description="Aspect Ratio.">
+		  <option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>	
+		<param name="volumes" type="text" default="100" label="Player Volume" description="Player Volume" />
+		<param name="controlsPadding" type="text" default="10" label="Player Controls Padding" description="Player Controls Padding" />
+		<param name="buttonSound" type="list" default="1" label="Use Button Sounds" description="Button Sounds.">
+		  <option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showPreviewImage" type="list" default="1" label="Show Preview Image" description="Preview Image.">
+		  <option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>		
+		<param name="showShareBtn" type="list" default="1" label="Show Share Button" description="Share Button.">
+		  <option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>		
+		<param name="showFullScreenBtn" type="list" default="1" label="Show FullScreen Button" description="Full Screen Button.">
+		  <option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showMiddlePlayBtn" type="list" default="0" label="Show Middle Play Button" description="Middle Play Button.">
+		  <option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showWatermark" type="list" default="0" label="Show Watermark" description="Show Watermark.">
+		  <option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+			<param name="@spacer" type="spacer" default="XPS Playlist" label="" description="XPS Playlist" />
+		<param name="xps" type="textarea" default="" rows="40" cols="50" label="Playlist" description="Enter your playlist parameters. Please read on-line help guide for instructions."/>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+	<params group="advanced">
+		<param name="@spacer" type="spacer" default="Pop Up and Lightbox Parameters" label="" description="Pop Up and Lightbox Basic Settings" />
+		<param name="speed" type="text" default="500" label="Lightbox speed" description="Lightbox effect speed."/>
+		<param name="button" type="imagelist" directory="/images" hide_default="1" default="" label="Link Button" description="Button Image for Pop Up setting. Upload images to /images directory." />
+		
+		
+			<param name="@spacer" type="spacer" default="Keyboard Shortcuts Parameters" label="" description="Players Basic Settings" />
+		<param name="spaceKeyListener" type="list" default="1" label="Use Space Key Play" description="Space Key Listener.">
+		  <option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="clickListener" type="list" default="1" label="On Click Play" description="On Click Play.">
+		  <option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>		
+		<param name="doubleClickListener" type="list" default="1" label="Double Click Play" description="Double Click Play.">
+		  <option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="@spacer" type="spacer" default="Player Parameters" label="" description="Players Basic Settings" />
+		<param name="playerBackgroundValue" type="colorinput" default="000000" label="Player Background" description="Player Background" />
+		<param name="watermarkPos" type="list" default="TR" label="Watermark Position" description="Show Watermark.">
+		  <option value="BR">Bottom Right</option>
+			<option value="TR">Top Right</option>
+	  	<option value="TL">Top Left</option>
+			<option value="BL">Bottom Left</option>
+		</param>	
+				
+		<param name="cBarAutoHide" type="list" default="1" label="Control Bar Auto Hide" description="Hide Controls.">
+		  <option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="cBarHideDelay" type="text" default="" label="Control Bar Hide Delay" description="Control Bar Hide Delay in Seconds" />
+		<param name="mouseCursorAutoHide" type="list" default="1" label="Autohide Controls on Mouse Over" description="Cursor Autohide.">
+		  <option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+		<param name="mouseCursorHideDelay" type="text" default="5" label="Cursor Hide Delay" description="Cursor Hide Delay in Seconds" />
+		<param name="controllerBackground" type="colorinput" default="ffffff" label="Controller Background" description="Control bar's background color" />
+		<param name="controllerButtonsNormal" type="colorinput" default="000000" label="Controller Buttons Normal" description="the buttons color for the normal state" />
+		<param name="controllerButtonsOver" type="colorinput" default="ffffff" label="Controller Buttons Over" description="the buttons color for the over state" />
+		<param name="controllerButtonsDown" type="colorinput" default="ffffff" label="Controller Buttons Down" description="the buttons color for the press state" />
+		
+		
+			<param name="@spacer" type="spacer" default="Playlist Parameters" label="" description="Playlist Basic Settings" />
+		<param name="playlistPos" type="list" default="1" label="Playlist Position" description="Top Left Right Bottom.">
+		  <option value="B">Bottom</option>
+			<option value="T">Top</option>
+			<option value="L">Left</option>
+			<option value="R">Right</option>
+		</param>
+		<param name="playlistSize" type="text" default="0" label="Playlist Size" description="Playlist Size" />
+		<param name="playlistAutoHide" type="list" default="1" label="Playlist Autohide" description="Playlist Autohide.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="playlistHideType" type="list" default="0" label="Playlist Hide Effect" description="Hide Effect.">
+		  <option value="0">No</option>
+			<option value="1">Fade</option>
+		</param>
+		<param name="playlistHideDelay" type="text" default="0" label="Playlist Hide Delay" description="Hide Delay in Seconds" />
+		<param name="playlistThumbWidth" type="text" default="70" label="Playlist Thumb Width" description="Playlist Thumb Width" />
+		<param name="playlistThumbHeight" type="text" default="50" label="Playlist Thumb Height" description="Playlist Thumb Height" />
+		<param name="playlistThumbPadding" type="text" default="10" label="Playlist Thumb Padding" description="Playlist Thumb Padding" />
+		
+		<param name="playlistBackground" type="colorinput" default="000000" label="Playlist Background" description="Playlist Background" />
+		<param name="playlistBckAlpha" type="text" default="60" label="Playlist Background Alpha" description="Playlist Background Alpha" />
+		<param name="playlistThumbBck" type="colorinput" default="ff0000" label="Playlist Thumb Background" description="Playlist Thumb Background" />
+		<param name="playlistThumbNormalAlpha" type="text" default="50" label="Playlist Thumb Normal Alpha" description="Playlist Thumb Normal Alpha" />
+		<param name="playlistThumbOverAlpha" type="text" default="80" label="Playlist Thumb Over Alpha" description="Playlist Thumb Over Alpha" />
+		<param name="playlistThumbSelectedAlpha" type="text" default="100" label="Playlist Thumb Selected Alpha" description="Playlist Thumb Selected Alpha" />
+		
+		
+			<param name="@spacer" type="spacer" default="Pre Loader Parameters" label="" description="Preloader Basic Settings" />
+		<param name="preloaderBackground" type="colorinput" default="ffffff" label="Preloader Background" description="Preloader Background" />
+		<param name="preloaderBckAlpha" type="text" default="70" label="Preloader Back Alpha" description="The background's alpha" />
+		<param name="preloaderText" type="colorinput" default="cccccc" label="Preloader Text" description="Percentage's color" />
+		<param name="preloaderCircle" type="colorinput" default="778080" label="Preloader Circle" description="The rotating circle's color" />
+			<param name="@spacer" type="spacer" default="Middle Play Button" label="" description="Players Basic Settings" />
+		<param name="middlePlayBtnarrowNormal" type="colorinput" default="cccccc" label="Middle Play Button Arrow Normal" description="the arrow's color for the normal state" />
+		<param name="middlePlayBtnbckNormal" type="colorinput" default="000000" label="Middle Play Button Back Normal" description="the background's color for the normal state" />
+		<param name="middlePlayBtnalphaNormal" type="colorinput" default="ffff00" label="Middle Play Button Alpha Normal" description="the alpha value for the normal state" />
+		<param name="middlePlayBtnarrowOver" type="colorinput" default="ffff00" label="Middle Play Button Arrow Over" description="the arrow's color for the over state" />
+		<param name="middlePlayBtnbckOver" type="colorinput" default="000ff0" label="Middle Play Button Back Over" description="the background's color for the over state" />
+		<param name="middlePlayBtnalphaOver" type="text" default="80" label="Middle Play Button Alpha Over" description="the alpha value for the over state" />
+		<param name="middlePlayBtnarrowDown" type="colorinput" default="f0ff0f" label="Middle Play Button Arrow Down" description="the arrow's color for the press state" />
+		<param name="middlePlayBtnbckDown" type="colorinput" default="f0ff0f" label="Middle Play Button Back Down" description="the background's color for the over state" />
+		<param name="middlePlayBtnalphaDown" type="text" default="100" label="Middle Play Button Alpha Down" description="the alpha value for the press state" />
+		
+		<param name="@spacer" type="spacer" default="Volume Parameters" label="" description="Volume Bar Color Settings" />
+		
+		<param name="volumeBorder" type="colorinput" default="666666" label="Volume Border" description="the volume's bar border color" />
+		<param name="volumeBackground" type="colorinput" default="cccccc" label="Volume Background" description="the volume's bar background color" />
+		<param name="volumeSpeaker" type="colorinput" default="000000" label="Volume Speaker" description="the speaker's button color" />
+		<param name="volumeBar" type="colorinput" default="000000" label="Volume Bar" description="the volume's bar color" />
+		
+		<param name="volumeScrubBtnBrdNormal" type="colorinput" default="000000" label="Volume Button Border Normal" description="the scrub volume button's border color for the normal state" />
+		<param name="volumeScrubBtnBckNormal" type="colorinput" default="000000" label="Volume Button Back Normal" description="the scrub volume button's background color for the normal state" />
+		<param name="volumeScrubBtnBrdOver" type="colorinput" default="0000ff" label="Volume Button Border Over" description="Volume Scrub Button Border Over" />
+		<param name="volumeScrubBtnBckOver" type="colorinput" default="cccccc" label="Volume Button Back Over" description="the scrub volume button's border color for the over state" />
+		<param name="volumeScrubBtnBrdDown" type="colorinput" default="0000ff" label="Volume Button Border Down" description="the scrub volume button's border color for the press state" />
+		<param name="volumeScrubBtnBckDown" type="colorinput" default="00FF00" label="Volume utton Back Down" description="the scrub volume button's background color for the press state" />
+				<param name="@spacer" type="spacer" default="Progress Bar Parameters" label="" description="Progress Bar Bar Color Settings" />
+		<param name="progressBarBorder" type="colorinput" default="6618ea" label="Progress Bar Border" description="the progress bar's border color" />
+		<param name="progressBarBackground" type="colorinput" default="000000" label="Progress Bar Background" description="the progress bar's background color" />
+		<param name="progressBarElapse" type="colorinput" default="cccccc" label="Progress Bar Elapse" description="the elapsed time bar's color" />
+		<param name="progressBarDownload" type="colorinput" default="c9fd9a" label="Progress Bar Download" description="the downloaded time bar's color" />
+		<param name="progressScrubBtnbrdNormal" type="colorinput" default="ff0000" label="Progress Button Border Normal" description="Progress Scrub Button Border Normal" />		
+		<param name="progressScrubBtnbckNormal" type="colorinput" default="00ff00" label="Progress Button Back Normal" description="the scrub video button's border color for the normal state" />
+		<param name="progressScrubBtnbrdOver" type="colorinput" default="00FF00" label="Progress Button BorderOver" description="the scrub video button's background color for the normal state" />
+		<param name="progressScrubBtnbckOver" type="colorinput" default="ff00ff" label="Progress Button BackOver" description="the scrub video button's background color for the over state" />
+		<param name="progressScrubBtnbrdDown" type="colorinput" default="ffff00" label="Progress Button BorderDown" description="the scrub video button's border color for the press state" />
+		<param name="progressScrubBtnbckDown" type="colorinput" default="00ffff" label="Progress Button BackDown" description="the scrub video button's background color for the press state" />
+		<param name="times" type="colorinput" default="00FF00" label="Time Text Color" description="The color for Elapsed Time and Total time" />
+				<param name="@spacer" type="spacer" default="Share Parameters" label="" description="Share Color Settings" />
+		<param name="shareBackground" type="colorinput" default="000000" label="Share Background" description="Share Background" />
+		<param name="shareBckAlpha" type="text" default="40" label="Share Background Alpha" description="Share Background Alpha" />
+		<param name="shareBoxBck" type="colorinput" default="000000" label="Share Box Background" description="Share Box Background" />
+		<param name="shareBoxBckAlpha" type="text" default="70" label="Share Box Background Alpha" description="Share Box Background Alpha" />
+		<param name="shareLabels" type="colorinput" default="ffffff" label="Share Labels" description="Share Labels" />
+		<param name="shareErrorText" type="colorinput" default="00ff00" label="Share Error Text" description="Share Error Text" />
+		<param name="shareText" type="colorinput" default="000000" label="Share Text" description="Share Text" />
+		<param name="shareTextBck" type="colorinput" default="ffffff" label="Share Text Background" description="Share Text Background" />
+		<param name="shareTextBrd" type="colorinput" default="000000" label="Share Text Border" description="Share Text Border" />
+		<param name="shareBtnsNormal" type="colorinput" default="cccccc" label="Share Buttons Normal" description="Share Buttons Normal" />
+		<param name="shareBtnsOver" type="colorinput" default="ffffff" label="Share Buttons Over" description="Share Buttons Over" />
+		<param name="shareBtnsDown" type="colorinput" default="ffffff" label="Share Buttons Down" description="Share Buttons Down" />
+				<param name="@spacer" type="spacer" default="Email A Friend Parameters" label="" description="Email A Friend Parameter Settings" />
+		<param name="subject" type="text" default="Hi" label="Email A Friend Subject Title" description="Subject Title" />
+		<param name="message" type="textarea" rows="20" cols="50" default="Your Friend thought you might enjoy this video!" label="Email Message" description="Email Message" />
+	</params>
+</install>

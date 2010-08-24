@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.0.0">
+	<name>Advanced Module Manager</name>
+	<description>Advanced Module Manager - advanced options for modules in Joomla!</description>
+	<version>1.7.0</version>
+	<creationDate>February 2010</creationDate>
+	<author>NoNumber! (Peter van Westen)</author>
+	<authorEmail>peter@nonumber.nl</authorEmail>
+	<authorUrl>http://www.nonumber.nl</authorUrl>
+	<copyright>Copyright (C) 2010 NoNumber! All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+
+	<!-- Installation -->
+	<uninstallfile>uninstall.advancedmodules.php</uninstallfile>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.advancedmodules.sql</file>
+		</sql>
+	</uninstall>
+</install>

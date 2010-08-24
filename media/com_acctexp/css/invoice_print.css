@@ -1,0 +1,23 @@
+/* Valanx.org AEC Membership Management - invoice_print.css */
+
+#printbutton {
+display: none !important;
+height: 0px;
+border: none;
+background: none;
+}
+
+
+body {
+background: #fff;
+}
+
+div {
+}
+
+div#invoice_wrap {
+width: 700px;
+background:#fff;
+padding:20px;
+border: none;
+}

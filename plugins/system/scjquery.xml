@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>System - SC jQuery</name>
+	<author>Phil Snell</author>
+	<authorEmail>phil@snellcode.com</authorEmail>
+	<authorUrl>http://snellcode.com</authorUrl>
+	<creationDate>September 06, 2009</creationDate>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<copyright>Copyright (C) 2009 Snellcode LLC. All rights reserved.</copyright>
+	<version>0.0.4</version>
+	<description><![CDATA[This plugin is used to load jQuery javascript library, and set "no conflict" mode to allow usage with mootools, and other libraries. No conflict mode remove the "$" operator from jQuery, allowing other libraries to use that operator.  If you have questions, please email me at phil@snellcode.com]]></description>
+	<files>
+		<filename plugin="scjquery">scjquery.php</filename>
+		<folder>scjquery</folder>
+	</files>
+	<params>
+		<param name="ui" type="radio" default="0" label="Load jQuery UI libraies (all)" description="Loads all the jQuery UI libraries.  Or replace the file with your personalized version">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="ui_theme" type="folderlist" default="ui-lightness" label="jQuery UI theme" description="Select a jQuery UI theme, or create your own at http://jqueryui.com/themeroller/" directory="plugins/system/scjquery/css" />
+		<param name="enable_site" type="radio" default="1" label="Enable plugin for frontend" description="Enable plugin for frontend">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="enable_admin" type="radio" default="0" label="Enable plugin for backend" description="Enable plugin for backend">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="code" type="textarea" rows="20" cols="60" default="" label="Enter custom code here" description="Any code here will be executed, and wrapped in to a protected 'document ready' function.  No need to add your own 'document ready'.  Ignored if empty." />
+	</params>
+</install>

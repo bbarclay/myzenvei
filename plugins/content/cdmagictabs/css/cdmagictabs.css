@@ -1,0 +1,11 @@
+/* CSS style for Core Design Magic Tabs plugin for Joomla! 1.5 */
+
+/* Read more link and prev-next buttons */
+.ui-widget-content div.readmore, .ui-widget-content .buttons {
+	padding-bottom: 10px;
+	clear: both;
+}
+/* Icons */
+.ui-widget-content div.readmore, .ui-widget-content .buttons a {
+	float: right;
+}

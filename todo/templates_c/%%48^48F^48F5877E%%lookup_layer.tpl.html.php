@@ -1,0 +1,9 @@
+<?php /* Smarty version 2.6.18, created on 2010-08-07 16:04:45
+         compiled from lookup_layer.tpl.html */ ?>
+<?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'replace', 'lookup_layer.tpl.html', 1, false),array('modifier', 'truncate', 'lookup_layer.tpl.html', 1, false),array('modifier', 'htmlspecialchars', 'lookup_layer.tpl.html', 1, false),)), $this); ?>
+<select size=\'6\' <?php if ($this->_tpl_vars['multiple']): ?>multiple<?php endif; ?> name=\'lookup<?php if ($this->_tpl_vars['multiple']): ?>[]<?php endif; ?>\' class=\'default_overlib\'><?php $_from = $this->_tpl_vars['list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['key'] => $this->_tpl_vars['item']):
+?><option value=\'<?php echo ((is_array($_tmp=((is_array($_tmp=$this->_tpl_vars['key'])) ? $this->_run_mod_handler('replace', true, $_tmp, "'", "&#146;") : smarty_modifier_replace($_tmp, "'", "&#146;")))) ? $this->_run_mod_handler('replace', true, $_tmp, "\"", "&quot;") : smarty_modifier_replace($_tmp, "\"", "&quot;")); ?>
+\'><?php echo ((is_array($_tmp=((is_array($_tmp=((is_array($_tmp=((is_array($_tmp=$this->_tpl_vars['item'])) ? $this->_run_mod_handler('truncate', true, $_tmp, 70) : smarty_modifier_truncate($_tmp, 70)))) ? $this->_run_mod_handler('replace', true, $_tmp, "'", "&#146;") : smarty_modifier_replace($_tmp, "'", "&#146;")))) ? $this->_run_mod_handler('replace', true, $_tmp, "\"", "&quot;") : smarty_modifier_replace($_tmp, "\"", "&quot;")))) ? $this->_run_mod_handler('htmlspecialchars', true, $_tmp) : htmlspecialchars($_tmp)); ?>
+</option><?php endforeach; endif; unset($_from); ?></select>

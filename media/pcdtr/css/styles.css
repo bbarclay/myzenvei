@@ -1,0 +1,12 @@
+/* P C D T R */
+/* font-size in pts */
+
+.contentheading {
+	font-family: Brody;
+	font-size:18pt;
+	color:#C60;
+	text-decoration:none;
+}
+.contentheading a:hover {
+	color:#06F;
+}

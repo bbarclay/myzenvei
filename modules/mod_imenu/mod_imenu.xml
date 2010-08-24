@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5">
+    <name>Imenu</name>
+    <author>ogweb.net</author>
+	<creationDate>Dec 2009</creationDate>
+	<copyright>(C) 2009 ogweb.net. All rights reserved.</copyright>
+	<license>http://www.opensource.org/licenses/lgpl-license.html</license>
+	<authorEmail>ogsbox@gmail.com</authorEmail>
+	<authorUrl>www.ogweb.net</authorUrl>
+    <version>1.0</version>
+    <description>
+    	<![CDATA[<p>The Imenu module allow you to have a macintosh-style bottom menu in your site.</p>
+ 		<p>
+    	<br />Remember to add 
+    	<br /><br />&lt;script type="text/javascript" src="modules/mod_imenu/js/nitobi.toolkit.js"&gt;&lt;/script&gt; 
+    	<br /><br />before the 
+    	<br /><br />&lt;jdoc:include type="head" /&gt; 
+    	<br /><br />in your template index.php!!!!
+    	</p>]]>
+    </description>
+    <files>
+        <filename module="mod_imenu">mod_imenu.php</filename>
+        <filename>index.html</filename>
+        <filename>nitobi.fisheye.css</filename>
+        <filename>mod_imenu.xml</filename>
+		<filename>helper.php</filename>
+        <folder>theme</folder>
+		<folder>tmpl</folder>
+		<folder>js</folder>
+    </files>
+		<params>
+		<param name="mymenu" type="menu" default="mainmenu" label="Select a menu" description='Select a menu' />	
+		<param name="maxwidth" type="text" default="100" label="Maximum width (%)" description="Set the maximum width of the icons in %." />
+		<param name="itemwidth" type="text" default="70" label="Item width (px)" description="Set the item width of the icons in pixels." />
+		<param name="direction" type="list" default="right" label="Menu direction" description="Set the menu direction.">
+			<option value="right">right</option>
+			<option value="center">center</option>
+			<option value="left">left</option>
+		</param>
+		<param name="menutype" type="list" default="up" label="Menu type" description="Set the menu type. Stick to the up or down.">
+			<option value="up">up</option>
+			<option value="down">down</option>
+		</param>
+		<param name="menutheme" type="list" default="clearback" label="Menu theme" description="Set the menu theme.">
+			<option value="clearback">clearback</option>
+			<option value="nitobi">nitobi</option>
+		</param>
+    </params>
+</install>
+
+

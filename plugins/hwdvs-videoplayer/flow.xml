@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="hwdvs-videoplayer" method="upgrade">
+    <name>Flow Player</name>
+    <creationDate>2009 12 04</creationDate>
+    <author>Highwood Design</author>
+    <copyright>(C) 2007 - 2009 Highwood Design</copyright>
+    <authorEmail>info@highwooddesign.co.uk</authorEmail>
+    <authorUrl>http://hwdmediashare.co.uk</authorUrl>
+    <version>[ Dannevirke ]</version>
+    <description>Adds Flow Player support to hwdVideoShare</description>
+    <files>
+        <filename plugin="flow">flow/flowplayer-3.0.2.min.js</filename>
+        <filename plugin="flow">flow/flowplayer-3.0.2.swf</filename>
+        <filename plugin="flow">flow/flowplayer.controls-3.0.2.swf</filename>
+        <filename plugin="flow">flow.view.php</filename>
+    </files>
+    <params>
+        <param name="accelerated" type="list" default="0" label="Accelerated" description="Flag indicating whether Flash 9 (and above) hardware-accelerated full screen mode should be used.">
+            <option value="1">Yes</option>
+            <option value="0">No (default)</option>
+        </param>
+        <param name="autoBuffering" type="list" default="1" label="Auto Buffering" description="Flag indicating whether loading of clip into player's memory should begin straight away. When this is true and autoPlay is false then the clip will automatically stop at first frame of the video.">
+            <option value="1">Yes (default)</option>
+            <option value="0">No</option>
+        </param>        
+        <param name="autoPlay" type="list" default="0" label="Auto Play" description="Flag indicating whether the player should start playback immediately upon loading.">
+            <option value="1">Yes</option>
+            <option value="0">No (default)</option>
+        </param>  
+        <param name="repeat" type="list" default="0" label="Repeat Playback" description="Repeat the video playback.">
+            <option value="1">Yes</option>
+            <option value="0">No (default)</option>
+        </param>  
+        <param name="bufferLength" type="list" default="3" label="Buffer Length" description="The amount of video data (in seconds) which should be loaded into Flowplayer's memory in advance of playback commencing.">
+            <option value="1">1 Sec</option>
+            <option value="2">2 Sec</option>
+            <option value="3">3 Sec (default)</option>
+            <option value="4">4 Sec</option>
+            <option value="5">5 Sec</option>
+            <option value="6">6 Sec</option>
+            <option value="7">7 Sec</option>
+            <option value="8">8 Sec</option>
+            <option value="9">9 Sec</option>
+            <option value="10">10 Sec</option>
+            <option value="11">11 Sec</option>
+            <option value="12">12 Sec</option>
+            <option value="13">13 Sec</option>
+            <option value="14">14 Sec</option>
+            <option value="15">15 Sec</option>
+            <option value="16">16 Sec</option>
+            <option value="17">17 Sec</option>
+            <option value="18">18 Sec</option>
+            <option value="19">19 Sec</option>
+            <option value="20">20 Sec</option>
+        </param>         
+        <param name="linkUrl" type="text" default="" size="10" label="External Link" description="Link to an external site." />    
+        <param name="scaling" type="list" default="0" label="Scaling" description="Setting which defines how video is scaled on the video screen.">
+            <option value="0">Scale (default)</option>
+            <option value="1">Fit</option>
+            <option value="2">Half</option>
+            <option value="3">Original</option>
+        </param>   
+    </params>
+</install>

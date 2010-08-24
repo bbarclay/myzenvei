@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+        <name>System - kc_vm_registration_redirect</name>
+        <author>Laurelle Keashly</author>
+        <creationDate>November 2009</creationDate>
+        <copyright>Copyright (C) 2009-2010 Keashly.ca Consulting. All rights reserved.</copyright>
+        <license>GNU General Public License</license>
+        <authorEmail>info@keashly.ca</authorEmail>
+        <authorUrl>www.keashly.ca</authorUrl>
+        <version>1.0.1</version>
+        <description>A system plugin to redirect core Joomla 1.5 registration attempts to Virtuemart's registration page. Remeber to publish the plugin in the Plugin Manager.</description>
+        <files>
+                <filename plugin="kc_vm_registration_redirect">kc_vm_registration_redirect.php</filename>
+        </files>
+        <params>
+        </params>
+</install>

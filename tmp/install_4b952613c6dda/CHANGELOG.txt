@@ -1,0 +1,111 @@
+/**
+ * Changelog
+ *
+ * @package     Better Preview
+ * @version     1.6.0
+ *
+ * @author      Peter van Westen <peter@nonumber.nl>
+ * @link        http://www.nonumber.nl
+ * @copyright   Copyright (C) 2010 NoNumber! All Rights Reserved
+ * @license     http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+
+/**
+ * + Added
+ * ! Removed
+ * ^ Changed
+ * # Fixed
+ */
+
+17-Feb-2009 : v1.6.0
+ + Added JoomFish support (for menu items/articles/categories/sections)
+ + Added option to open sections/categories by list or blog by default
+ + Added AdminPraise 2 support
+ # Fixed issue with tooltip not displaying properly on all pages
+ # Fixed issue with error about redeclaring clone function on php 4
+
+10-Feb-2009 : v1.5.2
+ + Changed the big article preview link to handle plugins over content
+ # Fixed issue with errors about registry for php 5.0.5
+
+09-Feb-2009 : v1.5.1
+ ^ Changed the License Code check (now controlled by the License Manager)
+ # Fixed location of Joomla! DTD files
+ # Fixed issue with deprecated syntax for php 5.3+
+
+19-Jan-2010 : v1.5.0
+ + Added Commercial License Code support
+ ^ Moved elements to seperate global plugin (also used by other extensions)
+
+17-Dec-2009 : v1.4.2
+ + Added support for APLite admin template
+
+21-Nov-2009 : v1.4.1
+ # Fixed issue with link not opening in new window
+
+20-Nov-2009 : v1.4.0
+ + Added option to hide link text
+ ^ Moved classes to helper file
+ ^ Changed name from 'BetterPreview' to 'Better Preview' (space)
+ ^ Changed file encoding to UTF-8
+ # Fixed issue with titles with quotes messing up the tooltip
+
+05-Aug-2009 : v1.3.3
+ + Added option to set the homepage file
+ ^ Enhanced feature when no components are selected
+
+13-July-2009 : v1.3.2
+ ^ Changed sliding toggle option (in admin settings) to work better in IE8
+ # Fixed issues with php4 incompatibility (MBCS warning)
+ 
+03-July-2009 : v1.3.1
+ + Added 'preview' when no components are selected
+ ^ Changed description in tooltip (added page title, etc)
+ # Fixed issue with invalid query for categories
+ # Fixed issue with minor error in version check
+ # Fixed issue with undefined function error on disabled components
+
+26-May-2009 : v1.3.0
+ + Added support for JoomSuite Resource Content items
+ + Added option to turn of the BetterPreview icon
+ ^ Made the note a little easier to understand
+ ^ Recoded some stuff to make it more logical and lighter
+
+17-May-2009 : v1.2.2
+ # Fixed issue with components element conflicting with other extensions (Sourcerer)
+ # Fixed issue with frontend hanging in IE7
+
+07-May-2009 : v1.2.1
+ # Fixed issue with tooltip jumping (resizing)
+ # Fixed issue with mootools javascript error
+
+02-May-2009 : v1.2.0
+ + Added Tooltip with extra link info (and option to turn it off)
+ + Added Copy to Clipboard icon (and option to turn it off)
+ ^ Changed components list to show all the components available in both admin and frontend
+ # Fixed issue with unpublished articles/categories/sections
+ # Fixed issue with cached selected categories/sections in list view
+
+20-Apr-2009 : v1.1.0
+ ^ Changed preview icon in toolbar
+ ^ Changed installation procedure (automatic installer/updater)
+ ^ Changed update check
+ ^ Changed code a bit to make it lighter
+ ^ Changed different administrator elements
+ ! Removed update icon in administrator toolbar
+ # Made url xhtml compatible (attribute-encoded)
+ # Fixed typo in html output of component list
+
+10-Dec-2008 : v1.0.3
+ # Fixed issue with Fatal error: Class 'BetterPreviewVersionCheck' not found
+
+08-Nov-2008 : v1.0.2
+ ^ Changed update check
+ # Fixed issue with article links not always matching correctly
+
+26-Sept-2008 : v1.0.1
+ ^ Changed update check
+ ! Removed redundant checks for components
+
+17-Sept-2008 : v1.0.0
+ + First release

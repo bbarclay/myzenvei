@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<install version="1.5" type="extension" plugin="advlink" extension="k2links" folder="links" method="upgrade">
+	<name>K2 Links for Advanced Link</name>
+	<version>1.0</version>
+	<creationDate>28 October 2009</creationDate>
+	<author>Nicholas K. Dionysopoulos</author>
+	<authorEmail>nicholas@dionysopoulos.me</authorEmail>
+	<authorUrl>http://www.dionysopoulos.me/</authorUrl>
+	<copyright>Nicholas K. Dionysopoulos</copyright>
+	<license>GPL v.2 or later</license>
+	<description>K2 Links for JCE Advanced Link</description>
+	<files>
+		<filename>k2links.php</filename>
+		<filename>k2links/index.html</filename>
+		<filename>k2links/k2.php</filename>
+	</files>
+	<params>
+		<param name="advlink_k2content" type="list" default="1" label="Show K2 Content Items" description="Enables display of K2 items in JCE's Advanced Link page">
+           	<option value="1">YES</option>
+           	<option value="0">NO</option>
+		</param>
+	</params>
+</install>

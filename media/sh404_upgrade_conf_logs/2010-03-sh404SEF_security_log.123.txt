@@ -1,0 +1,7 @@
+Date	Time	Cause	IP	Name	User agent	Request method	Request URI	Comment
+2010-03-06	12:54:44	Page not found (404)	216.83.138.67	dsl6-ore-67.fiber.net	Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6 (.NET CLR 3.5.30729)	GET	/IT
+2010-03-06	12:56:06	Page not found (404)	216.83.138.67	dsl6-ore-67.fiber.net	Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6 (.NET CLR 3.5.30729)	GET	/component/seminar/	http://www.zenvei.com/news.html
+2010-03-06	12:59:02	Page not found (404)	216.83.138.67	dsl6-ore-67.fiber.net	Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6 (.NET CLR 3.5.30729)	GET	/Top-Menu-Section/product	http://www.zenvei.com/Zenvei/green
+2010-03-07	08:35:26	Page not found (404)	67.159.44.138	.	Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6 (.NET CLR 3.5.30729)	GET	/zenvei/	http://www.zenvei.com
+2010-03-07	15:46:55	Page not found (404)	203.177.72.75	203.177.72.75	No user agent	GET	/sumthin
+2010-03-07	16:30:28	Page not found (404)	216.83.138.67	dsl6-ore-67.fiber.net	Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6 (.NET CLR 3.5.30729)	GET	/company	http://www.zenvei.com/

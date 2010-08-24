@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+<name>HOT Joomla Carousel</name> 
+<author>HotJoomlaTemplates.com</author> 
+<creationDate>2009-11-25</creationDate> 
+<copyright>All rights reserved by HotJoomlaTemplates.com</copyright> 
+<license>This extension in released under the GNU/GPL License - http://www.gnu.org/copyleft/gpl.html</license> 
+<authorEmail>info@hotjoomlatemplates.com</authorEmail> 
+<authorUrl>http://www.hotjoomlatemplates.com</authorUrl> 
+<version>1.0.0</version> 
+<description>MODULE_DESC</description>
+<files>
+	<filename module="mod_hot_joomla_carousel">mod_hot_joomla_carousel.php</filename>
+	<filename>index.html</filename>
+	<filename>images/circleleft32.png</filename>
+	<filename>images/circleright32.png</filename>
+	<filename>images/hotjoomlatemplates_logo_150px.jpg</filename>
+	<filename>images/index.html</filename>
+	<filename>js/index.html</filename>
+	<filename>js/jquery.carousel.js</filename>
+	<filename>js/jquery-1.3.2.min.js</filename>
+	<filename>tmpl/default.php</filename>
+	<filename>tmpl/index.html</filename>
+	<filename>tmpl/hot_joomla_carousel.css</filename>
+</files>
+<languages>
+	<language tag="en-GB">en-GB.mod_hot_joomla_carousel.ini</language>
+</languages>
+<params>
+	<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	<param name="enablejQuery" type="list" default="1" label="LABEL JQUERY" description="DESC JQUERY">
+		<option value="1">Enable</option>
+		<option value="0">Disable</option>
+	</param>
+	<param name="moduleWidth" type="text" default="500" label="LABEL WIDTH" description="DESC WIDTH" />
+	<param name="moduleHeight" type="text" default="136" label="LABEL HEIGHT" description="DESC HEIGHT" />
+	<param name="imageFolder" type="text" default="images/stories" label="LABEL FOLDER" description="DESC FOLDER" />
+	<param name="imageNumber" type="text" default="3" label="LABEL IMAGES NUMBER" description="DESC IMAGES NUMBER" />
+	<param name="imageWidth" type="text" default="145" label="LABEL IMAGE WIDTH" description="DESC IMAGE WIDTH" />
+	<param name="imageHeight" type="text" default="128" label="LABEL IMAGE HEIGHT" description="DESC IMAGE HEIGHT" />
+	<param name="imageMargin" type="text" default="10" label="LABEL MARGIN" description="DESC MARGIN" />
+	<param name="imagePadding" type="text" default="2" label="LABEL PADDING" description="DESC PADDING" />
+	<param name="imageBorderWidth" type="text" default="2" label="LABEL BORDER WIDTH" description="DESC BORDER WIDTH" />
+	<param name="imageBorderColor" type="text" default="000000" label="LABEL BORDER COLOR" description="DESC BORDER COLOR" />
+	<param name="carouselPagination" type="list" default="false" label="LABEL PAGINATION" description="DESC PAGINATION">
+		<option value="true">Enable</option>
+		<option value="false">Disable</option>
+	</param>
+	<param name="carouselAutoSlide" type="list" default="false" label="LABEL AUTO SLIDE" description="DESC AUTO SLIDE">
+		<option value="true">Enable</option>
+		<option value="false">Disable</option>
+	</param>
+	<param name="carouselAutoSlideInterval" type="text" default="3000" label="LABEL AUTO SLIDE INTERVAL" description="DESC AUTO SLIDE INTERVAL" />
+	<param name="carouselEffect" type="list" default="slide" label="LABEL EFFECT" description="DESC EFFECT">
+		<option value="slide">Slide</option>
+		<option value="fade">Fade</option>
+	</param>
+	<param name="carouselAnimSpeed" type="list" default="normal" label="LABEL ANIM SPEED" description="DESC ANIM SPEED">
+		<option value="slow">Slow</option>
+		<option value="normal">Normal</option>
+		<option value="fast">Fase</option>
+	</param>
+	<param name="carouselDirection" type="list" default="normal" label="LABEL DIRECTION" description="DESC DIRECTION">
+		<option value="horizontal">Horizontal</option>
+		<option value="vertical">Vertical</option>
+	</param>
+	<param name="carouselLoop" type="list" default="false" label="LABEL LOOP" description="DESC LOOP">
+		<option value="true">Enable</option>
+		<option value="false">Disable</option>
+	</param>
+</params>
+</install>

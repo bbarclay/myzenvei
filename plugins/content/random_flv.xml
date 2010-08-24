@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<install version="1.5" type="plugin" group="content">
+	<name>Random FLV</name>
+	<author>Fiona Coulter</author>
+	<creationDate>May 2009</creationDate>
+	<copyright>Inspiration Web Design</copyright>
+	<license>Commercial</license>
+	<authorEmail>joomla@iswebdesign.co.uk</authorEmail>
+	<authorUrl>www.iswebdesign.co.uk</authorUrl>
+	<version>1.0.2</version>
+	<description>Content Plugin for Random FLV Player</description>
+	<files>
+		<filename plugin="random_flv">random_flv.php</filename>
+	</files>
+	<params>
+		<param name="count" type="text" default="5" label="Count" description="DESCCOUNT" />
+		<param name="playerHeight" type="text" default="250" label="Player Height" description="DESCHEIGHT" />		
+		<param name="ordering" type="list" default="create_dsc" label="Ordering" description="Ordering options">
+			<option value="random">Random</option>
+	  	</param>
+		<param name="folder" type="text" default="media/flvs" label="FLV Folder" description="PARAMFLVFOLDER" />
+		<param name="skin" type="filelist" label="Skin" description="DESCSKIN" directory="/modules/mod_random_flv_pro/assets/" default="flvplayer" stripext="1" filter="\.swf$" />
+		<param name="autoStart" type="radio" default="yes" label="Auto Start Play" description="PARAMAUTOSTART">
+			<option value="yes">yes</option>
+			<option value="no">no</option>
+		</param>
+        <param name="autoReplay" type="radio" default="yes" label="Auto Replay" description="PARAMAUTOREPLAY">
+			<option value="yes">yes</option>
+			<option value="no">no</option>
+		</param>									
+	</params>
+		<languages>
+		   <language tag="en-GB">en-GB.plg_content_random_flv.ini</language>
+	    </languages>
+</install>

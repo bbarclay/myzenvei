@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="hwdvs-thirdparty" method="upgrade">
+    <name>Third Party Support Pack</name>
+    <creationDate>2009 12 04</creationDate>
+    <author>Highwood Design</author>
+    <copyright>(C) 2007 - 2009 Highwood Design</copyright>
+    <authorEmail>info@highwooddesign.co.uk</authorEmail>
+    <authorUrl>http://hwdmediashare.co.uk</authorUrl>
+    <version>[ Dannevirke ]</version>
+    <description>Adds support for all third party websites in one single plugin</description>
+    <files>
+        <filename plugin="thirdpartysupportpack">support.ini</filename>
+        <filename plugin="thirdpartysupportpack">blip.tv.php</filename>
+        <filename plugin="thirdpartysupportpack">blip.tv.view.php</filename>
+        <filename plugin="thirdpartysupportpack">break.com.php</filename>
+        <filename plugin="thirdpartysupportpack">break.com.view.php</filename>
+        <filename plugin="thirdpartysupportpack">dailymotion.com.php</filename>
+        <filename plugin="thirdpartysupportpack">dailymotion.com.view.php</filename>
+        <filename plugin="thirdpartysupportpack">freecaster.tv.php</filename>
+        <filename plugin="thirdpartysupportpack">freecaster.tv.view.php</filename>        
+        <filename plugin="thirdpartysupportpack">gametrailers.com.php</filename>
+        <filename plugin="thirdpartysupportpack">gametrailers.com.view.php</filename>
+	<filename plugin="thirdpartysupportpack">google.co.uk.php</filename>
+        <filename plugin="thirdpartysupportpack">google.co.uk.view.php</filename>
+        <filename plugin="thirdpartysupportpack">jumpcut.com.php</filename>
+        <filename plugin="thirdpartysupportpack">jumpcut.com.view.php</filename>
+        <filename plugin="thirdpartysupportpack">megavideo.com.php</filename>
+        <filename plugin="thirdpartysupportpack">megavideo.com.view.php</filename>
+        <filename plugin="thirdpartysupportpack">myspace.com.php</filename>
+        <filename plugin="thirdpartysupportpack">myspace.com.view.php</filename>
+        <filename plugin="thirdpartysupportpack">revver.com.php</filename>
+        <filename plugin="thirdpartysupportpack">revver.com.view.php</filename>
+        <filename plugin="thirdpartysupportpack">schooltube.com.php</filename>
+        <filename plugin="thirdpartysupportpack">schooltube.com.view.php</filename>
+        <filename plugin="thirdpartysupportpack">screencast.com.php</filename>
+        <filename plugin="thirdpartysupportpack">screencast.com.view.php</filename>
+        <filename plugin="thirdpartysupportpack">ustream.tv.php</filename>
+        <filename plugin="thirdpartysupportpack">ustream.tv.view.php</filename>
+        <filename plugin="thirdpartysupportpack">veoh.com.php</filename>
+        <filename plugin="thirdpartysupportpack">veoh.com.view.php</filename>
+        <filename plugin="thirdpartysupportpack">viddler.com.php</filename>
+        <filename plugin="thirdpartysupportpack">viddler.com.view.php</filename>
+        <filename plugin="thirdpartysupportpack">vimeo.com.php</filename>
+        <filename plugin="thirdpartysupportpack">vimeo.com.view.php</filename>
+        <filename plugin="thirdpartysupportpack">wegame.com.php</filename>
+        <filename plugin="thirdpartysupportpack">wegame.com.view.php</filename>
+        <filename plugin="thirdpartysupportpack">yahoo.com.php</filename>
+        <filename plugin="thirdpartysupportpack">yahoo.com.view.php</filename>
+        <filename plugin="thirdpartysupportpack">zshare.net.php</filename>
+        <filename plugin="thirdpartysupportpack">zshare.net.view.php</filename>
+    </files>
+    <params>
+    </params>  
+</install>
+
+

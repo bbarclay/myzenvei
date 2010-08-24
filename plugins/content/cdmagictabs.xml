@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+  <name>Content - Core Design Magic Tabs plugin</name>
+  <author>Daniel Rataj</author>
+  <creationDate>October 12th, 2009</creationDate>
+  <copyright>(C) 2007 - 2010 Great Joomla! All rights reserved.</copyright>
+  <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL 3</license>
+  <authorEmail>info@greatjoomla.com</authorEmail>
+  <authorUrl>www.greatjoomla.com</authorUrl>
+  <version>1.0.9</version>
+  <description>DESCRIPTION CD_MAGICTABS</description>
+  <files>
+    <filename plugin="cdmagictabs">cdmagictabs.php</filename>
+    <filename>cdmagictabs/css/cdmagictabs.css</filename>
+    <filename>cdmagictabs/css/index.html</filename>
+	<filename>cdmagictabs/index.html</filename>
+	<filename>cdmagictabs/license-gpl.txt</filename>
+  </files>
+  <languages>
+  	<language tag="en-GB">en-GB.plg_content_cdmagictabs.ini</language>
+   </languages>
+  <params>
+  <param name="default_tabstyle" type="folderlist" default="smoothness" label="LABEL_DEFAULT_STYLE" description="DESC_DEFAULT_STYLE" directory="plugins/system/cdscriptegrator/libraries/jquery/theme" filter="" exclude="" />
+  <param name="default_animated" type="list" default="none" label="LABEL_DEFAULT_ANIMATION" description="DESC_DEFAULT_ANIMATION">
+  <option value="none">PARAM_DEFAULT_ANIMATION_01</option>
+  <option value="both">PARAM_DEFAULT_ANIMATION_02</option>
+  <option value="slide">PARAM_DEFAULT_ANIMATION_03</option>
+  <option value="fade">PARAM_DEFAULT_ANIMATION_04</option>
+  </param>
+  <param name="default_boxwidth" type="text" default="0" label="LABEL_DEFAULT_WIDTH" description="DESC_WIDTH"/>
+  <param name="default_tabalign" type="list" default="left" label="LABEL_DEFAULT_TAB_ALIGN" description="DESC_DEFAULT_TAB_ALIGN">
+  <option value="left">PARAM_DEFAULT_TAB_ALIGN_01</option>
+  <option value="right">PARAM_DEFAULT_TAB_ALIGN_02</option>
+  </param>
+  <param name="default_taboffset" type="text" default="0px" label="LABEL_DEFAULT_TAB_OFFSET" description="DESC_DEFAULT_TAB_OFFSET"/>
+  <param name="default_tabrotate" type="text" default="0" label="LABEL_DEFAULT_TABS_ROTATE" description="DESC_DEFAULT_TABS_ROTATE"/>
+  <param name="default_tabevent" type="list" default="left" label="LABEL_DEFAULT_TAB_EVENT" description="LABEL_DEFAULT_TAB_EVENT">
+  <option value="click">PARAM_DEFAULT_TABS_EVENT_01</option>
+  <option value="mouseover">PARAM_DEFAULT_TABS_EVENT_02</option>
+  </param>
+  </params>
+  <params group="advanced">
+  <param name="navigation" type="list" default="0" label="LABEL_NAVIGATION" description="DESC_NAVIGATION">
+  <option value="0">PARAM_NAVIGATION_NO</option>
+  <option value="1">PARAM_NAVIGATION_YES</option>
+  </param>
+  <param name="@spacer" type="spacer" default="ID mode" label="" description="" />
+  <param name="readmore" type="list" default="0" label="LABEL_DEFAULT_READMORE" description="DESC_DEFAULT_READMORE">
+  <option value="0">PARAM_DEFAULT_READMORE_NO</option>
+  <option value="1">PARAM_DEFAULT_READMORE_YES</option>
+  </param>
+  <param name="plugins" type="list" default="0" label="LABEL_DEFAULT_PLUGINS" description="DESC_DEFAULT_PLUGINS">
+  <option value="0">PARAM_DEFAULT_PLUGINS_NO</option>
+  <option value="1">PARAM_DEFAULT_PLUGINS_YES</option>
+  </param>
+  </params>
+</install>

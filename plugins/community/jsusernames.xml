@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="community">
+	<name>JS Usernames</name>
+	<author>Jomsocialplate</author>
+	<creationDate>07/07/2009</creationDate>
+	<copyright>Copyright (C) 2009. All rights reserved.</copyright>
+	<license>http://www.socialcode.co.uk</license>
+	<authorEmail>sales@socialcode.co.uk</authorEmail>
+	<authorUrl>www.socialcode.co.uk</authorUrl>
+	<version>1.0</version>
+	<isapplication>true</isapplication>
+	<description>
+		Allows you to have your own personalized url.
+	</description>
+	<files>
+		<file plugin="jsusernames">jsusernames.php</file>
+		<folder>jsusernames</folder>
+	</files>	
+	<params>
+		<param name="excluded" type="textarea" default="" rows="5" cols="30" label="Exclude custom usernames (Separate by comma)" description="Set the disallowed custom url names. If you are using 3rd party SEF components such as SH404SEF, SEFAdvance, ARTIO JoomSEF, you should add the custom aliases here." />
+	</params>
+</install>

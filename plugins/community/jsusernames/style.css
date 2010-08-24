@@ -1,0 +1,19 @@
+div.jsusernames-info
+{
+	background: #f4f4f4;
+	border: 1px solid #eee;
+	padding: 5px;
+}
+
+div.myurl
+{
+	background: url( url.png ) no-repeat;
+	padding: 0 0 2px 22px;
+}
+
+div.myurl-wrapper
+{
+	background: #f4f4f4;
+	padding: 5px;
+	border: 1px solid #eee;
+}

@@ -1,0 +1,26 @@
+Hello
+This is the install package for a joomla 1.5.x environment. 
+Here you will find the component and some modules and a plugin to integrate your google 
+analytics statistic data into a joomla based web site.
+
+***** PREREQUISITS *****
+- joomla 1.5.x
+- google analytics account
+- mysql >= 5.0.0 
+
+***** INSTALLATION *****
+To install extract the component, your desired modules and the plugin zip files and 
+install them with the joomla installer.
+
+***** UPGRADE *****
+You must have installed a previous version of the ganalytics component or the modules.
+Extract the component or module zip file to your joomla root folder. E.g. if you want to
+upgrade mod_ganalytics_stats version 0.5.0 to this version extract the content of 
+the zip file mod_ganalytics_stats.zip to your joomla root. 
+
+***** DOCUMENTATION *****
+Check http://g4j.laoneo.net for the documentation, forum and current issues. 
+
+
+Have fun
+the gcalendar team

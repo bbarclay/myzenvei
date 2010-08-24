@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="community">
+<params>
+		<param name="username" type="text" default="" label="Twitter Username" description="Your twitter username" />
+		<param name="password" type="password" default="" label="Password" description="Password" />
+		<param name="count" type="text" default="5" label="Updates count" description="How many updates to display" />
+		
+		<param name="updateTwitter" type="list" default="0" label="Update Twitter" description="Select yes if you want to update your twitter account on status change.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+		<param name="showFriends" type="list" default="0" label="Show friends updates" description="Select yes if you want to show your friends updates as well ">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+</params>
+</install>

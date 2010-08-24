@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : content.xml
+    Created on : December 11, 2009, 3:49 PM
+    Author     : User
+    Description:
+        Purpose of the document follows.
+-->
+
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD plugin 1.0//EN" "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<install version="1.5" type="plugin" group="content" method="upgrade">
+    <name>Hdflvplayer Plugin</name>
+    <creationDate>Feb 19 , 2010</creationDate>
+    <author>Contus Support </author>
+    <authorEmail>email</authorEmail>
+    <authorUrl>url</authorUrl>
+    <copyright>Copyright</copyright>
+    <license> GNU/GPL</license>
+    <version>1.3</version>
+    <description>
+<p>Plugin Steps</p>
+<p>1. Install the joomla_hdflvplayer_plugin_demo.<br />
+  2. In the plugin manager under extensions menu Hdflvplayer Plugin can be found.<br />
+  3. Just publish it.<br />
+  4. In any articles plugin can be used...<br />
+  5. The attributes includes </p>
+<p> * videoid<br />
+  * Height<br />
+  * Width<br />
+  * Autoplay<br />
+  * Playlist</p>
+<p>6. Any one of the above attributes can be included...Mandatory is videoid<br />
+  7. Below are the formats for plugin</p>
+<p> <br />
+  1.[hdplay videoid=1 heigth=300 width=400 autoplay=true playlist=summer]<br />
+  2.[hdplay videoid=1]<br />
+  3.[hdplay videoid=2 height=300] <br />
+  4.[hdplay videoid=4 width=700] <br />
+  5.[hdplay videoid=3 autoplay=true] <br />
+  6.[hdplay videoid=3 playlist=summer] </p>
+<p>Different combinations can be used as mentioned above<br />
+</p></description>
+    <files>
+        <filename plugin="contusvideo">contusvideo.php</filename>
+        <filename>readme.txt</filename>
+    </files>
+    <params>
+    </params>
+
+</install>
+

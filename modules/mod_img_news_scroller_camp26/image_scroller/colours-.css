@@ -1,0 +1,41 @@
+	.news .wocc, .news .link-wocc a, .news .linkro-wocc a:hover {
+		color: #fff;
+	}
+	.news .bocc, .news .link-bocc a, .news .linkro-bocc a:hover {
+		color: #000;
+		background-color:#00AAD2;
+	}
+	.news .xocc, .news .link-xocc a, .news .linkro-xocc a:hover {
+		background-color:#00AAD2;
+	}	
+
+	.news .ccow, .news .link-ccow a, .news .linkro-ccow a:hover {
+		color:#00AAD2;
+		background-color: #fff;
+	}
+	.news .ccob, .news .link-ccob a, .news .linkro-ccob a:hover {
+		color:#00AAD2;
+		background-color: #000;
+	}
+	.news .ccox, .news .link-ccox a, .news .linkro-ccox a:hover {
+		color:#00AAD2;
+	}
+	.news .ccolcc, .news .link-ccolcc a, .news .linkro-ccolcc a:hover {
+		color:#00AAD2;
+		background-color: #E8FBFF;
+	}
+	.news .ccogr2, .news .link-ccogr2 a, .news .linkro-ccogr2 a:hover {
+		color:#00AAD2;
+	}
+	.news .bdrcc,.news a.link-bdrcc, .news .linkro-bdrcc:hover,.news a:hover .linkro-bdrcc {
+	    border-width:1px;
+	    border-style:solid;
+	    border-color:#00AAD2;
+	}
+
+	.laskar-link{
+		float: right; 
+		font-size: 8px;
+		font-family: Helvetica,Arial,sans-serif;
+		color: #999999;
+	}

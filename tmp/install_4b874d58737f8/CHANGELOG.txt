@@ -1,0 +1,70 @@
+/**
+ * Changelog
+ *
+ * @package     AdminBar Docker
+ * @version     1.1.1
+ *
+ * @author      Peter van Westen <peter@nonumber.nl>
+ * @link        http://www.nonumber.nl
+ * @copyright   Copyright (C) 2010 NoNumber! All Rights Reserved
+ * @license     http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+
+/**
+ * + Added
+ * ! Removed
+ * ^ Changed
+ * # Fixed
+ */
+
+09-Feb-2009 : v1.1.1
+ # Fixed location of Joomla! DTD files
+ # Fixed issue with deprecated syntax for php 5.3+
+ # Fixed issue with notice about variable random not being defined
+
+18-Jan-2010 : v1.1.0
+ + Added link to admin home on icon (left of menu, only in Khepri template)
+ ^ Moved elements to seperate global plugin (also used by other extensions)
+ ^ Changed the License Code check (now controlled by the License Manager)
+
+02-Jan-2010 : v1.0.1
+ # Fixed issue with error on plugin settings page (due to License check)
+
+01-Jan-2010 : v1.0.0
+ + First stable release
+ + Added Commercial License Code support
+ # Fixed position of module position text box
+
+15-Dec-2009 : v0.3.1
+ ^ Disabled plugin for eXtplorer
+ # Fixed issue with bars being hidden on first undock action
+
+13-Dec-2009 : v0.3.0
+ + Added option to auto hide the admin bars
+ + Added support for APLite, AdminPraise and AdminPraise2 admin templates
+ ^ Complete changed way the actions are handled (mootools)
+
+26-Nov-2009 : v0.2.1
+ + Added reload button
+ ^ Changed scroll to top / bottom from ancor based to javascript based
+ ^ Changed z-index to prevent tooltips from being displayed under toolbars
+ ^ Changed icon images to css sprite
+ ^ Moved classes to helper file
+ # Fixed issue with occasional javascript error about adminbardocker_spacer_top
+
+29-Oct-2009 : v0.2.0
+ + First beta release
+ + Added options to make toolbars undocked by default
+ + Added button to undock bars to bottom (except menubar)
+ + Added buttons to jump to top / bottom
+ ^ Changed layout of Admin toolbars (full width)
+ ^ Improved handling of cookies (to remember state)
+ ^ Improved javascript functions
+
+13-Oct-2009 : v0.1.0c
+ ^ Changed icons
+ ^ Changed file encoding to UTF-8
+ # Fixed issue with extra whitespace being added at bottom of page
+
+12-Oct-2009 : v0.1.0b
+ + First alpha release

@@ -1,0 +1,116 @@
+/**
+ * Changelog
+ *
+ * @package     Advanced Module Manager
+ * @version     1.7.0
+ *
+ * @author      Peter van Westen <peter@nonumber.nl>
+ * @link        http://www.nonumber.nl
+ * @copyright   Copyright (C) 2010 NoNumber! All Rights Reserved
+ * @license     http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+
+/**
+ * + Added
+ * ! Removed
+ * ^ Changed
+ * # Fixed
+ */
+
+28-Feb-2010 : v1.7.0
+ + Added option to move selection of modules to other position
+ + Added filter for access level in module list
+ ! Removed Pages column from module list
+ ^ Optimized more code to make it all a lot faster/lighter
+ # Fixed issue with position select box not working on IE
+ # Fixed issue with mirroring modules not working correctly
+ # Fixed issue with trashed menu items appearing in menu item select box
+ # Fixed some layout issues for APLite template
+ # Fixed issue with modules assigned to K2 categories also appearing on other pages
+ # Fixed issue with links pointing to com_advancedmodules when option is com_modules
+ # Fixed issue with admin modules giving errors in edit screen
+ # Fixed issue with database table not being created (for real this time)
+
+14-Feb-2010 : v1.6.1
+ # Fixed issue with database table not being created
+
+12-Feb-2010 : v1.6.0
+ + Added more assignment filters (url matching, user ids, k2 categories, php evaluation)
+ ^ Changed display of position combobox (text field and pulldown separately)
+ ^ Changed assignment checks to use global plugin
+ ^ Reduced number of queries
+ ^ Optimized more code (= faster)
+ # Fixed ordering of module list in menu items view
+ # Fixed issue with mirror module not working correctly
+ # Fixed issue with sections/categories assignments not working correctly
+ # Fixed issue with modal links breaking on titles with special characters
+ # Fixed issue with deprecated syntax for php 5.3+
+ # Fixed issue with errors about registry for php 5.0.5
+
+19-Jan-2010 : v1.5.0
+ + Added save button to module popup (modal) window
+ + Added option to mirror assignment settings of other module
+ + Added option to choose AND / OR method of assignments matching
+ + Added option to also show/hide on child menu items
+ + Added extra options to hide certain settings
+ ^ Reduced number of queries
+ ^ Optimized code a little (= faster)
+ ^ Moved elements to separate global plugin (also used by other extensions)
+ ^ Changed the License Code check (now controlled by the License Manager)
+ # Fixed ordering field in module edit screen not working
+ # Fixed location of Joomla! DTD files
+
+03-Jan-2010 : v1.4.3
+ # Fixed issue with error on Custom HTML module admin pages
+
+02-Jan-2010 : v1.4.2
+ # Fixed issue with error on plugin settings page (due to License check)
+
+01-Jan-2010 : v1.4.1
+ + Added Commercial License Code support
+ ^ Moved Module Assignment options to parameter tabs
+ # Fixed issue with assignment to JACL user group levels not working correctly
+ # Fixed issue with modules assigned to articles/categories/sections also showing on other pages
+
+18-Dec-2009 : v1.3.3
+ # Fixed issue with database query error on installation
+
+14-Dec-2009 : v1.3.2
+ # Fixed issue with php warning if no modules are published
+ # Fixed issue with ordering of modules on some setups
+
+04-Dec-2009 : v1.3.1
+ ^ Reduced amount of queries (thanks to Omar Ramos)
+ ^ Improved some code
+ # Fixed issue with jos_ instead of #__ being used in 2 queries
+
+01-Dec-2009 : v1.3.0
+ ^ Changed name from Advanced Modules to Advanced Module Manager
+ ^ Changed size of modal window to maximum
+ ^ Changed order of filter options
+ ^ Changed titles and descriptions of filters (publish on instead of limit by)
+ ^ Improved User Group Level selection
+ ^ Improved some code
+
+18-Nov-2009 : v1.2.0
+ + Added extra option to not render module if it has not output
+ + Added extra limit filters (date, sections / categories, articles, user group levels, components, languages, templates)
+ # Fixed issue with php syntax error for php4 setups
+ # Fixed issue with error on uninstallation of plugin
+
+28-Oct-2009 : v1.0.0
+ + First stable release
+ # Fixed issue with new module screen returning blank (when selecting type and clicking next)
+ # Fixed issue with menu item edit screen returning blank on some setups
+ # Fixed issue with toggling of settings
+
+13-Oct-2009 : v0.2.2
+ ^ Changed file encoding to UTF-8
+ ^ Changed some code to make it a bit lighter
+ # Fixed issue with module ordering not working correctly (wasn't fixed in v0.2.1)
+
+12-Oct-2009 : v0.2.1
+ # Fixed issue with module ordering not working correctly
+
+09-Oct-2009 : v0.2.0
+ + First beta release

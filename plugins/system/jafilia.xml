@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5.14" type="plugin" group="system" method="upgrade">
+	<name>System - Jafilia</name>
+	<author>Arkadiusz Maniecki</author>
+	<authorEmail>keranek@o2.pl</authorEmail>
+	<authorUrl>http://www.webwizard.pl/en/</authorUrl>
+	<creationDate>26-Sep-2009</creationDate>
+	<copyright>Copyright 2009 Quarkbit Software. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.5.14</version>
+	<description><![CDATA[Jafilia plugin 1.5.14 - Copyright &copy; 2009 - Quarkbit Software. All rights reserved.]]></description>  
+    <files>
+        <filename plugin="jafilia">jafilia.php</filename>
+    </files>
+	<params/>
+</install>

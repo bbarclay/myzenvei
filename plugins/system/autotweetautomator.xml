@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5.4" type="plugin" group="system" method="upgrade">
+	<name>AutoTweet NG Automator-Plugin</name>
+	<author>Ulli Storck</author>
+	<creationDate>October 2009</creationDate>
+	<copyright>Ulli Storck</copyright>
+	<license>GPL 2.0</license>
+	<authorEmail></authorEmail>
+	<authorUrl>http://www.1st-movers.com</authorUrl>
+	<version>1.2</version>
+	<description>AutoTweed NG Automator makes automatic post attempts for pending twitter messages (stored in the AutoTweet NG Component database). Needs AutoTweet NG Component to work.</description>
+	<files>
+		<filename plugin="autotweetautomator">autotweetautomator.php</filename>
+	</files>
+	<languages>
+	</languages>
+	<params>
+		<param name="max_posts" type="list" default="5" label="Max. nr of posts" description="Max. number of pending posts sendet by the Automator-Plugin in one time/call. (Max. 5 posts for performance reasons.)">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</param>
+		<param name="interval" type="text" default="180" label="Interval in seconds" description="Interval for the post attempts of the Automator-Plugin. This means the plugin checks all X seconds for new pending posts. Min. is 120 seconds for performance reasons." />
+	</params>
+</install>

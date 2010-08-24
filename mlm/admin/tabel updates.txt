@@ -1,0 +1,233 @@
+	//accounts setup
+	
+	
+	
+	
+	
+	
+	
+	
+	$peql="insert into ".$mem_name."(cycle_id,binary_rank,left_id,right_id,enroller_id,enrolled_id)
+	values('".$cycle_id."','".$binary_rank."','".$left_id."','".$right_id."','".$enroller_id."','".$enrolled_id."')";
+	$query1=mysql_query($peql)or die(mysql_error());
+						
+				
+				
+				
+				//logic to insert details in earnings
+				
+				
+				
+				
+				
+				$pql1="insert into earnings(period,chk_id,chk_dt,chk_amt,enroller_id,enrolled_id)
+				
+				values('".$date."','".$chk_id."','".$chk_dt."','".$chk_amt."','".$enroller_id."','".$enrolled_id."')";
+				
+							$result1=mysql_query($pql1)or die(mysql_error());
+							
+							
+							
+				//logic to insert details in geneloogy
+				
+				
+				
+				
+							
+				$eql="insert into gene_logy(level_mem,mem_name,jn_dt,enroller_id,enrolled_id)
+				
+				values('".$level_mem."','".$mem_name."','".$jn_dt."','".$enroller_id."','".$enrolled_id."')";
+				
+							$gesult1=mysql_query($eql)or die(mysql_error());
+							
+							
+							
+							
+				//logic to insert details in enroller table
+				
+				
+				
+				
+							
+				$eql="insert into gene_logy(level_mem,mem_name,jn_dt,enroller_id,enrolled_id)
+				
+				values('".$level_mem."','".$mem_name."','".$jn_dt."','".$enroller_id."','".$enrolled_id."')";
+				
+							$gesult1=mysql_query($eql)or die(mysql_error());
+							
+							
+							
+							
+							
+							
+				//logic to insert details in enroller table
+				
+				
+				
+				
+							
+				$eql="insert into gene_logy(level_mem,mem_name,jn_dt,enroller_id,enrolled_id)
+				
+				values('".$level_mem."','".$mem_name."','".$jn_dt."','".$enroller_id."','".$enrolled_id."')";
+				
+							$gesult1=mysql_query($eql)or die(mysql_error());
+							
+							
+							
+							
+							
+							
+				//logic to insert details in enroller table
+				
+				
+				
+				
+							
+				$eql="insert into gene_logy(level_mem,mem_name,jn_dt,enroller_id,enrolled_id)
+				
+				values('".$level_mem."','".$mem_name."','".$jn_dt."','".$enroller_id."','".$enrolled_id."')";
+				
+							$gesult1=mysql_query($eql)or die(mysql_error());
+							
+							
+							
+							
+							
+							
+				//logic to insert details in enroller table
+				
+				
+				
+				
+							
+				$eql="insert into gene_logy(level_mem,mem_name,jn_dt,enroller_id,enrolled_id)
+				
+				values('".$level_mem."','".$mem_name."','".$jn_dt."','".$enroller_id."','".$enrolled_id."')";
+				
+							$gesult1=mysql_query($eql)or die(mysql_error());
+							
+							
+							
+							
+							
+							
+				//logic to insert details in enroller table
+				
+				
+				
+				
+							
+				$eql="insert into gene_logy(level_mem,mem_name,jn_dt,enroller_id,enrolled_id)
+				
+				values('".$level_mem."','".$mem_name."','".$jn_dt."','".$enroller_id."','".$enrolled_id."')";
+				
+							$gesult1=mysql_query($eql)or die(mysql_error());
+							
+							
+							
+							
+							
+							
+				//logic to insert details in enroller table
+				
+				
+				
+				
+							
+				$eql="insert into gene_logy(level_mem,mem_name,jn_dt,enroller_id,enrolled_id)
+				
+				values('".$level_mem."','".$mem_name."','".$jn_dt."','".$enroller_id."','".$enrolled_id."')";
+				
+							$gesult1=mysql_query($eql)or die(mysql_error());
+							
+							
+							
+							
+							
+							
+				//logic to insert details in enroller table
+				
+				
+				
+				
+							
+				$eql="insert into gene_logy(level_mem,mem_name,jn_dt,enroller_id,enrolled_id)
+				
+				values('".$level_mem."','".$mem_name."','".$jn_dt."','".$enroller_id."','".$enrolled_id."')";
+				
+							$gesult1=mysql_query($eql)or die(mysql_error());
+							
+							
+							
+							
+							
+							
+				//logic to insert details in enroller table
+				
+				
+				
+				
+							
+				$eql="insert into gene_logy(level_mem,mem_name,jn_dt,enroller_id,enrolled_id)
+				
+				values('".$level_mem."','".$mem_name."','".$jn_dt."','".$enroller_id."','".$enrolled_id."')";
+				
+							$gesult1=mysql_query($eql)or die(mysql_error());
+							
+							
+							
+							
+							
+							
+				//logic to insert details in enroller table
+				
+				
+				
+				
+							
+				$eql="insert into gene_logy(level_mem,mem_name,jn_dt,enroller_id,enrolled_id)
+				
+				values('".$level_mem."','".$mem_name."','".$jn_dt."','".$enroller_id."','".$enrolled_id."')";
+				
+							$gesult1=mysql_query($eql)or die(mysql_error());
+							
+							
+							
+							
+							
+							
+				//logic to insert details in enroller table
+				
+				
+				
+				
+							
+				$eql="insert into gene_logy(level_mem,mem_name,jn_dt,enroller_id,enrolled_id)
+				
+				values('".$level_mem."','".$mem_name."','".$jn_dt."','".$enroller_id."','".$enrolled_id."')";
+				
+							$gesult1=mysql_query($eql)or die(mysql_error());
+							
+							
+							
+							
+							
+							
+				//logic to insert details in enroller table
+				
+				
+				
+				
+							
+				$eql="insert into gene_logy(level_mem,mem_name,jn_dt,enroller_id,enrolled_id)
+				
+				values('".$level_mem."','".$mem_name."','".$jn_dt."','".$enroller_id."','".$enrolled_id."')";
+				
+							$gesult1=mysql_query($eql)or die(mysql_error());
+	
+	
+	
+	
+	
+	
+	

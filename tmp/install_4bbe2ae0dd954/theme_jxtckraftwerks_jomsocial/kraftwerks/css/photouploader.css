@@ -1,0 +1,41 @@
+div#community-wrap #photoupload-container div.upload-form
+{
+	border: 1px solid #eee;
+	margin: 0pt 0pt 10px;
+	padding: 10px;
+	display:none; 
+}
+
+div#community-wrap button.upload-photos-button
+{
+	margin-left: 10px;
+}
+
+body #community-wrap div.add-new-upload
+{
+	margin-bottom: 15px;
+}
+
+body #community-wrap a.add-upload:link,
+body #community-wrap a.add-upload:visited
+{
+	padding: 0 0 0 20px;
+	display: inline;
+	text-indent: 0px;
+}
+
+body #community-wrap #photoupload-container span.error
+{
+	font-weight: 700;
+	color: red;
+}
+
+body #community-wrap #photoupload-container span.success
+{
+	font-weight: 700;
+	color: green;
+}
+body #community-wrap a.add.add-upload:link {
+	text-indent: 20px;
+	width: auto;
+}

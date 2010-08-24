@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cbinstall version="1.0.0" type="plugin" group="user">
+	<name>JoomlaXTC VM Buys</name>
+	<author>JoomlaXTC</author>
+	<copyright>(C) 2008 JoomlaXTC</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorUrl>www.joomlaxtc.com</authorUrl>
+	<version>1.0</version>
+	<description>
+		Display the latests products ordered in Virtuemart component - Visit www.joomlaxtc.com documents area for help.
+	</description>
+	<files>
+		<filename plugin="jxtc_vmbuys">jxtc_vmbuys.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<params>
+		<param name="qty" type="text" label="Number of products" default="5" description="How many products to show." />
+		<param name="location" type="list" label="Location" default="f" description="Choose tab location." >
+			<option value="f">Frontend tab</option>
+			<option value="a">Profile Admin tab</option>
+			<option value="b">Both</option>
+		</param>
+	</params>
+	<tabs>
+		<tab name="JXTC My Virtuemart Buys" description="Shows product thumbnails for user's products recently bought in Virtuemart component." class="jxtc_vmbuys" fields="0" position="cb_tabmain" displaytype="tab">
+		</tab>
+	</tabs>
+</cbinstall>
