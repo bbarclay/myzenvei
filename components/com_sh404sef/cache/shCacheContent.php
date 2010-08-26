@@ -485,4 +485,9 @@ $shURLDiskCache[216]='index.php?option=com_jevents&amp;Itemid=14&amp;day=18&amp;
 $shURLCacheCreationDate=1279199889;
 
 $shURLDiskCache[217]='index.php?option=com_user&amp;lang=en&amp;view=remind#Lost-user-name/#0';
+?><?php
+
+$shURLCacheCreationDate=1279662628;
+
+$shURLDiskCache[218]='index.php?option=com_content&amp;id=44&amp;lang=en&amp;view=article#terms-and-conditions#0';
 ?>
