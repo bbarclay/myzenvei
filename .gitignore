@@ -1,2 +1,5 @@
 cache/*
 *error_log
+.DS_Store
+*.swp
+*.swo
