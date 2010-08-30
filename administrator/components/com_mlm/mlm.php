@@ -1,103 +1,40 @@
 <?php
-defined( '_JEXEC' ) or die( 'Restricted access' );	
-	
-	$task = $_GET['page'];
-	
-	//$dynamic_link = 'http://localhost/Brandons/site';
-	$dynamic_link = 'http://www.myzenvei.com';
-	
-	include('members/settings.inc');
-	$id = 63;
-	include('members/graph_custom_functions.php');
-	include('fisheye/index.html');
-	
-	switch( $task )
-	{
-	
-		case 'main':
-		
-		include 'members/main.php';
-		break;
-		
-		case 'view_profile':
-		
-		include 'members/view_profile.php';
-		break;
-			
-		case 'active_de_active_members':
-		
-		include 'members/active_de_active_members.php';
-		break;
-		
-		case 'view_personally_enrolled':
-		
-		include 'members/view_personally_enrolled.php';
-		break;
-		
-		case 'view_mem_cust':
-		
-		include 'members/view_mem_cust.php';
-		break;
-		
-		case 'view_geneology':
-		
-		include 'members/view_geneology.php';
-		break;
+/**
+ * Joomla! 1.5 component mlm
+ *
+ * @version $Id: mlm.php 2010-08-27 14:49:16 svn $
+ * @author Abdul Basit
+ * @package Joomla
+ * @subpackage mlm
+ * @license GNU/GPL
+ *
+ * Package for Multi-Level-Marketing. Functionality contains: Client Signup, Building Referral Tree
+ *
+ * This component file was created using the Joomla Component Creator by Not Web Design
+ * http://www.notwebdesign.com/joomla_component_creator/
+ *
+ */
 
-		case 'view_geneology_graph_simple':
-		include 'members/view_geneology_graph_simple.php';
-		break;
-		
-		case 'view_geneology_graph':
-		header("Location: ".$dynamic_link."/components/com_mlm/members/view_geneology_graph.php");
-		//include 'members/view_geneology_graph.php';
-		break;
-		
-		case 'view_orders':
-		
-		include 'members/view_orders.php';
-		break;
-		
-		case 'view_volume_carry_over':
-		
-		include 'members/view_volume_carry_over.php';
-		break;
-		
-		case 'view_commisions':
-		
-		include 'members/view_commisions.php';
-		break;
-		
-		case 'view_earnings':
-		header("Location: ".$dynamic_link."/administrator/components/com_mlm/members/cindex.php?drill_date=".$_GET['drill_date']."");
-		//include 'members/cindex.php';
-		break;
-		
-		case 'view_reports':
-		header("Location: ".$dynamic_link."/administrator/components/com_mlm/members/reports/index.php");
-		//include 'members/reports/index.php';
-				
-		break;
-		
-		
-		case 'view_reports_archieves':
-		include 'members/view_reports_archieves.php';
-				
-		break;
+// no direct access
+defined('_JEXEC') or die('Restricted access');
 
-		case 'billing':
-	
-		header("Location: ".$dynamic_link."/administrator/components/com_mlm/members/billing_index.php");	
-		break;
-		
-		case 'logout':
-		include 'members/index.php';
-		break;
-			
-		
-		default:
-		
-		include 'members/main.php';
-		break;
-	}
+/*
+ * Define constants for all pages
+ */
+define( 'COM_MLM_DIR', 'images'.DS.'mlm'.DS );
+define( 'COM_MLM_BASE', JPATH_ROOT.DS.COM_MLM_DIR );
+define( 'COM_MLM_BASEURL', JURI::root().str_replace( DS, '/', COM_MLM_DIR ));
+
+// Require the base controller
+require_once JPATH_COMPONENT.DS.'controller.php';
+
+// Require the base controller
+require_once JPATH_COMPONENT.DS.'helpers'.DS.'helper.php';
+
+// Initialize the controller
+$controller = new MlmController( );
+
+// Perform the Request task
+$controller->execute( JRequest::getCmd('task'));
+$controller->redirect();
 ?>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+    <name>mlm</name>
+    <author>Abdul Basit</author>
+    <creationDate>27/08/2010</creationDate>
+    <license>GNU/GPL</license>
+    <version>1.0</version>
+    <description>Package for Multi-Level-Marketing. Functionality contains: Client Signup, Building Referral Tree</description>
+
+    <!-- installation part -->
+    <install>
+        <queries>
+           
+        </queries>
+    </install>
+
+    <installfile>install.mlm.php</installfile>
+    <uninstallfile>uninstall.mlm.php</uninstallfile>
+
+    <!-- user part -->
+    <files folder="components/com_mlm">
+        <filename>controller.php</filename>
+        <filename>index.html</filename>
+        <filename>router.php</filename>
+        <filename>mlm.php</filename>
+        <folder>models</folder>
+        <folder>views</folder>
+    </files>
+
+    <languages folder="language/en-GB">
+        <language tag="en-GB">en-GB.com_mlm.ini</language>
+    </languages>
+
+    <!-- administration part -->
+    <administration>
+
+    <menu task="default" img="js/ThemeOffice/component.png">mlm</menu>
+    <submenu>
+        <menu link="option=com_mlm">mlm</menu>
+    </submenu>
+
+    <files>
+        <filename>mlm.xml</filename>
+    </files>
+    <files folder="administrator/components/com_mlm">
+        <filename>config.xml</filename>
+        <filename>controller.php</filename>
+        <filename>index.html</filename>
+        <filename>install.mlm.php</filename>
+        <filename>mlm.php</filename>
+        <filename>uninstall.mlm.php</filename>
+        <folder>helpers</folder>
+        <folder>models</folder>
+        <folder>tables</folder>
+        <folder>views</folder>
+    </files>
+
+    <languages folder="administrator/language/en-GB">
+        <language tag="en-GB">en-GB.com_mlm.menu.ini</language>
+        <language tag="en-GB">en-GB.com_mlm.ini</language>
+    </languages>
+
+    </administration>
+
+    <params>
+
+    </params>
+
+</install>
