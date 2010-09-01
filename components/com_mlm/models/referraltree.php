@@ -27,5 +27,30 @@ jimport('joomla.application.component.model');
  */
 class MlmModelReferralTree extends JModel
 {
+  static $allrows = array();
+
+  function findPostition($parentId){
+    $result = $this->__getChildern($parentId);
+    $childCount = $db->getNumRows();
+    if($childCount<3){
+      return array('parent_id'=>$parentId, 'position'=>$childCount)
+    }
+    else{
+      unset($this->allrows[0]);
+      $this->allrows = array_merge($this->allrows, $result);
+      findPosition($this->allrows[0]);
+    }
+    return false;
+  }
+  function __getChildern($parentid){
+    $db = 7 JFactory::getDBO();
+    $query = 'select * from geneology_tree where parent_id = $parentId order by positino asc';
+    $db->setQuery($query);
+    $result = $db->loadResultArray();
+    return $result;
+  }
+  function calculateCommissions(){
+
+  }
 }
 
