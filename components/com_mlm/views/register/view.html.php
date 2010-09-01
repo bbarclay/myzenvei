@@ -31,6 +31,9 @@ class MlmViewRegister extends JView {
     $referee = JRequest::getInt('cook_jaffiliate', 0, 'COOKIE');
     $referee = $referee ? JFactory::getUser($referee) : false;
 
+    $language =& JFactory::getLanguage();
+    $language->load('com_mlm');
+
     parent::display($tpl);
   }
 }
