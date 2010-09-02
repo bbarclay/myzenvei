@@ -1,18 +1,18 @@
 <?php defined('_JEXEC') or die('Restricted access'); ?>
 
-<?php JHTML::script('reg_form.js'); ?>
+<?php JHTML::script('http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'); ?>
+<?php JHTML::script('reg_form.js',  JPATH_COMPONENT.'/views/register/js/reg_form.js'); ?>
 
 <div>
   <div>
+    <!-- TODO: referee -->
     <h3>Referring Associate Name: <?php echo $referee ?></h3>
   </div>
   <div>
     <label for="enrollment_type">Enrollment Type:</label>
     <select id="enrollment_type">
       <option value="">Please Select</option>
-      <option value="MARKETING ASSOCIATE">Marketing Associate</option>
-      <option value="BUSINESS ASSOCIATE">Business Associate</option>
-      <option value="PREFERRED CUSTOMER">Preferred Customer</option>
+      <option value="<?php echo $member_type->code ?>"><?php echo $member_type->name ?></option>
     </select>
     <p class="marketing_associate">MARKETING ASSOCIATE - $70 or more</p>
     <p class="business_associate">BUSINESS ASSOCIATE - $128 or more</p>
@@ -41,18 +41,21 @@
       <label for="enrollment_type">Shipping Method</label>
       <select id="enrollment_type">
         <option value="">Please Select</option>
-        <option value="<?php echo $method->code ?>"><?php echo $method->name ?></option>
+        <?php foreach ($this->shipping_carriers as $carrier) { ?>
+          <option value="<?php echo $carrier->shipping_carrier_id ?>"><?php echo $carrier->shipping_carrier_name ?></option>
+        <?php } ?>
       </select>
     </div>
     <div>
-      <!-- TODO: foreach product -->
+      <?php foreach ($this->products as $product) { ?>
       <div>
-        <div><?php echo $product->name ?></div>
-        <div><?php echo $product->desctiption ?></div>
-        <div><?php echo $product->currency_symbol.$product->price ?></div>
-        <div><input type="text" name="products[<?php echo $product->code ?>][quantity]" value="0"/></div>
-        <div><img src="<?php echo $product->image ?>" alt="$product->name"></div>
+        <div><?php echo $product->product_name ?></div>
+        <div><?php echo $product->product_s_desctiption ?></div>
+        <div><?php echo $this->getCurrencySymbol($product->product_currency).sprintf('%.2f', $product->product_price); ?></div>
+        <div><input type="text" name="products[<?php echo $product->product_sku ?>][quantity]" value="0"/></div>
+        <div><img src="<?php echo $this->getProductImage($product->product_full_image, 'full') ?>" alt="<?php echo $product->product_name?>" /></div>
       </div>
+      <?php } ?>
     </div>
   </div>
   <div id="monthly_order">
@@ -63,14 +66,15 @@
       <p class="preferred_customer">If you are a signing up as a Preferred Customer then you can skip this if you do not wish to set up an AutoShip.</p>
     </div>
     <div>
-      <!-- TODO: foreach product -->
+      <?php foreach ($this->products as $product) { ?>
       <div>
-        <div><?php echo $product->name ?></div>
-        <div><?php echo $product->desctiption ?></div>
-        <div><?php echo $product->currency_symbol.$product->price ?></div>
-        <div><input type="text" name="products[<?php echo $product->code ?>][quantity]" value="0"/></div>
-        <div><img src="<?php echo $product->image ?>" alt="$product->name"></div>
+        <div><?php echo $product->product_name ?></div>
+        <div><?php echo $product->product_s_desctiption ?></div>
+        <div><?php echo $this->getCurrencySymbol($product->product_currency).sprintf('%.2f', $product->product_price); ?></div>
+        <div><input type="text" name="products[<?php echo $product->product_sku ?>][quantity]" value="0"/></div>
+        <div><img src="<?php echo $this->getProductImage($product->product_full_image, 'full') ?>" alt="<?php echo $product->product_name?>" /></div>
       </div>
+      <?php } ?>
     </div>
   </div>
   <div id="user_info">
@@ -197,8 +201,9 @@
               <label for="shipping_state">State</label>
               <select id="shipping_state">
                 <option value="">Select a state</option>
-                <!-- TODO: foreach state (using javascript to load) -->
-                <option value="<?php echo $state->code ?>"><?php echo $state->name ?></option>
+                <?php foreach ($this->states as $state) { ?>
+                  <option value="<?php echo $state->state_2_code ?>"><?php echo $state->state_name ?></option>
+                <?php } ?>
               </select>
             </li>
             <li>
@@ -209,8 +214,13 @@
               <label for="shipping_country">Country</label>
               <select id="shipping_country">
                 <option value="">Select a country</option>
-                <!-- TODO: foreach country -->
-                <option value="<?php echo $country->code ?>"><?php echo $country->name ?></option>
+                <?php foreach ($this->countries as $country) { ?>
+                  <?php if ($country->country_3_code == $this->default_country) { ?>
+                    <option value="<?php echo $country->country_3_code ?>" selected><?php echo $country->country_name ?></option>
+                  <?php } else { ?>
+                    <option value="<?php echo $country->country_3_code ?>"><?php echo $country->country_name ?></option>
+                  <?php } ?>
+                <?php } ?>
               </select>
             </li>
           </ul>
@@ -238,8 +248,9 @@
               <label for="billing_state">State</label>
               <select id="billing_state">
                 <option value="">Select a state</option>
-                <!-- TODO: foreach state (using javascript to load) -->
-                <option value="<?php echo $state->code ?>"><?php echo $state->name ?></option>
+                <?php foreach ($this->states as $state) { ?>
+                  <option value="<?php echo $state->state_2_code ?>"><?php echo $state->state_name ?></option>
+                <?php } ?>
               </select>
             </li>
             <li>
@@ -250,8 +261,13 @@
               <label for="billing_country">Country</label>
               <select id="billing_country">
                 <option value="">Select a country</option>
-                <!-- TODO: foreach country -->
-                <option value="<?php echo $country->code ?>"><?php echo $country->name ?></option>
+                <?php foreach ($this->countries as $country) { ?>
+                  <?php if ($country->country_3_code == $this->default_country) { ?>
+                    <option value="<?php echo $country->country_3_code ?>" selected><?php echo $country->country_name ?></option>
+                  <?php } else { ?>
+                    <option value="<?php echo $country->country_3_code ?>"><?php echo $country->country_name ?></option>
+                  <?php } ?>
+                <?php } ?>
               </select>
             </li>
           </ul>

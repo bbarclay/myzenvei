@@ -30,13 +30,19 @@ class MlmControllerUser extends JController
   {
     $user =& JFactory::getUser();
 
-    if ($user->get('guest')) {
-      JRequest::setVar('view', 'register');
-    } else {
+    if ($user->get('guest') == 0) {
       $this->setredirect('index.php?option=com_mlm', JText::_('You are already registered.'));
     }
 
-    parent::display();
+    $view  =& $this->getView('register', 'html');
+
+    $product =& $this->getModel('Product');
+    $view->setModel($product);
+
+    $virtuemart =& $this->getModel('VirtueMart');
+    $view->setModel($virtuemart);
+
+    $view->display();
   }
 
   /**

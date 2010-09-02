@@ -34,7 +34,34 @@ class MlmViewRegister extends JView {
     $language =& JFactory::getLanguage();
     $language->load('com_mlm');
 
+    $product    = $this->getModel('Product');
+    $virtuemart = $this->getModel('VirtueMart');
+
+
+    $default_country = 'USA';
+
+    $this->assignRef('products',           $product->getAllProducts());
+    $this->assignRef('countries',          $virtuemart->getCountries());
+    $this->assignRef('default_country',    $default_country);
+    $this->assignRef('states',             $virtuemart->getStates('USA'));
+    $this->assignRef('shipping_carriers',  $virtuemart->getShippingCarriers());
+
     parent::display($tpl);
+  }
+
+  function getProductImage($filename, $type)
+  {
+    return $this->getModel('product')->getProductImage($filename, $type);
+  }
+
+  function getCurrencySymbol($currency_code)
+  {
+    switch ($currency_code) {
+    case 'USD':
+      return '&#36;';
+    default:
+      return $currency_code;
+    }
   }
 }
 
