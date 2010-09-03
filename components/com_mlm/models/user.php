@@ -27,86 +27,47 @@ jimport('joomla.application.component.model');
  */
 class MlmModelUser extends JModel
 {
-  /**
-   * User id
-   *
-   * @var int
-   */
-  var $_id = null;
 
-  /**
-   * User data
-   *
-   * @var array
-   */
-  var $_data = null;
-
-  /**
-   * Constructor
-   *
-   * @since 1.5
-   */
-  function __construct()
+  function username_available($username)
   {
-    parent::__construct();
+    $db = $this->getDBO();
 
-    $id = JRequest::getVar('id', 0, '', 'int');
-    $this->setId($id);
+    $query = sprintf('SELECT COUNT(id)
+      FROM #__users
+      WHERE username = \'%s\'', $username);
+
+    $db->setQuery($query);
+
+    $count = $db->loadResult();
+    return $count == 0;
   }
 
-  /**
-   * Method to set the weblink identifier
-   *
-   * @access  public
-   * @param int Weblink identifier
-   */
-  function setId($id)
+  function replicated_site_available($site_id)
   {
-    // Set weblink id and wipe data
-    $this->_id    = $id;
-    $this->_data  = null;
+    $db = $this->getDBO();
+
+    $query = sprintf('SELECT COUNT(id)
+      FROM #__vm_jsusernames
+      WHERE username = \'%s\'', $replicated_site);
+
+    $db->setQuery($query);
+
+    $count = $db->loadResult();
+    return $count == 0;
   }
 
-  /**
-   * Method to get a user
-   *
-   * @since 1.5
-   */
-  function getData()
+  function email_available($email)
   {
-    // Load the weblink data
-    $this->_loadData();
-    return $this->_data;
+    $db = $this->getDBO();
+
+    $query = sprintf('SELECT COUNT(id)
+      FROM #__users
+      WHERE email = \'%s\'', $email);
+
+    $db->setQuery($query);
+
+    $count = $db->loadResult();
+    return $count == 0;
   }
-
-  /**
-   * Method to store the user data
-   *
-   * @access  public
-   * @return  boolean True on success
-   * @since 1.5
-   */
-  function store($data)
-  {
-    $user   = JFactory::getUser();
-
-    // Bind the form fields to the user table
-    if (!$user->bind($data)) {
-      $this->setError($this->_db->getErrorMsg());
-      return false;
-    }
-
-    // Store the web link table to the database
-    if (!$user->save()) {
-      $this->setError($user->getError());
-      return false;
-    }
-
-    $session =& JFactory::getSession();
-    $session->set('user', $user);
-
-    return true;
-  }
-
 }
 

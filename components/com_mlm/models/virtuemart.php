@@ -82,5 +82,17 @@ class MlmModelVirtueMart extends JModel
     return is_array($states) ? $states : false;
   }
 
+  function getShopperGroups()
+  {
+    $db = $this->getDBO();
+
+    $query = 'SELECT *
+      FROM #__vm_shopper_group G';
+    $db->setQuery($query);
+
+    $groups = $db->loadObjectList();
+    return is_array($groups) ? $groups : false;
+  }
+
 }
 

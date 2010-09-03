@@ -25,26 +25,51 @@ jimport( 'joomla.application.component.view');
  */
 class MlmViewRegister extends JView {
   function display($tpl = null) {
+    
     /*
-     * Check who the referrer is.
+     * Check who referred the user
+     */
+    $referee = '';
+
+    /*
+     * Load Language
+     */
+    $language =& JFactory::getLanguage();
+    $language->load('com_mlm');
+
+    /*
+     * Load Models
+     */
+    $product    = $this->getModel('Product');
+    $virtuemart = $this->getModel('VirtueMart');
+
+    /*
+     * Add external CSS & JS
+     */
+    $document =& JFactory::getDocument();
+    $document->addScript('http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js');
+    $document->addCustomTag('<script type="text/javascript">jQuery.noConflict();</script>');
+    $document->addScript('http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js');
+    JHTML::script('reg_form.js', 'components/com_mlm/views/register/js/');
+
+    /*
+     * Custom Code
      */
     $referee = JRequest::getInt('cook_jaffiliate', 0, 'COOKIE');
     $referee = $referee ? JFactory::getUser($referee) : false;
 
-    $language =& JFactory::getLanguage();
-    $language->load('com_mlm');
-
-    $product    = $this->getModel('Product');
-    $virtuemart = $this->getModel('VirtueMart');
-
-
     $default_country = 'USA';
 
+    /*
+     * Set variables
+     */
+    $this->assignRef('referee',            $referee);
     $this->assignRef('products',           $product->getAllProducts());
     $this->assignRef('countries',          $virtuemart->getCountries());
     $this->assignRef('default_country',    $default_country);
     $this->assignRef('states',             $virtuemart->getStates('USA'));
     $this->assignRef('shipping_carriers',  $virtuemart->getShippingCarriers());
+    $this->assignRef('shopper_groups',     $virtuemart->getShopperGroups());
 
     parent::display($tpl);
   }

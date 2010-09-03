@@ -34,13 +34,23 @@ class MlmControllerUser extends JController
       $this->setredirect('index.php?option=com_mlm', JText::_('You are already registered.'));
     }
 
-    $view  =& $this->getView('register', 'html');
+    $view  =& $this->getView('Register', 'html');
 
     $product =& $this->getModel('Product');
     $view->setModel($product);
 
     $virtuemart =& $this->getModel('VirtueMart');
     $view->setModel($virtuemart);
+
+    $view->display();
+  }
+
+  function fieldcheck()
+  {
+    $view  =& $this->getView('FieldCheck', 'raw');
+
+    $user =& $this->getModel('User');
+    $view->setModel($user);
 
     $view->display();
   }
