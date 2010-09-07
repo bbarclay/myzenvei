@@ -48,7 +48,7 @@ class MlmModelUser extends JModel
 
     $query = sprintf('SELECT COUNT(id)
       FROM #__vm_jsusernames
-      WHERE username = \'%s\'', $replicated_site);
+      WHERE username = \'%s\'', $site_id);
 
     $db->setQuery($query);
 

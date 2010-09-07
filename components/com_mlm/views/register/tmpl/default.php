@@ -1,11 +1,17 @@
 <?php defined('_JEXEC') or die('Restricted access'); ?>
 
+<h1>Join the Zenvei Team</h1>
 <form id="reg_form" action="index.php?option=com_mlm&controller=user&task=register_save" method="POST">
   <?php echo JHTML::_( 'form.token' ); ?>
   <div>
+    <input id="referee" name="referee" value="<?php echo $this->referee['id'] ?>" type="hidden" />
+    <input id="state_tax" value="0" type="hidden" />
+    <?php foreach ($this->products as $product) { ?>
+    <input id="price_<?php echo $product->product_sku ?>" value="<?php echo sprintf('%.2f', $product->product_price) ?>" type="hidden" />
+    <?php } ?>
     <div>
       <!-- TODO: referee -->
-      <h3>Referring Associate Name: <?php echo $this->referee ?></h3>
+      <h3>Referring Associate Name: <?php echo $this->referee['name'] ?></h3>
     </div>
     <div>
       <label for="enrollment_type">Enrollment Type:</label>
@@ -42,7 +48,7 @@
     <div id="todays_order">
       <div>
         <label for="shipping_method">Shipping Method</label>
-        <select id="shipping_method">
+        <select id="shipping_method" name="order[shipping_method]">
           <option value="">Please Select</option>
           <?php foreach ($this->shipping_carriers as $carrier) { ?>
             <option value="<?php echo $carrier->shipping_carrier_id ?>"><?php echo $carrier->shipping_carrier_name ?></option>
@@ -54,14 +60,21 @@
         <div>
           <div><?php echo $product->product_name ?></div>
           <div><?php echo $product->product_s_desc ?></div>
-          <div><?php echo $this->getCurrencySymbol($product->product_currency).sprintf('%.2f', $product->product_price); ?></div>
-          <div><input type="text" name="products[<?php echo $product->product_sku ?>][quantity]" value="0"/></div>
+          <div>
+            <span class="price_<?php echo $product->product_sku ?>"><?php echo $this->getCurrencySymbol($product->product_currency).sprintf('%.2f', $product->product_price); ?></span>
+            <input id="order_total_<?php echo $product->product_sku ?>" type="hidden" value="0" />
+          </div>
+          <div><input id="order_quantity_<?php echo $product->product_sku ?>" name="order[products][<?php echo $product->product_sku ?>]" type="text" value="0"/></div>
           <div><img src="<?php echo $this->getProductImage($product->product_full_image, 'full') ?>" alt="<?php echo $product->product_name?>" /></div>
         </div>
         <?php } ?>
       </div>
     </div>
     <div id="monthly_order">
+      <div>
+        <label for="autoship_date">Autoship Date</label>
+        <input id="autoship_date" name="autoship[shipping_date]" type="text" />
+      </div>
       <div>
         <p>Your first order will ship immedialtely and on that date every month thereafter, until you contact Zenvei to cancel.</p>
         <p class="etrigger marketing_associate">To qualify as a Marketing Associate you must choose a combination of products totalying $70 or more. To enjoy the benefits of a Marketing Associate, your monthly qualifying purchase would be a combination of products totallying $70 or more.</p>
@@ -73,8 +86,11 @@
         <div>
           <div><?php echo $product->product_name ?></div>
           <div><?php echo $product->product_s_desc ?></div>
-          <div><?php echo $this->getCurrencySymbol($product->product_currency).sprintf('%.2f', $product->product_price); ?></div>
-          <div><input type="text" name="products[<?php echo $product->product_sku ?>][quantity]" value="0"/></div>
+          <div>
+            <span class="price_<?php echo $product->product_sku ?>"><?php echo $this->getCurrencySymbol($product->product_currency).sprintf('%.2f', $product->product_price); ?><span>
+            <input id="autoship_total_<?php echo $product->product_sku ?>" type="hidden" value="0" />
+          </div>
+          <div><input type="text" name="autoship[products][<?php echo $product->product_sku ?>]" value="0"/></div>
           <div><img src="<?php echo $this->getProductImage($product->product_full_image, 'full') ?>" alt="<?php echo $product->product_name?>" /></div>
         </div>
         <?php } ?>
@@ -88,12 +104,12 @@
             <li>
               <label for="username">Username<em>*</em></label>
               <input id="username" type="text" name="user_info[username]"/>
-              <span id="username_status" href="<?php echo '/myzenvei/index.php?option=com_mlm&controller=user&task=fieldcheck&format=raw' ?>"></span>
+              <span id="username_status"></span>
             </li>
             <li class="etrigger marketing_associate business_associate">
               <label for="replicated_site">Replicated Site ID<em>*</em></label>
               <input id="replicated_site" type="text" />
-              <span id="replicated_site_status"<?php echo '/myzenvei/index.php?option=com_mlm&controller=user&task=fieldcheck&format=raw' ?>></span>
+              <span id="replicated_site_status"></span>
             </li>
             <li>
               <label for="password">Password<em>*</em></label>
@@ -136,7 +152,7 @@
               <li>
                 <label for="email">Email</label>
                 <input id="email" type="text" name="user_info[email]" />
-                <span id="email_status"<?php echo '/myzenvei/index.php?option=com_mlm&controller=user&task=fieldcheck&format=raw' ?>></span>
+                <span id="email_status"></span>
               </li>
               <li>
                 <label for="confirm_email">Confirm Email</label>
@@ -335,4 +351,12 @@
       </div>
     </div>
   </div>
+
+  <input id="order_products_total" type="hidden" value="0" />
+  <input id="order_tax" type="hidden" value="0" />
+  <input id="order_shipping" type="hidden" value="0" />
+  <input id="order_total" type="hidden" value="0" />
+
+  <input id="autoship_total" type="hidden" value="" />
+
 </form>

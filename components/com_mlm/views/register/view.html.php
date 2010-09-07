@@ -50,6 +50,7 @@ class MlmViewRegister extends JView {
     $document->addScript('http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js');
     $document->addCustomTag('<script type="text/javascript">jQuery.noConflict();</script>');
     $document->addScript('http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js');
+    $document->addScript('http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.min.js');
     JHTML::script('reg_form.js', 'components/com_mlm/views/register/js/');
 
     /*

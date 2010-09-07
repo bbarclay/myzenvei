@@ -53,7 +53,7 @@ class MlmModelVirtueMart extends JModel
     $db->setQuery($query);
 
     $tax_rate = $db->loadResult();
-    return $tax_rate ? $tax_rate : false;
+    return $tax_rate ? $tax_rate : 0.00;
   }
 
   function getCountries()
@@ -92,6 +92,19 @@ class MlmModelVirtueMart extends JModel
 
     $groups = $db->loadObjectList();
     return is_array($groups) ? $groups : false;
+  }
+
+  function getShopperGroupByName($group_name)
+  {
+    $db = $this->getDBO();
+
+    $query = sprintf('SELECT *
+      FROM #__vm_shopper_group G
+      WHERE shopper_group_name = \'%s\'', $group_name);
+    $db->setQuery($query);
+
+    $groups = $db->loadObject();
+    return $groups ? $groups : false;
   }
 
 }

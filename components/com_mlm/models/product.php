@@ -43,20 +43,20 @@ class MlmModelProduct extends JModel
     return is_array($products) ? $products : false;
   }
 
-  function getProductPrice($product_id, $group_id)
+  function getProductPrices($group_id)
   {
     $db = $this->getDBO();
 
-    $query = sprintf('SELECT product_price
-      FROM #__vm_product_price
-      WHERE product_id = %d
-      AND shopper_group_id = %d',
-      $product_id, $group_id);
-
+    $query = sprintf('SELECT p.product_sku, IF (gp.product_price, gp.product_price, pp.product_price) AS product_price, IF (gp.product_currency, gp.product_currency, pp.product_currency) AS product_currency
+      FROM #__vm_product p
+      LEFT JOIN #__vm_product_price gp ON p.product_id = gp.product_id AND gp.shopper_group_id = %d
+      INNER JOIN #__vm_product_price pp ON p.product_id = pp.product_id
+      INNER JOIN #__vm_shopper_group g ON g.shopper_group_id = pp.shopper_group_id AND g.default = 1
+      WHERE p.product_publish = \'Y\'', $group_id);
     $db->setQuery($query);
 
-    $price_info = $db->loadResult();
-    return $price_info ? sprintf('%.2f', $price_info) : false;
+    $products = $db->loadObjectList();
+    return is_array($products) ? $products : false;
   }
 
   function getProductImage($filename, $type)

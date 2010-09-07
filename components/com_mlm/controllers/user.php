@@ -45,16 +45,6 @@ class MlmControllerUser extends JController
     $view->display();
   }
 
-  function fieldcheck()
-  {
-    $view  =& $this->getView('FieldCheck', 'raw');
-
-    $user =& $this->getModel('User');
-    $view->setModel($user);
-
-    $view->display();
-  }
-
   /**
    * Save user registration and notify users and admins if required
    * @return void
@@ -122,11 +112,18 @@ class MlmControllerUser extends JController
     // TODO: Send email
   }
 
+  function test()
+  {
+    require_once JPATH_BASE.'/components/com_virtuemart/virtuemart_parser.php';
+
+    $this->_debug(CLASSPATH);
+  }
+
   /**
    * Debug function
    * @return void
    */
-  function _stop($obj)
+  function _debug($obj)
   {
     global $mainframe;
     echo '<pre>';
