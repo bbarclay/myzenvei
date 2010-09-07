@@ -49,6 +49,8 @@ class MlmControllerUser extends JController
    * Save user registration and notify users and admins if required
    * @return void
    */
+
+
   function register_save()
   {
     global $mainframe;
@@ -64,16 +66,27 @@ class MlmControllerUser extends JController
     $document   =& JFactory::getDocument();
 
     // Initialize new usertype setting
-    if (!$newUsertype) {
+    if (!isset($newUsertype)) {
       $newUsertype = 'Registered';
-      // TODO: Set to bussiness_associate, marketing_associate or preferred_customer?
+     
+    // TODO: Set to bussiness_associate, marketing_associate or preferred_customer?
     }
 
+    $user_info = JRequest::getVar('user_info');
+    $business_info = JRequest::getVar('business_info');
+    $credit_card = JRequest::getVar('card');
+    $shipping_info = JRequest::getVar('shipping');
+    $billing_info = JRequest::getVar('billing');
+    $co_applicant = JRequest::getVar('coapplicant');
+    $autoship_date = JRequest::getVar('auto_ship_date');
+
+    $user_info_id_value = md5( uniqid('_VIRTUEMART_SECRET' ));
+    $user_info['name'] = $business_info['first_name'].' '.$business_info['last_name'];
+    
     // Bind the post array to the user object
-    if (!$user->bind( JRequest::get('post'), 'usertype' )) {
+    if (!$user->bind($user_info)) {
       JError::raiseError( 500, $user->getError());
     }
-
     // Set some initial user values
     $user->set('id', 0);
     $user->set('usertype', $newUsertype);
@@ -85,22 +98,33 @@ class MlmControllerUser extends JController
     // If there was an error with registration, set the message and display form
     if (!$user->save()) {
       JError::raiseWarning('', JText::_( $user->getError()));
+      echo $user->getError();
+      echo "waj gaye";
       $this->register();
       return false;
     }
+    $user_info['user_id'] = $user->id;
+
+    $user_model = $this->getModel('User');
+
+    $user_model->enter_virtuemart_info($business_info, $autoship_date, $co_applicant, $user_info, $shipping_info, $billing_info, $credit_card,
+      5, array(), array() );
+
+      die('Completed Execution');
+
+
 
     // TODO: Build Tree
     // TODO: Add autship
 
     // Send registration confirmation mail
-    $password = JRequest::getString('password', '', 'post', JREQUEST_ALLOWRAW);
+    /*$password = JRequest::getString('password', '', 'post', JREQUEST_ALLOWRAW);
     $password = preg_replace('/[\x00-\x1F\x7F]/', '', $password); //Disallow control chars in the email
     self::_sendMail($user, $password);
 
     // Everything went fine, set relevant message depending upon user activation state and display message
     $message = JText::_( 'REG_COMPLETE' );
-
-    $this->setRedirect('index.php', $message);
+    $this->setRedirect('index.php', $message);*/
   }
 
   /**

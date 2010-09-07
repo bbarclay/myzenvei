@@ -27,23 +27,30 @@ jimport('joomla.application.component.model');
  */
 class MlmModelReferralTree extends JModel
 {
-  static $allrows = array();
-
   function findPostition($parentId){
-    $result = $this->__getChildern($parentId);
-    $childCount = $db->getNumRows();
-    if($childCount<3){
-      return array('parent_id'=>$parentId, 'position'=>$childCount)
-    }
-    else{
-      unset($this->allrows[0]);
-      $this->allrows = array_merge($this->allrows, $result);
-      findPosition($this->allrows[0]);
+    $allrows = array();
+    $allrows = $this->__getChildern($parentId);
+    $childCount = count($allrows);
+    while(count($allrows)!=0){
+      if($childCount<3){
+        return array('parent_id'=>$parentId, 'position'=>$childCount)
+      }
+      else{
+        unset($allrows[0]);
+        $result = $this->__getChildern($allrows[0]);
+        $childCount = count($result);
+        $allrows = array_merge($allrows, $result);
+      }
     }
     return false;
   }
-  function __getChildern($parentid){
-    $db = 7 JFactory::getDBO();
+  function insertInTree($userId, $parentId, $position){
+    $db = & JFactory::getDBO();
+    $query = 'insert into geneology_tree values($userId, $parentId, $position)';
+    $db->Execute($query);
+  }
+  function __getChildern($parentId){
+    $db = & JFactory::getDBO();
     $query = 'select * from geneology_tree where parent_id = $parentId order by positino asc';
     $db->setQuery($query);
     $result = $db->loadResultArray();

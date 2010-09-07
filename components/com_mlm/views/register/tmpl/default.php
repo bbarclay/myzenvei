@@ -28,13 +28,21 @@
       </div>
 
       <label for="builder_packs">Builder Packs</label>
+      
       <select id="builder_packs">
         <option value="">Please Select</option>
         <option value="Marketing Associate">Marketing Associate</option>
         <option value="Business Associate">Business Associate</option>
         <option value="Master Builder Pak">Master Builder Pak</option>
         <option value="Mega Master Builder Pak">Mega Master Builder Pak</option>
-      </select> 
+      </select>
+      <div>
+      <label for="auto_ship_date">Auto Ship Date</label>
+      <select id="auto_ship_date" name="auto_ship_date">
+        <option value="10">10th</option>
+        <option value = "20">20th</option>
+      </select>
+      </div>
     </div>
   </div>
 
@@ -180,7 +188,7 @@
               </li>
               <li>
                 <label for="evening_phone">Evening Phone</label>
-                <input id="evening_phone" type="text" name="business_info[evening-phone]"/>
+                <input id="evening_phone" type="text" name="business_info[evening_phone]"/>
               </li>
               <li>
                 <label for="cell_phone">Cell Phone</label>
@@ -201,7 +209,7 @@
               </li>
               <li>
                 <label for="coapplicant_last_name">Last Name</label>
-                <input id="coapplicant_last_name" type="text" name="coapplicatn[lname]"/>
+                <input id="coapplicant_last_name" type="text" name="coapplicant[lname]"/>
               </li>
               <li>
                 <label for="coapplicant_birthday">Birthday</label>
