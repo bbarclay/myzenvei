@@ -49,8 +49,6 @@ class MlmControllerUser extends JController
    * Save user registration and notify users and admins if required
    * @return void
    */
-
-
   function register_save()
   {
     global $mainframe;

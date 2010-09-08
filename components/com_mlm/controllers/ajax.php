@@ -24,7 +24,7 @@ class MlmControllerAjax extends JController
 {
   function fieldcheck()
   {
-    $view  =& $this->getView('FieldCheck', 'raw');
+    $view  =& $this->getView('FieldCheck', 'json');
 
     $user =& $this->getModel('User');
     $view->setModel($user);

@@ -5,17 +5,12 @@
   <?php echo JHTML::_( 'form.token' ); ?>
   <div>
     <input id="referee" name="referee" value="<?php echo $this->referee['id'] ?>" type="hidden" />
-    <input id="state_tax" value="0" type="hidden" />
-    <?php foreach ($this->products as $product) { ?>
-    <input id="price_<?php echo $product->product_sku ?>" value="<?php echo sprintf('%.2f', $product->product_price) ?>" type="hidden" />
-    <?php } ?>
     <div>
-      <!-- TODO: referee -->
       <h3>Referring Associate Name: <?php echo $this->referee['name'] ?></h3>
     </div>
     <div>
       <label for="enrollment_type">Enrollment Type:</label>
-      <select id="enrollment_type">
+      <select id="enrollment_type" name="enrollment_type">
         <option value="">Please Select</option>
         <?php foreach ($this->shopper_groups as $group) { ?>
           <option value="<?php echo str_replace(' ', '_', strtolower($group->shopper_group_name)) ?>"><?php echo $group->shopper_group_name ?></option>
@@ -27,22 +22,11 @@
         <p class="etrigger preferred_customer">Preferred Customer</p>
       </div>
 
+      <!-- TODO -->
       <label for="builder_packs">Builder Packs</label>
-      
-      <select id="builder_packs">
+      <select id="builder_packs" name="builder_pack">
         <option value="">Please Select</option>
-        <option value="Marketing Associate">Marketing Associate</option>
-        <option value="Business Associate">Business Associate</option>
-        <option value="Master Builder Pak">Master Builder Pak</option>
-        <option value="Mega Master Builder Pak">Mega Master Builder Pak</option>
       </select>
-      <div>
-      <label for="auto_ship_date">Auto Ship Date</label>
-      <select id="auto_ship_date" name="auto_ship_date">
-        <option value="10">10th</option>
-        <option value = "20">20th</option>
-      </select>
-      </div>
     </div>
   </div>
 
@@ -72,16 +56,20 @@
             <span class="price_<?php echo $product->product_sku ?>"><?php echo $this->getCurrencySymbol($product->product_currency).sprintf('%.2f', $product->product_price); ?></span>
             <input id="order_total_<?php echo $product->product_sku ?>" type="hidden" value="0" />
           </div>
-          <div><input id="order_quantity_<?php echo $product->product_sku ?>" name="order[products][<?php echo $product->product_sku ?>]" type="text" value="0"/></div>
+          <div><input id="order_quantity_<?php echo $product->product_sku ?>" name="order[products][<?php echo $product->product_sku ?>]" type="text" value="0"/> <a class="quantity_add" href="#">+</a> <a class="quantity_sub" href="#">-</a></div>
           <div><img src="<?php echo $this->getProductImage($product->product_full_image, 'full') ?>" alt="<?php echo $product->product_name?>" /></div>
         </div>
         <?php } ?>
       </div>
     </div>
-    <div id="monthly_order">
+    <div id="monthly_autoship">
       <div>
         <label for="autoship_date">Autoship Date</label>
-        <input id="autoship_date" name="autoship[shipping_date]" type="text" />
+        <select id="autoship_date" name="auto_ship[date]">
+          <option value="">Please Select</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+        </select>
       </div>
       <div>
         <p>Your first order will ship immedialtely and on that date every month thereafter, until you contact Zenvei to cancel.</p>
@@ -95,10 +83,10 @@
           <div><?php echo $product->product_name ?></div>
           <div><?php echo $product->product_s_desc ?></div>
           <div>
-            <span class="price_<?php echo $product->product_sku ?>"><?php echo $this->getCurrencySymbol($product->product_currency).sprintf('%.2f', $product->product_price); ?><span>
+            <span class="price_<?php echo $product->product_sku ?>"><?php echo $this->getCurrencySymbol($product->product_currency).sprintf('%.2f', $product->product_price); ?></span>
             <input id="autoship_total_<?php echo $product->product_sku ?>" type="hidden" value="0" />
           </div>
-          <div><input type="text" name="autoship[products][<?php echo $product->product_sku ?>]" value="0"/></div>
+          <div><input id="autoship_quantity_<?php echo $product->product_sku ?>" name="autoship[products][<?php echo $product->product_sku ?>]" type="text" value="0"/> <a class="quantity_add" href="#">+</a> <a class="quantity_sub" href="#">-</a></div>
           <div><img src="<?php echo $this->getProductImage($product->product_full_image, 'full') ?>" alt="<?php echo $product->product_name?>" /></div>
         </div>
         <?php } ?>
@@ -116,7 +104,7 @@
             </li>
             <li class="etrigger marketing_associate business_associate">
               <label for="replicated_site">Replicated Site ID<em>*</em></label>
-              <input id="replicated_site" type="text" />
+              <input id="replicated_site" type="text"  name="user_info[replicated_site]"/>
               <span id="replicated_site_status"></span>
             </li>
             <li>
@@ -238,7 +226,7 @@
               <li>
                 <label for="shipping_state">State</label>
                 <select id="shipping_state" name="shipping[state]">
-                  <option value="">Select a state</option>
+                  <option value="">Please Select</option>
                   <?php foreach ($this->states as $state) { ?>
                     <option value="<?php echo $state->state_2_code ?>"><?php echo $state->state_name ?></option>
                   <?php } ?>
@@ -251,7 +239,7 @@
               <li>
                 <label for="shipping_country">Country</label>
                 <select id="shipping_country" name="shipping[country]">
-                  <option value="">Select a country</option>
+                  <option value="">Please Select</option>
                   <?php foreach ($this->countries as $country) { ?>
                     <?php if ($country->country_3_code == $this->default_country) { ?>
                       <option value="<?php echo $country->country_3_code ?>" selected="selected"><?php echo $country->country_name ?></option>
@@ -285,7 +273,7 @@
               <li class="billing_field">
                 <label for="billing_state">State</label>
                 <select id="billing_state" name="billing[state]">
-                  <option value="">Select a state</option>
+                  <option value="">Please Select</option>
                   <?php foreach ($this->states as $state) { ?>
                     <option value="<?php echo $state->state_2_code ?>"><?php echo $state->state_name ?></option>
                   <?php } ?>
@@ -298,7 +286,7 @@
               <li class="billing_field">
                 <label for="billing_country">Country</label>
                 <select id="billing_country" name="billing[country]">
-                  <option value="">Select a country</option>
+                  <option value="">Please Select</option>
                   <?php foreach ($this->countries as $country) { ?>
                     <?php if ($country->country_3_code == $this->default_country) { ?>
                       <option value="<?php echo $country->country_3_code ?>" selected="selected"><?php echo $country->country_name ?></option>
@@ -316,6 +304,7 @@
               <li>
                 <label for="card_type">Card Type:</label>
                 <select id="card_type" name="card[type]">
+                  <option value="">Please Select</option>
                   <option value="AMEX">American Express</option>
                   <option value="Visa">Visa</option>
                   <option value="MasterCard">MasterCard</option>
@@ -346,7 +335,7 @@
     <div id="terms_conditions">
       <div>
         <p>To become a Zenvei Associate, you must acknowledge that you have read, understand, and agree to the Terms &amp; Conditions. If you have not already done so, click on the links below to read and print these documents then check the boxes to indicate your agreement.</p>
-        <p><input id="terms_condition" type="checkbox" />I have read, understand and agree to abide by the terms set forth in the <a href="#">Terms and Conditions</a>.</p>
+        <p><input id="terms_conditions" type="checkbox" name="terms_conditions"/>I have read, understand and agree to abide by the terms set forth in the <a href="#">Terms and Conditions</a>.</p>
 
         <input type="submit" value="Submit Now!" />
 
@@ -360,11 +349,19 @@
     </div>
   </div>
 
+  <!-- BEGIN: Used for calculations -->
+  <input id="state_tax" value="0" type="hidden" />
+  
+  <?php foreach ($this->products as $product) { ?>
+  <input id="price_<?php echo $product->product_sku ?>" value="<?php echo sprintf('%.2f', $product->product_price) ?>" type="hidden" />
+  <?php } ?>
+  
   <input id="order_products_total" type="hidden" value="0" />
   <input id="order_tax" type="hidden" value="0" />
   <input id="order_shipping" type="hidden" value="0" />
   <input id="order_total" type="hidden" value="0" />
 
-  <input id="autoship_total" type="hidden" value="" />
+  <input id="autoship_total" type="hidden" value="0" />
+  <!-- END: Used for calculations -->
 
 </form>

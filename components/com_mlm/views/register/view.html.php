@@ -25,7 +25,13 @@ jimport( 'joomla.application.component.view');
  */
 class MlmViewRegister extends JView {
   function display($tpl = null) {
-    
+    $document =& JFactory::getDocument();
+
+    /*
+     * Having a base url causes problems with the jquery tabs
+     */
+    $document->setBase('');
+
     /*
      * Check who referred the user
      */
@@ -46,12 +52,12 @@ class MlmViewRegister extends JView {
     /*
      * Add external CSS & JS
      */
-    $document =& JFactory::getDocument();
     $document->addScript('http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js');
     $document->addCustomTag('<script type="text/javascript">jQuery.noConflict();</script>');
     $document->addScript('http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js');
     $document->addScript('http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.min.js');
     JHTML::script('reg_form.js', 'components/com_mlm/views/register/js/');
+    JHTML::script('jquery.numeric.js', 'components/com_mlm/views/register/js/');
 
     /*
      * Custom Code

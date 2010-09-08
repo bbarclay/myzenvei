@@ -28,46 +28,58 @@ jimport('joomla.application.component.model');
 class MlmModelUser extends JModel
 {
 
-  function username_available($username)
+  private $reserved_words = array();
+
+  function check_username($username)
   {
-    $db = $this->getDBO();
+    $username = strtolower($username);
+    if (preg_match('/[^a-z1-9].*/', $username)) {
+      return 'invalid';
+    } else if (in_array($username, $this->reserved_words)) {
+      return 'reserved';
+    } else {
+      $db = $this->getDBO();
+      $query = sprintf('SELECT COUNT(id)
+        FROM #__users
+        WHERE username = \'%s\'', $username);
+      $db->setQuery($query);
 
-    $query = sprintf('SELECT COUNT(id)
-      FROM #__users
-      WHERE username = \'%s\'', $username);
-
-    $db->setQuery($query);
-
-    $count = $db->loadResult();
-    return $count == 0;
+      $count = $db->loadResult();
+      return $count == 0 ? 'available' : 'taken';
+    }
   }
 
-  function replicated_site_available($site_id)
+  function check_replicated_site($site_id)
   {
-    $db = $this->getDBO();
+    $site_id = strtolower($site_id);
+    if (preg_match('/[^a-z1-9].*/', $site_id)) {
+      return 'invalid';
+    } else if (in_array($site_id, $this->reserved_words)) {
+      return 'reserved';
+    } else {
+      $db = $this->getDBO();
+      $query = sprintf('SELECT COUNT(id)
+        FROM #__vm_jsusernames
+        WHERE username = \'%s\'', $site_id);
+      $db->setQuery($query);
 
-    $query = sprintf('SELECT COUNT(id)
-      FROM #__vm_jsusernames
-      WHERE username = \'%s\'', $site_id);
-
-    $db->setQuery($query);
-
-    $count = $db->loadResult();
-    return $count == 0;
+      $count = $db->loadResult();
+      return $count == 0 ? 'available' : 'taken';
+    }
   }
 
-  function email_available($email)
+  function check_email($email)
   {
-    $db = $this->getDBO();
+    $email = strtolower($email);
 
+    $db = $this->getDBO();
     $query = sprintf('SELECT COUNT(id)
       FROM #__users
       WHERE email = \'%s\'', $email);
-
     $db->setQuery($query);
 
     $count = $db->loadResult();
-    return $count == 0;
+    return $count == 0 ? 'available' : 'taken';
   }
 
   function enter_virtuemart_info($business_info, $autoship_date, $coapplicant_info, $user_info, $shipping_info, $billing_info, $card_info,
@@ -96,7 +108,7 @@ class MlmModelUser extends JModel
     INSERT INTO  jos_vm_shopper_vendor_xref
     (user_id,vendor_id,shopper_group_id)
     values('".$user_info['user_id']."','1','".$shopper_group_id."')");
-    
+
     var_dump($query);
      $db->Execute($query);
 

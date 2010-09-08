@@ -18,10 +18,17 @@ jQuery(document).ready(function ($) {
   /*
    * TODO: Enable tabs
    */
+  $('#tabs').tabs();
 
   /*
    * TODO: Enable Datepicker
    */
+  $.datepicker.setDefaults({ 
+    changeMonth: true,
+    changeYear: true,
+  });
+  $('#birthday').datepicker({ yearRange: '-100:+0' });
+  $('#coapplicant_birthday').datepicker({ yearRange: '-100:+0' });
 
   /*
    * Signup as business functionality
@@ -54,32 +61,44 @@ jQuery(document).ready(function ($) {
   var get_states = function(event) {
     $country = $(event.target);
     var state_id = $country.attr('id').replace(/country/, 'state');
-    alert(state_id);
     $('#'+state_id).load('/myzenvei/index.php?option=com_mlm&controller=ajax&task=states&format=raw', { country: $country.val() });
   }
   $('#shipping_country').change(get_states);
   $('#billing_country').change(get_states);
 
   /*
-   * Functionality to check availability of:
-   *   - Username
-   *   - Replicated Site ID
-   *   - Email
+   * Increment and Decrement Operations for quantity
    */
-  var field_check = function(event) {
-    $field = $(event.target);
-    if ($field.val()) {
-      var status_field = $field.attr('id')+'_status';
-      $status = $('#'+status_field);
-      $status.load('/myzenvei/index.php?option=com_mlm&controller=ajax&task=fieldcheck&format=raw', { 
-        field: $field.attr('id'),
-        value: $field.val(),
-      });
+  $('.quantity_add').click(function (event) {
+    $input = $(event.target).parent().find('input');
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
+  });
+  $('.quantity_sub').click(function (event) {
+    $input = $(event.target).parent().find('input');
+    if ($input.val() > 0) {
+      $input.val(parseInt($input.val()) - 1);
+      $input.change();
     }
-  }
-  $('#username').change(field_check);
-  $('#replicated_site').change(field_check);
-  $('#email').change(field_check);
+    return false;
+  });
+
+  /*
+   * Make sure quantities are only numeric
+   */
+  var numeric = function (event) {
+    var val = $(event.target).val();
+    var original_val = val;
+    val = val.replace(/[0-9]*/g, '');
+    if (val != '') {
+      original_val = parseInt(original_val, 10);
+      original_val = original_val >= 0 ? original_val : 0;
+      $(this).val(original_val);
+      alert('Only positive integer values allowed.');
+    }
+  };
+  $('input[name^=order[products]], input[name^=autoship[products]]').blur(numeric).keyup(numeric);
 
   /*
    *  On form submit
@@ -93,8 +112,6 @@ jQuery(document).ready(function ($) {
         $('[name=' + billing_name + ']').val($(this).val());
       });
     }
-
-    return false;
   });
 
   /*
@@ -103,18 +120,34 @@ jQuery(document).ready(function ($) {
   $('#reg_form').validate({
     debug: true,
     rules: {
+      'enrollment_type': "required",
+      'user_info[username]': {
+        required: true,
+        minlength: 3,
+        remote: '/myzenvei/index.php?option=com_mlm&controller=ajax&task=fieldcheck&format=raw&field=username', 
+      },
+      'user_info[replicated_site]': {
+        required: true,
+        minlength: 3,
+        remote: '/myzenvei/index.php?option=com_mlm&controller=ajax&task=fieldcheck&format=raw&field=replicated_site', 
+      },
+      'user_info[email]': {
+        required: true,
+        email: true,
+        remote: '/myzenvei/index.php?option=com_mlm&controller=ajax&task=fieldcheck&format=raw&field=email', 
+      },
+      'terms_conditions': "required",
     },
     messages: {
     },
-
   });
 
 
   /*
-   * Pricing calculations
+   * Order Pricing calculations
    */
   
-  var pricing_calc_product_total = function (sku) {
+  var order_calc_product_total = function (sku) {
     $quantity = $('#order_quantity_'+sku);
     $price = $('#price_'+sku);
     $total = $('#order_total_'+sku);
@@ -122,7 +155,7 @@ jQuery(document).ready(function ($) {
     $total.val(($price.val()*$quantity.val()).toFixed(2));
   };
 
-  var pricing_calc_order_cost = function () {
+  var order_calc_products_total = function () {
     var products_total = 0;
     $('input[id^=order_total_]').each(function () {
       products_total = parseFloat(products_total) + parseFloat($(this).val());
@@ -130,32 +163,62 @@ jQuery(document).ready(function ($) {
     $('#order_products_total').val(products_total.toFixed(2));
   };
 
-  var pricing_calc_tax = function () {
+  var order_calc_tax = function () {
     var tax = $('#order_products_total').val() * $('#state_tax').val();
     $('#order_tax').val(tax.toFixed(2));
   };
 
-  var pricing_calc_shipping = function () {
+  var order_calc_shipping = function () {
   };
 
-  var pricing_update_total = function () {
+  var order_update_total = function () {
     var order_total = parseFloat($('#order_products_total').val()) + parseFloat($('#order_tax').val()) + 
       parseFloat($('#order_shipping').val());
     $('#order_total').val(order_total.toFixed(2));
   };
 
+  /*
+   * Autoship Pricing calculations
+   */
+
+  var autoship_calc_product_total = function (sku) {
+    $quantity = $('#autoship_quantity_'+sku);
+    $price = $('#price_'+sku);
+    $total = $('#autoship_total_'+sku);
+
+    $total.val(($price.val()*$quantity.val()).toFixed(2));
+  };
+
+  var autoship_update_total = function () {
+    var products_total = 0;
+    $('input[id^=autoship_total_]').each(function () {
+      products_total = parseFloat(products_total) + parseFloat($(this).val());
+    });
+    $('#autoship_total').val(products_total.toFixed(2));
+  };
+
 
   /*
-   * When product quantity is updated
+   * When product quantity is updated for order
    */
   $('input[name^=order[products]]').change(function (event) {
     var sku = $(event.target).attr('id').substr(-3)
-    pricing_calc_product_total(sku);
+    order_calc_product_total(sku);
   
-    pricing_calc_order_cost();
-    pricing_calc_tax();
-    pricing_calc_shipping();
-    pricing_update_total();
+    order_calc_products_total();
+    order_calc_tax();
+    order_calc_shipping();
+    order_update_total();
+  });
+
+  /*
+   * When product quantity is updated for autoship
+   */
+  $('input[name^=autoship[products]]').change(function (event) {
+    var sku = $(event.target).attr('id').substr(-3)
+    autoship_calc_product_total(sku);
+
+    autoship_update_total();
   });
 
   /*
@@ -171,8 +234,8 @@ jQuery(document).ready(function ($) {
         var tax = $.parseJSON(data);
         $('#state_tax').val(tax);
     
-        pricing_calc_tax();
-        pricing_update_total();
+        order_calc_tax();
+        order_update_total();
       },
     });
   });
@@ -202,20 +265,21 @@ jQuery(document).ready(function ($) {
 
     // Update prices for products and calculations
     $.ajax({
-      url: '/myzenvei/index.php?option=com_mlm&controller=user&task=productprices&format=json',
+      url: '/myzenvei/index.php?option=com_mlm&controller=ajax&task=productprices&format=json',
       data: ({ group: $this.val() }),
       success: function(data) {
         var prices = $.parseJSON(data);
         $.each(prices, function (i, price) {
           $('.price_'+price.sku).html(price.text_val);
           $('#price_'+price.sku).val(price.value);
-          pricing_calc_product_total(price.sku);
+          order_calc_product_total(price.sku);
+          autoship_calc_product_total(price.sku);
         });
-        pricing_calc_order_cost();
-        pricing_calc_tax();
-        pricing_update_total();
+        order_calc_products_total();
+        order_calc_tax();
+        order_update_total();
+        autoship_update_total();
       },
     });
   });
-
 });
