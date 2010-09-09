@@ -27,37 +27,42 @@ jimport('joomla.application.component.model');
  */
 class MlmModelReferralTree extends JModel
 {
-  function findPostition($parentId){
-    $allrows = array();
-    $allrows = $this->__getChildern($parentId);
-    $childCount = count($allrows);
-    while(count($allrows)!=0){
-      if($childCount<3){
-        return array('parent_id'=>$parentId, 'position'=>$childCount)
+  function find_postition($parent_id) {
+    $nodes = array($parent_id);
+    while (count($nodes)) {
+      $node = array_shift($nodes);
+      $children = $this->_getChildren($node);
+
+      $child_count = count($children);
+      if ($child_count < 3) {
+        return array(
+          'parent_id'  => $node,
+          'position'   => $child_count
+        );
       }
-      else{
-        unset($allrows[0]);
-        $result = $this->__getChildern($allrows[0]);
-        $childCount = count($result);
-        $allrows = array_merge($allrows, $result);
-      }
+      $nodes = array_merge($nodes, $children);
     }
     return false;
   }
-  function insertInTree($userId, $parentId, $position){
-    $db = & JFactory::getDBO();
-    $query = 'insert into geneology_tree values($userId, $parentId, $position)';
-    $db->Execute($query);
-  }
-  function __getChildern($parentId){
-    $db = & JFactory::getDBO();
-    $query = 'select * from geneology_tree where parent_id = $parentId order by positino asc';
-    $db->setQuery($query);
-    $result = $db->loadResultArray();
-    return $result;
-  }
-  function calculateCommissions(){
 
+  function insert_node($user_id, $parent_id, $position) {
+    $db = $this->getDBO();
+    $query = sprintf('INSERT INTO geneology_tree(user_id, parent_id, position)
+      VALUES (%d, %d, %d)',
+      $user_id, $parent_id, $position);
+    $db->query($query);
+    return $db->getAffectedRows() > 0;
+  }
+  
+  function _getChildern($parent_id) {
+    $query = sprintf('SELECT *
+      FROM geneology_tree
+      WHERE parent_id = %d
+      ORDER BY position ASC', $parent_id);
+    $db->setQuery($query);
+    $result = $db->loadObjectList();
+
+    return is_array($result) ? $result : false;
   }
 }
 
