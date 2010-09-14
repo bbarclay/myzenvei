@@ -43,11 +43,13 @@ class MlmModelProduct extends JModel
     return is_array($products) ? $products : false;
   }
 
-  function getProductPrices($group_id)
+  function getProductsByShopperGroup($group_id)
   {
     $db = $this->getDBO();
 
-    $query = sprintf('SELECT p.product_sku, IF (gp.product_price, gp.product_price, pp.product_price) AS product_price, IF (gp.product_currency, gp.product_currency, pp.product_currency) AS product_currency
+    $query = sprintf('SELECT p.product_id, p.product_sku, p.product_name,
+      IF (gp.product_price, gp.product_price, pp.product_price) AS product_price,
+      IF (gp.product_currency, gp.product_currency, pp.product_currency) AS product_currency
       FROM #__vm_product p
       LEFT JOIN #__vm_product_price gp ON p.product_id = gp.product_id AND gp.shopper_group_id = %d
       INNER JOIN #__vm_product_price pp ON p.product_id = pp.product_id

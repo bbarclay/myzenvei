@@ -41,6 +41,20 @@ class MlmModelVirtueMart extends JModel
     return is_array($carrier) ? $carrier : false;
   }
 
+  function getRegistrationFee($shopper_group_id) {
+    $db = $this->getDBO();
+
+    $query = sprintf('SELECT regfee
+      FROM #__mlm_regfee
+      WHERE shopper_group_id = %d',
+      $shoppergroup_id);
+
+    $db->setQuery($query);
+
+    $reg_fee = $db->loadResult();
+    return $reg_fee ? $reg_fee : false;
+  }
+
   function getTaxRate($state, $country)
   {
     $db = $this->getDBO();

@@ -1,12 +1,12 @@
 <?php defined('_JEXEC') or die('Restricted access'); ?>
 
 <h1>Join the Zenvei Team</h1>
-<form id="reg_form" action="index.php?option=com_mlm&controller=user&task=register_save" method="POST">
-  <?php echo JHTML::_( 'form.token' ); ?>
+  <form id="reg_form" action="index.php?option=com_mlm&controller=user&task=register_save" method="POST">
+  <?php echo JHTML::_('form.token'); ?>
   <div>
-    <input id="referee" name="referee" value="<?php echo $this->referee['id'] ?>" type="hidden" />
+    <input id="referee" name="referee" value="<?php echo $this->referee ? $this->referee->id : 0 ?>" type="hidden" />
     <div>
-      <h3>Referring Associate Name: <?php echo $this->referee['name'] ?></h3>
+      <h3>Referring Associate Name: <?php echo $this->referee ? $this->referee->name : 'Not Applicable' ?></h3>
     </div>
     <div>
       <label for="enrollment_type">Enrollment Type:</label>
@@ -99,21 +99,21 @@
           <ul>
             <li>
               <label for="username">Username<em>*</em></label>
-              <input id="username" type="text" name="user_info[username]"/>
+              <input id="username" type="text" name="user[username]"/>
               <span id="username_status"></span>
             </li>
             <li class="etrigger marketing_associate business_associate">
               <label for="replicated_site">Replicated Site ID<em>*</em></label>
-              <input id="replicated_site" type="text"  name="user_info[replicated_site]"/>
+              <input id="replicated_site" type="text"  name="user[replicated_site]"/>
               <span id="replicated_site_status"></span>
             </li>
             <li>
               <label for="password">Password<em>*</em></label>
-              <input id="password" type="password" name="user_info[password]"/>
+              <input id="password" type="password" name="user[password]"/>
             </li>
             <li>
               <label for="verify_password">Verify Password<em>*</em></label>
-              <input id="verify_password" type="password" name="user_info[password2]"/>
+              <input id="verify_password" type="password" name="user[password2]"/>
             </li>
           </ul>
         </fieldset>
@@ -127,19 +127,19 @@
               </li>
               <li>
                 <label for="first_name">First Name</label>
-                <input id="first_name" type="text" name="business_info[first_name]"/>
+                <input id="first_name" type="text" name="user[first_name]"/>
               </li>
               <li>
                 <label for="last_name">Last Name</label>
-                <input id="last_name" type="text" name="business_info[last_name]"/>
+                <input id="last_name" type="text" name="user[last_name]"/>
               </li>
               <li>
                 <label for="birthday">Birthday</label>
-                <input id="birthday" type="text" name="business_info[birthday]"/>
+                <input id="birthday" type="text" name="user[birthday]"/>
               </li>
               <li class="business_signup">
                 <label for="business_name">Business Name</label>
-                <input id="business_name" type="text" name="business_info[business_name]"/>
+                <input id="business_name" type="text" name="business[name]"/>
               </li>
             </ul>
           </fieldset>
@@ -147,44 +147,44 @@
             <ul>
               <li>
                 <label for="email">Email</label>
-                <input id="email" type="text" name="user_info[email]" />
+                <input id="email" type="text" name="user[email]" />
                 <span id="email_status"></span>
               </li>
               <li>
                 <label for="confirm_email">Confirm Email</label>
-                <input id="confirm_email" type="text" name="user_info[confirm_email]"/>
+                <input id="confirm_email" type="text" name="user[confirm_email]"/>
               </li>
               <li class="business_signup">
                 <label for="tax_id">Tax ID.</label>
-                <input id="tax_id" type="text" name="business_info[tax_id]"/>
+                <input id="tax_id" type="text" name="business[tax_id]"/>
               </li>
               <li class="business_signup">
                 <label for="confirm_tax_id">Confirm Tax ID.</label>
-                <input id="confirm_tax_id" type="text" name="business_info[confirm_tax_id]"/>
+                <input id="confirm_tax_id" type="text" name="business[confirm_tax_id]"/>
               </li>
               <li class="user_signup">
                 <label id="ssn_label" for="ssn">SSN/SIN</label>
-                <input id="ssn" type="text" name="business_info[ssn]"/>
+                <input id="ssn" type="text" name="user[ssn]"/>
               </li>
               <li class="user_signup">
                 <label for="confirm_ssn">Confirm SSN/SIN</label>
-                <input id="confirm_ssn" type="text" name="business_info[confirm_ssn]"/>
+                <input id="confirm_ssn" type="text" name="user[confirm_ssn]"/>
               </li>
               <li>
                 <label for="day_phone">Day Phone</label>
-                <input id="day_phone" type="text" name="business_info[day_phone]"/>
+                <input id="day_phone" type="text" name="user[day_phone]"/>
               </li>
               <li>
                 <label for="evening_phone">Evening Phone</label>
-                <input id="evening_phone" type="text" name="business_info[evening_phone]"/>
+                <input id="evening_phone" type="text" name="user[evening_phone]"/>
               </li>
               <li>
                 <label for="cell_phone">Cell Phone</label>
-                <input id="cell_phone" type="text" name="business_info[cell_phone]" />
+                <input id="cell_phone" type="text" name="user[cell_phone]" />
               </li>
               <li>
                 <label for="fax_number">Fax Number</label>
-                <input id="fax_number" type="text" name="business_info[fax_number]"/>
+                <input id="fax_number" type="text" name="user[fax_number]"/>
               </li>
             </ul>
           </fieldset>

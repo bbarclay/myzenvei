@@ -117,7 +117,7 @@ jQuery(document).ready(function ($) {
   /*
    *  Form validation
    */
-  $('#reg_form').validate({
+/*  $('#reg_form').validate({
     debug: true,
     rules: {
       'enrollment_type': "required",
@@ -141,7 +141,7 @@ jQuery(document).ready(function ($) {
     messages: {
     },
   });
-
+*/
 
   /*
    * Order Pricing calculations
@@ -202,7 +202,7 @@ jQuery(document).ready(function ($) {
    * When product quantity is updated for order
    */
   $('input[name^=order[products]]').change(function (event) {
-    var sku = $(event.target).attr('id').substr(-3)
+    var sku = $(event.target).attr('id').replace(/order\_quantity\_/, '');
     order_calc_product_total(sku);
   
     order_calc_products_total();
@@ -215,7 +215,7 @@ jQuery(document).ready(function ($) {
    * When product quantity is updated for autoship
    */
   $('input[name^=autoship[products]]').change(function (event) {
-    var sku = $(event.target).attr('id').substr(-3)
+    var sku = $(event.target).attr('id').replace(/order\_quantity\_/, '');
     autoship_calc_product_total(sku);
 
     autoship_update_total();

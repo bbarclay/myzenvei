@@ -27,7 +27,15 @@ jimport('joomla.application.component.model');
  */
 class MlmModelReferralTree extends JModel
 {
-  function find_postition($parent_id) {
+  function addUser($user_id, $referee) {
+    $pos = $this->_findPosition($referee);
+    if ($pos) {
+      return $this->_insertNode($user_id, $pos['parent_id'], $pos['position']);
+    }
+    return false;
+  }
+
+  function _findPosition($parent_id) {
     $nodes = array($parent_id);
     while (count($nodes)) {
       $node = array_shift($nodes);
@@ -45,12 +53,13 @@ class MlmModelReferralTree extends JModel
     return false;
   }
 
-  function insert_node($user_id, $parent_id, $position) {
+  function _insertNode($user_id, $parent_id, $position) {
     $db = $this->getDBO();
     $query = sprintf('INSERT INTO geneology_tree(user_id, parent_id, position)
       VALUES (%d, %d, %d)',
       $user_id, $parent_id, $position);
     $db->query($query);
+
     return $db->getAffectedRows() > 0;
   }
   

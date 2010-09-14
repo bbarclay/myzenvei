@@ -26,7 +26,7 @@ jimport( 'joomla.application.component.view');
 class MlmViewProductPrices extends JView {
   function display($tpl = null) {
     $product = $this->getModel('Product');
-    $prices = $product->getProductPrices(JRequest::getVar('group_id'));
+    $prices = $product->getProductsByShopperGroup(JRequest::getVar('group_id'));
 
     $obj = array();
     foreach ($prices as $price) {
