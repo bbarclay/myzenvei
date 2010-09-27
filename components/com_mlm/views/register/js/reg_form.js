@@ -16,9 +16,9 @@ jQuery(document).ready(function ($) {
   }
 
   /*
-   * TODO: Enable tabs
+   * Enable tabs
    */
-  $('#tabs').tabs();
+  $('#tab-container').tabs({ fxFade: true, fxSpeed: 'fast' });
 
   /*
    * TODO: Enable Datepicker

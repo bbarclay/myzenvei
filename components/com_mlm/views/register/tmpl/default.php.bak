@@ -1,15 +1,15 @@
 <?php defined('_JEXEC') or die('Restricted access'); ?>
 
 <h1>Join the Zenvei Team</h1>
-<form id="reg_form" action="index.php?option=com_mlm&controller=user&task=register_save" method="POST">
+  <form id="reg_form" action="index.php?option=com_mlm&controller=user&task=register_save" method="POST">
   <?php echo JHTML::_('form.token'); ?>
   <div>
     <input id="referee" name="referee" value="<?php echo $this->referee ? $this->referee->id : 0 ?>" type="hidden" />
     <div>
       <h3>Referring Associate Name: <?php echo $this->referee ? $this->referee->name : 'Not Applicable' ?></h3>
     </div>
-    <div class="labeltop">
-      <label class="lbl" for="enrollment_type">Enrollment Type:</label>
+    <div>
+      <label for="enrollment_type">Enrollment Type:</label>
       <select id="enrollment_type" name="enrollment_type">
         <option value="">Please Select</option>
         <?php foreach ($this->shopper_groups as $group) { ?>
@@ -22,25 +22,23 @@
         <p class="etrigger preferred_customer">Preferred Customer</p>
       </div>
 
-      <div class="m10">&nbsp;</div>
-
       <!-- TODO -->
-      <label class="lbl" for="builder_packs">Builder Packs:</label>
+      <label for="builder_packs">Builder Packs</label>
       <select id="builder_packs" name="builder_pack">
         <option value="">Please Select</option>
       </select>
     </div>
   </div>
-  
-  <div id="tab-container" class="tabs">
+
+  <div id="tabs">
     <ul>
-        <li><a href="#todays_order"><span>Today's Order</span></a></li>
-        <li><a href="#monthly_autoship"><span>Select Monthly AutoShip Program</span></a></li>
-        <li><a href="#user_info"><span>User Information</span></a></li>
-        <li><a href="#terms_conditions"><span>Terms &amp; Conditions</span></a></li>
+      <li><a href="#todays_order"><span>Today's Order</span></a></li>
+      <li><a href="#monthly_autoship"><span>Select Monthly AutoShip Program</span></a></li>
+      <li><a href="#user_info"><span>User Information</span></a></li>
+      <li><a href="#terms_conditions"><span>Terms &amp; Conditions</span></a></li>
     </ul>
     <div id="todays_order">
-      <div class="zn_title">
+      <div>
         <label for="shipping_method">Shipping Method</label>
         <select id="shipping_method" name="order[shipping_method]">
           <option value="">Please Select</option>
@@ -51,25 +49,21 @@
       </div>
       <div>
         <?php foreach ($this->products as $product) { ?>
-        <div class="zn_sp">
-          <div class="zn_1"><?php echo $product->product_name ?></div>
-          <div class="zn_2"><?php echo $product->product_s_desc ?></div>
-          <div class="zn_3">
-            <span class="zn_3a price_<?php echo $product->product_sku ?>"><?php echo $this->getCurrencySymbol($product->product_currency).sprintf('%.2f', $product->product_price); ?></span>
-            <input id="order_total_<?php echo $product->product_sku ?>" class="zn_3b" type="hidden" value="0" />
+        <div>
+          <div><?php echo $product->product_name ?></div>
+          <div><?php echo $product->product_s_desc ?></div>
+          <div>
+            <span class="price_<?php echo $product->product_sku ?>"><?php echo $this->getCurrencySymbol($product->product_currency).sprintf('%.2f', $product->product_price); ?></span>
+            <input id="order_total_<?php echo $product->product_sku ?>" type="hidden" value="0" />
           </div>
-          <div class="zn_4">
-            <input id="order_quantity_<?php echo $product->product_sku ?>" name="order[products][<?php echo $product->product_sku ?>]" type="text" value="0"/>
-            <img class="quantity_add" src="components/com_mlm/views/register/images/ico_plus.png" />
-            <img class="quantity_sub" src="components/com_mlm/views/register/images/ico_minus.png" />
-          </div>
-          <div class="zn_5"><img src="<?php echo $this->getProductImage($product->product_full_image, 'full') ?>" alt="<?php echo $product->product_name?>" /></div>
+          <div><input id="order_quantity_<?php echo $product->product_sku ?>" name="order[products][<?php echo $product->product_sku ?>]" type="text" value="0"/> <a class="quantity_add" href="#">+</a> <a class="quantity_sub" href="#">-</a></div>
+          <div><img src="<?php echo $this->getProductImage($product->product_full_image, 'full') ?>" alt="<?php echo $product->product_name?>" /></div>
         </div>
         <?php } ?>
       </div>
     </div>
     <div id="monthly_autoship">
-      <div class="zn_title">
+      <div>
         <label for="autoship_date">Autoship Date</label>
         <select id="autoship_date" name="auto_ship[date]">
           <option value="">Please Select</option>
@@ -77,7 +71,7 @@
           <option value="20">20</option>
         </select>
       </div>
-      <div class="zn_alert">
+      <div>
         <p>Your first order will ship immedialtely and on that date every month thereafter, until you contact Zenvei to cancel.</p>
         <p class="etrigger marketing_associate">To qualify as a Marketing Associate you must choose a combination of products totalying $70 or more. To enjoy the benefits of a Marketing Associate, your monthly qualifying purchase would be a combination of products totallying $70 or more.</p>
         <p class="etrigger business_associate">To qualify as a Business Associate you must choose a combination of products totallying $128 or more. To enjoy the benefits of a Business Associate, your monthly qualifying purchase would be a combination of products totallying $128 or more.</p>
@@ -85,25 +79,21 @@
       </div>
       <div>
         <?php foreach ($this->products as $product) { ?>
-        <div class="zn_sp">
-          <div class="zn_1"><?php echo $product->product_name ?></div>
-          <div class="zn_2"><?php echo $product->product_s_desc ?></div>
-          <div class="zn_3">
-            <span class="zn_3a price_<?php echo $product->product_sku ?>"><?php echo $this->getCurrencySymbol($product->product_currency).sprintf('%.2f', $product->product_price); ?></span>
-            <input id="autoship_total_<?php echo $product->product_sku ?>" class="zn_3b" type="hidden" value="0" />
+        <div>
+          <div><?php echo $product->product_name ?></div>
+          <div><?php echo $product->product_s_desc ?></div>
+          <div>
+            <span class="price_<?php echo $product->product_sku ?>"><?php echo $this->getCurrencySymbol($product->product_currency).sprintf('%.2f', $product->product_price); ?></span>
+            <input id="autoship_total_<?php echo $product->product_sku ?>" type="hidden" value="0" />
           </div>
-          <div class="zn_4">
-            <input id="autoship_quantity_<?php echo $product->product_sku ?>" name="autoship[products][<?php echo $product->product_sku ?>]" type="text" value="0"/>
-            <img class="quantity_add" src="components/com_mlm/views/register/images/ico_plus.png" />
-            <img class="quantity_sub" src="components/com_mlm/views/register/images/ico_minus.png" />
-          </div>
-          <div class="zn_5"><img src="<?php echo $this->getProductImage($product->product_full_image, 'full') ?>" alt="<?php echo $product->product_name?>" /></div>
+          <div><input id="autoship_quantity_<?php echo $product->product_sku ?>" name="autoship[products][<?php echo $product->product_sku ?>]" type="text" value="0"/> <a class="quantity_add" href="#">+</a> <a class="quantity_sub" href="#">-</a></div>
+          <div><img src="<?php echo $this->getProductImage($product->product_full_image, 'full') ?>" alt="<?php echo $product->product_name?>" /></div>
         </div>
         <?php } ?>
       </div>
     </div>
     <div id="user_info">
-      <div class="zn_user">
+      <div>
         <fieldset>
           <legend>Step 1: User Information</legend>
           <ul>
@@ -343,14 +333,14 @@
       </div>
     </div>
     <div id="terms_conditions">
-      <div class="zn_terms">
+      <div>
         <p>To become a Zenvei Associate, you must acknowledge that you have read, understand, and agree to the Terms &amp; Conditions. If you have not already done so, click on the links below to read and print these documents then check the boxes to indicate your agreement.</p>
-        <p><input id="terms_conditions" type="checkbox" name="terms_conditions">I have read, understand and agree to abide by the terms set forth in the <a href="#">Terms and Conditions</a>.</p>
+        <p><input id="terms_conditions" type="checkbox" name="terms_conditions"/>I have read, understand and agree to abide by the terms set forth in the <a href="#">Terms and Conditions</a>.</p>
 
-        <input type="submit" value="Submit Now!">
+        <input type="submit" value="Submit Now!" />
 
-        <p class="zn_approve">Congratulations! This will submit your enrollment and your order will be shipped within 72 hours. You should talk with your Referring Associate immediately for any questions and information you require. Thank you for your interest in Zenvei International!</p>
-        <p class="zn_reject">Please note it may take a few moments to process your credit card. To avoid multiple charges, please do not click the continue button more than once.</p>
+        <p>Congratulations! This will submit your enrollment and your order will be shipped within 72 hours. You should talk with your Referring Associate immediately for any questions and information you require. Thank you for your interest in Zenvei International!</p>
+        <p class="red">Please note it may take a few moments to process your credit card. To avoid multiple charges, please do not click the continue button more than once.</p>
       </div>
       <div class="etrigger marketing_associate bussiness_associate">
         <h3>Registration Fee</h3>
@@ -373,38 +363,5 @@
 
   <input id="autoship_total" type="hidden" value="0" />
   <!-- END: Used for calculations -->
+
 </form>
-
-<!-- TODO: Add Javascript to make this work -->
-<div id="zn_package">
-  <table>
-    <tbody>
-    <tr id="row_signup_fee">
-      <th class="border">REGIST. FEE</td>
-      <td class="border"><span id="fee_amount">$<span id="display_reg_fee">0.00</span></span></td>
-    </tr>
-    <tr>
-      <th>Bonus Pak Total:</td>
-      <td class="border"><span id="bonus_pak_amount">$<span id="bonus_pak_total">0.00</span></span></td>
-    </tr>
-    <tr>
-      <th>PRODUCT ORDER</td>
-      <td class="border"><span id="order_amount">$<span id="products_total">0.00</span></span></td>
-    </tr>
-    <tr>
-      <th class="border">SHIPPING</td>
-      <td class="border">$<span id="shipping_amount">0.00</span></td>
-    </tr>
-    <tr>
-      <th>TAX</td>
-      <td>$<span id="tax_amount">0.00</span></td>
-    </tr>
-    <tr>
-      <th class="total">TOTAL</td>
-      <td class="total">$<span id="total_amount">0.00</span></td>
-    </tr>
-    </tbody>
-  </table>
-  Your AutoShip order will be charged monthly at an amount of $<span id="autoship_amount">0.00</span>
-</div>
-

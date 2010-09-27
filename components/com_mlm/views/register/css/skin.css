@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+.labelTop {clear:both;float:left;width:100%;}
+.lbl {float:left;width:130px;}
+.tabs {clear:both;float:left;width:100%;margin-top:20px;}
+.m10 {clear:both;float:left;width:100%;height:10px;font-size:10px;}
+
+/* Global Classes */
+.zn_title {clear:both;float:left;width:98.5%;background:#e4edff;padding:10px 0 10px 10px;border:1px solid #bccdef;}
+.zn_sp {clear:both;float:left;width:100%;border-bottom:1px solid #bccdef;border-top:1px solid #e4edff;padding-bottom:10px;}
+.zn_1 {clear:both;width:130px;}
+.zn_2 {width:240px;}
+.zn_3 {width:70px;}
+.zn_3a {}
+.zn_3b {}
+.zn_4 {width:50px!important;}
+.zn_4 img {cursor:pointer}
+.zn_4 input {width:40px}
+.zn_5 {width:200px;}
+.zn_1, .zn_2, .zn_3, .zn_3b, .zn_4 {float:left;margin:20px 20px 0 0;overflow:hidden;}
+.zn_3a, .zn_5 {float:left;overflow:hidden;}
+.zn_5 {margin-top:10px;}
+
+/* User Information Page */
+.zn_user {clear:both;float:left;width:100%;}
+.zn_user label {clear:both;width:120px;}
+.zn_user input {}
+.zn_user span {}
+.zn_user label, .zn_user input, .zn_user span {float:left;}
+
+.zn_user ul, .zn_user ul li {float:left;width:100%;}
+.zn_user ul li {margin-top:8px;}
+
+/* Terms & Conditions */
+.zn_terms {clear:both;float:left;width:100%;}
+.zn_terms a {color:#3c7f2c;}
+.zn_terms a:hover {color:#7cb957;text-decoration:none;}
+
+/* Alerts */
+.zn_approve {color:#3c7f2c;}
+.zn_reject {color:#900;}
+
+.zn_alert {clear:both;float:left;width:97.4%;background:#ffffe4;padding:0px 10px;border:1px solid #eae090;font-weight:normal;}
+
+/* Right Fixed Panel */
+#zn_package {float:left;width:180px;padding:10px;background:#fff;border:1px solid #777;position:fixed;right:20px;top:100px;font-size:12px}
+#zn_package table {border-spacing:0px;width:180px}
+#zn_package table td {border-bottom:0px;padding: 5px 0px;text-align:right;font-weight:bold;}
+#zn_package table th {color:rgb(85, 165, 28);border-bottom:0px;padding: 5px 0px;}
+#zn_package table th.border, #zn_package table td.border {border-bottom:1px solid rgb(213, 214, 208);}
+#zn_package table th.total, #zn_package table td.total {color:rgb(100, 24, 76);font-size:14px;}
