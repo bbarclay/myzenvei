@@ -34,10 +34,10 @@
   
   <div id="tab-container" class="tabs">
     <ul>
-        <li><a href="#todays_order"><span>Today's Order</span></a></li>
-        <li><a href="#monthly_autoship"><span>Select Monthly AutoShip Program</span></a></li>
-        <li><a href="#user_info"><span>User Information</span></a></li>
-        <li><a href="#terms_conditions"><span>Terms &amp; Conditions</span></a></li>
+      <li><a href="#todays_order"><span>Today's Order</span></a></li>
+      <li><a href="#monthly_autoship"><span>Select Monthly AutoShip Program</span></a></li>
+      <li><a href="#user_info"><span>User Information</span></a></li>
+      <li><a href="#terms_conditions"><span>Terms &amp; Conditions</span></a></li>
     </ul>
     <div id="todays_order">
       <div class="zn_title">
@@ -110,12 +110,10 @@
             <li>
               <label for="username">Username<em>*</em></label>
               <input id="username" type="text" name="user[username]"/>
-              <span id="username_status"></span>
             </li>
             <li class="etrigger marketing_associate business_associate">
               <label for="replicated_site">Replicated Site ID<em>*</em></label>
               <input id="replicated_site" type="text"  name="user[replicated_site]"/>
-              <span id="replicated_site_status"></span>
             </li>
             <li>
               <label for="password">Password<em>*</em></label>
@@ -158,7 +156,6 @@
               <li>
                 <label for="email">Email</label>
                 <input id="email" type="text" name="user[email]" />
-                <span id="email_status"></span>
               </li>
               <li>
                 <label for="confirm_email">Confirm Email</label>
@@ -375,36 +372,35 @@
   <!-- END: Used for calculations -->
 </form>
 
-<!-- TODO: Add Javascript to make this work -->
 <div id="zn_package">
   <table>
     <tbody>
     <tr id="row_signup_fee">
-      <th class="border">REGIST. FEE</td>
-      <td class="border"><span id="fee_amount">$<span id="display_reg_fee">0.00</span></span></td>
+      <th class="border">Reg. Fee</td>
+      <td class="border">$<span class="reg_fee">0.00</span></td>
     </tr>
     <tr>
       <th>Bonus Pak Total:</td>
-      <td class="border"><span id="bonus_pak_amount">$<span id="bonus_pak_total">0.00</span></span></td>
+      <td class="border">$<span id="bonus_pak_total">0.00</span></td>
     </tr>
     <tr>
-      <th>PRODUCT ORDER</td>
-      <td class="border"><span id="order_amount">$<span id="products_total">0.00</span></span></td>
+      <th>Product Order</td>
+      <td class="border">$<span class="order_products_total">0.00</span></td>
     </tr>
     <tr>
-      <th class="border">SHIPPING</td>
-      <td class="border">$<span id="shipping_amount">0.00</span></td>
+      <th class="border">Shipping</td>
+      <td class="border">$<span class="order_shipping">0.00</span></td>
     </tr>
     <tr>
-      <th>TAX</td>
-      <td>$<span id="tax_amount">0.00</span></td>
+      <th>Tax</td>
+      <td>$<span class="order_tax">0.00</span></td>
     </tr>
     <tr>
       <th class="total">TOTAL</td>
-      <td class="total">$<span id="total_amount">0.00</span></td>
+      <td class="total">$<span class="order_total">0.00</span></td>
     </tr>
     </tbody>
   </table>
-  Your AutoShip order will be charged monthly at an amount of $<span id="autoship_amount">0.00</span>
+  Your AutoShip order will be charged monthly at an amount of $<span class="autoship_total">0.00</span>
 </div>
 

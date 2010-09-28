@@ -28,7 +28,7 @@ class MlmViewFieldCheck extends JView {
     $user = $this->getModel('User');
 
     $type = JRequest::getVar('field');
-    $data = JRequest::getVar('user_info', false);
+    $data = JRequest::getVar('user', false);
     $res = false;
 
     if ($data and isset($data[$type])) {

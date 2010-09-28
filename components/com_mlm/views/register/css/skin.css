@@ -24,7 +24,7 @@
 
 /* User Information Page */
 .zn_user {clear:both;float:left;width:100%;}
-.zn_user label {clear:both;width:120px;}
+.zn_user label {width:120px;}
 .zn_user input {}
 .zn_user span {}
 .zn_user label, .zn_user input, .zn_user span {float:left;}
@@ -50,3 +50,6 @@
 #zn_package table th {color:rgb(85, 165, 28);border-bottom:0px;padding: 5px 0px;}
 #zn_package table th.border, #zn_package table td.border {border-bottom:1px solid rgb(213, 214, 208);}
 #zn_package table th.total, #zn_package table td.total {color:rgb(100, 24, 76);font-size:14px;}
+
+.zn_user label.error {width:auto;color:#ff0000;padding:4px 0 0 10px;}
+

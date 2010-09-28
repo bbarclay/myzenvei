@@ -85,7 +85,7 @@ class MlmModelUser extends JModel
   function addReplicatedSite($user)
   {
   }
-
+/*
   function insertVirtuemartInfo($biz, $coapplicant, $user, $shipping, $billing, $card, $shopper_group_id, $order_info, $products_info) {
     $db = $this->getDBO();
 
@@ -276,7 +276,7 @@ class MlmModelUser extends JModel
     return $db->getAffectedRows()>0;
 
   }
-
+ */
 }
 
 
