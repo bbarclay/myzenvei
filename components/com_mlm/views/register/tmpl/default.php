@@ -219,19 +219,6 @@
             <legend>  <?php echo JText::_('CLI_FLOAT_PRODUCT_ORD');?>Shipping Address (No PO Boxes)</legend>
             <ul>
               <li>
-                <label for="shipping_country">  <?php echo JText::_('CLI_FLOAT_PRODUCT_ORD');?>Country</label>
-                <select id="shipping_country" name="shipping[country]">
-                  <option value="">Please Select</option>
-                  <?php foreach ($this->countries as $country) { ?>
-                    <?php if ($country->country_3_code == $this->default_country) { ?>
-                      <option value="<?php echo $country->country_3_code ?>" selected="selected"><?php echo $country->country_name ?></option>
-                    <?php } else { ?>
-                      <option value="<?php echo $country->country_3_code ?>"><?php echo $country->country_name ?></option>
-                    <?php } ?>
-                  <?php } ?>
-                </select>
-              </li>
-              <li>
                 <label for="shipping_addr_1">  <?php echo JText::_('CLI_FLOAT_PRODUCT_ORD');?>Address 1</label>
                 <input id="shipping_addr_1"  type="text" name="shipping[addr_1]"/>
               </li>
@@ -256,7 +243,19 @@
                 <label for="shipping_zip">  <?php echo JText::_('CLI_FLOAT_PRODUCT_ORD');?>Zip</label>
                 <input id="shipping_zip" name="shipping[zip]" type="text" />
               </li>
-
+              <li>
+                <label for="shipping_country">  <?php echo JText::_('CLI_FLOAT_PRODUCT_ORD');?>Country</label>
+                <select id="shipping_country" name="shipping[country]">
+                  <option value="">Please Select</option>
+                  <?php foreach ($this->countries as $country) { ?>
+                    <?php if ($country->country_3_code == $this->default_country) { ?>
+                      <option value="<?php echo $country->country_3_code ?>" selected="selected"><?php echo $country->country_name ?></option>
+                    <?php } else { ?>
+                      <option value="<?php echo $country->country_3_code ?>"><?php echo $country->country_name ?></option>
+                    <?php } ?>
+                  <?php } ?>
+                </select>
+              </li>
             </ul>
           </fieldset>
           <fieldset>
