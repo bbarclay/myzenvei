@@ -36,8 +36,8 @@ class MlmModelOrder extends JModel
 
     // Insert order
     $vendor_id = 1;
-    $order_number = md5(uniqid('zenvei'));
-    $user_info_id = md5(uniqid('zenvei'));
+    $order_number = md5(uniqid($user['id']));
+    $user_info_id = md5($user['id']);
     $order_status = 'P';
 
     $query = sprintf("INSERT INTO #__vm_orders

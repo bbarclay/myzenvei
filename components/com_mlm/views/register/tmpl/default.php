@@ -71,7 +71,7 @@
     <div id="monthly_autoship">
       <div class="zn_title">
         <label for="autoship_date">  <?php echo JText::_('CLI_FLOAT_PRODUCT_ORD');?>Autoship Date</label>
-        <select id="autoship_date" name="auto_ship[date]">
+        <select id="autoship_date" name="autoship[date]">
           <option value="">Please Select</option>
           <option value="10">10</option>
           <option value="20">20</option>
@@ -363,6 +363,7 @@
   <input id="price_<?php echo $product->product_sku ?>" value="<?php echo sprintf('%.2f', $product->product_price) ?>" type="hidden" />
   <?php } ?>
   
+  <input id="reg_fee" type="hidden" value="0" />
   <input id="order_products_total" type="hidden" value="0" />
   <input id="order_tax" type="hidden" value="0" />
   <input id="order_shipping" type="hidden" value="0" />

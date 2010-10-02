@@ -1,5 +1,7 @@
 jQuery(document).ready(function ($) {
 
+  var reg_fee = '39.00';
+
   /*
    * Add rounding method to the number class
    */
@@ -264,6 +266,15 @@ jQuery(document).ready(function ($) {
     $('.etrigger').hide();
     if ($this.val()) {
       $('.'+selected).show();
+    }
+
+    // Reg Fee
+    if (!$this.val() || $this.val() == 'preferred_customer') {
+      $('#reg_fee').val('0.00');
+      $('.reg_fee').html('0.00');
+    } else {
+      $('#reg_fee').val(reg_fee);
+      $('.reg_fee').html(reg_fee);
     }
 
     // Update prices for products and calculations

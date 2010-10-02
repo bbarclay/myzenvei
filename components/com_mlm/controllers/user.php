@@ -70,20 +70,22 @@ class MlmControllerUser extends JController
     // Create Joomla User
     $user['name'] = trim($user['first_name'].' '.$user['last_name']);
     
-    $user_obj = $this->_createJoomlaUser();
+//    $user_obj = $this->_createJoomlaUser($user);
 
-    $user['id'] = $user_obj->id;
+//    $user['id'] = $user_obj->id;
+    $user['id'] = 407;
     
     // Insert user in the referral tree
     if ($enrollment_type  != 'preferred_customer') {
       $referral_tree = $this->getModel('ReferralTree');
-      $referral_tree->addUser($user_obj->id, $referee);
+      $referral_tree->addUser($user['id'], $referee);
     }
 
     // Create Replicated Site
     $user_model    = $this->getModel('User');
     $user_model->addReplicatedSite($user);
 
+    $virtuemart    = $this->getModel('VirtueMart');
     $shopper_group = ucwords(str_replace('_', ' ', $enrollment_type));
     $shopper_group = $virtuemart->getShopperGroupByName($shopper_group);
     if ($shopper_group) {
@@ -93,29 +95,15 @@ class MlmControllerUser extends JController
     }
 
     // Insert virtuemart information
-    $virtuemart    = $this->getModel('VirtueMart');
-    $virtuemart->addUser('VirtueMart');
+    $virtuemart->addUser($user, $coapplicant, $business, $shipping, $card, $autoship);
 
-    // Add Registration Fee Info
-    // Add Jafilia Info
-    // Add Communtiy Info
-
-    // Insert virtuemart information
-    $virtuemart    = $this->getModel('VirtueMart');
-    $virtuemart->addUser('VirtueMart');
+    // Add info for other components
+    $user_model->addRegistrationInfo($user);
+    $user_model->addJafiliaInfo($user, $shipping);
+    $user_model->addCommunityInfo($user, $shipping);
 
     // Process current order
     $order_id = $this->_createOrder($user, $order, $coapplicant, $business, $shipping, $card);
-
-
-//    $user_model = $this->getModel('User');
-
-//    $user_model->enter_virtuemart_info($business_info, $autoship_date, $co_applicant, $user_info, $shipping_info, $billing_info, $credit_card,
-//      5, array(), array() );
-
-//      die('Completed Execution');
-
-
 
     // Send registration confirmation mail
     /*
@@ -127,10 +115,9 @@ class MlmControllerUser extends JController
     $message = JText::_('REG_COMPLETE');
     $this->setRedirect('index.php', $message);
      */
-    jexit();
   }
 
-  function _createJoomlaUser($user_info)
+  function _createJoomlaUser($user)
   {
     $user_obj   = clone(JFactory::getUser());
     $authorize  =& JFactory::getACL();

@@ -121,8 +121,41 @@ class MlmModelVirtueMart extends JModel
     return $groups ? $groups : false;
   }
 
-  function addUser()
+  function addUser($user, $coapplicant, $business, $shipping, $card, $autoship)
   {
+    $db = $this->getDBO();
+
+    $user_info_id = md5($user['id']);
+    $addr_type = 'BT';
+    $addr_type_name = 'BT Address';
+    $vendor_id = 1;
+
+    $query = sprintf("INSERT INTO jos_vm_user_info
+      (user_info_id, user_id, address_type, address_type_name, company,
+      last_name, first_name, phone_1, phone_2, fax, address_1, address_2,
+      city, state, country, zip, user_email, vm_coapplicant_firtsname ,
+      vm_coapplicant_lastname, vm_coapplicant_birthday, vm_card_type,
+      vm_name_on_card, vm_card_number, vm_card_expirydate, vm_csv_digits,
+      vm_ssn_number, vm_autoship_date)
+      VALUES ('%s', %d, '%s', '%s', '%s',
+        '%s', '%s','%s', '%s','%s','%s', '%s',
+        '%s', '%s', '%s', '%s', '%s', '%s',
+        '%s', '%s', '%s',
+        '%s', '%s', '%s', '%s',
+        '%s', '%s')",
+        $user_info_id, $user['id'], $addr_type, $addr_type_name, $business['name'],
+        $user['last_name'], $user['first_name'], $user['day_phone'], $user['evening_phone'], $user['fax_number'], $shipping['addr_1'], $shipping['addr_2'],
+        $shipping['city'], $shipping['state'], $shipping['country'], $shipping['zip'], $user['email'], $coapplicant['fname'],
+        $coapplicant['lname'], $coapplicant['birthday'], $card['type'],
+        $card['name'], $card['number'], $card['expire_date'], $card['csv'],
+        $user['ssn'], $autoship['date']);
+    
+    $db->query($query);
+
+    $query = sprintf("INSERT INTO jos_vm_shopper_vendor_xrefx (user_id, vendor_id, shopper_group_id) 
+      VALUES(%d , %d, %d)",
+        $user['id'], $vendor_id, $user['shopper_group_id']);
+    $db->query($query);
   }
 }
 

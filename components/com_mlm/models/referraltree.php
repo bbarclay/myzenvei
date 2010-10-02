@@ -63,7 +63,8 @@ class MlmModelReferralTree extends JModel
     return $db->getAffectedRows() > 0;
   }
   
-  function _getChildern($parent_id) {
+  function _getChildren($parent_id) {
+    $db = $this->getDBO();
     $query = sprintf('SELECT *
       FROM geneology_tree
       WHERE parent_id = %d
