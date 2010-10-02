@@ -117,7 +117,7 @@ jQuery(document).ready(function ($) {
   /*
    *  Form validation
    */
-  $('#reg_form').validate({
+/*  $('#reg_form').validate({
     debug: true,
     rules: {
       'enrollment_type': "required",
@@ -141,7 +141,7 @@ jQuery(document).ready(function ($) {
     messages: {
     },
   });
-
+*/
   /*
    * Order Pricing calculations
    */

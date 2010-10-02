@@ -121,5 +121,8 @@ class MlmModelVirtueMart extends JModel
     return $groups ? $groups : false;
   }
 
+  function addUser()
+  {
+  }
 }
 

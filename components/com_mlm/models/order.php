@@ -27,11 +27,19 @@ jimport('joomla.application.component.model');
  */
 class MlmModelOrder extends JModel
 {
-  function save($user, $order)
+  function save($user, $order, $coapplicant, $business, $shipping, $card)
   {
     $db = $this->getDBO();
 
+    $timestamp = time();
+    $date = date('Y-m-d H:i:s', time());
+
     // Insert order
+    $vendor_id = 1;
+    $order_number = md5(uniqid('zenvei'));
+    $user_info_id = md5(uniqid('zenvei'));
+    $order_status = 'P';
+
     $query = sprintf("INSERT INTO #__vm_orders
       (user_id, vendor_id, order_number, user_info_id, order_total, 
       order_subtotal, order_tax, order_shipping, order_status, ship_method_id, 
@@ -39,47 +47,52 @@ class MlmModelOrder extends JModel
       VALUES(%d, %d, %d, %d, '%.2f',
         '%.2f', '%.2f', '%.2f', '%s', %d,
         '%s', %d, %d)",
-        $user['id'], false, false, false, $order['total'],
-        $order['subtotal'], $order['tax'], $order['shipping'], false, $order['shipping_method'],
-        JRequest::getVar('REMOTE_ADDR', '', 'server'), false, false
+        $user['id'], $vendor_id, $order_number, $user_info_id, $order['total'],
+        $order['subtotal'], $order['tax'], $order['shipping'], $order_status, $order['shipping_method'],
+        JRequest::getVar('REMOTE_ADDR', '', 'server'), $timestamp, $timestamp
       );
-    var_dump($query);
-//    $db->query($query);
-
+    $db->query($query);
     $order_id = $db->insertid();
 
     // Insert Order History
     $query = sprintf("INSERT INTO #__vm_order_history
-      (order_id, order_status_code, date_added, customer_notified, comments
+      (order_id, order_status_code, date_added, customer_notified, comments)
       VALUES(%d, '%s', '%s', '%s', '%s')",
-        $order_id, false, false, false, false
+        $order_id, $order_status, $date, 0, ''
       );
-    var_dump($query);
-//    $db->query($query);
-
-/*    // Insert Order User Info
-    $query = sprintf("INSERT INTO  #_vm_order_user_info
-    order_id, user_id, address_type, address_type_name, company, last_name, first_name, phone_1, phone_2,	
-    fax, address_1, address_2, city, state,	country, zip, user_email, vm_coapplicant_firtsname, vm_coapplicant_lastname,
-    vm_coapplicant_birthday, vm_card_type, vm_name_on_card, vm_card_number, vm_card_expirydate, vm_csv_digits, vm_refferal_id_name, vm_ssn_number
-    values('".$order_id."','".$user_info['user_id']."','BT','BT Address','".$business_info['business_name']."','".$business_info['last_name']."',
-      '".$business_info['lname']."','".$business_info['day_phone']."','".$business_info['evening_phone']."','".$business_info['fax']."',
-      '".$shipping_info['address_1']."','".$shipping_info['address_2']."','".$shipping_info['city']."','".$shipping_info['state']."',
-      '".$shipping_info['country']."','".$shipping_info['country']."','".$shipping_info['zip']."','".$user_info['email']."',
-      '".$coapplicant_info['fname']."','".$coapplicant_info['lname']."','".$coapplicant_info['birthday']."','".$card_info['type']"',
-      '".$card_info['name']"','".$card_info['number']."','".$card_info['expire_date']."','".$card_info['csv']."','".$refferal_name."'.
-      '".$business_info['ssn']"')");
     $db->query($query);
- */
+
+    // Insert Order User Info
+    $addr_type = 'BT';
+    $addr_type_name = 'BT Address';
+
+    $query = sprintf("INSERT INTO #__vm_order_user_info
+      (order_id, user_id, address_type, address_type_name, company, last_name,
+      first_name, phone_1, phone_2,	fax, address_1, address_2, city, state,
+      country, zip, user_email, vm_coapplicant_firstname,
+      vm_coapplicant_lastname, vm_coapplicant_birthday, vm_card_type,
+      vm_name_on_card, vm_card_number, vm_card_expirydate, vm_csv_digits, vm_ssn_number)
+      VALUES (%d, %d, '%s', '%s', '%s', '%s',
+        '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s',
+        '%s', '%s', '%s', '%s',
+        '%s', '%s', '%s',
+        '%s', '%s', '%s', '%s', '%s')",
+      $order_id, $user['id'], $addr_type, $addr_type_name, $business['name'], $user['last_name'],
+      $user['first_name'], $user['day_phone'], $user['evening_phone'], $user['fax_number'], $shipping['addr_1'], $shipping['addr_2'], $shipping['city'], $shipping['state'],
+      $shipping['country'], $shipping['zip'], $user['email'], $coapplicant['fname'],
+      $coapplicant['lname'], $coapplicant['birthday'], $card['type'],
+      $card['name'], $card['number'], $card['expire_date'], $card['csv'], $user['ssn']);
+    $db->query($query);
+
     // Insert Products Info
     $values = array();
     foreach ($order['products'] as $sku => $product) {
       $values[] = sprintf("(%d, %d, %d, %d, '%s',
         '%s', %d, '%.2f',
         '%.2f', '%s', %d, %d)",
-        $order_id, false, false, $product['id'], $sku,
+        $order_id, $user_info_id, $vendor_id, $product['id'], $sku,
         $product['name'], $product['quantity'], $product['price'],
-        $product['total'], false, false, false);
+        $product['total'], $order_status, $timestamp, $timestamp);
     }
 
     $query = sprintf("INSERT INTO #__vm_order_item
@@ -87,8 +100,7 @@ class MlmModelOrder extends JModel
       order_item_name, product_quantity, product_item_price, 
       product_final_price, order_status, cdate, mdate)
       VALUES %s", implode(',', $values));
-    var_dump($query);
-//    $db->query($query);
+    $db->query($query);
   }
 }
 

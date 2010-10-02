@@ -68,29 +68,21 @@ class MlmControllerUser extends JController
     $terms_conditions  = JRequest::getVar('terms_conditions');
 
     // Create Joomla User
-    
     $user['name'] = trim($user['first_name'].' '.$user['last_name']);
     
-    //    $user_obj = $this->_createJoomlaUser();
+    $user_obj = $this->_createJoomlaUser();
 
-    // For testing, so new user is not created every time
-    $user_obj = JFactory::getUser(407);
     $user['id'] = $user_obj->id;
     
-/*
     // Insert user in the referral tree
     if ($enrollment_type  != 'preferred_customer') {
       $referral_tree = $this->getModel('ReferralTree');
       $referral_tree->addUser($user_obj->id, $referee);
     }
-*/
 
     // Create Replicated Site
     $user_model    = $this->getModel('User');
     $user_model->addReplicatedSite($user);
-
-    // Insert virtuemart information
-    $virtuemart    = $this->getModel('VirtueMart');
 
     $shopper_group = ucwords(str_replace('_', ' ', $enrollment_type));
     $shopper_group = $virtuemart->getShopperGroupByName($shopper_group);
@@ -100,8 +92,20 @@ class MlmControllerUser extends JController
       $user['shopper_group_id'] = 0;
     }
 
+    // Insert virtuemart information
+    $virtuemart    = $this->getModel('VirtueMart');
+    $virtuemart->addUser('VirtueMart');
+
+    // Add Registration Fee Info
+    // Add Jafilia Info
+    // Add Communtiy Info
+
+    // Insert virtuemart information
+    $virtuemart    = $this->getModel('VirtueMart');
+    $virtuemart->addUser('VirtueMart');
+
     // Process current order
-    $order_id = $this->_createOrder($user, $order, $shipping, $card);
+    $order_id = $this->_createOrder($user, $order, $coapplicant, $business, $shipping, $card);
 
 
 //    $user_model = $this->getModel('User');
@@ -153,7 +157,7 @@ class MlmControllerUser extends JController
     return $user_obj;
   }
 
-  function _createOrder($user, $order, $shipping)
+  function _createOrder($user, $order, $coapplicant, $business, $shipping, $card)
   {
     $virtuemart    = $this->getModel('VirtueMart');
     $product_model = $this->getModel('Product');
@@ -196,7 +200,7 @@ class MlmControllerUser extends JController
 
     $order['total'] = $order['subtotal'] + $order['shipping'] + $order['tax'];
 
-    return $order_model->save($user, $order, $shipping);
+    return $order_model->save($user, $order, $coapplicant, $business, $shipping, $card);
   }
 
   /**

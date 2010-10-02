@@ -37,15 +37,17 @@ class MlmViewFieldCheck extends JView {
       $method = 'check_'.$type;
       $res = method_exists($user, $method) ? call_user_func(array($user, $method), $data) : false;
 
+      $type = ucwords(str_replace('_', ' ', $type));
+
       switch ($res) {
       case 'invalid':
-        $res = sprintf('The %s `%s` contains invalid characters. Only alphanumeric characters are allowed.', ucwords(str_replace('_', ' ', $type)), $data);
+        $res = JText::sprintf('MLM_FIELD_CHECK_INVALID', $type, $data);
         break;
       case 'reserved':
-        $res = sprintf('The %s `%s` is reserved.', ucwords(str_replace('_', ' ', $type)), $data);
+        $res = JText::sprintf('MLM_FIELD_CHECK_RESERVED', $type, $data);
         break;
       case 'taken':
-        $res = sprintf('The %s `%s` is in use.', ucwords(str_replace('_', ' ', $type)), $data);
+        $res = JText::sprintf('MLM_FIELD_CHECK_TAKEN', $type, $data);
         break;
       case 'available':
         $res = true;

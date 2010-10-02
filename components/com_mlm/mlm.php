@@ -33,6 +33,9 @@ if ($controller = JRequest::getWord('controller')) {
 $classname    = 'MlmController'.$controller;
 $controller   = new $classname();
 
+// Load Language Files
+JFactory::getLanguage()->load('com_mlm', JPATH_COMPONENT);
+
 // Perform the Request task
 $controller->execute(JRequest::getWord('task'));
 
