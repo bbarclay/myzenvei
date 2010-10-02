@@ -70,10 +70,8 @@ class MlmControllerUser extends JController
     // Create Joomla User
     $user['name'] = trim($user['first_name'].' '.$user['last_name']);
     
-//    $user_obj = $this->_createJoomlaUser($user);
-
-//    $user['id'] = $user_obj->id;
-    $user['id'] = 407;
+    $user_obj = $this->_createJoomlaUser($user);
+    $user['id'] = $user_obj->id;
     
     // Insert user in the referral tree
     if ($enrollment_type  != 'preferred_customer') {
